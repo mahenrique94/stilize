@@ -1,0 +1,82 @@
+@mixin background-aside {
+	background: -webkit-linear-gradient(to bottom right, #0099FF, #005C99);
+	background: -moz-linear-gradient(to bottom right, #0099FF, #005C99);
+	background: -o-linear-gradient(to bottom right, #0099FF, #005C99);
+	background: -ms-linear-gradient(to bottom right, #0099FF, #005C99);
+	background: linear-gradient(to bottom right, #0099FF, #005C99);
+}
+
+@mixin background-button-login {
+	background: -webkit-linear-gradient(#F5F5F5, #DCDCDC, #C4C4C4, #949494);
+	background: -moz-linear-gradient(#F5F5F5, #DCDCDC, #C4C4C4, #949494);
+	background: -o-linear-gradient(#F5F5F5, #DCDCDC, #C4C4C4, #949494);
+	background: -ms-linear-gradient(#F5F5F5, #DCDCDC, #C4C4C4, #949494);
+	background: linear-gradient(#F5F5F5, #DCDCDC, #C4C4C4, #949494);
+}
+
+@mixin background-button-default {
+	background: -webkit-linear-gradient(#F6F6F6, #E7E7E7);
+	background: -moz-linear-gradient(#F6F6F6, #E7E7E7);
+	background: -o-linear-gradient(#F6F6F6, #E7E7E7);
+	background: -ms-linear-gradient(#F6F6F6, #E7E7E7);
+	background: linear-gradient(#F6F6F6, #E7E7E7);
+}
+
+@mixin background-label-input {
+	background: -webkit-linear-gradient(#F6F6F6, #E7E7E7);
+	background: -moz-linear-gradient(#F6F6F6, #E7E7E7);
+	background: -o-linear-gradient(#F6F6F6, #E7E7E7);
+	background: -ms-linear-gradient(#F6F6F6, #E7E7E7);
+	background: linear-gradient(#F6F6F6, #E7E7E7);
+}
+
+@mixin background-navbar {
+	background: -webkit-linear-gradient(#FBFBFB, #F6F6F6);	
+	background: -moz-linear-gradient(#FBFBFB, #F6F6F6);	
+	background: -o-linear-gradient(#FBFBFB, #F6F6F6);	
+	background: -ms-linear-gradient(#FBFBFB, #F6F6F6);	
+	background: linear-gradient(#FBFBFB, #F6F6F6);	
+}
+
+@mixin border-radius($value){
+	-webkit-border-radius: $value;
+	-moz-border-radius: $value;
+	-o-border-radius: $value;
+	-ms-border-radius: $value;
+	border-radius: $value;
+}
+
+@mixin border-radius-lefttop-leftbottom($value) {
+	border-top-left-radius: $value;
+	border-bottom-left-radius: $value;
+}
+
+@mixin border-radius-lefttop-righttop($value) {
+	border-top-left-radius: $value;
+	border-top-right-radius: $value;
+}
+
+@mixin border-radius-righttop-rightbottom($value) {
+	border-top-right-radius: $value;
+	border-bottom-right-radius: $value;
+}
+
+@mixin category-button($color) {
+	@include border-radius(5px);
+	background: $color;
+	-webkit-box-shadow: inset 0 0 7px #FFFFFF;
+	-moz-box-shadow: inset 0 0 7px #FFFFFF;
+	-o-box-shadow: inset 0 0 7px #FFFFFF;
+	-ms-box-shadow: inset 0 0 7px #FFFFFF;
+	box-shadow: inset 0 0 7px #FFFFFF;
+	color: #FFFFFF;
+	padding: 5px 10px;
+}
+
+@mixin width-calc($value) {
+	// width: -webkit-calc(100% - $value);
+	// width: -moz-calc(100% - $value);
+	// width: -o-calc(100% - $value);
+	// width: -ms-calc(100% - $value);
+	// width: calc(100% - $value);
+}

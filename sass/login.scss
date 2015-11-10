@@ -1,0 +1,68 @@
+section.login {
+	@include border-radius(10px);
+	@include background-aside;
+	border: 1px solid $subtext-color;	
+	height: 200px;	
+	left: 45%;
+	position: absolute;
+	text-align: center;
+	top: 35%;	
+	width: 400px;
+	h1 {
+		background: #F6F6F6;
+		color: #333333;
+		font-size: 1.5em;
+		margin-bottom: 30px;
+		padding: 10px 0;		
+	}
+	div.row-input {
+		margin-bottom: 20px;
+		padding: 0 20px 0 10px;		
+		input{
+			@include border-radius(5px);
+			border: inherit;
+			color: #000000;
+			height: 20px;
+			padding: 2px 5px;
+			width: 100%;
+			&:focus {
+				outline: none;
+			}
+			&::-webkit-input-placeholder {
+				color: #000000;
+			}
+			&::-moz-input-placeholder {
+				color: #000000;
+			}
+			&::-o-input-placeholder {
+				color: #000000;
+			}
+			&::-ms-input-placeholder {
+				color: #000000;
+			}
+		}
+	}		
+	button.login {
+		@include background-button-login;
+		@include border-radius(3px);
+		border: 1px solid #F6F6F6;
+		color: $color-label-button;
+		float: right;
+		font-size: 0.9em;
+		height: 30px;
+		margin-right: 10px;
+		padding: 5px 10px;
+		text-align: center;
+		text-shadow: 1px 1px 5px #FFFFFF;
+		width: 100px;
+		&:hover {
+			cursor: pointer;
+		}
+	}
+	p.error {
+		color: #FFFFFF;
+		float: left;
+		margin-left: 10px;
+		margin-top: 10px;
+	}
+}

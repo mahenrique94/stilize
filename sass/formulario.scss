@@ -1,0 +1,111 @@
+div.container-form {
+	margin-top: 20px;
+	float: left;
+	width: 100%;
+	label.left-input {
+		@include border-radius-lefttop-leftbottom(5px);
+		@include background-label-input;
+		border: 1px solid #DCDCDC;
+		color: $color-label-button;
+		float: left;
+		padding: 5px;
+		text-align: center;
+		width: 120px;
+	}
+	label.top-textarea {
+		@include border-radius-lefttop-righttop(5px);
+		@include background-label-input;
+		border: 1px solid #DCDCDC;
+		color: $color-label-button;
+		float: left;
+		padding: 5px;
+		text-align: center;
+		width: 120px;
+	}
+	.input-form {
+		@include border-radius-righttop-rightbottom(5px);
+		border: 1px solid #DCDCDC;
+		color: #000000;
+		float: left;
+		font-size: 1.15em;
+		padding: 2px;
+		width: calc(100% - 150px);
+		&:focus {
+			outline: none;
+		}
+	}
+	.select-form {
+		@include border-radius-righttop-rightbottom(5px);
+		border: 1px solid #DCDCDC;
+		color: #000000;
+		float: left;
+		font-size: 1.15em;
+		padding: 2px;
+		width: calc(100% - 150px);
+		&:focus {
+			outline: none;
+		}
+	}
+	.textarea-form {
+		@include border-radius(5px);
+		border-top-left-radius: 0px;
+		border: 1px solid #DCDCDC;
+		color: #000000;
+		float: left;
+		font-size: 1.15em;
+		padding: 2px;
+		width: calc(100% - 150px);
+		&:focus {
+			outline: none;
+		}
+	}
+	.full {
+		width: calc(100% - 140px);
+	}
+	.full-select {
+		width: calc(100% - 135px);	
+	}
+	.full-textarea {
+		width: 100%;
+	}
+	div.row-input {
+		float: left;
+		margin-bottom: 10px;
+		width: 100%;
+	}
+	div.row {
+		float: left;
+		margin-bottom: 10px;
+		width: 100%;
+	}
+	div.post {
+		border: 1px solid #DCDCDC;
+		clear: both;
+		float: left;
+		width: 100%;
+	}
+	button.default {
+		@include background-button-default;
+		@include border-radius(5px);
+		border: 1px solid #DCDCDC;
+		color: $color-label-button;
+		font-size: 0.9em;
+		height: 30px;
+		padding: 5px 10px;
+		text-align: center;
+		text-shadow: 1px 1px 5px #FFFFFF;
+		width: 100px;
+		&:hover {
+			cursor: pointer;
+		}
+	}
+	.right {
+		float: right;
+	}
+	input[readonly] {
+		background: #F6F6F6;
+		&:hover {
+			cursor: not-allowed;
+		}
+	}
+}

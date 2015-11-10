@@ -1,0 +1,20 @@
+@import url(https://fonts.googleapis.com/css?family=Dosis);
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans);
+@import url(https://fonts.googleapis.com/css?family=Francois+One);
+
+@import 'sass/base/reset';
+
+@import 'sass/helpers/mixin';
+@import 'sass/helpers/variable';
+@import 'sass/helpers/placeholder';
+
+@import 'sass/component/main';
+
+@import 'sass/config';
+@import 'sass/post';
+@import 'sass/footer';
+@import 'sass/login';
+@import 'sass/formulario';
+@import 'sass/size';
+@import 'sass/override';
+@import 'sass/comment';

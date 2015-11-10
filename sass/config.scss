@@ -1,0 +1,72 @@
+html, body{
+	background: $background-color;
+	font-family: Arial;
+	height:100%;
+	margin:0;
+	padding:0;
+}
+
+body:before{
+	content:"";
+	float:left;
+	height:100%;
+	margin-top:-32767px;
+	width:0;
+}
+
+aside {
+	@include background-aside;
+	float: left;
+	height: 100%;
+	text-align: center;
+	width: 200px;
+	span {
+		background: rgba(0, 0, 0, 0.3);
+		color: #FFFFFF;
+		float: left;
+		font-family: 'Francois One', sans-serif;
+		padding: 5px 0;
+		width: 100%;
+	}
+	input {
+		@include border-radius(10px);
+		background: transparent;
+		border: 2px solid #FFFFFF;		
+		color: #FFFFFF;
+		font-size: 0.8em;
+		height: 30px;
+		margin: 30px 0 20px 0;
+		width: calc(100% - 10px);
+		&:focus {
+			outline: none;
+		}
+		&:hover {
+			background: rgba(0, 0, 0, 0.2);
+		}
+		&::-webkit-input-placeholder {
+			color: #FFFFFF;
+		}
+		&::-moz-input-placeholder {
+			color: #FFFFFF;
+		}
+		&::-o-input-placeholder {
+			color: #FFFFFF;
+		}
+		&::-ms-input-placeholder {
+			color: #FFFFFF;
+		}
+	}
+}
+
+main {
+	float: left;
+	padding: 20px;
+	width: calc(100% - 240px);
+}
+
+main.visualizar {
+	float: none;
+	margin: 0 auto;
+	padding: 20px;	
+	width: 80%;	
+}
