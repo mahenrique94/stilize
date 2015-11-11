@@ -1,9 +1,9 @@
-@mixin background-aside {
-	background: -webkit-linear-gradient(to bottom right, #0099FF, #005C99);
-	background: -moz-linear-gradient(to bottom right, #0099FF, #005C99);
-	background: -o-linear-gradient(to bottom right, #0099FF, #005C99);
-	background: -ms-linear-gradient(to bottom right, #0099FF, #005C99);
-	background: linear-gradient(to bottom right, #0099FF, #005C99);
+@mixin background-primary($important: null) {
+	background: -webkit-linear-gradient(to bottom right, #0099FF, #005C99) $important;
+	background: -moz-linear-gradient(to bottom right, #0099FF, #005C99) $important;
+	background: -o-linear-gradient(to bottom right, #0099FF, #005C99) $important;
+	background: -ms-linear-gradient(to bottom right, #0099FF, #005C99) $important;
+	background: linear-gradient(to bottom right, #0099FF, #005C99) $important;
 }
 
 @mixin background-button-login {
@@ -59,6 +59,14 @@
 @mixin border-radius-righttop-rightbottom($value) {
 	border-top-right-radius: $value;
 	border-bottom-right-radius: $value;
+}
+
+@mixin calc($property, $expression) {
+	#{$property}: -webkit-calc(#{$expression});
+	#{$property}: -moz-calc(#{$expression});
+	#{$property}: -o-calc(#{$expression});
+	#{$property}: -ms-calc(#{$expression});
+	#{$property}: calc(#{$expression});
 }
 
 @mixin category-button($color) {

@@ -1,0 +1,31 @@
+.container-default {
+	background: $container-default;
+	margin: 0 auto;
+	padding: 20px;
+	@media screen and #{$media-querie-mobile} {
+		& {
+			@include calc(width, "100% - 240px");
+		}
+	}
+	@media screen and #{$media-querie-tablet} {
+		& {
+			@include calc(width, "100% - 240px");
+		}
+	}
+	@media screen and #{$media-querie-desktop} {
+		& {
+			@include calc(width, "100% - 240px");
+		}
+	}
+	@media screen and #{$media-querie-large-screen} {
+		& {
+			@include calc(width, "100% - 240px");
+		}
+	}
+	header.container-header {		
+		width: 100%;
+		.container-brand {
+			font-size: 1.5em;
+		}
+	}
+}

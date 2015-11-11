@@ -1,6 +1,14 @@
+/************************************************** COLOR **************************************************/
 $background-color: #FFFFFF;
 $border-color: #F6F6F6;
 $color-hover: #6E6E6E;
 $color-label-button: #005C99;
+$container-default: #FFFFFF;
 $subtext-color: #B0B0B0;
 $text-color: #424242;
+
+/************************************************** MEDIA-QUERIE **************************************************/
+$media-querie-mobile: "(min-width: 0px)";
+$media-querie-tablet: "(min-width: 480px)";
+$media-querie-desktop: "(min-width: 768px)";
+$media-querie-large-screen: "(min-width: 980px)";
