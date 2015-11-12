@@ -4,17 +4,17 @@
 	padding: 20px;
 	@media screen and #{$media-querie-mobile} {
 		& {
-			@include calc(width, "100% - 240px");
+			@include calc(width, "100% - 120px");
 		}
 	}
 	@media screen and #{$media-querie-tablet} {
 		& {
-			@include calc(width, "100% - 240px");
+			@include calc(width, "100% - 160px");
 		}
 	}
 	@media screen and #{$media-querie-desktop} {
 		& {
-			@include calc(width, "100% - 240px");
+			@include calc(width, "100% - 200px");
 		}
 	}
 	@media screen and #{$media-querie-large-screen} {

@@ -1,0 +1,66 @@
+.btn-default {
+	@include background-button-default;
+	@include border-radius(5px);
+	border: 1px solid #DCDCDC;
+	color: $color-label-button;
+	font-size: 0.9em;	
+	text-align: center;
+	text-shadow: 1px 1px 5px #FFFFFF;	
+	&:active {
+		outline: none;
+	}
+	&:focus {
+		outline: none;
+	}
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+.btn-lube {
+	@include button-category(#33ADFF);
+	&:hover {
+		cursor: pointer;
+	}
+}
+.btn-range {
+	@include button-category(#FF6600);
+	&:hover {
+		cursor: pointer;
+	}
+}
+.btn-low {
+	@include button-category(#FFCC66);
+	&:hover {
+		cursor: pointer;
+	}
+}
+.btn-der {
+	@include button-category(#FF0000);
+	&:hover {
+		cursor: pointer;
+	}
+}
+.btn-gary {
+	@include button-category(#ACACAC);
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+.btn-hidden {
+	opacity: 0;
+}
+
+/************************************************** SIZES **************************************************/
+.btn-md {
+	padding: 5px 25px;
+}
+
+.btn-sm {
+	padding: 2px 15px;
+}
+
+.btn-xs {
+	padding: 1px 10px;
+}

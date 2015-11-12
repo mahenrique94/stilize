@@ -1,6 +1,18 @@
-nav.redes-sociais {
-	ul {
-		background: rgba(0, 0, 0, 0.3);
+nav.nav-lube {
+	@include background-lube;
+	padding: 50px;	
+	a.nav-brand {
+		color: #FFFFFF;		
+		font-size: 1.5em;
+		text-decoration: none;
+		&:hover {
+			color: rgba(255, 255, 255, 0.9);
+		}
+	}
+}
+
+nav.nav-network-social {
+	ul {		
 		bottom: 0;
 		display: inline-block;
 		width: 100%;
@@ -16,19 +28,15 @@ nav.redes-sociais {
 	}
 }
 
-nav.nav-top {
-	position: absolute;
-	top: 0;
-}
-
 nav.nav-responsive {	
 	width: 100%;
 	ul {
-		@include background-navbar;
-		display: flex;	
+		@include background-nav-default;
+		display: inline-flex;	
+		width: 100%;
 		li {
 			border-right: 1px solid #EEEEEE;
-			display: flex;			
+			display: inline-flex;			
 			justify-content: center;
 			list-style: none;
 			text-align: center;
@@ -49,16 +57,7 @@ nav.nav-responsive {
 	}
 }
 
-// nav.nav-top {
-// 	@include background-primary;
-// 	padding: 50px;	
-// 	a.nav-brand {
-// 		color: #FFFFFF;
-// 		font-family: 'Francois One', sans-serif;
-// 		font-size: 1.5em;
-// 		text-decoration: none;
-// 		&:hover {
-// 			color: rgba(255, 255, 255, 0.9);
-// 		}
-// 	}
-// }
+nav.nav-top {
+	position: absolute;
+	top: 0;
+}

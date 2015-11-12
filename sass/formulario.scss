@@ -1,10 +1,20 @@
-div.container-form {
+div.row-input {
+	float: inherit;
+	margin-bottom: 10px;
+	width: 100%;
+}
+div.row {
+	width: 100%;
+}
+
+form.form-inline {
+	display: inline-block;
 	margin-top: 20px;
 	float: left;
 	width: 100%;
 	label.left-input {
 		@include border-radius-lefttop-leftbottom(5px);
-		@include background-label-input;
+		@include background-label-input-default;
 		border: 1px solid #DCDCDC;
 		color: $color-label-button;
 		float: left;
@@ -14,7 +24,7 @@ div.container-form {
 	}
 	label.top-textarea {
 		@include border-radius-lefttop-righttop(5px);
-		@include background-label-input;
+		@include background-label-input-default;
 		border: 1px solid #DCDCDC;
 		color: $color-label-button;
 		float: left;
@@ -67,45 +77,12 @@ div.container-form {
 	}
 	.full-textarea {
 		width: 100%;
-	}
-	div.row-input {
-		float: left;
-		margin-bottom: 10px;
-		width: 100%;
-	}
-	div.row {
-		float: left;
-		margin-bottom: 10px;
-		width: 100%;
-	}
-	div.post {
-		border: 1px solid #DCDCDC;
-		clear: both;
-		float: left;
-		width: 100%;
-	}
-	button.default {
-		@include background-button-default;
-		@include border-radius(5px);
-		border: 1px solid #DCDCDC;
-		color: $color-label-button;
-		font-size: 0.9em;
-		height: 30px;
-		padding: 5px 10px;
-		text-align: center;
-		text-shadow: 1px 1px 5px #FFFFFF;
-		width: 100px;
-		&:hover {
-			cursor: pointer;
-		}
-	}
-	.right {
-		float: right;
-	}
-	input[readonly] {
-		background: #F6F6F6;
-		&:hover {
-			cursor: not-allowed;
-		}
+	}	
+}
+
+input[readonly] {
+	background: #F6F6F6;
+	&:hover {
+		cursor: not-allowed;
 	}
 }

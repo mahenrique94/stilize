@@ -1,0 +1,6 @@
+span.icon-answer {		
+	&::after {
+		content: "  \f149";
+		font-family: "FontAwesome";
+	}
+}

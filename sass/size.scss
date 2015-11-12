@@ -2,10 +2,26 @@ div[class^=w-] {
 	float: left;
 }
 
-div.w-50 {
+.w-50 {
 	width: 50%;
 }
 
-div.w-100 {
+.w-100 {
 	width: 100%;
+}
+
+.margin-left-10 {
+	margin-left: 10px;
+}
+
+.margin-right-10 {
+	margin-right: 10px;
+}
+
+.margin-right-20 {
+	margin-right: 20px;
+}
+
+.margin-top-10 {
+	margin-top: 10px;
 }

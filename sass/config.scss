@@ -13,8 +13,8 @@ body:before {
 	width:0;
 }
 
-body.body-primary {
-	@include background-primary(!important);
+body.body-lube {
+	@include background-lube(!important);
 }
 
 body.body-blog {
