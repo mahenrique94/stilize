@@ -50,6 +50,10 @@ table {
 
 /************************************************** COLOR **************************************************/
 /************************************************** MEDIA-QUERIE **************************************************/
+ul.pagination-default li.page-default a, ul.pagination-default li.page-default a:link, ul.pagination-default li.page-default a:visited, ul.pagination-default li.page-default a:active {
+  color: #424242;
+  text-decoration: none; }
+
 nav.nav-lube {
   background: -webkit-linear-gradient(to bottom right, #0099FF, #005C99);
   background: -moz-linear-gradient(to bottom right, #0099FF, #005C99);
@@ -108,7 +112,7 @@ nav.nav-top {
   position: absolute;
   top: 0; }
 
-.btn-default {
+.btn-default, .btn-md, .btn-sm, .btn-xs {
   background: -webkit-linear-gradient(#F6F6F6, #E7E7E7);
   background: -moz-linear-gradient(#F6F6F6, #E7E7E7);
   background: -o-linear-gradient(#F6F6F6, #E7E7E7);
@@ -124,11 +128,11 @@ nav.nav-top {
   font-size: 0.9em;
   text-align: center;
   text-shadow: 1px 1px 5px #FFFFFF; }
-  .btn-default:active {
+  .btn-default:active, .btn-md:active, .btn-sm:active, .btn-xs:active {
     outline: none; }
-  .btn-default:focus {
+  .btn-default:focus, .btn-md:focus, .btn-sm:focus, .btn-xs:focus {
     outline: none; }
-  .btn-default:hover {
+  .btn-default:hover, .btn-md:hover, .btn-sm:hover, .btn-xs:hover {
     cursor: pointer; }
 
 .btn-lube {
@@ -443,5 +447,17 @@ div[class^=w-] {
 
 .float-right {
   float: right; }
+
+ul.pagination-default {
+  display: inline-block;
+  margin-top: 5px; }
+  ul.pagination-default li.page-default {
+    display: inherit;
+    float: left;
+    margin-right: 5px; }
+    ul.pagination-default li.page-default a {
+      font-family: 'Francois One', sans-serif; }
+    ul.pagination-default li.page-default:not(:last-child)::after {
+      content: " - "; }
 
 /*# sourceMappingURL=style.css.map */

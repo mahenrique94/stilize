@@ -54,13 +54,16 @@
 
 /************************************************** SIZES **************************************************/
 .btn-md {
+	@extend .btn-default;
 	padding: 5px 25px;
 }
 
 .btn-sm {
+	@extend .btn-default;
 	padding: 2px 15px;
 }
 
 .btn-xs {
+	@extend .btn-default;
 	padding: 1px 10px;
 }

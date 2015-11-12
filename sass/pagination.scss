@@ -1,0 +1,28 @@
+ul.pagination-default {
+	display: inline-block;
+	margin-top: 5px;
+	li.page-default {
+		display: inherit;;
+		float: left;
+		margin-right: 5px;
+		a {
+			@extend %link-page-default;
+			font-family: 'Francois One', sans-serif;
+			&:link {
+				@extend %link-page-default;
+			}
+			&:visited {
+				@extend %link-page-default;	
+			}
+			&:hover {
+
+			}
+			&:active {
+				@extend %link-page-default;
+			}
+		}
+		&:not(:last-child)::after {
+			content: " - ";
+		}
+	}
+}
