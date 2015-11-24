@@ -1,0 +1,91 @@
+table.table-default {
+	width: 100%;
+	td {
+		border-bottom: 1px #DDDDDD solid;
+		border-left: 1px #FFFFFF solid;
+		border-right: 1px #DDDDDD solid;
+		border-top: 1px #FFFFFF solid;
+		padding: 4px;
+		text-align: left;
+	}
+	th {
+		border-left: 1px #FFFFFF solid;
+		border-right: 1px #DDDDDD solid;		
+		border-top: 1px #DDDDDD solid;
+		padding: 4px;
+		text-align: left;
+		&:nth-child(1) td {
+			border-top: 1px #DDDDDD solid !important;
+		}
+		&:nth-child(odd) {
+			background-color: #FFFFFF;
+		}
+		&:nth-child(odd):hover {
+			background-color: #DAF8FF;
+			cursor: pointer;			
+		}
+		&:nth-child(even) {
+			background-color: #F7F7F7;
+		}
+		&:nth-child(even):hover {
+			background-color: #DAF8FF;
+			cursor: pointer;			
+		}
+	}
+	tr {
+		&:nth-child(1) td {
+			border-top: 1px #DDDDDD solid !important;
+		}
+		&:nth-child(odd) {
+			background-color: #FFFFFF;
+		}
+		&:nth-child(odd):hover {
+			background-color: #DAF8FF;
+			color: #0052A6;
+			cursor: pointer;			
+		}
+		&:nth-child(even) {
+			background-color:#F7F7F7;
+		}
+		&:nth-child(even):hover {
+			background-color: #DAF8FF;
+			color: #0052A6;
+			cursor: pointer;			
+		}
+	}
+	thead {
+		th {
+			background: #F9F9F9;
+			background: -webkit-linear-gradient(top,  #F9F9F9 0%,#F9F9F9 50%,#F1F2F4 51%,#EBECEE 100%);
+			background: -moz-linear-gradient(top,  #F9F9F9 0%, #F9F9F9 50%, #F1F2F4 51%, #EBECEE 100%);			
+			background: -o-linear-gradient(top,  #F9F9F9 0%,#F9F9F9 50%,#F1F2F4 51%,#EBECEE 100%);
+			background: -ms-linear-gradient(top,  #F9F9F9 0%,#F9F9F9 50%,#F1F2F4 51%,#EBECEE 100%);
+			background: linear-gradient(to bottom,  #F9F9F9 0%,#F9F9F9 50%,#F1F2F4 51%,#EBECEE 100%);
+			font-weight: 100;
+			color: #555;
+		}
+		tr {
+			th:first-child {
+				border-left: 1px solid #ddd;
+			}	
+		}
+	}
+	tbody {
+		tr {
+			td:first-child {
+				border-left: 1px solid #ddd;
+			}
+			&.empty td:last-child {
+				border-bottom: 0px;
+				border-left: 0px;
+				border-right: 0px;
+				border-top: 0px;
+				display: table-cell;
+			}
+			&:last-child td {
+				border-bottom: 1px #ddd solid;
+			}
+		}
+
+	}
+}

@@ -24,6 +24,7 @@ form.form-inline {
 	}
 	.input-form {
 		@include border-radius-righttop-rightbottom(5px);
+		background: #FFFFFF;
 		border: 1px solid #DCDCDC;
 		color: #000000;
 		float: left;
@@ -36,18 +37,20 @@ form.form-inline {
 	}
 	.select-form {
 		@include border-radius-righttop-rightbottom(5px);
+		background: #FFFFFF;
 		border: 1px solid #DCDCDC;
 		color: #000000;
 		float: left;
 		font-size: 1.15em;
 		padding: 2px;
-		width: calc(100% - 150px);
+		width: calc(100% - 145px);
 		&:focus {
 			outline: none;
 		}
 	}
 	.textarea-form {
 		@include border-radius(5px);
+		background: #FFFFFF;
 		border-top-left-radius: 0px;
 		border: 1px solid #DCDCDC;
 		color: #000000;
@@ -68,7 +71,7 @@ form.form-inline {
 }
 
 input[readonly], select[disabled], textarea[readonly] {
-	background: #F6F6F6;
+	background: #F6F6F6 !important;
 	&:hover {
 		cursor: not-allowed;
 	}

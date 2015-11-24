@@ -3,21 +3,14 @@ nav.nav-kal {
 	@include calc(width, "100% - 3.950rem");
 	padding: 0.9rem 1.975rem;	
 	a.nav-brand {
-		@include link-no-decoration;
-		color: #FFFFFF;
-		font-size: 1.5rem;				
+		@include nav-brand;
 	}
 }
 nav.nav-lube {
 	@include background-lube;
-	padding: 50px;	
+	padding: 0.9rem 1.975rem;	
 	a.nav-brand {
-		color: #FFFFFF;		
-		font-size: 1.5em;
-		text-decoration: none;
-		&:hover {
-			color: rgba(255, 255, 255, 0.9);
-		}
+		@include nav-brand;
 	}
 }
 nav.nav-network-social {

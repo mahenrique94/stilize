@@ -110,8 +110,16 @@
 	}
 	&:hover {
 		@extend %link-no-decoration;
+		color: rgba(255, 255, 255, 0.9);
+		cursor: pointer;		
 	}
 	&:active {
 		@extend %link-no-decoration;
 	}	
+}
+
+@mixin nav-brand {
+	@include link-no-decoration;
+	color: #FFFFFF;
+	font-size: 1.5rem;
 }

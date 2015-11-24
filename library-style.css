@@ -50,7 +50,7 @@ table {
 
 /************************************************** COLOR **************************************************/
 /************************************************** MEDIA-QUERIE **************************************************/
-nav.nav-kal a.nav-brand:link, nav.nav-kal a.nav-brand:visited, nav.nav-kal a.nav-brand:hover, nav.nav-kal a.nav-brand:active {
+nav.nav-kal a.nav-brand:link, nav.nav-kal a.nav-brand:visited, nav.nav-kal a.nav-brand:hover, nav.nav-kal a.nav-brand:active, nav.nav-lube a.nav-brand:link, nav.nav-lube a.nav-brand:visited, nav.nav-lube a.nav-brand:hover, nav.nav-lube a.nav-brand:active {
   text-decoration: none; }
 
 nav.nav-kal {
@@ -64,6 +64,9 @@ nav.nav-kal {
   nav.nav-kal a.nav-brand {
     color: #FFFFFF;
     font-size: 1.5rem; }
+    nav.nav-kal a.nav-brand:hover {
+      color: rgba(255, 255, 255, 0.9);
+      cursor: pointer; }
 
 nav.nav-lube {
   background: -webkit-linear-gradient(to bottom right, #0099FF, #005C99);
@@ -71,13 +74,13 @@ nav.nav-lube {
   background: -o-linear-gradient(to bottom right, #0099FF, #005C99);
   background: -ms-linear-gradient(to bottom right, #0099FF, #005C99);
   background: linear-gradient(to bottom right, #0099FF, #005C99);
-  padding: 50px; }
+  padding: 0.9rem 1.975rem; }
   nav.nav-lube a.nav-brand {
     color: #FFFFFF;
-    font-size: 1.5em;
-    text-decoration: none; }
+    font-size: 1.5rem; }
     nav.nav-lube a.nav-brand:hover {
-      color: rgba(255, 255, 255, 0.9); }
+      color: rgba(255, 255, 255, 0.9);
+      cursor: pointer; }
 
 nav.nav-network-social ul {
   bottom: 0;
@@ -467,6 +470,7 @@ form.form-inline {
     -ms-border-bottom-right-radius: 5px;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
+    background: #FFFFFF;
     border: 1px solid #DCDCDC;
     color: #000000;
     float: left;
@@ -486,12 +490,13 @@ form.form-inline {
     -ms-border-bottom-right-radius: 5px;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
+    background: #FFFFFF;
     border: 1px solid #DCDCDC;
     color: #000000;
     float: left;
     font-size: 1.15em;
     padding: 2px;
-    width: calc(100% - 150px); }
+    width: calc(100% - 145px); }
     form.form-inline .select-form:focus {
       outline: none; }
   form.form-inline .textarea-form {
@@ -500,6 +505,7 @@ form.form-inline {
     -o-border-radius: 5px;
     -ms-border-radius: 5px;
     border-radius: 5px;
+    background: #FFFFFF;
     border-top-left-radius: 0px;
     border: 1px solid #DCDCDC;
     color: #000000;
@@ -515,9 +521,12 @@ form.form-inline {
     width: calc(100% - 135px); }
 
 input[readonly], select[disabled], textarea[readonly] {
-  background: #F6F6F6; }
+  background: #F6F6F6 !important; }
   input[readonly]:hover, select[disabled]:hover, textarea[readonly]:hover {
     cursor: not-allowed; }
+
+.center {
+  text-align: center; }
 
 .font-bold {
   font-weight: bold; }
@@ -631,3 +640,66 @@ h6 {
 /************************************************** PADDING **************************************************/
 .p-top-50 {
   padding-top: 50px; }
+
+table.table-default {
+  width: 100%; }
+  table.table-default td {
+    border-bottom: 1px #DDDDDD solid;
+    border-left: 1px #FFFFFF solid;
+    border-right: 1px #DDDDDD solid;
+    border-top: 1px #FFFFFF solid;
+    padding: 4px;
+    text-align: left; }
+  table.table-default th {
+    border-left: 1px #FFFFFF solid;
+    border-right: 1px #DDDDDD solid;
+    border-top: 1px #DDDDDD solid;
+    padding: 4px;
+    text-align: left; }
+    table.table-default th:nth-child(1) td {
+      border-top: 1px #DDDDDD solid !important; }
+    table.table-default th:nth-child(odd) {
+      background-color: #FFFFFF; }
+    table.table-default th:nth-child(odd):hover {
+      background-color: #DAF8FF;
+      cursor: pointer; }
+    table.table-default th:nth-child(even) {
+      background-color: #F7F7F7; }
+    table.table-default th:nth-child(even):hover {
+      background-color: #DAF8FF;
+      cursor: pointer; }
+  table.table-default tr:nth-child(1) td {
+    border-top: 1px #DDDDDD solid !important; }
+  table.table-default tr:nth-child(odd) {
+    background-color: #FFFFFF; }
+  table.table-default tr:nth-child(odd):hover {
+    background-color: #DAF8FF;
+    color: #0052A6;
+    cursor: pointer; }
+  table.table-default tr:nth-child(even) {
+    background-color: #F7F7F7; }
+  table.table-default tr:nth-child(even):hover {
+    background-color: #DAF8FF;
+    color: #0052A6;
+    cursor: pointer; }
+  table.table-default thead th {
+    background: #F9F9F9;
+    background: -webkit-linear-gradient(top, #F9F9F9 0%, #F9F9F9 50%, #F1F2F4 51%, #EBECEE 100%);
+    background: -moz-linear-gradient(top, #F9F9F9 0%, #F9F9F9 50%, #F1F2F4 51%, #EBECEE 100%);
+    background: -o-linear-gradient(top, #F9F9F9 0%, #F9F9F9 50%, #F1F2F4 51%, #EBECEE 100%);
+    background: -ms-linear-gradient(top, #F9F9F9 0%, #F9F9F9 50%, #F1F2F4 51%, #EBECEE 100%);
+    background: linear-gradient(to bottom, #F9F9F9 0%, #F9F9F9 50%, #F1F2F4 51%, #EBECEE 100%);
+    font-weight: 100;
+    color: #555; }
+  table.table-default thead tr th:first-child {
+    border-left: 1px solid #ddd; }
+  table.table-default tbody tr td:first-child {
+    border-left: 1px solid #ddd; }
+  table.table-default tbody tr.empty td:last-child {
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    display: table-cell; }
+  table.table-default tbody tr:last-child td {
+    border-bottom: 1px #ddd solid; }
