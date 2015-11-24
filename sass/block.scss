@@ -1,0 +1,41 @@
+fieldset.block {
+	@include border-radius(5px);
+	@include calc(width, "100% - 0.7rem");
+	border: 1px solid #DCDCDC;	
+	padding: 2.5rem 0.250rem 0.5rem;
+	position: relative;
+	legend.block-header {
+		left: 0;
+		padding: 0.5rem 0.9rem;
+		position: absolute;
+		top: 0;
+		@include calc(width, "100% - 1.8rem");
+	}
+	h1.block-title {
+		font-size: 1rem;
+	}
+}
+fieldset.block-default {
+	@extend .block;
+	legend.block-header {		
+		@include background-default;
+	}
+}
+fieldset.block-lube {
+	@extend .block;
+	legend.block-header {		
+		@include background-lube;
+		h1.block-title {
+			color: #FFFFFF;
+		}
+	}
+}
+fieldset.block-kal {
+	@extend .block;
+	legend.block-header {		
+		@include background-kal;
+		h1.block-title {
+			color: #FFFFFF;
+		}
+	}
+}

@@ -1,10 +1,10 @@
 html, body {
 	background: #FFFFFF;
 	font-family: Arial;
+	height: 100%;
 	margin:0;
 	padding:0;
 }
-
 body:before {
 	content:"";
 	float:left;
@@ -12,15 +12,6 @@ body:before {
 	margin-top:-32767px;
 	width:0;
 }
-
-body.body-lube {
-	@include background-lube(!important);
-}
-
-body.body-blog {
-	padding: 50px 0;
-}
-
 .clearfix:before,
 .clearfix:after {
 	display: table;

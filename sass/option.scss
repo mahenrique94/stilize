@@ -1,11 +1,44 @@
 .font-bold {
 	font-weight: bold;
 }
-
 .float-left {
 	float: left;
 }
-
 .float-right {
 	float: right;
+}
+.row {
+	width: 100%;
+}
+.row-input {
+	float: inherit;
+	margin-bottom: 10px;
+	width: 100%;
+}
+.wallpait {
+	@include border-radius(5px);
+	@include calc(width, "100% - 2.2rem");
+	background: #F6F6F6;
+	border: 1px solid #DCDCDC;
+	clear: both;
+	font-family: "Dosis", "Arial";
+	padding: 0.5rem 1rem;	
+	position: relative;
+	label.wallpait-tag {
+		@include border-radius-righttop(5px);
+		background: #FFFFFF;
+		float: right;
+		padding: 0.5rem;
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+}
+
+/************************************************** TAGS HTML **************************************************/
+strong {
+	font-weight: bold;
+}
+i {
+	font-style: italic;
 }

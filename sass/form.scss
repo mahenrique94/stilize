@@ -1,22 +1,12 @@
-div.row-input {
-	float: inherit;
-	margin-bottom: 10px;
-	width: 100%;
-}
-div.row {
-	width: 100%;
-}
-
 form.form-inline {
 	display: inline-block;
-	margin-top: 20px;
 	float: left;
 	width: 100%;
 	label.left-input {
 		@include border-radius-lefttop-leftbottom(5px);
-		@include background-label-input-default;
+		@include background-default;
 		border: 1px solid #DCDCDC;
-		color: $color-label-button;
+		color: #000000;
 		float: left;
 		padding: 5px;
 		text-align: center;
@@ -24,9 +14,9 @@ form.form-inline {
 	}
 	label.top-textarea {
 		@include border-radius-lefttop-righttop(5px);
-		@include background-label-input-default;
+		@include background-default;
 		border: 1px solid #DCDCDC;
-		color: $color-label-button;
+		color: #000000;
 		float: left;
 		padding: 5px;
 		text-align: center;
@@ -64,7 +54,7 @@ form.form-inline {
 		float: left;
 		font-size: 1.15em;
 		padding: 2px;
-		width: calc(100% - 150px);
+		width: calc(100% - 6px);
 		&:focus {
 			outline: none;
 		}
@@ -75,12 +65,9 @@ form.form-inline {
 	.full-select {
 		width: calc(100% - 135px);	
 	}
-	.full-textarea {
-		width: 100%;
-	}	
 }
 
-input[readonly] {
+input[readonly], select[disabled], textarea[readonly] {
 	background: #F6F6F6;
 	&:hover {
 		cursor: not-allowed;

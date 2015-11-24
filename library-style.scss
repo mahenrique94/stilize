@@ -8,16 +8,18 @@
 @import 'sass/helpers/variable';
 @import 'sass/helpers/placeholder';
 
-@import 'sass/component/main';
+@import 'sass/component/nav';
 
+@import 'sass/block';
 @import 'sass/button';
 @import 'sass/config';
-@import 'sass/header';
+// @import 'sass/header';
 @import 'sass/container';
 @import 'sass/figure';
-@import 'sass/formulario';
-@import 'sass/footer';
-@import 'sass/icon';
-@import 'sass/size';
+@import 'sass/form';
+// @import 'sass/footer';
+// @import 'sass/grid';
+// @import 'sass/icon';
 @import 'sass/option';
-@import 'sass/pagination';
+// @import 'sass/pagination';
+@import 'sass/size';
