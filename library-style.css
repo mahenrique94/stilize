@@ -50,6 +50,10 @@ table {
 
 /************************************************** COLOR **************************************************/
 /************************************************** MEDIA-QUERIE **************************************************/
+ul.pagination-default li.page-default a, ul.pagination-default li.page-default a:link, ul.pagination-default li.page-default a:visited, ul.pagination-default li.page-default a:active {
+  color: #424242;
+  text-decoration: none; }
+
 nav.nav-kal a.nav-brand:link, nav.nav-kal a.nav-brand:visited, nav.nav-kal a.nav-brand:hover, nav.nav-kal a.nav-brand:active, nav.nav-lube a.nav-brand:link, nav.nav-lube a.nav-brand:visited, nav.nav-lube a.nav-brand:hover, nav.nav-lube a.nav-brand:active {
   text-decoration: none; }
 
@@ -582,6 +586,24 @@ strong {
 i {
   font-style: italic; }
 
+ul.pagination-default {
+  display: inline-block;
+  margin-top: 5px; }
+  ul.pagination-default li.page-default {
+    display: inherit;
+    float: left;
+    margin-right: 5px; }
+    ul.pagination-default li.page-default a {
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      -o-border-radius: 2px;
+      -ms-border-radius: 2px;
+      border-radius: 2px;
+      border: 1px solid #DCDCDC;
+      padding: 0.2rem 0.5rem; }
+      ul.pagination-default li.page-default a:hover {
+        background: rgba(0, 0, 0, 0.05); }
+
 div[class^=w-] {
   float: left; }
 
@@ -619,6 +641,10 @@ h6 {
   width: 100%; }
 
 /************************************************** MARGIN **************************************************/
+/************************* TOP **************************/
+.m-bottom-10 {
+  margin-bottom: 10px; }
+
 /************************* LEFT **************************/
 .m-left-10 {
   margin-left: 10px; }

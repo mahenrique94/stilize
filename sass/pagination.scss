@@ -1,13 +1,15 @@
 ul.pagination-default {
 	display: inline-block;
 	margin-top: 5px;
-	li.page-default {
+	li.page-default {		
 		display: inherit;;
 		float: left;
-		margin-right: 5px;
+		margin-right: 5px;		
 		a {
+			@include border-radius(2px);
+			border: 1px solid #DCDCDC;
+			padding: 0.2rem 0.5rem;		
 			@extend %link-page-default;
-			font-family: 'Francois One', sans-serif;
 			&:link {
 				@extend %link-page-default;
 			}
@@ -15,14 +17,11 @@ ul.pagination-default {
 				@extend %link-page-default;	
 			}
 			&:hover {
-
+				background: rgba(0, 0, 0, 0.05);
 			}
 			&:active {
 				@extend %link-page-default;
 			}
-		}
-		&:not(:last-child)::after {
-			content: " - ";
 		}
 	}
 }
