@@ -1,4 +1,15 @@
-.round-shadow {
+figure.brand-default {
+	h1 {
+		margin: inherit;
+		padding: inherit;
+	}
+	img {
+		height: 50px;
+		width: 400px;
+	}
+}
+
+figure.round-shadow {
 	@include border-radius(50%);
 	-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 	-moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
@@ -8,7 +19,7 @@
 }
 
 /************************************************** SIZES **************************************************/
-.round-md {
+figure.round-md {
 	height: 50px;
 	width: 50px;
 }

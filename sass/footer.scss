@@ -5,3 +5,21 @@ footer {
 	text-align: center;
 	word-spacing: 5px;
 }
+
+footer{
+	float: left;
+	font-size: 12px;
+	margin: -31px 0 0 0;
+	padding:0;
+	position: relative;
+	height:30px;
+	clear:both;
+	width:100%;
+	color: #000000;
+	border-top: solid 1px #DCDCDC;
+	background: #ddd;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=’#ffffff’, endColorstr=’#cfcfcf’);
+	background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#EBEBE0));
+	background: -moz-linear-gradient(top, #fff, #cfcfcf);
+	background-image: -o-linear-gradient(#fff,#cfcfcf);
+}

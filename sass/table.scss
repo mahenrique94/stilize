@@ -5,13 +5,15 @@ table.table-default {
 		border-left: 1px #FFFFFF solid;
 		border-right: 1px #DDDDDD solid;
 		border-top: 1px #FFFFFF solid;
-		padding: 4px;
+		font-size: 0.75rem;
+		padding: 5px;
 		text-align: left;
 	}
 	th {
 		border-left: 1px #FFFFFF solid;
 		border-right: 1px #DDDDDD solid;		
 		border-top: 1px #DDDDDD solid;
+		font-size: 0.9rem;
 		padding: 4px;
 		text-align: left;
 		&:nth-child(1) td {

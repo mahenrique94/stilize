@@ -1,4 +1,13 @@
-html, body {
+.clearfix:before,
+.clearfix:after {
+	display: table;
+	content: "";
+}
+.clearfix:after {
+	clear: both;
+}
+
+body, html {
 	background: #FFFFFF;
 	font-family: Arial;
 	height: 100%;
@@ -12,12 +21,17 @@ body:before {
 	margin-top:-32767px;
 	width:0;
 }
-.clearfix:before,
-.clearfix:after {
-	display: table;
-	content: "";
-}
 
-.clearfix:after {
-	clear: both;
+main#wrap{
+	min-height:100%;
+	padding: 0;
+	margin: 0;
+	padding-bottom: 35px;
+}
+section#content {
+	overflow:hidden;
+	margin:auto;
+	width:100%;
+	clear:both;
+	height:auto;
 }

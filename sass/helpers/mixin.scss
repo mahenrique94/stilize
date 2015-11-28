@@ -1,3 +1,17 @@
+@mixin background-default {
+	background: -webkit-linear-gradient(#FFFFFF, #EBEBE0);
+	background: -moz-linear-gradient(#FFFFFF, #EBEBE0);
+	background: -o-linear-gradient(#FFFFFF, #EBEBE0);
+	background: -ms-linear-gradient(#FFFFFF, #EBEBE0);
+	background: linear-gradient(#FFFFFF, #EBEBE0);
+}
+@mixin background-default-hover {
+	background: -webkit-linear-gradient(lighten(#FFFFFF, 5%), lighten(#EBEBE0, 5%));
+	background: -moz-linear-gradient(lighten(#FFFFFF, 5%), lighten(#EBEBE0, 5%));
+	background: -o-linear-gradient(lighten(#FFFFFF, 5%), lighten(#EBEBE0, 5%));
+	background: -ms-linear-gradient(lighten(#FFFFFF, 5%), lighten(#EBEBE0, 5%));
+	background: linear-gradient(lighten(#FFFFFF, 5%), lighten(#EBEBE0, 5%));
+}
 @mixin background-lube($important: null) {
 	background: -webkit-linear-gradient(to bottom right, #0099FF, #005C99) $important;
 	background: -moz-linear-gradient(to bottom right, #0099FF, #005C99) $important;
@@ -5,12 +19,12 @@
 	background: -ms-linear-gradient(to bottom right, #0099FF, #005C99) $important;
 	background: linear-gradient(to bottom right, #0099FF, #005C99) $important;
 }
-@mixin background-default {
-	background: -webkit-linear-gradient(#F6F6F6, #E7E7E7);
-	background: -moz-linear-gradient(#F6F6F6, #E7E7E7);
-	background: -o-linear-gradient(#F6F6F6, #E7E7E7);
-	background: -ms-linear-gradient(#F6F6F6, #E7E7E7);
-	background: linear-gradient(#F6F6F6, #E7E7E7);
+@mixin background-kal {
+	background: -webkit-linear-gradient(#595959, #333333, #1A1A1A, #000000);
+	background: -moz-linear-gradient(#595959, #333333, #1A1A1A, #000000);
+	background: -o-linear-gradient(#595959, #333333, #1A1A1A, #000000);
+	background: -mslinear-gradient(#595959, #333333, #1A1A1A, #000000);
+	background: linear-gradient(#595959, #333333, #1A1A1A, #000000);
 }
 @mixin background-nav-default {
 	background: -webkit-linear-gradient(#FBFBFB, #F6F6F6);	
@@ -19,8 +33,19 @@
 	background: -ms-linear-gradient(#FBFBFB, #F6F6F6);	
 	background: linear-gradient(#FBFBFB, #F6F6F6);	
 }
-@mixin background-kal {
-	background: linear-gradient(#595959, #333333, #1A1A1A, #000000);
+@mixin background-nav-default-hover {
+	background: -webkit-linear-gradient(#80B2FF, #1975FF);
+	background: -moz-linear-gradient(#80B2FF, #1975FF);
+	background: -o-linear-gradient(#80B2FF, #1975FF);
+	background: -ms-linear-gradient(#80B2FF, #1975FF);
+	background: linear-gradient(#80B2FF, #1975FF);
+}
+@mixin background-warning {
+	background: -webkit-linear-gradient(#FFDD99, #FFCC66, #FFBB33);
+	background: -moz-linear-gradient(#FFDD99, #FFCC66, #FFBB33);
+	background: -o-linear-gradient(#FFDD99, #FFCC66, #FFBB33);
+	background: -ms-linear-gradient(#FFDD99, #FFCC66, #FFBB33);
+	background: linear-gradient(#FFDD99, #FFCC66, #FFBB33);
 }
 @mixin border-radius($value){
 	-webkit-border-radius: $value;

@@ -1,6 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Dosis);
 @import url(https://fonts.googleapis.com/css?family=Josefin+Sans);
 @import url(https://fonts.googleapis.com/css?family=Francois+One);
+@font-face {
+	font-family: 'Icons Halflings';
+	src: url('fonts/icon-halflings-regular.eot');
+	src: url('fonts/icon-halflings-regular.eot?#iefix') format('embedded-opentype'), url('fonts/icon-halflings-regular.woff') format('woff'), url('fonts/icon-halflings-regular.ttf') format('truetype'), url('fonts/icon-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
 
 @import 'sass/base/reset';
 
@@ -10,17 +15,21 @@
 
 @import 'sass/component/nav';
 
+@import 'sass/alert';
+@import 'sass/background';
 @import 'sass/block';
 @import 'sass/button';
 @import 'sass/config';
-// @import 'sass/header';
+@import 'sass/header';
 @import 'sass/container';
 @import 'sass/figure';
 @import 'sass/form';
 // @import 'sass/footer';
 // @import 'sass/grid';
-// @import 'sass/icon';
+@import 'sass/icon';
 @import 'sass/option';
 @import 'sass/pagination';
+@import 'sass/panel';
+@import 'sass/section';
 @import 'sass/size';
 @import 'sass/table';

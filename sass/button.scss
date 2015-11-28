@@ -2,28 +2,28 @@
 	@include background-default;
 	@include border-radius(5px);
 	border: 1px solid #DCDCDC;
-	color: $color-label-button;
+	color: #000000;
 	font-size: 0.9em;	
 	text-align: center;
 	text-shadow: 1px 1px 5px #FFFFFF;	
-	&:active {
-		outline: none;
+	&:link {
+		@extend %link-no-decoration;
 	}
+	&:visited {
+		@extend %link-no-decoration;
+	}	
 	&:focus {
 		outline: none;
 	}
-	&:hover {
-		cursor: pointer;
+	&:hover {		
+		@extend %link-no-decoration;
+		@include background-default-hover;
+		cursor: pointer;		
 	}
-}
-.btn-lube {
-	@include button-custom(#33ADFF);
-}
-.btn-range {
-	@include button-custom(#FF6600);
-}
-.btn-low {
-	@include button-custom(#FFCC66);
+	&:active {
+		@extend %link-no-decoration;
+		outline: none;
+	}
 }
 .btn-der {
 	@include button-custom(#FF0000);
@@ -34,17 +34,65 @@
 .btn-hidden {
 	opacity: 0;
 }
+.btn-low {
+	@include button-custom(#FFCC66);
+}
+.btn-lube {
+	@include button-custom(#33ADFF);
+}
+.btn-range {
+	@include button-custom(#FF6600);
+}
+.btn-right-input {
+	@include background-default;
+	@include border-radius-righttop-rightbottom(5px);
+	border: 1px solid #DCDCDC;
+	color: #000000;
+	font-size: 0.9em;	
+	padding: 0.3rem 0.5rem;
+	text-align: center;
+	text-shadow: 1px 1px 5px #FFFFFF;	
+	&:link {
+		@extend %link-no-decoration;
+	}
+	&:visited {
+		@extend %link-no-decoration;
+	}	
+	&:focus {
+		outline: none;
+	}
+	&:hover {		
+		@extend %link-no-decoration;
+		@include background-default-hover;
+		cursor: pointer;		
+	}
+	&:active {
+		@extend %link-no-decoration;
+		outline: none;
+	}	
+}
 
 /************************************************** SIZES **************************************************/
+.btn-full {
+	@extend .btn-default;
+	padding: 5px 25px;
+	width: 100%;
+}
 .btn-md {
 	@extend .btn-default;
 	padding: 5px 25px;
 }
+a.btn-md {
+	@extend .btn-md;
+	padding: 6.5px 25px;	
+}
 .btn-sm {
 	@extend .btn-default;
-	padding: 2px 15px;
+	// font-size: 0.8rem;
+	// padding: 2px 15px;
 }
 .btn-xs {
 	@extend .btn-default;
-	padding: 1px 10px;
+	font-size: 0.8rem;
+	padding: 2px 15px;
 }

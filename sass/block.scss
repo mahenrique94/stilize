@@ -1,8 +1,8 @@
 fieldset.block {
 	@include border-radius(5px);
-	@include calc(width, "100% - 0.7rem");
+	@include calc(width, "100% - 0.2rem");
 	border: 1px solid #DCDCDC;	
-	padding: 2.5rem 0.250rem 0.5rem;
+	padding: 2rem 0 0;
 	position: relative;
 	legend.block-header {
 		left: 0;
@@ -13,6 +13,9 @@ fieldset.block {
 	}
 	h1.block-title {
 		font-size: 1rem;
+	}
+	section.block-body {
+		padding: 0.5rem 0 0 0.15rem;
 	}
 }
 fieldset.block-default {

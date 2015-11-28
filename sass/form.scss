@@ -3,70 +3,117 @@ form.form-inline {
 	float: left;
 	width: 100%;
 	label.left-input {
-		@include border-radius-lefttop-leftbottom(5px);
 		@include background-default;
+		@include border-radius-lefttop-leftbottom(5px);		
 		border: 1px solid #DCDCDC;
 		color: #000000;
 		float: left;
+		font-size: 0.7rem;
+		font-weight: 100;
 		padding: 5px;
 		text-align: center;
-		width: 120px;
+		width: 100px;
 	}
 	label.top-textarea {
-		@include border-radius-lefttop-righttop(5px);
 		@include background-default;
+		@include border-radius-lefttop-righttop(5px);		
 		border: 1px solid #DCDCDC;
 		color: #000000;
 		float: left;
+		font-size: 0.7rem;
 		padding: 5px;
 		text-align: center;
-		width: 120px;
+		width: 100px;
 	}
-	.input-form {
+	input.input-form {
 		@include border-radius-righttop-rightbottom(5px);
+		@include calc(width, "100% - 130px");
 		background: #FFFFFF;
 		border: 1px solid #DCDCDC;
 		color: #000000;
 		float: left;
-		font-size: 1.15em;
-		padding: 2px;
-		width: calc(100% - 150px);
+		font-size: 0.9em;
+		padding: 2px;		
 		&:focus {
 			outline: none;
 		}
 	}
-	.select-form {
+	select.select-form {
 		@include border-radius-righttop-rightbottom(5px);
+		@include calc(width, "100% - 125px");
 		background: #FFFFFF;
 		border: 1px solid #DCDCDC;
 		color: #000000;
 		float: left;
-		font-size: 1.15em;
-		padding: 2px;
-		width: calc(100% - 145px);
+		font-size: 0.9em;
+		padding: 2px;		
 		&:focus {
 			outline: none;
 		}
 	}
-	.textarea-form {
+	textarea.textarea-form {
 		@include border-radius(5px);
+		@include calc(width, "100% - 6px");
 		background: #FFFFFF;
 		border-top-left-radius: 0px;
 		border: 1px solid #DCDCDC;
 		color: #000000;
 		float: left;
-		font-size: 1.15em;
-		padding: 2px;
-		width: calc(100% - 6px);
+		font-size: 0.9em;
+		padding: 2px;		
 		&:focus {
 			outline: none;
 		}
 	}
 	.full {
-		width: calc(100% - 140px);
+		width: calc(100% - 120px) !important;
 	}
 	.full-select {
-		width: calc(100% - 135px);	
+		width: calc(100% - 115px) !important;
+	}
+	.no-label {
+		@include border-radius(5px);
+		width: calc(100% - 10px) !important;
+	}
+}
+
+form.form-search {
+	label.right-input {
+		@include background-default;
+		@include border-radius-righttop-rightbottom(5px);		
+		border: 1px solid #DCDCDC;
+		color: #000000;
+		float: right;
+		font-size: 1.05rem;
+		font-weight: 100;
+		padding: 5px;
+		text-align: center;
+		width: 50px;
+	}
+	input.input-search {
+		border: 1px solid #DCDCDC;
+		color: #000000;
+		float: left;
+		font-size: 0.9em;
+		padding: 5px;
+		width: 100%;
+		&:focus {
+			outline: none;
+		}
+		border-radius: 0;
+	}	
+	select.select-search {
+		@include calc(width, "100% - 10px");
+		background: #FFFFFF;
+		border: 1px solid #DCDCDC;
+		color: #000000;
+		float: left;
+		font-size: 0.9em;
+		height: 30px;
+		padding: 5px;		
+		&:focus {
+			outline: none;
+		}
 	}
 }
 
@@ -75,4 +122,19 @@ input[readonly], select[disabled], textarea[readonly] {
 	&:hover {
 		cursor: not-allowed;
 	}
+}
+
+input[type=search] {
+	background-image: url(icon/search.png);
+	background-position: right;
+	background-repeat: no-repeat;
+}
+
+input:invalid, select:invalid, textarea:invalid {
+	background: rgba(255, 0, 0, 0.2) !important;
+	border: 1px solid #FF0000 !important;
+}
+input:focus:valid, select:focus:invalid, textarea:focus:invalid {
+	background: rgba(0, 255, 0, 0.2) !important;
+	border: 1px solid #00FF00 !important;	
 }
