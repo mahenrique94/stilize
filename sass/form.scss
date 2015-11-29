@@ -134,7 +134,24 @@ input:invalid, select:invalid, textarea:invalid {
 	background: rgba(255, 0, 0, 0.2) !important;
 	border: 1px solid #FF0000 !important;
 }
+
+input[type=search]:focus:invalid {
+	background-color: rgba(255, 0, 0, 0.2) !important;
+	background-image: url(icon/search.png) !important;
+	background-position: right !important;
+	background-repeat: no-repeat !important;
+	border: 1px solid #FF0000 !important;
+}
+
 input:focus:valid, select:focus:invalid, textarea:focus:invalid {
 	background: rgba(0, 255, 0, 0.2) !important;
+	border: 1px solid #00FF00 !important;	
+}
+
+input[type=search]:focus:valid {
+	background-color: rgba(0, 255, 0, 0.2) !important;
+	background-image: url(icon/search.png) !important;
+	background-position: right !important;
+	background-repeat: no-repeat !important;
 	border: 1px solid #00FF00 !important;	
 }

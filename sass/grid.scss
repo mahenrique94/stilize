@@ -1,18 +1,23 @@
 .col-2-last {
 	@include span(2 of 12 last);
 }
+
 .col-4-last {
 	@include span(4 of 12 last);
 }
+
 .col-8 {
 	@include span(8 of 12);
 }
+
 .col-9 {
 	@include span(9 of 12);
 }
+
 .col-10 {
 	@include span(10 of 12);
 }
+
 .col-10-last {
 	@include span(10 of 12 last);
 }

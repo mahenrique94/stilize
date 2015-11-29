@@ -2,6 +2,7 @@
 	@include calc(width, "100% - 0.2rem");
 	padding: 0.1rem;
 }
+
 .container-default {
 	background: $container-default;
 	margin: 0 auto;

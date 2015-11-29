@@ -1,3 +1,12 @@
+.band-lube {
+	@include background-lube;
+	@include calc(width, "100% - 0.6rem");
+	color: #FFFFFF;
+	float: left;
+	margin-bottom: 10px;
+	padding: 0.3rem;
+}
+
 .center {
 	text-align: center;
 }
@@ -5,20 +14,29 @@
 .font-bold {
 	font-weight: bold;
 }
+
 .float-left {
 	float: left;
 }
+
 .float-right {
 	float: right;
 }
+
+.no-decoration {
+	text-decoration: none;
+}
+
 .row {
 	width: 100%;
 }
+
 .row-input {
 	float: left;
 	margin-bottom: 10px;
 	width: 100%;
 }
+
 .wallpait {
 	@include border-radius(5px);
 	@include calc(width, "100% - 2.2rem");
@@ -43,6 +61,7 @@
 strong {
 	font-weight: bold;
 }
+
 i {
 	font-style: italic;
 }

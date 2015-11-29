@@ -25,24 +25,31 @@
 		outline: none;
 	}
 }
+
 .btn-der {
 	@include button-custom(#FF0000);
 }
+
 .btn-gary {
 	@include button-custom(#ACACAC);
 }
+
 .btn-hidden {
 	opacity: 0;
 }
+
 .btn-low {
 	@include button-custom(#FFCC66);
 }
+
 .btn-lube {
 	@include button-custom(#33ADFF);
 }
+
 .btn-range {
 	@include button-custom(#FF6600);
 }
+
 .btn-right-input {
 	@include background-default;
 	@include border-radius-righttop-rightbottom(5px);
@@ -78,21 +85,25 @@
 	padding: 5px 25px;
 	width: 100%;
 }
+
 .btn-md {
 	@extend .btn-default;
-	padding: 5px 25px;
+	padding: 0.4rem 0.6rem;
 }
+
 a.btn-md {
 	@extend .btn-md;
-	padding: 6.5px 25px;	
+	padding: 0.5rem 0.6rem;	
 }
+
 .btn-sm {
 	@extend .btn-default;
 	// font-size: 0.8rem;
 	// padding: 2px 15px;
 }
+
 .btn-xs {
 	@extend .btn-default;
 	font-size: 0.8rem;
-	padding: 2px 15px;
+	padding: 0.1rem 0.5rem;
 }

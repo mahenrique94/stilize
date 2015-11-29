@@ -3,6 +3,7 @@
 	display: table;
 	content: "";
 }
+
 .clearfix:after {
 	clear: both;
 }
@@ -14,6 +15,7 @@ body, html {
 	margin:0;
 	padding:0;
 }
+
 body:before {
 	content:"";
 	float:left;
@@ -28,6 +30,7 @@ main#wrap{
 	margin: 0;
 	padding-bottom: 35px;
 }
+
 section#content {
 	overflow:hidden;
 	margin:auto;

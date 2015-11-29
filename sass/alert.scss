@@ -18,6 +18,12 @@
 	}
 }
 
+.alert-message {
+	color: #FF0000;
+	text-align: center;
+	width: 100%;
+}
+
 /************************************************** COLORS **************************************************/
 .alert-warning {
 	@extend .alert;
