@@ -1,6 +1,10 @@
 .container {
 	@include calc(width, "100% - 0.2rem");
-	padding: 0.1rem;
+	clear:both;
+	height:auto;	
+	margin:auto;
+	overflow:hidden;
+	padding: 0 0.1rem 0;
 }
 
 .container-default {

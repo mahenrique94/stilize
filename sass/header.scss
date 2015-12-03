@@ -1,5 +1,13 @@
-header{
+header.header-default {
 	float: left;
 	width: 100%; 
 	background: #FFFFFF;
+	margin-bottom: 1px;
+	figure.header-brand, figure.header-brand h1, figure.header-brand h1 img {
+		float: left;
+		height: 50px; 	
+		margin: 0;
+		padding: 0; 
+		width: 400px;
+	}
 }

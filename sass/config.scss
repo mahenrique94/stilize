@@ -8,33 +8,33 @@
 	clear: both;
 }
 
-body, html {
+html, body {
 	background: #FFFFFF;
 	font-family: Arial;
 	height: 100%;
-	margin:0;
-	padding:0;
+	margin: 0;
+	padding: 0;	
 }
 
 body:before {
-	content:"";
-	float:left;
-	height:100%;
-	margin-top:-32767px;
-	width:0;
+	content: "";
+	float: left;
+	height: 100%;
+	margin-top: -32767px;
+	width: 0;	
 }
 
 main#wrap{
-	min-height:100%;
-	padding: 0;
 	margin: 0;
-	padding-bottom: 35px;
+	min-height:100%;
+	padding: 0;	
+	// padding-bottom: 35px;
 }
 
 section#content {
-	overflow:hidden;
-	margin:auto;
-	width:100%;
 	clear:both;
-	height:auto;
+	height:auto;	
+	margin:auto;
+	overflow:hidden;
+	width:100%;
 }

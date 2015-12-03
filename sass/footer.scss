@@ -1,31 +1,19 @@
 footer.footer-default {
 	@include background-default;
-	@include calc(width, "100% - 0.6rem");
+	@include calc(width, "100% - 1.4rem");
 	border-top: solid 1px #DCDCDC;
-	bottom: 0;
 	clear:both;
 	color: #000000;
 	float: left;
-	font-size: 0.95rem;
-	margin: 0;
-	padding: 1rem 0.3rem;
-	position: absolute;	
+	font-size: 0.8rem;
+	margin: -36px 0 0 0;
+	padding: 0.7rem;
+	position: relative;
 	a {
-		@extend %link-no-decoration;
-		color: inherit;
-		&:link {
-			@extend %link-no-decoration;
-		}
-		&:visited {
-			@extend %link-no-decoration;
-		}
+		color: #000000;
+		text-decoration: none;
 		&:hover {
-			@extend %link-no-decoration;
-			color: rgba(0, 0, 0, 0.7);
 			cursor: pointer;
-		}
-		&:active {
-			@extend %link-no-decoration;
 		}
 	}
 }
