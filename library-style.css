@@ -498,6 +498,29 @@ fieldset.block-kal legend.block-header {
   .btn-lube:hover {
     cursor: pointer; }
 
+.btn-kal {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  background: #333333;
+  border: 1px solid #DCDCDC;
+  -webkit-box-shadow: inset 0 0 7px #FFFFFF;
+  -moz-box-shadow: inset 0 0 7px #FFFFFF;
+  -o-box-shadow: inset 0 0 7px #FFFFFF;
+  -ms-box-shadow: inset 0 0 7px #FFFFFF;
+  box-shadow: inset 0 0 7px #FFFFFF;
+  color: #FFFFFF;
+  font-size: 0.9em;
+  text-align: center; }
+  .btn-kal:active {
+    outline: none; }
+  .btn-kal:focus {
+    outline: none; }
+  .btn-kal:hover {
+    cursor: pointer; }
+
 .btn-range {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -678,7 +701,7 @@ figure.brand-default img {
   height: 50px;
   width: 400px; }
 
-figure.round-shadow {
+figure.round-shadow img {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -o-border-radius: 50%;
@@ -691,7 +714,7 @@ figure.round-shadow {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.8); }
 
 /************************************************** SIZES **************************************************/
-figure.round-md {
+figure.round-md img {
   height: 50px;
   width: 50px; }
 

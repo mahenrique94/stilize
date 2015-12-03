@@ -46,6 +46,10 @@
 	@include button-custom(#33ADFF);
 }
 
+.btn-kal {
+	@include button-custom(#333333);
+}
+
 .btn-range {
 	@include button-custom(#FF6600);
 }
