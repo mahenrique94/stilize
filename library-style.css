@@ -810,7 +810,6 @@ form.form-inline {
     width: -o-calc(100% - 130px);
     width: -ms-calc(100% - 130px);
     width: calc(100% - 130px);
-    background: #FFFFFF;
     border: 1px solid #DCDCDC;
     color: #000000;
     float: left;
@@ -853,7 +852,6 @@ form.form-inline {
     width: -o-calc(100% - 8px);
     width: -ms-calc(100% - 8px);
     width: calc(100% - 8px);
-    background: #FFFFFF;
     border-top-left-radius: 0px;
     border: 1px solid #DCDCDC;
     color: #000000;
@@ -927,7 +925,7 @@ form.form-search select.select-search {
     outline: none; }
 
 input[readonly], select[disabled], textarea[readonly] {
-  background: #F6F6F6 !important; }
+  background: #F6F6F6; }
   input[readonly]:hover, select[disabled]:hover, textarea[readonly]:hover {
     cursor: not-allowed; }
 
@@ -1653,6 +1651,9 @@ div.alpha {
 
 .float-right {
   float: right; }
+
+.hidden {
+  display: none; }
 
 .no-border {
   border: none !important; }

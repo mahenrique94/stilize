@@ -28,7 +28,6 @@ form.form-inline {
 	input.input-form {
 		@include border-radius-righttop-rightbottom(5px);
 		@include calc(width, "100% - 130px");
-		background: #FFFFFF;
 		border: 1px solid #DCDCDC;
 		color: #000000;
 		float: left;
@@ -54,7 +53,6 @@ form.form-inline {
 	textarea.textarea-form {
 		@include border-radius(5px);
 		@include calc(width, "100% - 8px");
-		background: #FFFFFF;
 		border-top-left-radius: 0px;
 		border: 1px solid #DCDCDC;
 		color: #000000;
@@ -121,7 +119,7 @@ form.form-search {
 }
 
 input[readonly], select[disabled], textarea[readonly] {
-	background: #F6F6F6 !important;
+	background: #F6F6F6;
 	&:hover {
 		cursor: not-allowed;
 	}
