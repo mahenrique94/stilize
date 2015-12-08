@@ -390,8 +390,7 @@ fieldset.block-kal legend.block-header {
   border: 1px solid #DCDCDC;
   color: #000000;
   font-size: 0.9em;
-  text-align: center;
-  text-shadow: 1px 1px 5px #FFFFFF; }
+  text-align: center; }
   .btn-default:focus, .btn-full:focus, .btn-md:focus, .btn-sm:focus, .btn-xs:focus {
     outline: none; }
   .btn-default:hover, .btn-full:hover, .btn-md:hover, .btn-sm:hover, .btn-xs:hover {
