@@ -411,12 +411,7 @@ fieldset.block-kal legend.block-header {
   -ms-border-radius: 5px;
   border-radius: 5px;
   background: #FF0000;
-  border: 1px solid #DCDCDC;
-  -webkit-box-shadow: inset 0 0 7px #FFFFFF;
-  -moz-box-shadow: inset 0 0 7px #FFFFFF;
-  -o-box-shadow: inset 0 0 7px #FFFFFF;
-  -ms-box-shadow: inset 0 0 7px #FFFFFF;
-  box-shadow: inset 0 0 7px #FFFFFF;
+  border: 1px solid #FF0000;
   color: #FFFFFF;
   font-size: 0.9em;
   text-align: center; }
@@ -425,7 +420,8 @@ fieldset.block-kal legend.block-header {
   .btn-der:focus {
     outline: none; }
   .btn-der:hover {
-    cursor: pointer; }
+    cursor: pointer;
+    background: #ff3333 !important; }
 
 .btn-gary {
   -webkit-border-radius: 5px;
@@ -434,12 +430,7 @@ fieldset.block-kal legend.block-header {
   -ms-border-radius: 5px;
   border-radius: 5px;
   background: #ACACAC;
-  border: 1px solid #DCDCDC;
-  -webkit-box-shadow: inset 0 0 7px #FFFFFF;
-  -moz-box-shadow: inset 0 0 7px #FFFFFF;
-  -o-box-shadow: inset 0 0 7px #FFFFFF;
-  -ms-box-shadow: inset 0 0 7px #FFFFFF;
-  box-shadow: inset 0 0 7px #FFFFFF;
+  border: 1px solid #ACACAC;
   color: #FFFFFF;
   font-size: 0.9em;
   text-align: center; }
@@ -448,7 +439,8 @@ fieldset.block-kal legend.block-header {
   .btn-gary:focus {
     outline: none; }
   .btn-gary:hover {
-    cursor: pointer; }
+    cursor: pointer;
+    background: #c6c6c6 !important; }
 
 .btn-hidden {
   opacity: 0; }
@@ -460,12 +452,7 @@ fieldset.block-kal legend.block-header {
   -ms-border-radius: 5px;
   border-radius: 5px;
   background: #FFCC66;
-  border: 1px solid #DCDCDC;
-  -webkit-box-shadow: inset 0 0 7px #FFFFFF;
-  -moz-box-shadow: inset 0 0 7px #FFFFFF;
-  -o-box-shadow: inset 0 0 7px #FFFFFF;
-  -ms-box-shadow: inset 0 0 7px #FFFFFF;
-  box-shadow: inset 0 0 7px #FFFFFF;
+  border: 1px solid #FFCC66;
   color: #FFFFFF;
   font-size: 0.9em;
   text-align: center; }
@@ -474,7 +461,8 @@ fieldset.block-kal legend.block-header {
   .btn-low:focus {
     outline: none; }
   .btn-low:hover {
-    cursor: pointer; }
+    cursor: pointer;
+    background: #ffdd99 !important; }
 
 .btn-lube {
   -webkit-border-radius: 5px;
@@ -483,12 +471,7 @@ fieldset.block-kal legend.block-header {
   -ms-border-radius: 5px;
   border-radius: 5px;
   background: #33ADFF;
-  border: 1px solid #DCDCDC;
-  -webkit-box-shadow: inset 0 0 7px #FFFFFF;
-  -moz-box-shadow: inset 0 0 7px #FFFFFF;
-  -o-box-shadow: inset 0 0 7px #FFFFFF;
-  -ms-box-shadow: inset 0 0 7px #FFFFFF;
-  box-shadow: inset 0 0 7px #FFFFFF;
+  border: 1px solid #33ADFF;
   color: #FFFFFF;
   font-size: 0.9em;
   text-align: center; }
@@ -497,7 +480,8 @@ fieldset.block-kal legend.block-header {
   .btn-lube:focus {
     outline: none; }
   .btn-lube:hover {
-    cursor: pointer; }
+    cursor: pointer;
+    background: #66c2ff !important; }
 
 .btn-kal {
   -webkit-border-radius: 5px;
@@ -506,12 +490,7 @@ fieldset.block-kal legend.block-header {
   -ms-border-radius: 5px;
   border-radius: 5px;
   background: #333333;
-  border: 1px solid #DCDCDC;
-  -webkit-box-shadow: inset 0 0 7px #FFFFFF;
-  -moz-box-shadow: inset 0 0 7px #FFFFFF;
-  -o-box-shadow: inset 0 0 7px #FFFFFF;
-  -ms-box-shadow: inset 0 0 7px #FFFFFF;
-  box-shadow: inset 0 0 7px #FFFFFF;
+  border: 1px solid #333333;
   color: #FFFFFF;
   font-size: 0.9em;
   text-align: center; }
@@ -520,7 +499,8 @@ fieldset.block-kal legend.block-header {
   .btn-kal:focus {
     outline: none; }
   .btn-kal:hover {
-    cursor: pointer; }
+    cursor: pointer;
+    background: #4d4d4d !important; }
 
 .btn-range {
   -webkit-border-radius: 5px;
@@ -529,12 +509,7 @@ fieldset.block-kal legend.block-header {
   -ms-border-radius: 5px;
   border-radius: 5px;
   background: #FF6600;
-  border: 1px solid #DCDCDC;
-  -webkit-box-shadow: inset 0 0 7px #FFFFFF;
-  -moz-box-shadow: inset 0 0 7px #FFFFFF;
-  -o-box-shadow: inset 0 0 7px #FFFFFF;
-  -ms-box-shadow: inset 0 0 7px #FFFFFF;
-  box-shadow: inset 0 0 7px #FFFFFF;
+  border: 1px solid #FF6600;
   color: #FFFFFF;
   font-size: 0.9em;
   text-align: center; }
@@ -543,7 +518,8 @@ fieldset.block-kal legend.block-header {
   .btn-range:focus {
     outline: none; }
   .btn-range:hover {
-    cursor: pointer; }
+    cursor: pointer;
+    background: #ff8533 !important; }
 
 .btn-right-input {
   background: -webkit-linear-gradient(#FFFFFF, #EBEBE0);

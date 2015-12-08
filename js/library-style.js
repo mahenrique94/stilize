@@ -62,6 +62,11 @@ jQuery(document).ready(function () {
 	 */
 	jQuery('select[readonly]').css({'background' : '#ECEEEF', 'pointer-events' : 'none'});
 	
+	/** @auth Matheus
+	 * SETANDO LI ATIVO DE ACORDO COM URL
+	 */
+	jQuery('li[id=' + getFinal() + ']').addClass('active');
+	
 });
 
 /** @auth Matheus e Fernando
@@ -85,4 +90,15 @@ function openBox($obj) {
  */
 function toggleElement(element, parametro) {
 	jQuery(element + '[data-toggle=' + parametro + ']').fadeToggle("slow");
+}
+
+/** @auth Matheus
+ * IDENTIFICAR URL PARA ATIVAR LI
+ */
+function identityUrl() {
+	return window.location.href;
+}
+function getFinal() {
+	var url = identityUrl();
+	return url.substring(url.lastIndexOf('/') + 1);
 }
