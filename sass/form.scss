@@ -40,7 +40,6 @@ form.form-inline {
 	select.select-form {
 		@include border-radius-righttop-rightbottom(5px);
 		@include calc(width, "100% - 125px");
-		background: #FFFFFF;
 		border: 1px solid #DCDCDC;
 		color: #000000;
 		float: left;
@@ -125,14 +124,8 @@ input[readonly], select[disabled], textarea[readonly] {
 	}
 }
 
-input[type=search] {
-	background-image: url(icon/search.png);
-	background-position: right;
-	background-repeat: no-repeat;
-}
-
 input:invalid, select:invalid, textarea:invalid {
-	background: rgba(255, 0, 0, 0.2) !important;
+	background: rgba(255, 0, 0, 0.2);
 	border: 1px solid #FF0000 !important;
 }
 
@@ -145,7 +138,7 @@ input[type=search]:focus:invalid {
 }
 
 input:focus:valid, select:focus:valid, textarea:focus:valid {
-	background: rgba(0, 255, 0, 0.2) !important;
+	background: rgba(0, 255, 0, 0.2);
 	border: 1px solid #00FF00 !important;	
 }
 
@@ -155,4 +148,10 @@ input[type=search]:focus:valid {
 	background-position: right !important;
 	background-repeat: no-repeat !important;
 	border: 1px solid #00FF00 !important;	
+}
+
+input[type=search] {
+	background-image: url(icon/search.png);
+	background-position: right;
+	background-repeat: no-repeat;
 }

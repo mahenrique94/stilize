@@ -72,6 +72,7 @@ nav.nav-band {
   width: -o-calc(100% - 0.4rem);
   width: -ms-calc(100% - 0.4rem);
   width: calc(100% - 0.4rem);
+  float: left;
   padding: 0.3rem; }
 
 nav.nav-block {
@@ -833,7 +834,6 @@ form.form-inline {
     width: -o-calc(100% - 125px);
     width: -ms-calc(100% - 125px);
     width: calc(100% - 125px);
-    background: #FFFFFF;
     border: 1px solid #DCDCDC;
     color: #000000;
     float: left;
@@ -929,13 +929,8 @@ input[readonly], select[disabled], textarea[readonly] {
   input[readonly]:hover, select[disabled]:hover, textarea[readonly]:hover {
     cursor: not-allowed; }
 
-input[type=search] {
-  background-image: url(icon/search.png);
-  background-position: right;
-  background-repeat: no-repeat; }
-
 input:invalid, select:invalid, textarea:invalid {
-  background: rgba(255, 0, 0, 0.2) !important;
+  background: rgba(255, 0, 0, 0.2);
   border: 1px solid #FF0000 !important; }
 
 input[type=search]:focus:invalid {
@@ -946,7 +941,7 @@ input[type=search]:focus:invalid {
   border: 1px solid #FF0000 !important; }
 
 input:focus:valid, select:focus:valid, textarea:focus:valid {
-  background: rgba(0, 255, 0, 0.2) !important;
+  background: rgba(0, 255, 0, 0.2);
   border: 1px solid #00FF00 !important; }
 
 input[type=search]:focus:valid {
@@ -955,6 +950,11 @@ input[type=search]:focus:valid {
   background-position: right !important;
   background-repeat: no-repeat !important;
   border: 1px solid #00FF00 !important; }
+
+input[type=search] {
+  background-image: url(icon/search.png);
+  background-position: right;
+  background-repeat: no-repeat; }
 
 span.icon-answer::after {
   content: "  \f149";

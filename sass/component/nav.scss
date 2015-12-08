@@ -1,6 +1,7 @@
 nav.nav-band {
 	@include background-default;
 	@include calc(width, "100% - 0.4rem");
+	float: left;
 	padding: 0.3rem
 }
 
