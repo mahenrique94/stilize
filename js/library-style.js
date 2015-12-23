@@ -65,7 +65,7 @@ jQuery(document).ready(function () {
 	/** @auth Matheus
 	 * SETANDO LI ATIVO DE ACORDO COM URL
 	 */
-	jQuery('li[id=' + getFinal() + ']').addClass('active');
+//	jQuery('li[id=' + getFinal() + ']').addClass('active');
 	
 });
 
