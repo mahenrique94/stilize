@@ -57,12 +57,7 @@ table.table-default {
 	}
 	thead {
 		th {
-			background: #F9F9F9;
-			background: -webkit-linear-gradient(top,  #F9F9F9 0%,#F9F9F9 50%,#F1F2F4 51%,#EBECEE 100%);
-			background: -moz-linear-gradient(top,  #F9F9F9 0%, #F9F9F9 50%, #F1F2F4 51%, #EBECEE 100%);			
-			background: -o-linear-gradient(top,  #F9F9F9 0%,#F9F9F9 50%,#F1F2F4 51%,#EBECEE 100%);
-			background: -ms-linear-gradient(top,  #F9F9F9 0%,#F9F9F9 50%,#F1F2F4 51%,#EBECEE 100%);
-			background: linear-gradient(to bottom,  #F9F9F9 0%,#F9F9F9 50%,#F1F2F4 51%,#EBECEE 100%);
+			@include background-th-table-default;
 			font-weight: 100;
 			color: #555;
 		}

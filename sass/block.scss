@@ -18,14 +18,12 @@ fieldset.block {
 		padding: 0.5rem 0 0 0.15rem;
 	}
 }
-
 fieldset.block-default {
 	@extend .block;
 	legend.block-header {		
 		@include background-default;
 	}
 }
-
 fieldset.block-lube {
 	@extend .block;
 	legend.block-header {		
@@ -35,7 +33,6 @@ fieldset.block-lube {
 		}
 	}
 }
-
 fieldset.block-kal {
 	@extend .block;
 	legend.block-header {		
