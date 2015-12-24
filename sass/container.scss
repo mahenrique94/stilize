@@ -21,3 +21,19 @@
 		}
 	}
 }
+
+.container-flex {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 0 auto;
+	width: 70%;
+	.box-flex {
+		background: #F8F8F8;
+		border: 1px solid #DCDCDC;
+		margin-left: 5px;
+		padding: 0.5rem;
+		text-align: center;
+		width: 100%;
+	}
+}
