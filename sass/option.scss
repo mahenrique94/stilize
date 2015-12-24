@@ -60,12 +60,6 @@
 	width: 100%;
 }
 
-.row-input {
-	float: left;
-	margin-bottom: 10px;
-	width: 100%;
-}
-
 .wallpait {
 	@include border-radius(5px);
 	@include calc(width, "100% - 2.2rem");

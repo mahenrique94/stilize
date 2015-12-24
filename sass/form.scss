@@ -27,7 +27,7 @@ form.form-inline {
 	}
 	input.input-form {
 		@include border-radius-righttop-rightbottom(5px);
-		@include calc(width, "100% - 130px");
+		@include calc(width, "100% - 120px");
 		border: 1px solid #DCDCDC;
 		color: #000000;
 		float: left;
@@ -61,9 +61,6 @@ form.form-inline {
 		&:focus {
 			outline: none;
 		}
-	}
-	.full {
-		width: calc(100% - 120px) !important;
 	}
 	.full-block-no-border {
 		width: calc(100% - 115px) !important;	

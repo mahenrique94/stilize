@@ -1,17 +1,22 @@
 @import url(https://fonts.googleapis.com/css?family=Dosis);
 @import url(https://fonts.googleapis.com/css?family=Josefin+Sans);
 @import url(https://fonts.googleapis.com/css?family=Francois+One);
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
 @font-face {
 	font-family: 'Icons Halflings';
 	src: url('fonts/icon-halflings-regular.eot');
 	src: url('fonts/icon-halflings-regular.eot?#iefix') format('embedded-opentype'), url('fonts/icon-halflings-regular.woff') format('woff'), url('fonts/icon-halflings-regular.ttf') format('truetype'), url('fonts/icon-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
 
+@import 'susy';
+
 @import 'sass/base/reset';
 
 @import 'sass/helpers/mixin';
 @import 'sass/helpers/variable';
 @import 'sass/helpers/placeholder';
+@import 'sass/helpers/susy';
 
 @import 'sass/component/nav';
 
@@ -26,7 +31,7 @@
 @import 'sass/figure';
 @import 'sass/footer';
 @import 'sass/form';
-// @import 'sass/grid';
+@import 'sass/grid';
 @import 'sass/icon';
 @import 'sass/modal';
 @import 'sass/option';
