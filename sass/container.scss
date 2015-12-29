@@ -4,7 +4,7 @@
 	height:auto;	
 	margin:auto;
 	overflow:hidden;
-	padding: 0 0.1rem 0;
+	padding: 0 0.1rem 0;	
 }
 
 .container-center {
@@ -35,5 +35,21 @@
 		padding: 0.5rem;
 		text-align: center;
 		width: 100%;
+	}
+}
+
+.container-tie {
+	@include container();
+	margin: 1rem;
+	.container-header {
+		border-bottom: 1px solid #DCDCDC;
+		float: left;
+		margin-bottom: 1rem;				
+		width: 100%;
+		h2 {
+			color: #595959;
+			float: left;
+			margin-right: 0.5rem;
+		}
 	}
 }

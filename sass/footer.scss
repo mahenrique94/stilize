@@ -17,3 +17,24 @@ footer.footer-default {
 		}
 	}
 }
+
+footer.footer-tie {
+	background: #FFFFFF;
+	border-top: 3px solid $border-nav-tie;
+	box-sizing: border-box;
+	clear:both;
+	color: $text-nav-tie;
+	float: left;
+	font-size: 0.8rem;
+	margin: -48px 0 0 0;
+	padding: 1rem;
+	position: relative;
+	width: 100%;
+	a {
+		color: $text-nav-tie;
+		text-decoration: none;
+		&:hover {
+			cursor: pointer;
+		}
+	}	
+}

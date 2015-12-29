@@ -223,6 +223,14 @@
 	font-size: 1.5rem;
 }
 
+@mixin transform($expression) {
+	-webkit-transform: #{$expression};
+	-moz-transform: #{$expression};
+	-o-transform: #{$expression};
+	-ms-transform: #{$expression};
+	transform: #{$expression};
+}
+
 @mixin transition($expression) {
 	-webkit-transition: #{$expression};
 	-moz-transition: #{$expression};

@@ -1,10 +1,15 @@
+.border-bottom-dcdcdc {
+	border-bottom: 1px solid #DCDCDC;
+}
+
 .band-lube {
 	@include background-lube;
-	@include calc(width, "100% - 0.6rem");
+	box-sizing: border-box;
 	color: #FFFFFF;
 	float: left;
 	margin-bottom: 10px;
 	padding: 0.3rem;
+	width: 100%;
 }
 
 .center {

@@ -1,3 +1,57 @@
+form.form-block {
+	display: inline-block;
+	float: left;
+	width: 100%;
+	input.input-form {
+		border: 1px solid #DCDCDC;
+		box-sizing: border-box;
+		color: #000000;
+		float: left;
+		font-size: 0.9em;
+		padding: 2px;
+		width: 100%;		
+		&:focus {
+			outline: none;
+		}
+	}
+	input[type=checkbox] {
+		width: 100%;
+	}
+	select.select-form {
+		border: 1px solid #DCDCDC;
+		color: #000000;
+		float: left;
+		font-size: 0.9em;
+		padding: 2px;	
+		width: 100%;	
+		&:focus {
+			outline: none;
+		}
+	}
+	textarea.textarea-form {	
+		border-top-left-radius: 0px;
+		border: 1px solid #DCDCDC;
+		color: #000000;
+		float: left;
+		font-size: 0.9em;
+		padding: 2px;		
+		width: 100%;
+		&:focus {
+			outline: none;
+		}
+	}
+	.full-block-no-border {
+		width: calc(100% - 115px) !important;	
+	}
+	.full-select {
+		width: calc(100% - 115px) !important;
+	}
+	.no-label {
+		@include border-radius(5px);
+		width: calc(100% - 10px) !important;
+	}
+}
+
 form.form-inline {
 	display: inline-block;
 	float: left;

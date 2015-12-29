@@ -356,6 +356,89 @@ nav.nav-responsive {
 	}
 }
 
+nav.nav-tie {
+	@include span(12 of 12);
+	background: #FFFFFF;
+	border-bottom: 3px solid $border-nav-tie;
+	box-sizing: border-box;
+	float: left;
+	padding: 1rem;
+	a.nav-brand {
+		color: #595959;
+		float: left;
+		font-size: 1.2rem;
+		font-weight: 700;
+		line-height: 1;		
+		margin-right: 2rem;
+		text-decoration: none;
+	}
+	ul.nav-main {
+		display: inline-block;
+		float: left;
+		li {
+			display: inline-block;
+			float: left;
+			margin-right: 1.5rem;
+			position: relative;
+			a {
+				color: $text-nav-tie;
+				float: inherit;
+				font-size: 1em;
+				font-weight: 100;
+				line-height: 1.2;				
+				padding: 0 0.275rem;
+				text-decoration: none;
+			}
+			ul {
+				@include transition("transform ease-in-out 0.25s, opacity ease-in-out 0.25s");
+				background: #FFFFFF;
+				box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+				opacity: 0;
+				position: absolute;
+				top: 19px;
+				transform: scale(0, 0);			
+				z-index: -1;	
+				li {
+					border-bottom: 1px solid #DCDCDC;
+					display: inline-block;
+					float: left;
+					margin-right: 0;
+					padding: 0.3rem 0 0.3rem 0.125rem;
+					position: relative;
+					width: 150px;
+					ul {
+						left: 150px;
+						position: absolute;						
+						top: 0;
+						z-index: -2;
+					}
+					a {
+						color: $text-nav-tie;
+						font-size: 0.85em;
+					}				
+					&:last-child {
+						border-bottom: none;
+					}
+					&:hover > ul {
+						z-index: auto;
+					}
+				}
+			}			
+			&:hover {
+				background: $border-nav-tie;
+			}
+			&:hover > a {
+				color: #FFFFFF;	
+			}
+			&:hover > ul {
+				@include transform("scale(1, 1)");
+				opacity: 100;
+				z-index: 1;
+			}
+		}
+	}
+}
+
 nav.nav-top {
 	position: absolute;
 	top: 0;

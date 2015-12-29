@@ -42,3 +42,12 @@ fieldset.block-kal {
 		}
 	}
 }
+
+fieldset.block-tie {
+	@extend .block;
+	legend.block-header {
+		h1.block-title {
+			color: #595959;
+		}
+	}
+}
