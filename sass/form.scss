@@ -31,6 +31,7 @@ form.form-block {
 	textarea.textarea-form {	
 		border-top-left-radius: 0px;
 		border: 1px solid #DCDCDC;
+		box-sizing: border-box;
 		color: #000000;
 		float: left;
 		font-size: 0.9em;

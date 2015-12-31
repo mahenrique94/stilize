@@ -1,8 +1,9 @@
 nav.nav-band {
 	@include background-default;
-	@include calc(width, "100% - 0.4rem");
+	box-sizing: border-box;
 	float: left;
-	padding: 0.3rem
+	padding: 0.3rem;
+	width: 100%;
 }
 
 nav.nav-block {
@@ -358,17 +359,17 @@ nav.nav-responsive {
 
 nav.nav-tie {
 	@include span(12 of 12);
+	align-items: center;
 	background: #FFFFFF;
 	border-bottom: 3px solid $border-nav-tie;
 	box-sizing: border-box;
-	float: left;
+	display: flex;
 	padding: 1rem;
 	a.nav-brand {
 		color: #595959;
 		float: left;
 		font-size: 1.2rem;
 		font-weight: 700;
-		line-height: 1;		
 		margin-right: 2rem;
 		text-decoration: none;
 	}
@@ -385,7 +386,6 @@ nav.nav-tie {
 				float: inherit;
 				font-size: 1em;
 				font-weight: 100;
-				line-height: 1.2;				
 				padding: 0 0.275rem;
 				text-decoration: none;
 			}
@@ -395,7 +395,7 @@ nav.nav-tie {
 				box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 				opacity: 0;
 				position: absolute;
-				top: 19px;
+				top: 15px;
 				transform: scale(0, 0);			
 				z-index: -1;	
 				li {

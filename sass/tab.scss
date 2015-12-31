@@ -1,8 +1,8 @@
 ul.tab-default {
-  @include calc(width, "100% - 0.3rem");
   list-style: none;
   overflow: hidden;
   padding: 0;  
+  width: 100%;
   li {
     float: left;
   }
@@ -36,20 +36,22 @@ ul.tab-default {
 }
 
 div.tab-group {
-  @include calc(width, "100% - 0.3rem");
   background: #FFFFFF;
   border: 1px solid #DCDCDC;
+  box-sizing: border-box;
   float: left;
   height: auto;
   position: relative;
+  width: 100%;
   z-index: 2; 
 }
 
 @for $i from 1 through 10 {
   div#content-tab#{$i} {
-    @include calc(width, "100% - 0.2rem");
+    box-sizing: border-box;
     display: none;
     float: left;
-    margin: 0.2rem;
+    padding: 0.5rem;
+    width: 100%;
   }
 }

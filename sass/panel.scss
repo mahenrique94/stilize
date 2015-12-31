@@ -1,5 +1,4 @@
-.panel-center {
-	margin: auto;
+.panel-around {
+	@include border-radius(0.3rem);
 	padding: 1rem;
-	width: 30%;
 }

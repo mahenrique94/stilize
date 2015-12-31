@@ -1,3 +1,8 @@
+.position-right {
+	position: absolute;
+	right: 0;
+}
+
 .border-bottom-dcdcdc {
 	border-bottom: 1px solid #DCDCDC;
 }
@@ -38,19 +43,7 @@
 
 .no-decoration {
 	text-decoration: none;
-	&:link {
-		color: #000000;
-		text-decoration: none;
-	}
-	&:visited {
-		color: #000000;
-		text-decoration: none;
-	}
-	&:hover {
-		color: #000000;
-		text-decoration: none;
-	}
-	&:active {
+	&:link, &:visited, &:hover, &:active {
 		color: #000000;
 		text-decoration: none;
 	}
@@ -63,6 +56,20 @@
 .row {
 	float: left;
 	width: 100%;
+}
+
+.vertical-center {
+	@include align-items("center");
+	@include display-flex;	
+	height: 100%;
+}
+
+.vertical-horizontal-center {
+	@include align-items("center");
+	@include display-flex;
+	@include justify-content("center");
+	height: 100%;
+	width: 100%;	
 }
 
 .wallpait {
