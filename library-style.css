@@ -1309,6 +1309,9 @@ input[type=search] {
 [class^=col] {
   margin-bottom: 10px; }
 
+[class^=col]:last-child {
+  margin-right: 0 !important; }
+
 /************************************************** XS = Extra Small(min-width: 0px) **************************************************/
 @media screen and (max-width: 480px) {
   .col-xs-1 {

@@ -2,6 +2,10 @@
 	margin-bottom: 10px;
 }
 
+[class^=col]:last-child {
+	margin-right: 0 !important;
+}
+
 /************************************************** XS = Extra Small(min-width: 0px) **************************************************/
 @media screen and #{$media-querie-mobile} {
 	.col-xs-1 {	
