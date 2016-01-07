@@ -1313,7 +1313,7 @@ input[type=search] {
   margin-right: 0 !important; }
 
 /************************************************** XS = Extra Small(min-width: 0px) **************************************************/
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 0px) {
   .col-xs-1 {
     width: 6.77966%;
     float: left;
@@ -1435,7 +1435,7 @@ input[type=search] {
     float: right;
     margin-right: 0; } }
 /************************************************** SM = Small(min-width: 480px) **************************************************/
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 768px) {
   .col-sm-1 {
     width: 6.77966%;
     float: left;
@@ -1557,7 +1557,7 @@ input[type=search] {
     float: right;
     margin-right: 0; } }
 /************************************************** MD = Medium(min-width: 768px) **************************************************/
-@media screen and (min-width: 768px) and (max-width: 979px) {
+@media screen and (min-width: 992px) {
   .col-md-1 {
     width: 6.77966%;
     float: left;

@@ -10,7 +10,7 @@ $text-color: #424242;
 $text-nav-tie: #B3B3B3;
 
 /************************************************** MEDIA-QUERIE **************************************************/
-$media-querie-mobile: "(max-width: 480px)";
-$media-querie-tablet: "(max-width: 767px)";
-$media-querie-desktop: "(min-width: 768px) and (max-width: 979px)";
+$media-querie-mobile: "(min-width: 0px)";
+$media-querie-tablet: "(min-width: 768px)";
+$media-querie-desktop: "(min-width: 992px)";
 $media-querie-large-screen: "(min-width: 1200px)";
