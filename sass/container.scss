@@ -4,7 +4,12 @@
 	height:auto;	
 	margin:auto;
 	overflow:hidden;
-	padding: 0 0.1rem 0;	
+	padding: 0;	
+}
+
+.container-right {
+	@include span(9 of 12);
+	margin: gutter();
 }
 
 .container-center {

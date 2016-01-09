@@ -60,7 +60,7 @@ ul.pagination-default li.page-default a, ul.pagination-default li.page-default a
   color: #424242;
   text-decoration: none; }
 
-nav.nav-default-rotation ul:not(.nav-sub) a:link, nav.nav-default-rotation ul:not(.nav-sub) a:visited, nav.nav-default-rotation ul:not(.nav-sub) a:hover, nav.nav-default-rotation ul:not(.nav-sub) a:active, nav.nav-kal a.nav-brand:link, nav.nav-kal a.nav-brand:visited, nav.nav-kal a.nav-brand:hover, nav.nav-kal a.nav-brand:active, nav.nav-lube a.nav-brand:link, nav.nav-lube a.nav-brand:visited, nav.nav-lube a.nav-brand:hover, nav.nav-lube a.nav-brand:active, .btn-default:link, .btn-full:link, .btn-md:link, .btn-sm:link, .btn-xs:link, .btn-default:visited, .btn-full:visited, .btn-md:visited, .btn-sm:visited, .btn-xs:visited, .btn-default:hover, .btn-full:hover, .btn-md:hover, .btn-sm:hover, .btn-xs:hover, .btn-default:active, .btn-full:active, .btn-md:active, .btn-sm:active, .btn-xs:active, .btn-right-input:link, .btn-right-input:visited, .btn-right-input:hover, .btn-right-input:active {
+nav.nav-default-rotation ul:not(.nav-sub) a:link, nav.nav-default-rotation ul:not(.nav-sub) a:visited, nav.nav-default-rotation ul:not(.nav-sub) a:hover, nav.nav-default-rotation ul:not(.nav-sub) a:active, nav.nav-kal a.nav-brand:link, nav.nav-kal a.nav-brand:visited, nav.nav-kal a.nav-brand:hover, nav.nav-kal a.nav-brand:active, aside.nav-left ul li a:link, aside.nav-left ul li a:visited, aside.nav-left ul li a:hover, aside.nav-left ul li a:active, nav.nav-lube a.nav-brand:link, nav.nav-lube a.nav-brand:visited, nav.nav-lube a.nav-brand:hover, nav.nav-lube a.nav-brand:active, .btn-default:link, .btn-full:link, .btn-md:link, .btn-sm:link, .btn-xs:link, .btn-default:visited, .btn-full:visited, .btn-md:visited, .btn-sm:visited, .btn-xs:visited, .btn-default:hover, .btn-full:hover, .btn-md:hover, .btn-sm:hover, .btn-xs:hover, .btn-default:active, .btn-full:active, .btn-md:active, .btn-sm:active, .btn-xs:active, .btn-right-input:link, .btn-right-input:visited, .btn-right-input:hover, .btn-right-input:active {
   text-decoration: none; }
 
 nav.nav-band {
@@ -372,7 +372,8 @@ nav.nav-kal-dropdown ul.nav-main {
     left: 0;
     opacity: 0;
     position: absolute;
-    top: 30px; }
+    top: 30px;
+    z-index: 1; }
     nav.nav-kal-dropdown ul.nav-main ul li {
       -webkit-transition: height 0.25s ease 0.1s;
       -moz-transition: height 0.25s ease 0.1s;
@@ -425,6 +426,27 @@ nav.nav-kal-dropdown ul.nav-main {
           height: 0 !important;
           overflow: hidden;
           padding: 0; }
+
+aside.nav-left {
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  border-radius: 1rem;
+  width: 15.25424%;
+  float: left;
+  margin-right: 1.69492%;
+  margin: 1.69492%; }
+  aside.nav-left ul li {
+    box-sizing: border-box;
+    padding: 0.5rem 0.2rem;
+    text-align: center;
+    width: 100%; }
+    aside.nav-left ul li a {
+      color: #FFFFFF; }
+      aside.nav-left ul li a:hover {
+        color: rgba(255, 255, 255, 0.9);
+        cursor: pointer; }
 
 nav.nav-lube {
   background: -webkit-linear-gradient(to bottom right, #0099FF, #005C99);
@@ -566,6 +588,7 @@ nav.nav-top {
   top: 0; }
 
 .alert, .alert-warning {
+  box-sizing: border-box;
   color: #FFFFFF;
   padding: 1rem;
   text-align: center;
@@ -583,10 +606,7 @@ nav.nav-top {
     text-transform: uppercase; }
 
 .alert-message {
-  color: #FF0000;
-  margin-top: 10px;
   text-align: center;
-  position: absolute;
   width: 100%; }
 
 /************************************************** COLORS **************************************************/
@@ -596,6 +616,13 @@ nav.nav-top {
   background: -o-linear-gradient(#FFDD99, #FFCC66, #FFBB33);
   background: -ms-linear-gradient(#FFDD99, #FFCC66, #FFBB33);
   background: linear-gradient(#FFDD99, #FFCC66, #FFBB33); }
+
+.bg-kal {
+  background: -webkit-linear-gradient(#595959, #333333, #1A1A1A, #000000);
+  background: -moz-linear-gradient(#595959, #333333, #1A1A1A, #000000);
+  background: -o-linear-gradient(#595959, #333333, #1A1A1A, #000000);
+  background: -mslinear-gradient(#595959, #333333, #1A1A1A, #000000);
+  background: linear-gradient(#595959, #333333, #1A1A1A, #000000); }
 
 .bg-lube {
   background: -webkit-linear-gradient(to bottom right, #0099FF, #005C99);
@@ -851,10 +878,14 @@ fieldset.block-tie legend.block-header h1.block-title {
   width: 100%; }
 
 .btn-md, a.btn-md {
-  font-size: 0.8rem;
-  padding: 0.3rem 0.6rem; }
+  font-size: 0.9rem;
+  padding: 0.5rem 0.8rem; }
 
 a.btn-md {
+  font-size: 0.9rem;
+  padding: 0.6rem 0.8rem; }
+
+.btn-sm {
   font-size: 0.8rem;
   padding: 0.4rem 0.6rem; }
 
@@ -865,7 +896,7 @@ a.btn-md {
 .green {
   color: #00FF00; }
 
-.red {
+.red, .alert-message {
   color: #FF0000; }
 
 .clearfix:before,
@@ -910,11 +941,17 @@ section#content {
   height: auto;
   margin: auto;
   overflow: hidden;
-  padding: 0 0.1rem 0; }
+  padding: 0; }
   .container:after {
     content: " ";
     display: block;
     clear: both; }
+
+.container-right {
+  width: 74.57627%;
+  float: left;
+  margin-right: 1.69492%;
+  margin: 1.69492%; }
 
 .container-center {
   max-width: 100%;
@@ -2517,6 +2554,11 @@ div.alpha {
 
 .row {
   float: left;
+  width: 100%; }
+
+.row-input {
+  float: left;
+  margin-bottom: 0.625rem;
   width: 100%; }
 
 .vertical-center {

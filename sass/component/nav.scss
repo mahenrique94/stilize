@@ -264,6 +264,7 @@ nav.nav-kal-dropdown {
 			opacity: 0;
 			position: absolute;
 			top: 30px;
+			z-index: 1;
 			li {
 				@include transition("height 0.25s ease 0.1s");
 				height: 0;
@@ -295,6 +296,24 @@ nav.nav-kal-dropdown {
 						padding: 0;
 					}
 				}
+			}
+		}
+	}
+}
+
+aside.nav-left {	
+	@include border-radius(1rem);
+	@include span(2 of 12);	
+	margin: gutter();
+	ul {
+		li {
+			box-sizing: border-box;			
+			padding: 0.5rem 0.2rem;
+			text-align: center;
+			width: 100%;
+			a {
+				@include link-no-decoration;
+				color: #FFFFFF;
 			}
 		}
 	}

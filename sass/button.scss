@@ -82,18 +82,18 @@
 }
 .btn-md {
 	@extend .btn-default;
-	font-size: 0.8rem;
-	padding: 0.3rem 0.6rem;
+	font-size: 0.9rem;
+	padding: 0.5rem 0.8rem;
 }
 a.btn-md {
 	@extend .btn-md;
-	font-size: 0.8rem;
-	padding: 0.4rem 0.6rem;	
+	font-size: 0.9rem;
+	padding: 0.6rem 0.8rem;	
 }
 .btn-sm {
 	@extend .btn-default;
-	// font-size: 0.8rem;
-	// padding: 2px 15px;
+	font-size: 0.8rem;
+	padding: 0.4rem 0.6rem;
 }
 .btn-xs {
 	@extend .btn-default;
