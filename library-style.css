@@ -63,6 +63,23 @@ ul.pagination-default li.page-default a, ul.pagination-default li.page-default a
 nav.nav-default-rotation ul:not(.nav-sub) a:link, nav.nav-default-rotation ul:not(.nav-sub) a:visited, nav.nav-default-rotation ul:not(.nav-sub) a:hover, nav.nav-default-rotation ul:not(.nav-sub) a:active, nav.nav-kal a.nav-brand:link, nav.nav-kal a.nav-brand:visited, nav.nav-kal a.nav-brand:hover, nav.nav-kal a.nav-brand:active, aside.nav-left ul li a:link, aside.nav-left ul li a:visited, aside.nav-left ul li a:hover, aside.nav-left ul li a:active, nav.nav-lube a.nav-brand:link, nav.nav-lube a.nav-brand:visited, nav.nav-lube a.nav-brand:hover, nav.nav-lube a.nav-brand:active, .btn-default:link, .btn-full:link, .btn-md:link, .btn-sm:link, .btn-xs:link, .btn-default:visited, .btn-full:visited, .btn-md:visited, .btn-sm:visited, .btn-xs:visited, .btn-default:hover, .btn-full:hover, .btn-md:hover, .btn-sm:hover, .btn-xs:hover, .btn-default:active, .btn-full:active, .btn-md:active, .btn-sm:active, .btn-xs:active, .btn-right-input:link, .btn-right-input:visited, .btn-right-input:hover, .btn-right-input:active {
   text-decoration: none; }
 
+nav.left-range {
+  width: 15.25424%;
+  float: left;
+  margin-right: 1.69492%;
+  background: linear-gradient(to right bottom, #FFA64D, #FF8C1A, #FF8000, #FF6600);
+  border-right: 5px solid #DCDCDC;
+  box-sizing: border-box;
+  min-height: 100%;
+  padding: 1rem;
+  text-align: center; }
+  nav.left-range a.nav-brand {
+    color: #F2F2F2;
+    font-weight: 900;
+    text-decoration: none; }
+    nav.left-range a.nav-brand:link, nav.left-range a.nav-brand:visited, nav.left-range a.nav-brand:hover, nav.left-range a.nav-brand:active {
+      text-decoration: none; }
+
 nav.nav-band {
   background: -webkit-linear-gradient(#FFFFFF, #EBEBE0);
   background: -moz-linear-gradient(#FFFFFF, #EBEBE0);
@@ -2525,7 +2542,7 @@ div.alpha {
   padding: 0.3rem;
   width: 100%; }
 
-.center {
+.text-center {
   text-align: center; }
 
 .font-bold {
@@ -3027,7 +3044,7 @@ h6 {
   margin-top: 45px; }
 
 .m-top-50 {
-  margin-top: 50px; }
+  margin-top: 50px !important; }
 
 .m-top-55 {
   margin-top: 55px; }

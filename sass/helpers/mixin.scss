@@ -78,6 +78,14 @@
 	background: linear-gradient(to bottom, #595959, #404040, #333333);
 }
 
+@mixin background-range {
+	background: -webkit-linear-gradient(to right bottom, #FFA64D, #FF8C1A, #FF8000, #FF6600);
+	background: -moz-linear-gradient(to right bottom, #FFA64D, #FF8C1A, #FF8000, #FF6600);
+	background: -o-linear-gradient(to right bottom, #FFA64D, #FF8C1A, #FF8000, #FF6600);
+	background: -ms-linear-gradient(to right bottom, #FFA64D, #FF8C1A, #FF8000, #FF6600);
+	background: linear-gradient(to right bottom, #FFA64D, #FF8C1A, #FF8000, #FF6600);
+}
+
 @mixin background-th-table-default {
 	background: #F9F9F9;
 	background: -webkit-linear-gradient(top,  #F9F9F9 0%,#F9F9F9 50%,#F1F2F4 51%,#EBECEE 100%);

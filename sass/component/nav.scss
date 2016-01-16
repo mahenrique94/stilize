@@ -1,3 +1,21 @@
+nav.left-range {
+	@include span(2 of 12);
+	@include background-range;
+	border-right: 5px solid #DCDCDC;
+	box-sizing: border-box;
+	min-height: 100%;
+	padding: 1rem;
+	text-align: center;
+	a.nav-brand {
+		color: #F2F2F2;
+		font-weight: 900;
+		text-decoration: none;		
+		&:link, &:visited, &:hover, &:active {
+			text-decoration: none;
+		}
+	}
+}
+
 nav.nav-band {
 	@include background-default;
 	box-sizing: border-box;
