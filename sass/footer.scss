@@ -1,7 +1,7 @@
-footer.footer-default {
+footer.default {
 	@include background-default;
-	@include calc(width, "100% - 1.4rem");
 	border-top: solid 1px #DCDCDC;
+	box-sizing: border-box;
 	clear:both;
 	color: #000000;
 	float: left;
@@ -18,7 +18,28 @@ footer.footer-default {
 	}
 }
 
-footer.footer-tie {
+footer.kal {
+	@include background-kal;
+	border-top: 3px solid #FF9900;
+	box-sizing: border-box;
+	clear:both;
+	color: #FFFFFF;
+	float: left;
+	font-size: 0.8rem;
+	margin: -48px 0 0 0;
+	padding: 1rem;
+	position: relative;
+	width: 100%;
+	a {
+		color: #FFFFFF;
+		text-decoration: none;
+		&:hover {
+			cursor: pointer;
+		}
+	}
+}
+
+footer.tie {
 	background: #FFFFFF;
 	border-top: 3px solid $border-nav-tie;
 	box-sizing: border-box;

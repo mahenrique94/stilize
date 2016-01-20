@@ -262,10 +262,58 @@ nav.nav-default-rotation {
 
 nav.nav-kal {
 	@include background-kal;	
-	@include calc(width, "100% - 3.950rem");
-	padding: 0.9rem 1.975rem;	
+	border-bottom: 3px solid #FF9900;
+	box-sizing: border-box;
+	padding: 1rem;	
+	width: 100%;
 	a.nav-brand {
 		@include nav-brand;
+		margin-right: 1.5rem;
+	}
+	ul.nav-main {
+		display: inline-block;
+		li {
+			display: inline-block;
+			margin-right: 1rem;
+			position: relative;
+			a {
+				color: $color-link-nav-kal;
+				text-decoration: none;				
+			}
+			&:hover {
+				background: #FF9900;
+			}
+			&:hover > ul {
+				@include transform("scale(1)");
+				opacity: 100;
+			}
+		}
+		ul {
+			@include background-kal;
+			@include transform("scale(0)");
+			@include transition("all 0.3s linear");			
+			box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8);
+			left: 0;
+			opacity: 0;
+			position: absolute;
+			top: 1rem;
+			z-index: 1;
+			li {
+				border-bottom: 1px solid #F9F9F9;
+				box-sizing: border-box;
+				padding: 0.5rem;
+				margin: 0;
+				width: 170px;				
+				a {
+					display: inline-block;
+					width: 100%;
+					white-space: nowrap;
+				}
+				&:last-child {
+					border-bottom: none;
+				}
+			}
+		}
 	}
 }
 
@@ -339,7 +387,7 @@ nav.nav-kal-dropdown {
 					height: 30px !important;
 				}
 				ul {
-					@include border-radius-right-top-leftbottom-rightbottom(5px);
+					@include border-radius-righttop-leftbottom-rightbottom(5px);
 					@include transition("left 0.25s ease 0.1s");
 					left: 0;
 					position: absolute;
@@ -516,4 +564,16 @@ nav.nav-tie {
 nav.nav-top {
 	position: absolute;
 	top: 0;
+}
+
+nav.navbar-default {
+	@include background-default;
+	box-sizing: border-box;
+	float: left;
+	padding: 0.5rem 1rem;
+	width: 100%;
+	a.navbar-brand {
+		color: #595959;
+		text-decoration: none;
+	}
 }

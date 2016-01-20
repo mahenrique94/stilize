@@ -2,7 +2,7 @@ form.form-block {
 	display: inline-block;
 	float: left;
 	width: 100%;
-	input.input-form {
+	input {
 		border: 1px solid #DCDCDC;
 		box-sizing: border-box;
 		color: #000000;
@@ -17,7 +17,7 @@ form.form-block {
 	input[type=checkbox] {
 		width: 100%;
 	}
-	select.select-form {
+	select {
 		border: 1px solid #DCDCDC;
 		color: #000000;
 		float: left;
@@ -28,7 +28,7 @@ form.form-block {
 			outline: none;
 		}
 	}
-	textarea.textarea-form {	
+	textarea {	
 		border-top-left-radius: 0px;
 		border: 1px solid #DCDCDC;
 		box-sizing: border-box;
@@ -80,7 +80,7 @@ form.form-inline {
 		text-align: center;
 		width: 100px;
 	}
-	input.input-form {
+	input {
 		@include border-radius-righttop-rightbottom(5px);
 		@include calc(width, "100% - 120px");
 		border: 1px solid #DCDCDC;
@@ -92,7 +92,7 @@ form.form-inline {
 			outline: none;
 		}
 	}
-	select.select-form {
+	select {
 		@include border-radius-righttop-rightbottom(5px);
 		@include calc(width, "100% - 125px");
 		border: 1px solid #DCDCDC;
@@ -104,7 +104,7 @@ form.form-inline {
 			outline: none;
 		}
 	}
-	textarea.textarea-form {
+	textarea {
 		@include border-radius(5px);
 		@include calc(width, "100% - 8px");
 		border-top-left-radius: 0px;
@@ -130,19 +130,19 @@ form.form-inline {
 }
 
 form.form-search {
-	label.align-right {
+	.align-right {
 		@include background-default;
 		@include border-radius-righttop-rightbottom(5px);		
 		border: 1px solid #DCDCDC;
 		color: #000000;
-		float: right;
 		font-size: 1.05rem;
 		font-weight: 100;
-		padding: 5px;
+		padding: 0.21875rem;
+		position: absolute;
+		right: 0;
 		text-align: center;
-		width: 50px;
 	}
-	input.input-search {
+	input {
 		border: 1px solid #DCDCDC;
 		color: #000000;
 		float: left;
@@ -154,7 +154,7 @@ form.form-search {
 		}
 		border-radius: 0;
 	}	
-	select.select-search {
+	select {
 		@include calc(width, "100% - 10px");
 		background: #FFFFFF;
 		border: 1px solid #DCDCDC;

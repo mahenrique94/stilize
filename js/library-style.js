@@ -4,7 +4,7 @@ HTMLCollection.prototype.forEach = Array.prototype.forEach;
 document.addEventListener('DOMContentLoaded', function(e) {
 	
 	/** @auth Matheus, João, Fernando
-	 * MOSTRAR E ESCONDER MODAL AO CLICAR UMA OU DUAS VEZES NO SELETORES ABAIXO
+	 * MOSTRAR E ESCONDER MODAL AO CLICAR UMA OU DUAS VEZES NOS SELETORES ABAIXO
 	 */
 	document.querySelectorAll('[data-toggle=modal], div.alpha').forEach(function($e, i, n) {
 		$e.ondblclick = function(event) {

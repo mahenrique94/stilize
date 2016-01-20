@@ -1,4 +1,4 @@
-header.header-default {
+header.default {
 	float: left;
 	width: 100%; 
 	background: #FFFFFF;
@@ -10,4 +10,10 @@ header.header-default {
 		padding: 0; 
 		width: 400px;
 	}
+}
+
+header.banner {
+	align-items: center;
+	display: flex;
+	width: 100%;
 }
