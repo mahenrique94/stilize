@@ -86,6 +86,14 @@
 	background: linear-gradient(to right bottom, #FFA64D, #FF8C1A, #FF8000, #FF6600);
 }
 
+@mixin background-ray-degrade {
+	background: -webkit-linear-gradient(#FAFAFA, #F9F9F9, #F2F2F2, #E9E9E9);
+	background: -moz-linear-gradient(#FAFAFA, #F9F9F9, #F2F2F2, #E9E9E9);
+	background: -o-linear-gradient(#FAFAFA, #F9F9F9, #F2F2F2, #E9E9E9);
+	background: -ms-linear-gradient(#FAFAFA, #F9F9F9, #F2F2F2, #E9E9E9);
+	background: linear-gradient(#FAFAFA, #F9F9F9, #F2F2F2, #E9E9E9);
+}
+
 @mixin background-th-table-default {
 	background: #F9F9F9;
 	background: -webkit-linear-gradient(top,  #F9F9F9 0%,#F9F9F9 50%,#F1F2F4 51%,#EBECEE 100%);

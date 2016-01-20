@@ -65,8 +65,21 @@ jQuery(document).ready(function () {
 	/** @auth Matheus
 	 * SETANDO LI ATIVO DE ACORDO COM URL
 	 */
-	jQuery('li[id=' + getFinal() + ']').addClass('active');
+//	jQuery('li[id=' + getFinal() + ']').addClass('active');
 	
+	
+	/** @auth Matheus
+	 * REALIZANDO SLIDE NO MENU
+	 */
+	jQuery('[data-slide=true]').click(function() {
+		if (jQuery(this).find('span').hasClass('icon-circle-arrow-down')) {
+			jQuery(this).find('span').removeClass('icon-circle-arrow-down').addClass('icon-circle-arrow-up');
+			jQuery(jQuery(this).attr('href')).slideDown(500);
+		} else {
+			jQuery(this).find('span').removeClass('icon-circle-arrow-up').addClass('icon-circle-arrow-down');
+			jQuery(jQuery(this).attr('href')).slideUp(500);
+		}
+	})
 });
 
 /** @auth Matheus e Fernando
