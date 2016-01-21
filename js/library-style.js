@@ -42,15 +42,15 @@ jQuery(document).ready(function () {
 		jQuery('div#' + idActive).fadeIn();
 	})
 	
-	jQuery('ul.tab-default a').click(function(e) {
+	jQuery('ul[class^=tab] a').click(function(e) {
         e.preventDefault();
         if ($(this).closest('li').attr('class') == 'active'){
         	return;
         } else {             
-          jQuery('div.tab-group').find('div[id^=content]').attr({'aria-expanded' : 'false', 'aria-hidden' : 'true'}).hide();
-          jQuery('ul.tab-default li').removeAttr('class').attr('aria-selected', 'false');
+          jQuery('.tab-group').find('[id^=content]').attr({'aria-expanded' : 'false', 'aria-hidden' : 'true'}).hide();
+          jQuery('ul[class^=tab] li').removeAttr('class').attr('aria-selected', 'false');
           $(this).parent().addClass('active').attr('aria-selected', 'true');
-          jQuery('div#content-' + $(this).attr('id')).attr({'aria-expanded' : 'true', 'aria-hidden' : 'false'}).fadeIn();
+          jQuery('#content-' + $(this).attr('id')).attr({'aria-expanded' : 'true', 'aria-hidden' : 'false'}).fadeIn();
         }
     });
 	/**

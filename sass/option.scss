@@ -17,6 +17,17 @@
 	padding: 0.5rem 2rem;
 	width: 100%;
 }
+.band-kal-modern {
+	border-top: 3px solid #363636;
+	float: left;
+	width: 100%;
+	label {
+		background: #363636;		
+		color: #F2F2F2;
+		float: left;
+		padding: 0.5rem 1rem;
+	}
+}
 .text-center {
 	text-align: center;
 }
@@ -33,7 +44,7 @@
 	display: none;
 }
 .no-border {
-	border: none;
+	border: none !important;
 }
 .no-decoration {
 	text-decoration: none;
@@ -44,6 +55,9 @@
 }
 .no-margin {
 	margin: 0;
+}
+.no-padding {
+	padding: 0 !important;
 }
 .position-bottom {
 	bottom: 0;

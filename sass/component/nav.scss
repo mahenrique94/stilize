@@ -52,7 +52,7 @@ nav.left-category-slide {
 	}
 }
 
-nav.nav-band {
+nav.nav-band-default {
 	@include background-default;
 	box-sizing: border-box;
 	float: left;
@@ -575,6 +575,7 @@ nav.navbar-default {
 	width: 100%;
 	a.navbar-brand {
 		color: #595959;
+		float: left;
 		text-decoration: none;
 	}
 }

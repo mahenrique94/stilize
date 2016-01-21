@@ -15,19 +15,19 @@
 }
 
 @mixin background-default {
-	background: -webkit-linear-gradient(#FFFFFF, #EBEBE0);
-	background: -moz-linear-gradient(#FFFFFF, #EBEBE0);
-	background: -o-linear-gradient(#FFFFFF, #EBEBE0);
-	background: -ms-linear-gradient(#FFFFFF, #EBEBE0);
-	background: linear-gradient(#FFFFFF, #EBEBE0);
+	background: -webkit-linear-gradient(#FAFAFA, #EBEBE0);
+	background: -moz-linear-gradient(#FAFAFA, #EBEBE0);
+	background: -o-linear-gradient(#FAFAFA, #EBEBE0);
+	background: -ms-linear-gradient(#FAFAFA, #EBEBE0);
+	background: linear-gradient(#FAFAFA, #EBEBE0);
 }
 
 @mixin background-default-hover {
-	background: -webkit-linear-gradient(lighten(#FFFFFF, 5%), lighten(#EBEBE0, 5%));
-	background: -moz-linear-gradient(lighten(#FFFFFF, 5%), lighten(#EBEBE0, 5%));
-	background: -o-linear-gradient(lighten(#FFFFFF, 5%), lighten(#EBEBE0, 5%));
-	background: -ms-linear-gradient(lighten(#FFFFFF, 5%), lighten(#EBEBE0, 5%));
-	background: linear-gradient(lighten(#FFFFFF, 5%), lighten(#EBEBE0, 5%));
+	background: -webkit-linear-gradient(lighten(#FAFAFA, 5%), lighten(#EBEBE0, 5%));
+	background: -moz-linear-gradient(lighten(#FAFAFA, 5%), lighten(#EBEBE0, 5%));
+	background: -o-linear-gradient(lighten(#FAFAFA, 5%), lighten(#EBEBE0, 5%));
+	background: -ms-linear-gradient(lighten(#FAFAFA, 5%), lighten(#EBEBE0, 5%));
+	background: linear-gradient(lighten(#FAFAFA, 5%), lighten(#EBEBE0, 5%));
 }
 
 @mixin background-lube($important: null) {

@@ -1,3 +1,12 @@
+div.tab-group {
+  background: #FFFFFF;
+  border: 1px solid #DCDCDC;
+  box-sizing: border-box;
+  float: left;
+  height: auto;
+  position: relative;
+  width: 100%;
+}
 ul.tab-default {
   list-style: none;
   overflow: hidden;
@@ -34,16 +43,38 @@ ul.tab-default {
     z-index: 3;
   }
 }
-
-div.tab-group {
-  background: #FFFFFF;
-  border: 1px solid #DCDCDC;
-  box-sizing: border-box;
-  float: left;
-  height: auto;
-  position: relative;
+ul.tab-responsive {
+  @include background-ray-degrade;
+  display: inline-flex;
   width: 100%;
-  z-index: 2; 
+  li {
+    border-right: 1px solid #DCDCDC;
+    display: inline-flex;     
+    justify-content: center;
+    list-style: none;
+    text-align: center;
+    width: 100%;  
+    a, button {
+      color: #000000;
+      height: 35px;
+      justify-content: center;
+      line-height: 35px;
+      padding: 0.5rem;
+      text-decoration: none;      
+      width: 100%;  
+    }
+    &:hover {
+      background: #FFFFFF;
+      cursor: pointer;
+    }
+    &.active {
+      background: #FFFFFF;
+    }
+  }
+  &.active {
+    background: #FFFFFF;
+    border-bottom: none;
+  }  
 }
 
 @for $i from 1 through 10 {
