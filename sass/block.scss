@@ -42,7 +42,15 @@ fieldset.block-kal {
 		}
 	}
 }
-
+fieldset.block-modern-kal {
+	border: 1px solid #DCDCDC;
+	legend {
+		@include background-kal;
+		color: #F9F9F9;
+		float: left;
+		padding: 0.5rem 1rem;
+	}
+}
 fieldset.block-tie {
 	@extend .block;
 	legend.block-header {

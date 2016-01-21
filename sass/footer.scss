@@ -1,4 +1,4 @@
-footer.default {
+footer.footer-default {
 	@include background-default;
 	border-top: solid 1px #DCDCDC;
 	box-sizing: border-box;
@@ -18,7 +18,7 @@ footer.default {
 	}
 }
 
-footer.kal {
+footer.footer-kal {
 	@include background-kal;
 	border-top: 3px solid #FF9900;
 	box-sizing: border-box;
@@ -39,7 +39,7 @@ footer.kal {
 	}
 }
 
-footer.tie {
+footer.footer-tie {
 	background: #FFFFFF;
 	border-top: 3px solid $border-nav-tie;
 	box-sizing: border-box;

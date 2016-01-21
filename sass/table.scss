@@ -86,3 +86,24 @@ table.table-default {
 
 	}
 }
+
+table.table-kal {
+	width: 100%;
+	text-align: left;
+	thead {
+		@include background-linear("#595959, #333333");
+		th {
+			border: 1px solid #000000;
+			color: #F2F2F2;			
+			padding: 0.3rem;			
+		}
+	}
+	tbody {
+		@include background-linear("#F9F9F9, #F5F5F5");
+		td {
+			border: 1px solid #DCDCDC;
+			color: #333333;			
+			padding: 0.3rem;				
+		}
+	}
+}

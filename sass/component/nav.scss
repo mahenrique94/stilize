@@ -1,5 +1,4 @@
 nav.left-category-slide {
-	@include span(2 of 12);
 	border-right: 1px solid #DCDCDC;
 	box-sizing: border-box;
 	min-height: 100%;
@@ -448,19 +447,21 @@ nav.nav-network-social {
 }
 
 nav.nav-responsive {	
+	float: left;
 	width: 100%;
 	ul {
-		@include background-nav-default;
+		@include background-ray-degrade;
+		border: 1px solid #DCDCDC;
 		display: inline-flex;	
 		width: 100%;
 		li {
-			border-right: 1px solid #EEEEEE;
+			border-right: 1px solid #DCDCDC;
 			display: inline-flex;			
 			justify-content: center;
 			list-style: none;
 			text-align: center;
 			width: 100%;	
-			a {
+			a, button {
 				color: #000000;
 				height: 35px;
 				justify-content: center;

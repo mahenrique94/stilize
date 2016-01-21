@@ -6,12 +6,12 @@
 	overflow:hidden;
 	padding: 0;	
 }
-
-.container-right {
-	@include span(9 of 12);
-	margin: gutter();
+.container-body {
+	box-sizing: border-box;
+	float: left;
+	padding: 0.5rem;
+	width: 100%;
 }
-
 .container-center {
 	@include container();
 	@include span(10 of 12);
@@ -26,7 +26,6 @@
 		}
 	}
 }
-
 .container-flex {
 	display: flex;
 	flex-direction: row;
@@ -42,7 +41,15 @@
 		width: 100%;
 	}
 }
-
+.container-right {
+	@include span(9 of 12);
+	margin: gutter();
+}
+.container-right-ecommerce {
+	float: left;
+	height: auto;
+	width: 84.74576%;
+}
 .container-tie {
 	@include container();
 	margin: 1rem;

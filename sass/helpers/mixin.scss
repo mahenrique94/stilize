@@ -6,6 +6,14 @@
 	align-items: #{$value};
 }
 
+@mixin background-linear($expression) {
+	background: -webkit-linear-gradient(#{$expression});
+	background: -moz-linear-gradient(#{$expression});
+	background: -o-linear-gradient(#{$expression});
+	background: -ms-linear-gradient(#{$expression});
+	background: linear-gradient(#{$expression});
+}
+
 @mixin background-default {
 	background: -webkit-linear-gradient(#FFFFFF, #EBEBE0);
 	background: -moz-linear-gradient(#FFFFFF, #EBEBE0);

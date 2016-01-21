@@ -1,61 +1,40 @@
-.position-bottom {
-	bottom: 0;
-	position: absolute;
-}
-
-.position-left {
-	left: 0;
-	position: absolute;
-}
-
-.position-right {
-	position: absolute;
-	right: 0;
-}
-
-.position-top {	
-	position: absolute;
-	top: 0;
-}
-
 .border-bottom-dcdcdc {
 	border-bottom: 1px solid #DCDCDC;
 }
-
 .band-lube {
 	@include background-lube;
 	box-sizing: border-box;
 	color: #FFFFFF;
 	float: left;
-	margin-bottom: 10px;
 	padding: 0.3rem;
 	width: 100%;
 }
-
+.band-kal {
+	@include background-kal;
+	box-sizing: border-box;
+	color: #F2F2F2;
+	float: left;
+	padding: 0.5rem 2rem;
+	width: 100%;
+}
 .text-center {
 	text-align: center;
 }
-
 .font-bold {
 	font-weight: bold;
 }
-
 .float-left {
 	float: left;
 }
-
 .float-right {
 	float: right;
 }
-
 .hidden {
 	display: none;
 }
-
 .no-border {
 	border: none;
 }
-
 .no-decoration {
 	text-decoration: none;
 	&:link, &:visited, &:hover, &:active {
@@ -63,28 +42,39 @@
 		text-decoration: none;
 	}
 }
-
 .no-margin {
 	margin: 0;
 }
-
-.row {
+.position-bottom {
+	bottom: 0;
+	position: absolute;
+}
+.position-left {
+	left: 0;
+	position: absolute;
+}
+.position-right {
+	position: absolute;
+	right: 0;
+}
+.position-top {	
+	position: absolute;
+	top: 0;
+}
+.row {	
 	float: left;
 	width: 100%;
 }
-
 .row-input {
 	float: left;
 	margin-bottom: 0.625rem;
 	width: 100%;
 }
-
 .vertical-center {
 	@include align-items("center");
 	@include display-flex;	
 	height: 100%;
 }
-
 .vertical-horizontal-center {
 	@include align-items("center");
 	@include display-flex;
@@ -92,7 +82,6 @@
 	height: 100%;
 	width: 100%;	
 }
-
 .wallpait {
 	@include border-radius(5px);	
 	background: #F6F6F6;
@@ -117,7 +106,6 @@
 strong {
 	font-weight: bold;
 }
-
 i {
 	font-style: italic;
 }

@@ -30,6 +30,13 @@
 .btn-gary {
 	@include button-custom(#ACACAC);
 }
+.btn-group {
+	background: transparent;
+	border: none;
+	font-size: 1rem;
+	outline: none;
+	padding: 0;	
+}
 .btn-hidden {
 	opacity: 0;
 }
