@@ -171,6 +171,8 @@ form.form-search {
 
 a[disabled], button[disabled], input[readonly], select[disabled], textarea[readonly] {
 	background: #F6F6F6;
+	color: #BBBBBB !important;
+	//pointer-events: none;
 	&:hover {
 		cursor: not-allowed;
 	}

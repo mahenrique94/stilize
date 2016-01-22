@@ -400,6 +400,10 @@ nav.nav-kal {
         padding: 0.5rem;
         margin: 0;
         width: 170px; }
+        nav.nav-kal ul.nav-main ul li ul {
+          left: 160px;
+          position: absolute;
+          top: 0; }
         nav.nav-kal ul.nav-main ul li a {
           display: inline-block;
           width: 100%;
@@ -1560,7 +1564,8 @@ form.form-search select {
     outline: none; }
 
 a[disabled], button[disabled], input[readonly], select[disabled], textarea[readonly] {
-  background: #F6F6F6; }
+  background: #F6F6F6;
+  color: #BBBBBB !important; }
   a[disabled]:hover, button[disabled]:hover, input[readonly]:hover, select[disabled]:hover, textarea[readonly]:hover {
     cursor: not-allowed; }
 

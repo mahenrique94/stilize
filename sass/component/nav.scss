@@ -302,7 +302,12 @@ nav.nav-kal {
 				box-sizing: border-box;
 				padding: 0.5rem;
 				margin: 0;
-				width: 170px;				
+				width: 170px;	
+				ul {
+					left: 160px;
+					position: absolute;
+					top: 0;
+				}			
 				a {
 					display: inline-block;
 					width: 100%;

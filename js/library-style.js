@@ -58,11 +58,6 @@ jQuery(document).ready(function () {
 	 */
 	
 	/** @auth Matheus
-	 * READONLY PARA SELECTS
-	 */
-	jQuery('select[readonly]').css({'background' : '#ECEEEF', 'pointer-events' : 'none'});
-	
-	/** @auth Matheus
 	 * SETANDO LI ATIVO DE ACORDO COM URL
 	 */
 //	jQuery('li[id=' + getFinal() + ']').addClass('active');
@@ -80,6 +75,14 @@ jQuery(document).ready(function () {
 			jQuery(jQuery(this).attr('href')).slideUp(500);
 		}
 	})
+	
+	/** @auth Matheus
+	 * DESABILITANDO CLICK EM ELEMENTO DISABLED
+	 */
+	jQuery('[disabled]').click(function() {
+		
+	});
+	
 });
 
 /** @auth Matheus e Fernando
