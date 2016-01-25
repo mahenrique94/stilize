@@ -368,7 +368,7 @@ nav.nav-kal-dropdown {
 		}
 		ul {
 			@include background-nav-kal-dropdown;
-			@include border-radius-leftbottom-rightbottom(5px);
+			@include border-radius-rightbottom-leftbottom(5px);
 			@include transition("height 0.25s ease 0.1s");
 			left: 0;
 			opacity: 0;
@@ -394,7 +394,7 @@ nav.nav-kal-dropdown {
 					height: 30px !important;
 				}
 				ul {
-					@include border-radius-righttop-leftbottom-rightbottom(5px);
+					@include border-radius-righttop-rightbottom-leftbottom(5px);
 					@include transition("left 0.25s ease 0.1s");
 					left: 0;
 					position: absolute;

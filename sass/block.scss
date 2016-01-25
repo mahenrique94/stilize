@@ -5,6 +5,7 @@ fieldset.block {
 	padding: 2rem 0 0;
 	position: relative;
 	legend.block-header {
+		@include border-radius-lefttop-righttop(5px);
 		left: 0;
 		padding: 0.5rem 0.9rem;
 		position: absolute;

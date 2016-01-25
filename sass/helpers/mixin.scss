@@ -127,29 +127,6 @@
 	border-radius: $value;
 }
 
-@mixin border-radius-leftbottom-rightbottom($value) {
-	-webkit-border-bottom-left-radius: $value;
-	-moz-border-bottom-left-radius: $value;
-	-o-border-bottom-left-radius: $value;
-	-ms-border-bottom-left-radius: $value;
-	border-bottom-left-radius: $value;
-	-webkit-border-bottom-right-radius: $value;
-	-moz-border-bottom-right-radius: $value;
-	-o-border-bottom-right-radius: $value;
-	-ms-border-bottom-right-radius: $value;
-	border-bottom-right-radius: $value;
-	-webkit-border-top-left-radius: 0px;
-	-moz-border-top-left-radius: 0px;
-	-o-border-top-left-radius: 0px;
-	-ms-border-top-left-radius: 0px;
-	border-top-left-radius: 0px;
-	-webkit-border-top-right-radius: 0px;
-	-moz-border-top-right-radius: 0px;
-	-o-border-top-right-radius: 0px;
-	-ms-border-top-right-radius: 0px;
-	border-top-right-radius: 0px;	
-}
-
 @mixin border-radius-lefttop-leftbottom($value) {
 	-webkit-border-bottom-left-radius: $value;	
 	-moz-border-bottom-left-radius: $value;	
@@ -219,7 +196,7 @@
 	border-top-right-radius: $value;		
 }
 
-@mixin border-radius-righttop-leftbottom-rightbottom($value) {
+@mixin border-radius-rightbottom-leftbottom($value) {
 	-webkit-border-bottom-left-radius: $value;
 	-moz-border-bottom-left-radius: $value;
 	-o-border-bottom-left-radius: $value;
@@ -235,11 +212,11 @@
 	-o-border-top-left-radius: 0px;
 	-ms-border-top-left-radius: 0px;
 	border-top-left-radius: 0px;
-	-webkit-border-top-right-radius: $value;
-	-moz-border-top-right-radius: $value;
-	-o-border-top-right-radius: $value;
-	-ms-border-top-right-radius: $value;
-	border-top-right-radius: $value;		
+	-webkit-border-top-right-radius: 0px;
+	-moz-border-top-right-radius: 0px;
+	-o-border-top-right-radius: 0px;
+	-ms-border-top-right-radius: 0px;
+	border-top-right-radius: 0px;	
 }
 
 @mixin border-radius-righttop-rightbottom($value) {
@@ -263,6 +240,29 @@
 	-o-border-top-right-radius: $value;
 	-ms-border-top-right-radius: $value;
 	border-top-right-radius: $value;	
+}
+
+@mixin border-radius-righttop-rightbottom-leftbottom($value) {
+	-webkit-border-bottom-left-radius: $value;
+	-moz-border-bottom-left-radius: $value;
+	-o-border-bottom-left-radius: $value;
+	-ms-border-bottom-left-radius: $value;
+	border-bottom-left-radius: $value;
+	-webkit-border-bottom-right-radius: $value;
+	-moz-border-bottom-right-radius: $value;
+	-o-border-bottom-right-radius: $value;
+	-ms-border-bottom-right-radius: $value;
+	border-bottom-right-radius: $value;
+	-webkit-border-top-left-radius: 0px;
+	-moz-border-top-left-radius: 0px;
+	-o-border-top-left-radius: 0px;
+	-ms-border-top-left-radius: 0px;
+	border-top-left-radius: 0px;
+	-webkit-border-top-right-radius: $value;
+	-moz-border-top-right-radius: $value;
+	-o-border-top-right-radius: $value;
+	-ms-border-top-right-radius: $value;
+	border-top-right-radius: $value;		
 }
 
 @mixin button-custom($color) {

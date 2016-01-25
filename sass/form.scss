@@ -14,8 +14,9 @@ form.form-block {
 			outline: none;
 		}
 	}
-	input[type=checkbox] {
-		width: 100%;
+	input[type=checkbox], input[type=radio] {
+		margin: 0 0.3rem 0 0;
+		width: initial;
 	}
 	select {
 		border: 1px solid #DCDCDC;
@@ -91,6 +92,10 @@ form.form-inline {
 		&:focus {
 			outline: none;
 		}
+	}
+	input[type=checkbox], input[type=radio] {
+		margin: 0 0.3rem 0 0;
+		width: initial;
 	}
 	select {
 		@include border-radius-righttop-rightbottom(5px);
