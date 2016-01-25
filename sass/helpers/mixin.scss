@@ -112,11 +112,11 @@
 }
 
 @mixin background-warning {
-	background: -webkit-linear-gradient(#FFDD99, #FFCC66, #FFBB33);
-	background: -moz-linear-gradient(#FFDD99, #FFCC66, #FFBB33);
-	background: -o-linear-gradient(#FFDD99, #FFCC66, #FFBB33);
-	background: -ms-linear-gradient(#FFDD99, #FFCC66, #FFBB33);
-	background: linear-gradient(#FFDD99, #FFCC66, #FFBB33);
+	background: -webkit-linear-gradient(#FFF3D4, #FFEFC2);
+	background: -moz-linear-gradient(#FFF3D4, #FFEFC2);
+	background: -o-linear-gradient(#FFF3D4, #FFEFC2);
+	background: -ms-linear-gradient(#FFF3D4, #FFEFC2);
+	background: linear-gradient(#FFF3D4, #FFEFC2);
 }
 
 @mixin border-radius($value){

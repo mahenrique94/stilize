@@ -67,6 +67,10 @@ nav.nav-block {
 }
 
 nav.nav-default {
+	a.nav-brand {
+		@include nav-brand;
+		margin-right: 1.5rem;
+	}
 	ul.nav-main {
 		@include background-default;
 		border-bottom: 1px solid #DCDCDC;
@@ -260,8 +264,7 @@ nav.nav-default-rotation {
 }
 
 nav.nav-kal {
-	@include background-kal;	
-	border-bottom: 3px solid #FF9900;
+	@include background-kal;		
 	box-sizing: border-box;
 	padding: 1rem;	
 	width: 100%;
@@ -302,9 +305,9 @@ nav.nav-kal {
 				box-sizing: border-box;
 				padding: 0.5rem;
 				margin: 0;
-				width: 170px;	
+				width: 250px;	
 				ul {
-					left: 160px;
+					left: 230px;
 					position: absolute;
 					top: 0;
 				}			

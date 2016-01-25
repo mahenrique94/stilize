@@ -1,9 +1,8 @@
 .alert {
 	box-sizing: border-box;
-	color: #FFFFFF;
+	color: #000000;
 	padding: 1rem;	
-	text-align: center;
-	text-shadow: 0 0 1px #000000;
+	text-shadow: 0 0 1px #FFFFFF;
 	width: 100%;	
 }
 .alert-error {
@@ -27,4 +26,6 @@
 .alert-warning {
 	@extend .alert;
 	@include background-warning;
+	@include border-radius(0.3125rem);
+	border: 1px solid $border-warning;	
 }

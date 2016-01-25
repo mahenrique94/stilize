@@ -1,6 +1,15 @@
 .border-bottom-dcdcdc {
 	border-bottom: 1px solid #DCDCDC;
 }
+.border-bottom-range-3px {
+	border-bottom: 3px solid #FF9900;
+}
+.border-top-range-3px {
+	border-top: 3px solid #FF9900;
+}
+.border-box {
+	box-sizing: border-box;
+}
 .band-lube {
 	@include background-lube;
 	box-sizing: border-box;
