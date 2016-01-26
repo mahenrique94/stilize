@@ -13,6 +13,9 @@
 .hidden {
 	display: none;
 }
+.inline-block {
+	display: inline-block;
+}
 .no-decoration {
 	text-decoration: none;
 	&:link, &:visited, &:hover, &:active {

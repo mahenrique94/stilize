@@ -173,26 +173,34 @@ form.form-search {
 		}
 	}
 }
-
 a[disabled], button[disabled], input[readonly], select[disabled], textarea[readonly] {
 	background: #F6F6F6;
 	color: #BBBBBB !important;
-	//pointer-events: none;
+	pointer-events: none;
 	&:hover {
 		cursor: not-allowed;
 	}
 }
-
 input:invalid, select:invalid, textarea:invalid {
 	background: rgba(255, 0, 0, 0.2);
 	border: 1px solid #FF0000 !important;
 }
-
 input:focus:valid, textarea:focus:valid {
 	background: rgba(0, 255, 0, 0.2);
 	border: 1px solid #00FF00 !important;	
 }
-
 input[type=search] {
 	background: #FFFFFF url(icon/search.png) right no-repeat !important;	
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+input[data-toggle=modal]:hover {
+	cursor: pointer;
+}
+
+input[type=search]::-webkit-search-decoration,
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-results-button,
+input[type=search]::-webkit-search-results-decoration {
+  display: none;
 }

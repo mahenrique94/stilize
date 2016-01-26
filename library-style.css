@@ -1698,7 +1698,8 @@ form.form-search select {
 
 a[disabled], button[disabled], input[readonly], select[disabled], textarea[readonly] {
   background: #F6F6F6;
-  color: #BBBBBB !important; }
+  color: #BBBBBB !important;
+  pointer-events: none; }
   a[disabled]:hover, button[disabled]:hover, input[readonly]:hover, select[disabled]:hover, textarea[readonly]:hover {
     cursor: not-allowed; }
 
@@ -1711,7 +1712,18 @@ input:focus:valid, textarea:focus:valid {
   border: 1px solid #00FF00 !important; }
 
 input[type=search] {
-  background: #FFFFFF url(icon/search.png) right no-repeat !important; }
+  background: #FFFFFF url(icon/search.png) right no-repeat !important;
+  -webkit-appearance: none;
+  -moz-appearance: none; }
+
+input[data-toggle=modal]:hover {
+  cursor: pointer; }
+
+input[type=search]::-webkit-search-decoration,
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-results-button,
+input[type=search]::-webkit-search-results-decoration {
+  display: none; }
 
 [class^=col] {
   margin-bottom: 0.625rem;
@@ -5039,6 +5051,9 @@ table.table-kal {
 .hidden {
   display: none; }
 
+.inline-block {
+  display: inline-block; }
+
 .no-decoration {
   text-decoration: none; }
   .no-decoration:link, .no-decoration:visited, .no-decoration:hover, .no-decoration:active {
@@ -5314,6 +5329,9 @@ h6 {
 
 .w-100-3 {
   width: 100.3% !important; }
+
+.w-initial {
+  width: initial !important; }
 
 /************************************************** MARGIN **************************************************/
 .m-5 {
