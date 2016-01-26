@@ -197,70 +197,61 @@ nav.nav-default {
 }
 
 nav.nav-default-rotation {
-	@include background-nav-default-rotation;
-	float: left;
+	@include background-nav-default;
+	box-sizing: border-box;
 	padding: 1rem;
 	width: 100%;
 	a.nav-brand {
-		color: #000000;
-		float: left;
-		font-size: 1.5rem;		
-		margin-right: 20px;
+		color: #595959;
+		font-size: 1.5rem;
+		margin-right: 1.5rem;
 		text-decoration: none;
-		&:hover {
-			text-decoration: none;
-		}
 	}
-	ul:not(.nav-sub) {
+	ul.nav-main {
 		display: inline-block;
-		float: left;
-		margin-top: 3px;
-		position: relative;
-		& > li {
-			display: inline-block;
-			margin-right: 0.975rem;
-			&:hover {
-				@include background-nav-default-rotation-hover;
-				@include border-radius(5px);
-				padding: 0.1em;
-			}
-			&:hover > a {
-				color: #F8F8F8;
-			}
-			&:hover ul.nav-sub {
-				opacity: 100;
-				transform: rotateX(0);
-				z-index: 1;
-			}
-		}
-		a {
-			color: #333333;
-			@include link-no-decoration;
-		}
-	}
-	ul.nav-sub {
-		@include background-nav-default-rotation;
-		@include transition("all 0.3s ease-in-out");
-		box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-		opacity: 0;
-		position: absolute;
-		top: 21px;
-		transform: rotateX(180deg);
-		width: 150px;
-		z-index: -1;
 		li {
+			display: inline-block;
+			position: relative;
 			a {
-				@include calc(width, "100% - 0.5rem");
-				float: left;
-				font-size: 0.8em;
-				padding: 0.5em 0.3em;
-				&:hover {
-					@include background-nav-default-rotation-hover;
-					color: #F8F8F8;
+				color: #595959;
+				display: block;
+				text-decoration: none;
+				width: 100%;				
+			}
+			ul {
+				@include background-nav-default;
+				@include transition("all 0.2s linear");
+				@include transform("rotateX(180deg)");
+				box-shadow: 1px 1px 5px #DADADA;				
+				opacity: 0;
+				position: absolute;
+				top: 15px;
+				visibility: hidden;							
+				z-index: 1;
+				li {
+					box-sizing: border-box;
+					padding: 0.5rem;
+					width: 150px;
+					ul {
+						left: 140px;
+						position: absolute;
+						top: 0;
+					}
 				}
 			}
+			&:hover {
+				@include background-nav-default-rotation-hover;
+			}
+			&:hover > a {
+				color: #F9F9F9;
+			}
+			&:hover > ul {
+				@include transform("rotateX(0)");
+				opacity: 100;
+				visibility: visible;
+			}
 		}
-	}	
+	}
 }
 
 nav.nav-kal {
@@ -477,9 +468,11 @@ nav.nav-responsive {
 				text-decoration: none;			
 				width: 100%;	
 			}
+			a:hover, button:hover {
+				cursor: pointer;
+			}
 			&:hover {
 				background: #FFFFFF;
-				cursor: pointer;
 			}
 			&.active {
 				background: #FFFFFF;

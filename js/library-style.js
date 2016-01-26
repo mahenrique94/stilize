@@ -20,6 +20,18 @@ document.addEventListener('DOMContentLoaded', function(e) {
 });
 
 jQuery(document).ready(function () {
+	
+	/** @auth Matheus
+	 * UPPER CASE NO SISTEMA
+	 */
+//	jQuery('input, textarea, select').css('text-transform', 'uppercase');
+//	jQuery('input, textarea, select').keyup(function(event) {
+	jQuery('select').css('text-transform', 'uppercase');
+	jQuery('select').keyup(function(event) {
+		this.value = this.value.toUpperCase();
+		return event.preventDefault();
+	});
+	
 	/** @auth Matheus
 	 * ADICIONAR MODAL EM TODAS AS PAGINAS
 	 */

@@ -119,6 +119,18 @@
 	background: linear-gradient(#FFF3D4, #FFEFC2);
 }
 
+@mixin border($position, $px, $style, $color) {
+	@if $position != null {
+		border-#{$position}-color: $color;	
+		border-#{$position}-style: $style;
+		border-#{$position}-width: $px;	
+	} @else {
+		border-color: $color;	
+		border-style: $style;
+		border-width: $px;
+	}
+}
+
 @mixin border-radius($value){
 	-webkit-border-radius: $value;
 	-moz-border-radius: $value;

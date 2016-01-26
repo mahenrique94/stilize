@@ -18,6 +18,23 @@ footer.footer-default {
 	}
 }
 
+footer.footer-default-alt {
+	@include background-nav-default;
+	box-sizing: border-box;
+	clear: both; 
+	float: left;
+	font-size: 0.85rem;
+	margin: 0;
+	margin-top: -49px; 
+	padding: 1rem;
+	position: relative; 
+	width: 100%;
+	a {
+		color: #333333;		
+		text-decoration: none;
+	}
+}
+
 footer.footer-kal {
 	@include background-kal;
 	box-sizing: border-box;
