@@ -430,13 +430,12 @@ nav.nav-lube {
 
 nav.nav-network-social {
 	ul {		
-		bottom: 0;
 		display: inline-block;
+		padding-left: 0.3125rem;
 		width: 100%;
 		li {
 			display: inline-block;
 			list-style: none;
-			padding: 3px 0;
 			a {
 				color: #FFFFFF;
 				letter-spacing: 5px;

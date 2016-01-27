@@ -578,13 +578,12 @@ nav.nav-lube {
       cursor: pointer; }
 
 nav.nav-network-social ul {
-  bottom: 0;
   display: inline-block;
+  padding-left: 0.3125rem;
   width: 100%; }
   nav.nav-network-social ul li {
     display: inline-block;
-    list-style: none;
-    padding: 3px 0; }
+    list-style: none; }
     nav.nav-network-social ul li a {
       color: #FFFFFF;
       letter-spacing: 5px; }
@@ -2079,6 +2078,19 @@ input[type=search]::-webkit-search-results-decoration {
 span.icon-answer::after {
   content: "\f149";
   font-family: "FontAwesome"; }
+
+/************************************************** SIZES **************************************************/
+.icon-xs {
+  font-size: 1rem; }
+
+.icon-sm {
+  font-size: 1.5rem; }
+
+.icon-md {
+  font-size: 2rem; }
+
+.icon-lg {
+  font-size: 2.5rem; }
 
 /************************************************** BS **************************************************/
 span.icon, span.icon-adjust:before, span.icon-align-center:before, span.icon-align-justify:before, span.icon-align-left:before, span.icon-align-right:before, span.icon-arrow-down:before, span.icon-arrow-left:before, span.icon-arrow-right:before, span.icon-arrow-up:before, span.icon-asterisk:before, span.icon-backward:before, span.icon-ban-circle:before, span.icon-barcode:before, span.icon-bell:before, span.icon-bold:before, span.icon-book:before, span.icon-bookmark:before, span.icon-briefcase:before, span.icon-bullhorn:before, span.icon-calendar:before, span.icon-camera:before, span.icon-certificate:before, span.icon-check:before, span.icon-chevron-down:before, span.icon-chevron-left:before, span.icon-chevron-right:before, span.icon-chevron-up:before, span.icon-circle-arrow-down:before, span.icon-circle-arrow-left:before, span.icon-circle-arrow-right:before, span.icon-circle-arrow-up:before, span.icon-cloud:before, span.icon-cloud-download:before, span.icon-cloud-upload:before, span.icon-cog:before, span.icon-collapse-down:before, span.icon-collapse-up:before, span.icon-comment:before, span.icon-compressed:before, span.icon-copyright-mark:before, span.icon-credit-card:before, span.icon-cutlery:before, span.icon-dashboard:before, span.icon-download:before, span.icon-download-alt:before, span.icon-earphone:before, span.icon-edit:before, span.icon-eject:before, span.icon-envelope:before, span.icon-euro:before, span.icon-exclamation-sign:before, span.icon-expand:before, span.icon-export:before, span.icon-eye-close:before, span.icon-eye-open:before, span.icon-facetime-video:before, span.icon-fast-backward:before, span.icon-fast-forward:before, span.icon-file:before, span.icon-film:before, span.icon-filter:before, span.icon-fire:before, span.icon-flag:before, span.icon-flash:before, span.icon-floppy-disk:before, span.icon-floppy-open:before, span.icon-floppy-remove:before, span.icon-floppy-save:before, span.icon-floppy-saved:before, span.icon-font:before, span.icon-folder-close:before, span.icon-folder-open:before, span.icon-forward:before, span.icon-fullscreen:before, span.icon-gbp:before, span.icon-gift:before, span.icon-glass:before, span.icon-globe:before, span.icon-hand-down:before, span.icon-hand-left:before, span.icon-hand-right:before, span.icon-hand-up:before, span.icon-hd-video:before, span.icon-hdd:before, span.icon-header:before, span.icon-headphones:before, span.icon-heart:before, span.icon-heart-empty:before, span.icon-home:before, span.icon-import:before, span.icon-inbox:before, span.icon-indent-left:before, span.icon-indent-right:before, span.icon-info-sign:before, span.icon-italic:before, span.icon-leaf:before, span.icon-link:before, span.icon-list:before, span.icon-list-alt:before, span.icon-lock:before, span.icon-log-in:before, span.icon-log-out:before, span.icon-magnet:before, span.icon-map-marker:before, span.icon-minus:before, span.icon-minus-sign:before, span.icon-move:before, span.icon-music:before, span.icon-new-window:before, span.icon-off:before, span.icon-ok:before, span.icon-ok-circle:before, span.icon-ok-sign:before, span.icon-open:before, span.icon-paperclip:before, span.icon-pause:before, span.icon-pencil:before, span.icon-phone:before, span.icon-phone-alt:before, span.icon-picture:before, span.icon-plane:before, span.icon-play:before, span.icon-play-circle:before, span.icon-plus:before, span.icon-plus-sign:before, span.icon-print:before, span.icon-pushpin:before, span.icon-qrcode:before, span.icon-question-sign:before, span.icon-random:before, span.icon-record:before, span.icon-refresh:before, span.icon-registration-mark:before, span.icon-remove:before, span.icon-remove-circle:before, span.icon-remove-sign:before, span.icon-repeat:before, span.icon-resize-full:before, span.icon-resize-horizontal:before, span.icon-resize-small:before, span.icon-resize-vertical:before, span.icon-retweet:before, span.icon-road:before, span.icon-save:before, span.icon-saved:before, span.icon-screenshot:before, span.icon-sd-video:before, span.icon-search:before, span.icon-send:before, span.icon-share:before, span.icon-share-alt:before, span.icon-shopping-cart:before, span.icon-signal:before, span.icon-sort:before, span.icon-sort-by-alphabet:before, span.icon-sort-by-alphabet-alt:before, span.icon-sort-by-attributes:before, span.icon-sort-by-attributes-alt:before, span.icon-sort-by-order:before, span.icon-sort-by-order-alt:before, span.icon-sound-5-1:before, span.icon-sound-6-1:before, span.icon-sound-7-1:before, span.icon-sound-dolby:before, span.icon-sound-stereo:before, span.icon-star:before, span.icon-star-empty:before, span.icon-stats:before, span.icon-step-backward:before, span.icon-step-forward:before, span.icon-stop:before, span.icon-subtitles:before, span.icon-tag:before, span.icon-tags:before, span.icon-tasks:before, span.icon-text-height:before, span.icon-time:before, span.icon-tint:before, span.icon-text-width:before, span.icon-th:before, span.icon-th-large:before, span.icon-th-list:before, span.icon-thumbs-down:before, span.icon-thumbs-up:before, span.icon-tower:before, span.icon-transfer:before, span.icon-trash:before, span.icon-tree-conifer:before, span.icon-tree-deciduous:before, span.icon-unchecked:before, span.icon-upload:before, span.icon-usd:before, span.icon-user:before, span.icon-volume-down:before, span.icon-volume-off:before, span.icon-volume-up:before, span.icon-warning-sign:before, span.icon-wrench:before, span.icon-zoom-in:before, span.icon-zoom-out:before {
