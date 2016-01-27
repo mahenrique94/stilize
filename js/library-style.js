@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function(e) {
 	/** @auth Matheus, João, Fernando
 	 * MOSTRAR E ESCONDER MODAL AO CLICAR UMA OU DUAS VEZES NOS SELETORES ABAIXO
 	 */
-	document.querySelectorAll('[data-toggle=modal], div.alpha').forEach(function($e, i, n) {
+	document.querySelectorAll('[data-toggle=modal], div.bg-modal').forEach(function($e, i, n) {
 		$e.ondblclick = function(event) {
 			return openBox($e);
 		};			
@@ -35,7 +35,7 @@ jQuery(document).ready(function () {
 	/** @auth Matheus
 	 * ADICIONAR MODAL EM TODAS AS PAGINAS
 	 */
-	jQuery('body').append('<div class="alpha"><div class="modal"><iframe></iframe></div></div>');
+	jQuery('body').append('<div class="bg-modal"><div class="modal"><iframe id="iframe-modal"></iframe></div></div>');
 	
 	/** @auth Matheus
 	 * ESCONDER ELEMENTOS DEPOIS DE 2 SEGUNDOS
@@ -88,13 +88,6 @@ jQuery(document).ready(function () {
 		}
 	})
 	
-	/** @auth Matheus
-	 * DESABILITANDO CLICK EM ELEMENTO DISABLED
-	 */
-	jQuery('[disabled]').click(function() {
-		
-	});
-	
 });
 
 /** @auth Matheus e Fernando
@@ -103,21 +96,24 @@ jQuery(document).ready(function () {
 function openBox($obj) {
 	if (($obj.href || $obj.formAction) != undefined)
 		jQuery('iframe').attr('src', ($obj.href || $obj.formAction));
-	if ($obj.nodeName.toLowerCase() == 'div') {
-		jQuery('div.alpha').fadeOut(300);
-		jQuery('div.modal').fadeOut(300);
-	} else {
-		jQuery('div.alpha').fadeIn(300);
-		jQuery('div.modal').fadeIn(300);
-	}
+	jQuery('div.bg-modal').fadeToggle(300);
+	jQuery('div.modal').fadeToggle(300);
 	return false;
 }
 
 /** @auth Matheus
  * MOSTRAR OU ESCONDER ELEMENTO INFORMADO NOS PARAETROS
  */
-function toggleElement(element, parametro) {
-	jQuery(element + '[data-toggle=' + parametro + ']').fadeToggle("slow");
+function toggleElement(element, type, parametro) {
+	for(var i = 0; i < element.length; i++) {
+		if (type[i] == 'class') {
+			jQuery(element[i] + '.' + parametro[i]).fadeToggle(300);
+		} else if (type[i] == 'id') {
+			jQuery(element[i] + '#' + parametro[i]).fadeToggle(300);
+		} else if (type[i].match('^data')) {
+			jQuery(element[i] + '['+ type[i] + '=' + parametro[i] + ']').fadeToggle(300);
+		}
+	}
 }
 
 /** @auth Matheus

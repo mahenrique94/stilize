@@ -2,6 +2,18 @@ form.form-block {
 	display: inline-block;
 	float: left;
 	width: 100%;
+	.align-right {
+		@include background-default;
+		@include border-radius-righttop-rightbottom(5px);		
+		border: 1px solid #DCDCDC;
+		color: #000000;
+		font-size: 1.05rem;
+		font-weight: 100;
+		padding: 0.21875rem;
+		position: absolute;
+		right: 0;
+		text-align: center;
+	}
 	input {
 		border: 1px solid #DCDCDC;
 		box-sizing: border-box;

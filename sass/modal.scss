@@ -1,4 +1,4 @@
-div.alpha {
+div.bg-modal {
 	background-color: rgba(0, 0, 0, 0.5);
 	display: none;	
 	height: 100%;	
@@ -7,23 +7,23 @@ div.alpha {
 	top: 0;
 	width: 100%;
 	z-index: 1000;
-	div.modal {
-		@include border-radius(5px);
-		@include calc(width, "100% - 100px");
-		@include calc(height, "100% - 100px");
-		background: #FFFFFF;
-		border: solid 1px #6D6D6D;
-		display: none;	
-		left: 50px;
-		padding: 10px;
-		position: fixed;
-		top: 50px;
-		z-index: 1001;
-		iframe {
-			@include border-radius-lefttop-righttop(10px);
-			@include calc(width, "100% - 1px");
-			@include calc(height, "100% - 0px");		    
-			border: 1px solid #DCDCDC;
-		}
+}
+div.modal {
+	@include border-radius(5px);
+	@include calc(width, "100% - 100px");
+	@include calc(height, "100% - 100px");
+	background: #FFFFFF;
+	border: solid 1px #6D6D6D;
+	display: none;	
+	left: 50px;
+	padding: 10px;
+	position: fixed;
+	top: 50px;
+	z-index: 1001;
+	iframe {
+		@include border-radius-lefttop-righttop(10px);
+		@include calc(width, "100% - 1px");
+		@include calc(height, "100% - 0px");		    
+		border: 1px solid #DCDCDC;
 	}
 }
