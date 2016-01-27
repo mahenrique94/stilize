@@ -1447,9 +1447,9 @@ form.form-block {
     border-top-right-radius: 5px;
     border: 1px solid #DCDCDC;
     color: #000000;
-    font-size: 1.05rem;
+    font-size: 0.9rem;
     font-weight: 100;
-    padding: 0.21875rem;
+    padding: 0.1rem;
     position: absolute;
     right: 0;
     text-align: center; }
@@ -5083,13 +5083,15 @@ table.table-kal {
       color: #333333;
       padding: 0.3rem; }
 
-div.tooltip-message {
+div.tooltip-error {
   color: #FF0000;
   display: inline-block;
   margin-left: 5px; }
 
-.text-center {
-  text-align: center; }
+.disabled, .readonly {
+  background: #F6F6F6; }
+  .disabled:hover, .readonly:hover {
+    cursor: not-allowed; }
 
 .font-bold {
   font-weight: bold; }
@@ -5142,6 +5144,9 @@ div.tooltip-message {
   float: left;
   margin-bottom: 0.625rem;
   width: 100%; }
+
+.text-center {
+  text-align: center; }
 
 .vertical-center {
   -webkit-align-items: center;
@@ -5217,11 +5222,11 @@ div.tooltip-message {
     top: 0; }
 
 /************************************************** TAGS HTML **************************************************/
-strong {
-  font-weight: bold; }
-
 i {
   font-style: italic; }
+
+strong {
+  font-weight: bold; }
 
 div[class^=w-] {
   float: left; }

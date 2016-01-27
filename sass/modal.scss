@@ -24,6 +24,6 @@ div.modal {
 		@include border-radius-lefttop-righttop(10px);
 		@include calc(width, "100% - 1px");
 		@include calc(height, "100% - 0px");		    
-		// border: 1px solid #DCDCDC;
+		border: 1px solid #DCDCDC;
 	}
 }
