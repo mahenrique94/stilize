@@ -1419,6 +1419,9 @@ form.form-block {
   display: inline-block;
   float: left;
   width: 100%; }
+  form.form-block div[class^=col] label {
+    float: left;
+    width: 100%; }
   form.form-block .align-right {
     background: -webkit-linear-gradient(#FAFAFA, #EBEBE0);
     background: -moz-linear-gradient(#FAFAFA, #EBEBE0);
@@ -4995,6 +4998,7 @@ div#content-tab10 {
   width: 100%; }
 
 table.table-default {
+  display: inline-table;
   width: 100%; }
   table.table-default td {
     border-bottom: 1px #DDDDDD solid;

@@ -2,6 +2,10 @@ form.form-block {
 	display: inline-block;
 	float: left;
 	width: 100%;
+	div[class^=col] label {
+		float: left;
+		width: 100%;
+	}
 	.align-right {
 		@include background-default;
 		@include border-radius-righttop-rightbottom(5px);		
