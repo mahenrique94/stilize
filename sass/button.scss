@@ -46,6 +46,9 @@
 .btn-lube {
 	@include button-custom(#33ADFF);
 }
+.btn-blue {
+	@include button-custom(#0000FF);
+}
 .btn-kal {
 	@include button-custom(#333333);
 }

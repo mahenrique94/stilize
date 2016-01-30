@@ -3,6 +3,7 @@
 @import url(https://fonts.googleapis.com/css?family=Francois+One);
 @import url(https://fonts.googleapis.com/css?family=Raleway);
 @import url(https://fonts.googleapis.com/css?family=Noto+Sans);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
 @font-face {
 	font-family: 'Icons Halflings';
 	src: url('fonts/icon-halflings-regular.eot');
@@ -37,6 +38,7 @@
 @import 'sass/container';
 @import 'sass/header';
 @import 'sass/figure';
+@import 'sass/font';
 @import 'sass/footer';
 @import 'sass/form';
 @import 'sass/grid';

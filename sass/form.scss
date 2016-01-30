@@ -149,7 +149,25 @@ form.form-inline {
 		width: calc(100% - 10px) !important;
 	}
 }
-
+form.form-newsletter{
+	float: right;
+	label {
+		color: #000000;
+		font-size: 1.2rem;
+	}
+	input {
+		border: 1px solid #DCDCDC;
+		box-sizing: border-box;
+		display: block;
+		color: #000000;
+		font-size: 0.9em;
+		padding: 2px;
+		width: 100%;		
+		&:focus {
+			outline: none;
+		}
+	}
+}
 form.form-search {
 	.align-right {
 		@include background-default;

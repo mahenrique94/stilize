@@ -482,11 +482,8 @@ nav.nav-responsive {
 
 nav.nav-tie {
 	@include span(12 of 12);
-	align-items: center;
-	background: #FFFFFF;
-	border-bottom: 3px solid $border-nav-tie;
+	background: #FFFFFF;	
 	box-sizing: border-box;
-	display: flex;
 	padding: 1rem;
 	a.nav-brand {
 		color: #595959;
@@ -577,5 +574,45 @@ nav.navbar-default {
 		color: #595959;
 		float: left;
 		text-decoration: none;
+	}
+}
+
+ul.nav-mapa-site {
+	float: left;	
+	li {
+		line-height: 1.5;
+		&:first-child {		
+			color: #000000;	
+			font-size: 1.2rem;
+			font-weight: bold;
+		}
+	}
+}
+
+ul.nav-redes-sociais {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	li, a {
+		float: left;
+		height: 32px;		
+		text-indent: -999999px;
+		width: 32px;
+	}
+	li:not(:last-child), a:not(:last-child) {
+		margin-right: 2rem;
+	}
+	.facebook {
+		background: url(img/facebook.png) center / 32px 32px;		
+	}
+	.github {
+		background: url(img/github.png) center / 32px 32px;
+	}
+	.instagram {
+		background: url(img/instagram.png) center / 32px 32px;
+	}
+	.twitter {
+		background: url(img/twitter.png) center / 32px 32px;
 	}
 }

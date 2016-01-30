@@ -7,19 +7,25 @@
 
 /************************************************** BOTTOM **************************************************/
 $position: bottom;
+.border-bottom-black-3px {
+	@include border(bottom, 3px, solid, #000000);
+}
 .border-bottom-dcdcdc {
 	@include border(bottom, 1px, solid, #DCDCDC);
 }
+.border-bottom-lube-3px {
+	border-bottom: 3px solid $border-nav-tie;
+}
 .border-bottom-range-3px {
 	@include border(bottom, 3px, solid, #FF9900);
-}
-.border-bottom-black-3px {
-	@include border(bottom, 3px, solid, #000000);
 }
 
 /************************************************** TOP **************************************************/
 .border-top-black-3px {
 	@include border(top, 3px, solid, #000000);
+}
+.border-top-lube-3px {
+	border-top: 3px solid $border-nav-tie;
 }
 .border-top-range-3px {
 	@include border(top, 3px, solid, #FF9900);
