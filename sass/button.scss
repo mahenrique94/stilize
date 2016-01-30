@@ -90,6 +90,21 @@
 	padding: 5px 25px;
 	width: 100%;
 }
+a.btn-full {
+	box-sizing: border-box;
+	display: inline-block;
+	width: 100%;
+}
+.btn-xs {
+	@extend .btn-default;
+	font-size: 0.8rem;
+	padding: 0.1rem 0.5rem;
+}
+.btn-sm {
+	@extend .btn-default;
+	font-size: 0.8rem;
+	padding: 0.4rem 0.6rem;
+}
 .btn-md {
 	@extend .btn-default;
 	font-size: 0.9rem;
@@ -100,13 +115,8 @@ a.btn-md {
 	font-size: 0.9rem;
 	padding: 0.6rem 0.8rem;	
 }
-.btn-sm {
+.btn-lg {
 	@extend .btn-default;
-	font-size: 0.8rem;
-	padding: 0.4rem 0.6rem;
-}
-.btn-xs {
-	@extend .btn-default;
-	font-size: 0.8rem;
-	padding: 0.1rem 0.5rem;
+	font-size: 1rem;
+	padding: 0.7rem 0.9rem;
 }

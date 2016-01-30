@@ -115,7 +115,7 @@ form.form-inline {
 	}
 	select {
 		@include border-radius-righttop-rightbottom(5px);
-		@include calc(width, "100% - 125px");
+		@include calc(width, "100% - 115px");
 		border: 1px solid #DCDCDC;
 		color: #000000;
 		float: left;
@@ -215,14 +215,14 @@ a[disabled], button[disabled], input[readonly], select[disabled], textarea[reado
 		cursor: not-allowed;
 	}
 }
-input:invalid, select:invalid, textarea:invalid {
-	background: rgba(255, 0, 0, 0.2);
-	border: 1px solid #FF0000 !important;
-}
-input:focus:valid, textarea:focus:valid {
-	background: rgba(0, 255, 0, 0.2);
-	border: 1px solid #00FF00 !important;	
-}
+// input:invalid, select:invalid, textarea:invalid {
+// 	background: rgba(255, 0, 0, 0.2);
+// 	border: 1px solid #FF0000 !important;
+// }
+// input:focus:valid, textarea:focus:valid {
+// 	background: rgba(0, 255, 0, 0.2);
+// 	border: 1px solid #00FF00 !important;	
+// }
 input[type=search] {
 	background: #FFFFFF url(icon/search.png) right no-repeat !important;	
 	-webkit-appearance: none;

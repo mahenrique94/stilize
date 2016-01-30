@@ -23,5 +23,8 @@ ul.pagination-default {
 				@extend %link-page-default;
 			}
 		}
+		&.active a {
+			background: rgba(0, 0, 0, 0.05);
+		}
 	}
 }
