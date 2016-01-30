@@ -726,6 +726,18 @@ ul.nav-mapa-site {
       font-size: 1.2rem;
       font-weight: bold; }
 
+@media screen and (min-width: 0px) {
+  ul.nav-mapa-site {
+    width: 100%; } }
+@media screen and (min-width: 768px) {
+  ul.nav-mapa-site {
+    width: initial; } }
+@media screen and (min-width: 992px) {
+  ul.nav-mapa-site {
+    width: initial; } }
+@media screen and (min-width: 1200px) {
+  ul.nav-mapa-site {
+    width: initial; } }
 ul.nav-redes-sociais {
   align-items: center;
   display: flex;
@@ -1757,6 +1769,18 @@ form.form-newsletter {
     form.form-newsletter input:focus {
       outline: none; }
 
+@media screen and (min-width: 0px) {
+  form.form-newsletter {
+    width: 100%; } }
+@media screen and (min-width: 768px) {
+  form.form-newsletter {
+    width: 100%; } }
+@media screen and (min-width: 992px) {
+  form.form-newsletter {
+    width: initial; } }
+@media screen and (min-width: 1200px) {
+  form.form-newsletter {
+    width: initial; } }
 form.form-search .align-right {
   background: -webkit-linear-gradient(#FAFAFA, #EBEBE0);
   background: -moz-linear-gradient(#FAFAFA, #EBEBE0);

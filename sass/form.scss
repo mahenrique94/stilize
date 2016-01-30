@@ -168,6 +168,26 @@ form.form-newsletter{
 		}
 	}
 }
+@media screen and #{$media-querie-mobile} {
+	form.form-newsletter{
+		width: 100%;
+	}
+}
+@media screen and #{$media-querie-tablet} {
+	form.form-newsletter{
+		width: 100%;
+	}
+}
+@media screen and #{$media-querie-desktop} {
+	form.form-newsletter{
+		width: initial;
+	}
+}
+@media screen and #{$media-querie-large-screen} {
+	form.form-newsletter{
+		width: initial;
+	}
+}
 form.form-search {
 	.align-right {
 		@include background-default;

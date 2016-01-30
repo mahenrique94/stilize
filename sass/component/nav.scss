@@ -588,6 +588,26 @@ ul.nav-mapa-site {
 		}
 	}
 }
+@media screen and #{$media-querie-mobile} {
+	ul.nav-mapa-site {
+		width: 100%;
+	}
+}
+@media screen and #{$media-querie-tablet} {
+	ul.nav-mapa-site {
+		width: initial;
+	}
+}
+@media screen and #{$media-querie-desktop} {
+	ul.nav-mapa-site {
+		width: initial;
+	}
+}
+@media screen and #{$media-querie-large-screen} {
+	ul.nav-mapa-site {
+		width: initial;
+	}
+}
 
 ul.nav-redes-sociais {
 	align-items: center;
