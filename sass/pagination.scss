@@ -5,7 +5,7 @@ ul.pagination-default {
 		display: inherit;;
 		float: left;
 		margin-right: 5px;		
-		a {
+		a , button {
 			@include border-radius(2px);
 			border: 1px solid #DCDCDC;
 			padding: 0.2rem 0.5rem;		
@@ -18,12 +18,13 @@ ul.pagination-default {
 			}
 			&:hover {
 				background: rgba(0, 0, 0, 0.05);
+				cursor: pointer;
 			}
 			&:active {
 				@extend %link-page-default;
 			}
 		}
-		&.active a {
+		&.active a, &.active button {
 			background: rgba(0, 0, 0, 0.05);
 		}
 	}

@@ -61,7 +61,7 @@ table {
 
 /************************************************** COLOR **************************************************/
 /************************************************** MEDIA-QUERIE **************************************************/
-ul.pagination-default li.page-default a, ul.pagination-default li.page-default a:link, ul.pagination-default li.page-default a:visited, ul.pagination-default li.page-default a:active {
+ul.pagination-default li.page-default a, ul.pagination-default li.page-default button, ul.pagination-default li.page-default a:link, ul.pagination-default li.page-default button:link, ul.pagination-default li.page-default a:visited, ul.pagination-default li.page-default button:visited, ul.pagination-default li.page-default a:active, ul.pagination-default li.page-default button:active {
   color: #424242;
   text-decoration: none; }
 
@@ -719,25 +719,36 @@ nav.navbar-default {
 
 ul.nav-mapa-site {
   float: left; }
+  @media screen and (min-width: 0px) {
+    ul.nav-mapa-site {
+      width: 100%; } }
+  @media screen and (min-width: 768px) {
+    ul.nav-mapa-site {
+      width: initial; } }
+  @media screen and (min-width: 992px) {
+    ul.nav-mapa-site {
+      width: initial; } }
+  @media screen and (min-width: 1200px) {
+    ul.nav-mapa-site {
+      width: initial; } }
   ul.nav-mapa-site li {
     line-height: 1.5; }
     ul.nav-mapa-site li:first-child {
       color: #000000;
       font-size: 1.2rem;
       font-weight: bold; }
+    ul.nav-mapa-site li button {
+      background: transparent;
+      border: none;
+      color: #B3B3B3;
+      font-size: 0.8rem;
+      padding: 0; }
+      ul.nav-mapa-site li button:hover {
+        cursor: pointer;
+        outline: none; }
+      ul.nav-mapa-site li button:focus {
+        outline: none; }
 
-@media screen and (min-width: 0px) {
-  ul.nav-mapa-site {
-    width: 100%; } }
-@media screen and (min-width: 768px) {
-  ul.nav-mapa-site {
-    width: initial; } }
-@media screen and (min-width: 992px) {
-  ul.nav-mapa-site {
-    width: initial; } }
-@media screen and (min-width: 1200px) {
-  ul.nav-mapa-site {
-    width: initial; } }
 ul.nav-redes-sociais {
   align-items: center;
   display: flex;
@@ -4883,7 +4894,7 @@ ul.pagination-default {
     display: inherit;
     float: left;
     margin-right: 5px; }
-    ul.pagination-default li.page-default a {
+    ul.pagination-default li.page-default a, ul.pagination-default li.page-default button {
       -webkit-border-radius: 2px;
       -moz-border-radius: 2px;
       -o-border-radius: 2px;
@@ -4891,9 +4902,10 @@ ul.pagination-default {
       border-radius: 2px;
       border: 1px solid #DCDCDC;
       padding: 0.2rem 0.5rem; }
-      ul.pagination-default li.page-default a:hover {
-        background: rgba(0, 0, 0, 0.05); }
-    ul.pagination-default li.page-default.active a {
+      ul.pagination-default li.page-default a:hover, ul.pagination-default li.page-default button:hover {
+        background: rgba(0, 0, 0, 0.05);
+        cursor: pointer; }
+    ul.pagination-default li.page-default.active a, ul.pagination-default li.page-default.active button {
       background: rgba(0, 0, 0, 0.05); }
 
 .panel-around {

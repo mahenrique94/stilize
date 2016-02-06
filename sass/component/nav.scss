@@ -579,6 +579,18 @@ nav.navbar-default {
 
 ul.nav-mapa-site {
 	float: left;	
+	@media screen and #{$media-querie-mobile} {
+		width: 100%;	
+	}
+	@media screen and #{$media-querie-tablet} {
+		width: initial;
+	}
+	@media screen and #{$media-querie-desktop} {
+		width: initial;
+	}
+	@media screen and #{$media-querie-large-screen} {
+		width: initial;
+	}
 	li {
 		line-height: 1.5;
 		&:first-child {		
@@ -586,26 +598,20 @@ ul.nav-mapa-site {
 			font-size: 1.2rem;
 			font-weight: bold;
 		}
-	}
-}
-@media screen and #{$media-querie-mobile} {
-	ul.nav-mapa-site {
-		width: 100%;
-	}
-}
-@media screen and #{$media-querie-tablet} {
-	ul.nav-mapa-site {
-		width: initial;
-	}
-}
-@media screen and #{$media-querie-desktop} {
-	ul.nav-mapa-site {
-		width: initial;
-	}
-}
-@media screen and #{$media-querie-large-screen} {
-	ul.nav-mapa-site {
-		width: initial;
+		button {
+			background: transparent;
+			border: none;
+			color: #B3B3B3;
+			font-size: 0.8rem;
+			padding: 0;
+			&:hover {
+				cursor: pointer;
+				outline: none;
+			}
+			&:focus {
+				outline: none;
+			}
+		}
 	}
 }
 
