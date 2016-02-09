@@ -825,6 +825,9 @@ ul.nav-redes-sociais {
   border-radius: 0.3125rem;
   border: 1px solid #FFD666; }
 
+.bg-f2efef {
+  background: #F2EFEF; }
+
 .bg-fafafa {
   background: #FAFAFA; }
 
@@ -881,6 +884,30 @@ ul.nav-redes-sociais {
     color: #F2F2F2;
     float: left;
     padding: 0.5rem 1rem; }
+
+div.banner, div.banner-lube {
+  align-items: center;
+  color: #FFFFFF;
+  display: flex;
+  height: 649px;
+  justify-content: center; }
+  div.banner h1, div.banner-lube h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 3rem; }
+  div.banner p, div.banner-lube p {
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+    text-align: justify; }
+  div.banner .banner-center, div.banner-lube .banner-center {
+    width: 50%; }
+
+div.banner-lube {
+  background: -webkit-linear-gradient(to bottom right, #0099FF, #005C99);
+  background: -moz-linear-gradient(to bottom right, #0099FF, #005C99);
+  background: -o-linear-gradient(to bottom right, #0099FF, #005C99);
+  background: -ms-linear-gradient(to bottom right, #0099FF, #005C99);
+  background: linear-gradient(to bottom right, #0099FF, #005C99); }
 
 fieldset.block, fieldset.block-default, fieldset.block-lube, fieldset.block-kal, fieldset.block-tie {
   -webkit-border-radius: 5px;
@@ -1009,6 +1036,24 @@ fieldset.block-tie legend.block-header h1.block-title {
   border-top-color: #FF9900;
   border-top-style: solid;
   border-top-width: 3px; }
+
+div.box-group {
+  box-sizing: border-box;
+  display: flex;
+  padding: 1rem; }
+  div.box-group div[class^=box] {
+    display: flex;
+    justify-content: center;
+    width: 100%; }
+    div.box-group div[class^=box] img {
+      height: 200px;
+      margin-bottom: 1rem;
+      width: 70%; }
+  div.box-group div.box-content {
+    display: initial;
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-align: center; }
 
 .btn-default, .btn-full, .btn-xs, .btn-sm, .btn-md, a.btn-md, .btn-lg {
   background: -webkit-linear-gradient(#FAFAFA, #EBEBE0);
@@ -1268,6 +1313,9 @@ a.btn-md {
 
 .color-red, .alert-message {
   color: #FF0000; }
+
+.color-white {
+  color: #FFFFFF; }
 
 .clearfix:before,
 .clearfix:after {

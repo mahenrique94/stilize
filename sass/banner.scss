@@ -1,0 +1,25 @@
+div.banner {
+	align-items: center;
+	color: #FFFFFF;
+	display: flex;
+	height: 649px;
+	justify-content: center;	
+	h1 {
+		font-size: 2rem;
+		font-weight: bold;
+		margin-bottom: 3rem;
+	}
+	p {
+		font-size: 1.5rem;
+		margin-bottom: 3rem;
+		text-align: justify;
+	}
+	.banner-center {
+		width: 50%;
+	}
+}
+
+div.banner-lube {
+	@extend .banner;
+	@include background-lube;	
+}
