@@ -1,3 +1,13 @@
+.text-center {
+	text-align: center;
+}
+
+
+
+
+
+
+
 .disabled, .readonly {
 	background: #F6F6F6;
 	&:hover {
@@ -65,9 +75,6 @@
 	float: left;
 	margin-bottom: 0.625rem;
 	width: 100%;
-}
-.text-center {
-	text-align: center;
 }
 .vertical-center {
 	@include align-items("center");

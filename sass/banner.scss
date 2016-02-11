@@ -1,17 +1,19 @@
 div.banner {
-	align-items: center;
-	color: #FFFFFF;
+	@include align-items(center);
+	@include justify-content(center);
+	color: $banner-color;
 	display: flex;
-	height: 649px;
-	justify-content: center;	
+	height: $banner-height;
 	h1 {
-		font-size: 2rem;
-		font-weight: bold;
-		margin-bottom: 3rem;
+		font: {
+			size: $banner-font-size-h1;
+			weight: bold;
+		}
+		margin: $banner-margin;
 	}
 	p {
 		font-size: 1.5rem;
-		margin-bottom: 3rem;
+		margin: $banner-margin;
 		text-align: justify;
 	}
 	.banner-center {
@@ -19,7 +21,9 @@ div.banner {
 	}
 }
 
+/************************************************** THEMES **************************************************/
 div.banner-lube {
 	@extend .banner;
-	@include background-lube;	
+	@include background-lube;
+	color: $color-text-lube;	
 }

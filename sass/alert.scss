@@ -21,15 +21,9 @@
 	}
 }
 .alert-error {
-	position: absolute;
-	left: 50%;
-	top: 10px;
-	margin-left: -200px;
-	width: 400px;
-	h5 {
-		color: #FF0000;
-		text-transform: uppercase;
-	}
+	float: left;
+	width: 100%;
+	color: #FF0000;
 }
 .alert-message {
 	@extend .color-red;

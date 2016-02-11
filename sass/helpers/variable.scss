@@ -1,20 +1,93 @@
-/************************************************** COLOR **************************************************/
+/************************************************** BANNERS **************************************************/
+/************************* BANNER *************************/
+$banner-color: #000000;
+$banner-font-size-h1: 2rem;
+$banner-height: 649px;
+$banner-margin: 0 0 3rem 0;
+
+/************************* BANNER-LUBE *************************/
+$banner-lube-color: #FFFFFF;
+
+/************************************************** BORDERS **************************************************/
+$border-color: #DCDCDC;
+$border-color-hover: transparent;
+
+/************************************************** BOXS **************************************************/
+/************************* BOX *************************/
+$box-padding: 1rem;
+
+/************************* IMG *************************/
+$box-img-height: 200px;
+$box-img-margin: 0 0 1rem 0;
+
+/************************************************** BUTTONS **************************************************/
+/************************* BUTTON *************************/
+$button-border: 1px solid $border-color;
+$button-border-hover: 1px solid $border-color-hover;
+$button-border-radius: .3125rem;
+$button-color: #000000;
+
+/************************* BUTTON-TRANSPARENT *************************/
+$button-transparent-background: transparent;
+
+/************************* BUTTON-LUBE *************************/
+$button-lube-color: #FFFFFF;
+
+/************************************************** COLORS **************************************************/
+/************************* KAL *************************/
+$color-kal: #595959;
+$color-text-kal: #FFFFFF;
+
+/************************* LUBE *************************/
+$color-lube: #0099FF;
+$color-text-lube: #FFFFFF;
+
+/************************************************** CURSOR **************************************************/
+$cursor: pointer;
+
+/************************************************** FOOTERS **************************************************/
+/************************* FOOTER *************************/
+$footer-margin: -48px 0 0 0;
+$footer-padding: 1rem;
+
+/************************************************** MEDIA-QUERIES **************************************************/
+$media-querie-mobile: "(min-width: 0px)";
+$media-querie-tablet: "(min-width: 768px)";
+$media-querie-desktop: "(min-width: 992px)";
+$media-querie-large-screen: "(min-width: 1200px)";
+
+/************************************************** NAVS **************************************************/
+/************************* NAV *************************/
+$nav-box-sizing: border-box;
+$nav-display: inline-block;
+$nav-display-link: table-cell;
+$nav-align-link: middle;
+$nav-float: left;
+$nav-margin-brand: 1rem;
+$nav-margin-li: 1rem;
+$nav-height: 3.5rem;
+$nav-padding: 1rem;
+$nav-padding-li: 0 .5rem;
+$nav-text-decoration: none;
+$nav-shadow: 1px 1px 10px rgba(0, 0, 0, .8);
+
+/************************* NAV-KAL *************************/
+$nav-kal-color-link: $color-text-kal;
+$nav-kal-color-link-hover: $color-kal;
+$nav-kal-li-hover: $color-text-kal;
+
+
+
+
+
 $background-color: #FFFFFF;
-$border-color: #F6F6F6;
 $border-warning: #FFD666;
 $border-nav-tie: #1AA3FF;
 $color-hover: #6E6E6E;
 $color-label-button: #005C99;
 $color-link-nav-left-category-slide: #595959;
-$color-link-nav-kal: #F9F9F9;
 $container-default: #FFFFFF;
 $font-color: #595959;
 $subtext-color: #B0B0B0;
 $text-color: #424242;
 $text-nav-tie: #B3B3B3;
-
-/************************************************** MEDIA-QUERIE **************************************************/
-$media-querie-mobile: "(min-width: 0px)";
-$media-querie-tablet: "(min-width: 768px)";
-$media-querie-desktop: "(min-width: 992px)";
-$media-querie-large-screen: "(min-width: 1200px)";

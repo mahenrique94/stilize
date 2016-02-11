@@ -1,8 +1,10 @@
+%box-sizing {
+	box-sizing: border-box;
+}
 %link-page-default {
 	color: $text-color;
 	text-decoration: none;
 }
-
 %link-no-decoration {
 	text-decoration: none;	
 }

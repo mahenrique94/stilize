@@ -1,34 +1,42 @@
+.button {
+	@include border-radius($button-border-radius);
+	@include link-no-decoration;
+	color: $button-color;
+	margin: 0;
+	text: {
+		align: center;
+		decoration: none;
+	}
+}
+.button-transparent {
+	@extend .button;	
+	background: $button-transparent-background;
+}
+.btn-lube {
+	@extend .button;
+	color: $color-text-lube;
+	@include background-button(true, $color-lube);
+}
+.btn-lube-transparent {
+	@extend .button-transparent;	
+	@include background-button-transparent($color-lube);
+	border: $button-border;
+	color: $color-text-lube;
+}
+
+
+
 .btn-default {
-	@include background-default;
-	@include border-radius(5px);
-	border: 1px solid #DCDCDC;
-	color: #000000;
-	font-size: 0.9em;	
-	text-align: center;
-	&:link {
-		@extend %link-no-decoration;
-	}
-	&:visited {
-		@extend %link-no-decoration;
-	}	
-	&:focus {
-		outline: none;
-	}
+	@include background-default;		
 	&:hover {		
-		@extend %link-no-decoration;
 		@include background-default-hover;
-		cursor: pointer;		
-	}
-	&:active {
-		@extend %link-no-decoration;
-		outline: none;
-	}
+	}	
 }
 .btn-der {
-	@include button-custom(#FF0000);
+	@include background-button(true, #FF0000);
 }
 .btn-gary {
-	@include button-custom(#ACACAC);
+	@include background-button(true, #ACACAC);
 }
 .btn-group {
 	background: transparent;
@@ -41,19 +49,16 @@
 	opacity: 0;
 }
 .btn-low {
-	@include button-custom(#FFCC66);
-}
-.btn-lube {
-	@include button-custom(#33ADFF);
+	@include background-button(true, #FFCC66);
 }
 .btn-blue {
-	@include button-custom(#0000FF);
+	@include background-button(true, #0000FF);
 }
 .btn-kal {
-	@include button-custom(#333333);
+	@include background-button(true, #333333);
 }
 .btn-range {
-	@include button-custom(#FF6600);
+	@include background-button(true, #FF6600);
 }
 .btn-right-input {
 	@include background-default;
@@ -86,7 +91,6 @@
 
 /************************************************** SIZES **************************************************/
 .btn-full {
-	@extend .btn-default;
 	padding: 5px 25px;
 	width: 100%;
 }
@@ -96,17 +100,14 @@ a.btn-full {
 	width: 100%;
 }
 .btn-xs {
-	@extend .btn-default;
 	font-size: 0.8rem;
 	padding: 0.1rem 0.5rem;
 }
 .btn-sm {
-	@extend .btn-default;
 	font-size: 0.8rem;
 	padding: 0.4rem 0.6rem;
 }
 .btn-md {
-	@extend .btn-default;
 	font-size: 0.9rem;
 	padding: 0.5rem 0.8rem;
 }
@@ -116,7 +117,6 @@ a.btn-md {
 	padding: 0.6rem 0.8rem;	
 }
 .btn-lg {
-	@extend .btn-default;
 	font-size: 1rem;
 	padding: 0.7rem 0.9rem;
 }
