@@ -20,27 +20,24 @@ document.addEventListener('DOMContentLoaded', function(e) {
 });
 
 jQuery(document).ready(function () {
-	
-	/** @auth Matheus
-	 * UPPER CASE NO SISTEMA
-	 */
-//	jQuery('input, textarea, select').css('text-transform', 'uppercase');
-//	jQuery('input, textarea, select').keyup(function(event) {
-	jQuery('select').css('text-transform', 'uppercase');
-	jQuery('select').keyup(function(event) {
-		this.value = this.value.toUpperCase();
-		return event.preventDefault();
-	});
-	
 	/** @auth Matheus
 	 * ADICIONAR MODAL EM TODAS AS PAGINAS
 	 */
 	jQuery('body').append('<div class="bg-modal"><div class="modal"><iframe id="iframe-modal"></iframe></div></div>');
 	
 	/** @auth Matheus
+	 * UPPERCASE PARA INPUTS, SELECTS E TEXTAREAS, TANTO VISUAL COMO INTERNAMENTE
+	 */
+	jQuery('input:not(no-upper), textarea:not(no-upper), select:not(no-upper)').css('text-transform', 'uppercase');
+	jQuery('input:not(no-upper), textarea:not(no-upper), select:not(no-upper)').keyup(function(event) {
+		this.value = this.value.toUpperCase();
+		return event.preventDefault();
+	});
+	
+	/** @auth Matheus
 	 * ESCONDER ELEMENTOS DEPOIS DE 2 SEGUNDOS
 	 */
-	if (!jQuery('.time-out').is(':empty')) {
+	if(!jQuery('.time-out').is(':empty')) {
 		setTimeout(function () {
            jQuery('.time-out').toggle(); 
         }, 2000);
@@ -56,7 +53,7 @@ jQuery(document).ready(function () {
 	
 	jQuery('ul[class^=tab] a').click(function(e) {
         e.preventDefault();
-        if ($(this).closest('li').attr('class') == 'active'){
+        if($(this).closest('li').attr('class') == 'active') {
         	return;
         } else {             
           jQuery('.tab-group').find('[id^=content]').attr({'aria-expanded' : 'false', 'aria-hidden' : 'true'}).hide();
@@ -87,6 +84,11 @@ jQuery(document).ready(function () {
 			jQuery(jQuery(this).attr('href')).slideUp(500);
 		}
 	})
+	
+	/** @auth Matheus
+	 *  EXECUTANDOS FUNCAO PARA STICKY FOOTER
+	 */
+	stickyFooter();
 	
 });
 
@@ -125,4 +127,25 @@ function identityUrl() {
 function getFinal() {
 	var url = identityUrl();
 	return url.substring(url.lastIndexOf('/') + 1);
+}
+
+/** @auth Matheus
+ *  IMPLEMENTANDO STICKY FOOTER
+ */
+function stickyFooter() {
+	applySticky(jQuery('#wrap > section#content, #wrap + footer'), 'padding-bottom, margin-top');
+}
+function applySticky(elements, styles) {
+	var properties = styles.split(',');
+	jQuery(elements).each(function(i) {
+		jQuery(elements[i]).css(jQuery.trim(properties[i]), function() {
+			if (i == 0)
+				return getHeight(elements[1]); // [0] = section#content, [1] = footer
+			else
+				return "-" + getHeight(elements[1]); // [0] = section#content, [1] = footer
+		});
+	});
+}
+function getHeight(obj) {
+	return $(obj).css('height');
 }

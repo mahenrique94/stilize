@@ -1049,7 +1049,8 @@ div.box-group {
       width: 70%; }
   div.box-group div.box-content {
     display: initial;
-    padding: 1rem; }
+    padding: 1rem;
+    text-align: center; }
 
 .button, .button-transparent, .btn-lube-transparent, .btn-lube {
   -webkit-border-radius: 0.3125rem;
@@ -1240,7 +1241,6 @@ a.btn-md {
 html, body {
   background: #FFFFFF;
   font-family: Arial;
-  height: 100%;
   margin: 0;
   padding: 0; }
 
@@ -1257,18 +1257,12 @@ main#wrap {
   padding: 0; }
 
 section#content {
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
   clear: both;
   height: auto;
   margin: auto;
   overflow: hidden;
-  padding: 0; }
-  section#content:after {
-    content: " ";
-    display: block;
-    clear: both; }
+  padding-bottom: 50px;
+  width: 100%; }
 
 .container {
   max-width: 100%;
@@ -1434,6 +1428,7 @@ footer.footer, footer.footer-kal {
   clear: both;
   float: left;
   font-size: 0.8rem;
+  margin: -48px 0 0 0;
   padding: 1rem;
   position: relative;
   width: 100%; }
