@@ -1,18 +1,30 @@
 .bg-f2efef {
-	background: #F2EFEF;
+	background: #F2EFEF !important;
 }
 .bg-fafafa {
-	background: #FAFAFA;
+	background: #FAFAFA !important;
 }
 .bg-ffffff {
-	background: #FFFFFF;	
+	background: #FFFFFF !important;	
+}
+.bg-der {
+	background: $color-der !important;
+}
+.bg-gary {
+	background: $color-gary !important;
 }
 .bg-kal {
-	@include background-kal;
+	background: $color-kal !important;
+}
+.bg-low {
+	background: $color-low !important;
 }
 .bg-lube {
-	@include background-lube;
+	background: $color-lube !important;
 }
-.bg-padrao-blog {
-	background: url(img/Padrao-Background-Blog.png);
+.bg-range {
+	background: $color-range !important;
+}
+.bg-lube-triangle-square {
+	background: url(img/background-lube-triangle-square.jpg) !important;
 }

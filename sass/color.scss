@@ -1,5 +1,5 @@
 .color-blue {
-	color: #0000FF;
+	color: $color-blue;
 }
 .color-green {
 	color: #00FF00;
@@ -7,8 +7,8 @@
 .color-green-dark {
 	color: #00AA00;
 }
-.color-lube-blog {
-	color: #4DB6F8;
+.color-lube {
+	color: $color-lube;
 }
 .color-red {
 	color: #FF0000;

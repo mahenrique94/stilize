@@ -44,27 +44,27 @@ nav.nav {
 }
 nav.nav-kal {
 	@extend .nav;
-	@include background-kal;		
+	background: $color-kal;	
 	ul {
 		li {
 			a {
-				color: $nav-kal-color-link;
+				color: $color-text-kal;
 			}
 			&:hover {
-				background: $nav-kal-li-hover;
+				background: $color-text-kal;
 			}
 			&:hover a {
-				color: $nav-kal-color-link-hover;	
+				color: $color-kal;	
 			}
 			&:hover > ul {
 				@include transform("scale(1)");
 				opacity: 100;
 			}
 		}
-		ul {
-			@include background-kal;
+		ul {			
 			@include transform("scale(0)");
 			@include transition("all 0.3s linear");
+			background: $color-kal;	
 			opacity: 0;
 			top: 1rem;
 			z-index: 1;
@@ -509,7 +509,7 @@ nav.nav-tie {
 				}
 			}			
 			&:hover {
-				background: $border-nav-tie;
+				background: $color-lube;
 			}
 			&:hover > a {
 				color: #FFFFFF;	

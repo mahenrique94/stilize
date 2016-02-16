@@ -1,27 +1,102 @@
-.band-lube {
-	@include background-lube;
+.band {
 	box-sizing: border-box;
-	color: #FFFFFF;
 	float: left;
-	padding: 0.3rem;
 	width: 100%;
+	padding: $padding-band;
 }
-.band-kal {
-	@include background-kal;
-	box-sizing: border-box;
-	color: #F2F2F2;
-	float: left;
-	padding: 0.5rem 1rem;
-	width: 100%;
+.band-der {
+	@extend .band;
+	background: $color-der;
+	color: $color-text-der;
 }
-.band-kal-modern {
-	border-top: 3px solid #363636;
+.band-der-modern {
+	border-top: 1px solid $color-der;
 	float: left;
 	width: 100%;
 	label {
-		background: #363636;		
-		color: #F2F2F2;
+		background: $color-der;		
+		color: $color-text-der;
 		float: left;
-		padding: 0.5rem 1rem;
+		padding: $padding-band;
+	}
+}
+.band-gary {
+	@extend .band;
+	background: $color-gary;
+	color: $color-text-gary;
+}
+.band-gary-modern {
+	border-top: 1px solid $color-gary;
+	float: left;
+	width: 100%;
+	label {
+		background: $color-gary;		
+		color: $color-text-gary;
+		float: left;
+		padding: $padding-band;
+	}
+}
+.band-low {
+	@extend .band;
+	background: $color-low;
+	color: $color-text-low;
+}
+.band-low-modern {
+	border-top: 1px solid $color-low;
+	float: left;
+	width: 100%;
+	label {
+		background: $color-low;		
+		color: $color-text-low;
+		float: left;
+		padding: $padding-band;
+	}
+}
+.band-lube {
+	@extend .band;
+	background: $color-lube;
+	color: $color-text-lube;
+}
+.band-lube-modern {
+	border-top: 1px solid $color-lube;
+	float: left;
+	width: 100%;
+	label {
+		background: $color-lube;		
+		color: $color-text-lube;
+		float: left;
+		padding: $padding-band;
+	}
+}
+.band-kal {
+	@extend .band;
+	background: $color-kal;
+	color: $color-text-kal;
+}
+.band-kal-modern {
+	border-top: 1px solid $color-kal;
+	float: left;
+	width: 100%;
+	label {
+		background: $color-kal;		
+		color: $color-text-kal;
+		float: left;
+		padding: $padding-band;
+	}
+}
+.band-range {
+	@extend .band;
+	background: $color-range;
+	color: $color-text-range;
+}
+.band-range-modern {
+	border-top: 1px solid $color-range;
+	float: left;
+	width: 100%;
+	label {
+		background: $color-range;		
+		color: $color-text-range;
+		float: left;
+		padding: $padding-band;
 	}
 }

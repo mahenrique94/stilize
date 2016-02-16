@@ -1,17 +1,10 @@
-figure.brand-default {
-	h1 {
-		margin: inherit;
-		padding: inherit;
-	}
-	img {
-		height: 50px;
-		width: 400px;
-	}
-}
-
-figure.round-shadow {
+.figure-round {
 	img {
 		@include border-radius(50%);
+	}	
+}
+figure.figure-shadow {
+	img {		
 		-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 		-moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 		-o-box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
@@ -21,7 +14,7 @@ figure.round-shadow {
 }
 
 /************************************************** SIZES **************************************************/
-figure.round-md {
+figure.figure-md {	
 	img {
 		height: 50px;
 		width: 50px;

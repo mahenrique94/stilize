@@ -10,55 +10,150 @@
 }
 .button-transparent {
 	@extend .button;	
-	background: $button-transparent-background;
+	background: transparent;
 }
-.btn-lube {
+.btn-hidden {
+	opacity: 0;
+}
+.btn-none {
+	display: none;
+}
+
+/************************************************** COLORFULL **************************************************/
+.btn-blue {
+	@include button-color-hover($color-blue, $color-text-blue);
 	@extend .button;
-	color: $color-text-lube;
-	@include background-button(true, $color-lube);
-}
-.btn-lube-transparent {
-	@extend .button-transparent;	
-	@include background-button-transparent($color-lube);
-	border: $button-border;
-	color: $color-text-lube;
-}
-
-
-
-.btn-default {
-	@include background-default;		
-	&:hover {		
-		@include background-default-hover;
-	}	
+	background: $color-blue;
+	border: $border-blue;
+	color: $color-text-blue;
 }
 .btn-der {
-	@include background-button(true, #FF0000);
+	@include button-color-hover($color-der, $color-text-der);
+	@extend .button;
+	background: $color-der;
+	border: $border-der;
+	color: $color-text-der;
 }
 .btn-gary {
-	@include background-button(true, #ACACAC);
+	@include button-color-hover($color-gary, $color-text-gary);
+	@extend .button;
+	background: $color-gary;
+	border: $border-gary;
+	color: $color-text-gary;
 }
+.btn-lube {
+	@include button-color-hover($color-lube, $color-text-lube);
+	@extend .button;
+	background: $color-lube;
+	border: $border-lube;
+	color: $color-text-lube;
+}
+.btn-low {
+	@include button-color-hover($color-low, $color-text-low);
+	@extend .button;
+	background: $color-low;
+	border: $border-low;
+	color: $color-text-low;
+}
+.btn-kal {
+	@include button-color-hover($color-kal, $color-text-kal);
+	@extend .button;
+	background: $color-kal;
+	border: $border-kal;
+	color: $color-text-kal;
+}
+.btn-range {
+	@include button-color-hover($color-range, $color-text-range);
+	@extend .button;
+	background: $color-range;
+	border: $border-range;
+	color: $color-text-range;
+}
+
+/************************************************** BORDER-COLOR **************************************************/
+.btn-border-blue {
+	@include button-color-hover($color-text-blue, $color-blue);
+	@extend .button-transparent;	
+	border: $border-blue;
+	color: $color-blue;
+}
+.btn-border-der {
+	@include button-color-hover($color-text-der, $color-der);
+	@extend .button-transparent;	
+	border: $border-der;
+	color: $color-der;
+}
+.btn-border-gary {
+	@include button-color-hover($color-text-gary, $color-gary);
+	@extend .button-transparent;	
+	border: $border-gary;
+	color: $color-gary;
+}
+.btn-border-lube {
+	@include button-color-hover($color-text-lube, $color-lube);
+	@extend .button-transparent;	
+	border: $border-lube;
+	color: $color-lube;
+}
+.btn-border-low {
+	@include button-color-hover($color-text-low, $color-low);
+	@extend .button-transparent;	
+	border: $border-low;
+	color: $color-low;
+}
+.btn-border-kal {
+	@include button-color-hover($color-text-kal, $color-kal);
+	@extend .button-transparent;	
+	border: $border-kal;
+	color: $color-kal;
+}
+.btn-border-range {
+	@include button-color-hover($color-text-range, $color-range);
+	@extend .button-transparent;	
+	border: $border-range;
+	color: $color-range;
+}
+
+/************************************************** SIZES **************************************************/
+.btn-full {
+	padding: $button-full-padding;
+	width: 100%;
+}
+a.btn-full {
+	box-sizing: border-box;
+	display: inline-block;
+	width: 100%;
+}
+.btn-xs {
+	font-size: $button-font-size-xs;
+	padding: $button-padding-xs;
+}
+.btn-sm {
+	font-size: $button-font-size-sm;
+	padding: $button-padding-sm;
+}
+.btn-md {
+	font-size: $button-font-size-md;
+	padding: $button-padding-md;
+}
+.btn-lg {
+	font-size: $button-font-size-lg;
+	padding: $button-padding-lg;
+}
+
+
+
+
+
+
+
+
 .btn-group {
 	background: transparent;
 	border: none;
 	font-size: 1rem;
 	outline: none;
 	padding: 0;	
-}
-.btn-hidden {
-	opacity: 0;
-}
-.btn-low {
-	@include background-button(true, #FFCC66);
-}
-.btn-blue {
-	@include background-button(true, #0000FF);
-}
-.btn-kal {
-	@include background-button(true, #333333);
-}
-.btn-range {
-	@include background-button(true, #FF6600);
 }
 .btn-right-input {
 	@include background-default;
@@ -87,36 +182,4 @@
 		@extend %link-no-decoration;
 		outline: none;
 	}	
-}
-
-/************************************************** SIZES **************************************************/
-.btn-full {
-	padding: 5px 25px;
-	width: 100%;
-}
-a.btn-full {
-	box-sizing: border-box;
-	display: inline-block;
-	width: 100%;
-}
-.btn-xs {
-	font-size: 0.8rem;
-	padding: 0.1rem 0.5rem;
-}
-.btn-sm {
-	font-size: 0.8rem;
-	padding: 0.4rem 0.6rem;
-}
-.btn-md {
-	font-size: 0.9rem;
-	padding: 0.5rem 0.8rem;
-}
-a.btn-md {
-	@extend .btn-md;
-	font-size: 0.9rem;
-	padding: 0.6rem 0.8rem;	
-}
-.btn-lg {
-	font-size: 1rem;
-	padding: 0.7rem 0.9rem;
 }

@@ -1,4 +1,4 @@
-div.banner {
+.banner {
 	@include align-items(center);
 	@include justify-content(center);
 	color: $banner-color;
@@ -12,7 +12,7 @@ div.banner {
 		margin: $banner-margin;
 	}
 	p {
-		font-size: 1.5rem;
+		font-size: $banner-font-size;
 		margin: $banner-margin;
 		text-align: justify;
 	}
@@ -22,8 +22,13 @@ div.banner {
 }
 
 /************************************************** THEMES **************************************************/
-div.banner-lube {
+.banner-lube {
 	@extend .banner;
-	@include background-lube;
+	background: $color-lube;
 	color: $color-text-lube;	
+}
+.banner-kal {
+	@extend .banner;
+	background: $color-kal;
+	color: $color-text-kal;	
 }

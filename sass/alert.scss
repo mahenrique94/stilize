@@ -1,8 +1,6 @@
 .alert {
 	box-sizing: border-box;
-	color: #000000;
-	padding: 1rem;	
-	text-shadow: 0 0 1px #FFFFFF;
+	padding: $padding;
 	width: 100%;	
 }
 .alert-dialog {
@@ -20,21 +18,47 @@
 		padding: 1rem;
 	}
 }
-.alert-error {
-	float: left;
-	width: 100%;
-	color: #FF0000;
-}
-.alert-message {
-	@extend .color-red;
-	text-align: center;
-	width: 100%;
-}
 
 /************************************************** COLORS **************************************************/
-.alert-warning {
+.alert-der {
 	@extend .alert;
-	@include background-warning;
-	@include border-radius(0.3125rem);
-	border: 1px solid $border-warning;	
+	@include border-radius($border-radius-alert);
+	background: $color-der;	
+	border: $border-der;	
+	color: $color-text-der;
+}
+.alert-gary {
+	@extend .alert;
+	@include border-radius($border-radius-alert);
+	background: $color-gary;	
+	border: $border-gary;	
+	color: $color-text-gary;
+}
+.alert-low {
+	@extend .alert;	
+	@include border-radius($border-radius-alert);
+	background: $color-low;	
+	border: $border-low;	
+	color: $color-text-low;
+}
+.alert-lube {
+	@extend .alert;
+	@include border-radius($border-radius-alert);
+	background: $color-lube;	
+	border: $border-lube;
+	color: $color-text-lube;	
+}
+.alert-kal {
+	@extend .alert;
+	@include border-radius($border-radius-alert);
+	background: $color-kal;	
+	border: $border-kal;	
+	color: $color-text-kal;
+}
+.alert-range {
+	@extend .alert;
+	@include border-radius($border-radius-alert);
+	background: $color-range;	
+	border: $border-range;
+	color: $color-text-range;	
 }

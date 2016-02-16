@@ -1,52 +1,104 @@
+/************************************************** PATTERNS **************************************************/
+$border-color: #DCDCDC;
+$border: 1px solid $border-color;
+$font-size: 1rem;
+$padding: 1rem;
+$padding-band: .3rem;
+
+/************************************************** ALERT **************************************************/
+$border-radius-alert: .3125rem;
+
+/************************************************** COLORS **************************************************/
+// BLUE
+$color-blue: #0000FF;
+$color-text-blue: #FFFFFF;
+$border-blue: 1px solid darken($color-blue, 10%);
+
+// DER
+$color-der: #F57373;
+$color-text-der: #FFFFFF;
+$border-der: 1px solid darken($color-der, 10%);
+
+// GARY
+$color-gary: #E6E6E6;
+$color-text-gary: #FFFFFF;
+$border-gary: 1px solid darken($color-gary, 10%);
+
+// LOW
+$color-low: #FFEA00;
+$color-text-low: #FFFFFF;
+$border-low: 1px solid darken($color-low, 10%);
+
+// LUBE
+$color-lube: #0099FF;
+$color-text-lube: #FFFFFF;
+$border-lube: 1px solid darken($color-lube, 10%);
+
+// KAL
+$color-kal: #303030;
+$color-text-kal: #FFFFFF;
+$border-kal: 1px solid darken($color-kal, 10%);
+
+// RANGE
+$color-range: #FF6600;
+$color-text-range: #FFFFFF;
+$border-range: 1px solid darken($color-range, 10%);
+
 /************************************************** BANNERS **************************************************/
-/************************* BANNER *************************/
+// BANNER
 $banner-color: #000000;
+$banner-font-size: 1.5rem;
 $banner-font-size-h1: 2rem;
 $banner-height: 649px;
 $banner-margin: 0 0 3rem 0;
 
-/************************* BANNER-LUBE *************************/
-$banner-lube-color: #FFFFFF;
+/************************************************** BLOCKS **************************************************/
+$block-border-radius: .3125rem;
+$block-padding: 2rem 0 0 0;
 
-/************************************************** BORDERS **************************************************/
-$border-color: #DCDCDC;
-$border-color-hover: transparent;
+// LEGEND
+$block-legend-padding: .5rem .9rem;
+
+// BODY
+$block-body-padding: .5rem 0 0 .15rem;
 
 /************************************************** BOXS **************************************************/
-/************************* BOX *************************/
+// BOX
 $box-padding: 1rem;
 
-/************************* IMG *************************/
+// IMG
 $box-img-height: 200px;
 $box-img-margin: 0 0 1rem 0;
 
 /************************************************** BUTTONS **************************************************/
-/************************* BUTTON *************************/
+// BUTTON
 $button-border: 1px solid $border-color;
-$button-border-hover: 1px solid $border-color-hover;
 $button-border-radius: .3125rem;
 $button-color: #000000;
 
-/************************* BUTTON-TRANSPARENT *************************/
-$button-transparent-background: transparent;
+// SIZES
+$button-full-padding: .3125 1.5625rem;
 
-/************************* BUTTON-LUBE *************************/
-$button-lube-color: #FFFFFF;
+$button-font-size-xs: .8rem;
+$button-padding-xs: .1rem .5rem;
 
-/************************************************** COLORS **************************************************/
-/************************* KAL *************************/
-$color-kal: #595959;
-$color-text-kal: #FFFFFF;
+$button-font-size-sm: .8rem;
+$button-padding-sm: .4rem .6rem;
 
-/************************* LUBE *************************/
-$color-lube: #0099FF;
-$color-text-lube: #FFFFFF;
+$button-font-size-md: .9rem;
+$button-padding-md: .5rem .8rem;
+
+$button-font-size-lg: 1rem;
+$button-padding-lg: .7rem .9rem;
 
 /************************************************** CURSOR **************************************************/
 $cursor: pointer;
 
+/************************************************** FONTS **************************************************/
+$font-size-brand: 1.5rem;
+
 /************************************************** FOOTERS **************************************************/
-/************************* FOOTER *************************/
+// FOOTER
 $footer-padding: 1rem;
 
 /************************************************** MEDIA-QUERIES **************************************************/
@@ -56,7 +108,7 @@ $media-querie-desktop: "(min-width: 992px)";
 $media-querie-large-screen: "(min-width: 1200px)";
 
 /************************************************** NAVS **************************************************/
-/************************* NAV *************************/
+// NAV
 $nav-box-sizing: border-box;
 $nav-display: inline-block;
 $nav-display-link: table-cell;
@@ -70,22 +122,14 @@ $nav-padding-li: 0 .5rem;
 $nav-text-decoration: none;
 $nav-shadow: 1px 1px 10px rgba(0, 0, 0, .8);
 
-/************************* NAV-KAL *************************/
-$nav-kal-color-link: $color-text-kal;
-$nav-kal-color-link-hover: $color-kal;
-$nav-kal-li-hover: $color-text-kal;
-
 
 
 
 
 $background-color: #FFFFFF;
-$border-warning: #FFD666;
-$border-nav-tie: #1AA3FF;
 $color-hover: #6E6E6E;
 $color-label-button: #005C99;
 $color-link-nav-left-category-slide: #595959;
-$container-default: #FFFFFF;
 $font-color: #595959;
 $subtext-color: #B0B0B0;
 $text-color: #424242;

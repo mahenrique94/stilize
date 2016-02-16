@@ -1,61 +1,59 @@
 fieldset.block {
-	@include border-radius(5px);
-	@include calc(width, "100% - 0.2rem");
-	border: 1px solid #DCDCDC;	
-	padding: 2rem 0 0;
+	@include border-radius($block-border-radius);
+	border: $border;	
+	box-sizing: border-box;
+	padding: $block-padding;
 	position: relative;
+	width: 100%;
 	legend.block-header {
-		@include border-radius-lefttop-righttop(5px);
+		@include border-radius-lefttop-righttop($block-border-radius);
+		box-sizing: inherit;
 		left: 0;
-		padding: 0.5rem 0.9rem;
+		padding: $block-legend-padding;
 		position: absolute;
 		top: 0;
-		@include calc(width, "100% - 1.8rem");
+		width: inherit;
 	}
-	h1.block-title {
-		font-size: 1rem;
+	.block-title {
+		font-size: $font-size;
 	}
-	section.block-body {
-		padding: 0.5rem 0 0 0.15rem;
+	.block-body {
+		padding: $block-body-padding;
 	}
 }
-fieldset.block-default {
+
+/************************************************** STYLES **************************************************/
+fieldset.block-gary {
 	@extend .block;
 	legend.block-header {		
-		@include background-default;
+		background: $color-gary;
+		.block-title {
+			color: $color-text-gary;
+		}
 	}
 }
 fieldset.block-lube {
 	@extend .block;
 	legend.block-header {		
-		@include background-lube;
-		h1.block-title {
-			color: #FFFFFF;
+		background: $color-lube;
+		.block-title {
+			color: $color-text-lube;
 		}
 	}
 }
 fieldset.block-kal {
 	@extend .block;
 	legend.block-header {		
-		@include background-kal;
-		h1.block-title {
-			color: #FFFFFF;
+		background: $color-kal;
+		.block-title {
+			color: $color-text-kal;
 		}
-	}
-}
-fieldset.block-modern-kal {
-	border: 1px solid #DCDCDC;
-	legend {
-		@include background-kal;
-		color: #F9F9F9;
-		float: left;
-		padding: 0.5rem 1rem;
 	}
 }
 fieldset.block-tie {
 	@extend .block;
 	legend.block-header {
-		h1.block-title {
+		.block-title {
 			color: #595959;
 		}
 	}

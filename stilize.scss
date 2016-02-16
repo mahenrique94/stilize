@@ -27,14 +27,11 @@
 @import 'sass/component/nav';
 
 @import 'sass/alert';
-@import 'sass/background';
 @import 'sass/band';
 @import 'sass/banner';
 @import 'sass/block';
-@import 'sass/border';
 @import 'sass/box';
 @import 'sass/button';
-@import 'sass/color';
 @import 'sass/config';
 @import 'sass/container';
 @import 'sass/header';
@@ -51,5 +48,8 @@
 @import 'sass/table';
 @import 'sass/tooltip';
 
+@import 'sass/background';
+@import 'sass/border';
+@import 'sass/color';
 @import 'sass/option';
 @import 'sass/size';

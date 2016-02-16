@@ -9,7 +9,7 @@ footer.footer {
 }
 footer.footer-kal {
 	@extend .footer;
-	@include background-kal;	
+	background: $color-kal;
 	color: $color-text-kal;	
 	a {
 		@include link-no-decoration;

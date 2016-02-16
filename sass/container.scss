@@ -6,62 +6,17 @@
 	overflow:hidden;
 	padding: 0;	
 }
-.container-body {
-	box-sizing: border-box;
-	float: left;
-	padding: 0.5rem;
-	width: 100%;
-}
 .container-center {
 	@include container();
 	@include span(10 of 12);
-	background: $container-default;
+	background: #FFFFFF;
 	float: none !important;
 	margin: 0 auto !important;
-	padding: 1rem;	
+	padding: $padding;	
 	header.container-header {		
 		width: 100%;
 		h1.container-brand {
 			font-size: 1.5em;
-		}
-	}
-}
-.container-flex {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	margin: 0 auto;
-	width: 70%;
-	.box-flex {
-		background: #F8F8F8;
-		border: 1px solid #DCDCDC;
-		margin-left: 5px;
-		padding: 0.5rem;
-		text-align: center;
-		width: 100%;
-	}
-}
-.container-right {
-	@include span(9 of 12);
-	margin: gutter();
-}
-.container-right-ecommerce {
-	float: left;
-	height: auto;
-	width: 84.74576%;
-}
-.container-tie {
-	@include container();
-	margin: 1rem;
-	.container-header {
-		border-bottom: 1px solid #DCDCDC;
-		float: left;
-		margin-bottom: 1rem;				
-		width: 100%;
-		h2 {
-			color: #595959;
-			float: left;
-			margin-right: 0.5rem;
 		}
 	}
 }

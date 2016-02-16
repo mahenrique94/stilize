@@ -5,20 +5,6 @@
 	-ms-align-items: #{$value};
 	align-items: #{$value};
 }
-@mixin background-button($background, $color) {
-	@if $background {
-		background: $color;
-	}
-	&:hover {		
-		background: lighten($color, 10%);
-		@if not($background) {
-			border: $button-border-hover;
-		}		
-	}
-}
-@mixin background-button-transparent($color) {
-	@include background-button(false, $color);
-}
 @mixin display-flex {
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -40,6 +26,17 @@
 	background: -ms-linear-gradient(to bottom right, #0099FF, #005C99);
 	background: linear-gradient(to bottom right, #0099FF, #005C99);
 }
+@mixin border($position, $px, $style, $color) {
+	@if $position != null {
+		border-#{$position}-color: $color;	
+		border-#{$position}-style: $style;
+		border-#{$position}-width: $px;	
+	} @else {
+		border-color: $color;	
+		border-style: $style;
+		border-width: $px;
+	}
+}
 @mixin link-no-decoration {
 	&:link {
 		@extend %link-no-decoration;
@@ -59,8 +56,12 @@
 		outline: none;
 	}	
 }
-
-
+@mixin button-color-hover($color, $text-color) {
+	&:hover {
+		background: $text-color;
+		color: $color;
+	}
+}
 
 
 
@@ -85,13 +86,6 @@
 	background: -o-linear-gradient(#{$expression});
 	background: -ms-linear-gradient(#{$expression});
 	background: linear-gradient(#{$expression});
-}
-@mixin background-kal {
-	background: -webkit-linear-gradient(#595959, #333333, #1A1A1A, #000000);
-	background: -moz-linear-gradient(#595959, #333333, #1A1A1A, #000000);
-	background: -o-linear-gradient(#595959, #333333, #1A1A1A, #000000);
-	background: -mslinear-gradient(#595959, #333333, #1A1A1A, #000000);
-	background: linear-gradient(#595959, #333333, #1A1A1A, #000000);
 }
 @mixin background-nav-kal-dropdown {
 	background: -webkit-linear-gradient(#A4A4A4 5%, #333333 60%, #191919);
@@ -156,17 +150,6 @@
 	background: -o-linear-gradient(#FFF3D4, #FFEFC2);
 	background: -ms-linear-gradient(#FFF3D4, #FFEFC2);
 	background: linear-gradient(#FFF3D4, #FFEFC2);
-}
-@mixin border($position, $px, $style, $color) {
-	@if $position != null {
-		border-#{$position}-color: $color;	
-		border-#{$position}-style: $style;
-		border-#{$position}-width: $px;	
-	} @else {
-		border-color: $color;	
-		border-style: $style;
-		border-width: $px;
-	}
 }
 @mixin border-radius($value) {
 	-webkit-border-radius: $value;
@@ -317,7 +300,7 @@
 @mixin nav-brand {
 	@include link-no-decoration;
 	color: #FFFFFF;
-	font-size: 1.5rem;
+	font-size: $font-size-brand;
 }
 @mixin transform($expression) {
 	-webkit-transform: #{$expression};
