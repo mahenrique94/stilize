@@ -1,79 +1,31 @@
 footer.footer {
-	@extend %box-sizing;
+	box-sizing: border-box;
 	clear:both;
 	float: left;
 	font-size: 0.8rem;
 	padding: $footer-padding;
 	position: relative;
 	width: 100%;
+    a {
+		@include link-no-decoration;
+		color: inherit;
+		&:hover {
+			cursor: pointer;
+		}
+	}
 }
 footer.footer-kal {
 	@extend .footer;
 	background: $color-kal;
-	color: $color-text-kal;	
-	a {
-		@include link-no-decoration;
-		color: inherit;
-		&:hover {
-			cursor: $cursor;
-		}
-	}
+	color: $color-text-kal;		
 }
-
-
-
-
-footer.footer-default {
-	@include background-default;
-	border-top: solid 1px #DCDCDC;
-	box-sizing: border-box;
-	clear:both;
-	color: #000000;
-	float: left;
-	font-size: 0.8rem;
-	margin: -36px 0 0 0;
-	padding: 0.7rem;
-	position: relative;
-	a {
-		color: #000000;
-		text-decoration: none;
-		&:hover {
-			cursor: pointer;
-		}
-	}
-}
-footer.footer-default-alt {
-	@include background-nav-default;
-	box-sizing: border-box;
-	clear: both; 
-	float: left;
-	font-size: 0.85rem;
-	margin: 0;
-	margin-top: -49px; 
-	padding: 1rem;
-	position: relative; 
-	width: 100%;
-	a {
-		color: #333333;		
-		text-decoration: none;
-	}
+footer.footer-gary {
+    @extend .footer;
+    background: $color-gary;
+    color: $color-text-gary;
 }
 footer.footer-tie {
-	background: #FFFFFF;
-	box-sizing: border-box;
-	clear:both;
-	color: $text-nav-tie;
-	float: left;
-	font-size: 0.8rem;
-	margin: -48px 0 0 0;
-	padding: 1rem;
-	position: relative;
-	width: 100%;
-	a {
-		color: $text-nav-tie;
-		text-decoration: none;
-		&:hover {
-			cursor: pointer;
-		}
-	}	
+    @extend .footer;
+	background: $color-tie;
+	color: $color-text-tie;
 }

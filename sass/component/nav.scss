@@ -227,166 +227,6 @@ nav.nav-default {
 	    }
 	}
 }
-nav.nav-default-rotation {
-	@include background-nav-default;
-	box-sizing: border-box;
-	padding: 1rem;
-	width: 100%;
-	a.nav-brand {
-		color: #595959;
-		font-size: 1.5rem;
-		margin-right: 1.5rem;
-		text-decoration: none;
-	}
-	ul.nav-main {
-		display: inline-block;
-		li {
-			display: inline-block;
-			position: relative;
-			a {
-				color: #595959;
-				display: block;
-				text-decoration: none;
-				width: 100%;				
-			}
-			ul {
-				@include background-nav-default;
-				@include transition("all 0.2s linear");
-				@include transform("rotateX(180deg)");
-				box-shadow: 1px 1px 5px #DADADA;				
-				opacity: 0;
-				position: absolute;
-				top: 15px;
-				visibility: hidden;							
-				z-index: 1;
-				li {
-					box-sizing: border-box;
-					padding: 0.5rem;
-					width: 150px;
-					ul {
-						left: 140px;
-						position: absolute;
-						top: 0;
-					}
-				}
-			}
-			&:hover {
-				@include background-nav-default-rotation-hover;
-			}
-			&:hover > a {
-				color: #F9F9F9;
-			}
-			&:hover > ul {
-				@include transform("rotateX(0)");
-				opacity: 100;
-				visibility: visible;
-			}
-		}
-	}
-}
-nav.nav-kal-dropdown {
-	ul.nav-main,
-	ul.nav-main ul,
-	ul.nav-main li,
-	ul.nav-main a {
-		border: none;
-		margin: 0;
-		outline: none;
-		padding: 0;
-	}
-	ul.nav-main {
-		@include background-nav-kal-dropdown;
-		clear: both;
-		height: 30px;
-		width: 100%;
-		li {
-			display: block;
-			float: left;
-			height: 30px;
-			list-style: none;
-			position: relative;
-			a {
-				@include transition("color 0.1s ease-in-out");
-				border-right: 1px solid #E6E6E6;
-				color: #E6E6E6;
-				display: block;
-				font-weight: 100;
-				padding: 5px 15px;
-				text-decoration: none;
-			}
-			&:hover > a {
-				color: #FF9900;
-			}
-			&:hover > ul {
-				opacity: 1;
-			}
-			&:hover > ul li {
-				height: 30px;
-				overflow: visible;
-				padding: 0;
-			}
-		}
-		ul {
-			@include background-nav-kal-dropdown;
-			@include border-radius-rightbottom-leftbottom(5px);
-			@include transition("height 0.25s ease 0.1s");
-			left: 0;
-			opacity: 0;
-			position: absolute;
-			top: 30px;
-			z-index: 1;
-			li {
-				@include transition("height 0.25s ease 0.1s");
-				height: 0;
-				overflow: hidden;
-				padding: 0;
-				a {
-					border: none;
-					border-bottom: 1px solid #E6E6E6;
-					margin: 0;
-					padding: 5px 15px;
-					width: 250px;
-				}
-				&:hover > ul {
-					left: 230px;
-				}
-				&:hover > ul li {
-					height: 30px !important;
-				}
-				ul {
-					@include border-radius-righttop-rightbottom-leftbottom(5px);
-					@include transition("left 0.25s ease 0.1s");
-					left: 0;
-					position: absolute;
-					top: 0;
-					li {
-						@include transition("height 0.25s ease 0.1s");
-						height: 0 !important;
-						overflow: hidden;
-						padding: 0;
-					}
-				}
-			}
-		}
-	}
-}
-aside.nav-left {	
-	@include border-radius(1rem);
-	@include span(2 of 12);	
-	margin: gutter();
-	ul {
-		li {
-			box-sizing: border-box;			
-			padding: 0.5rem 0.2rem;
-			text-align: center;
-			width: 100%;
-			a {
-				@include link-no-decoration;
-				color: #FFFFFF;
-			}
-		}
-	}
-}
 nav.nav-lube {
 	@include background-lube;
 	padding: 0.9rem 1.975rem;	
@@ -394,40 +234,56 @@ nav.nav-lube {
 		@include nav-brand;
 	}
 }
-nav.nav-network-social {
-	ul {		
-		display: inline-block;
-		padding-left: 0.3125rem;
-		width: 100%;
-		li {
-			display: inline-block;
-			list-style: none;
-			a {
-				color: #FFFFFF;
-				letter-spacing: 5px;
-			}
-		}
+ul.nav-network-social {
+	@include align-items("center");
+	@include display-flex;
+	@include justify-content("center");
+	width: 100%;
+	li, a {
+		float: left;
+		height: 32px;		
+		text-indent: -999999px;
+		width: 32px;
 	}
+	li:not(:last-child), a:not(:last-child) {
+		margin-right: 2rem;
+	}
+	.facebook {
+		background: url(img/facebook.png) center / 32px 32px;		
+	}
+	.github {
+		background: url(img/github.png) center / 32px 32px;
+	}
+	.instagram {
+		background: url(img/instagram.png) center / 32px 32px;
+	}
+	.linkedin {
+		background: url(img/linkedin.png) center / 32px 32px;	
+	}
+	.twitter {
+		background: url(img/twitter.png) center / 32px 32px;
+	}	
 }
 nav.nav-responsive {	
 	float: left;
 	width: 100%;
 	ul {
-		@include background-ray-degrade;
-		border: 1px solid #DCDCDC;
+		@include background-default;
+		border: $border;
 		display: inline-flex;	
 		width: 100%;
 		li {
-			border-right: 1px solid #DCDCDC;
-			display: inline-flex;			
-			justify-content: center;
+			@include display-inline-flex;
+			@include justify-content("center");
+			border-right: $border;
+			
 			list-style: none;
 			text-align: center;
 			width: 100%;	
 			a, button {
-				color: #000000;
-				height: 35px;
-				justify-content: center;
+				@include justify-content("center");
+				color: $color;
+				height: 35px;				
 				line-height: 35px;
 				text-decoration: none;			
 				width: 100%;	
@@ -522,10 +378,6 @@ nav.nav-tie {
 		}
 	}
 }
-nav.nav-top {
-	position: absolute;
-	top: 0;
-}
 nav.navbar-default {
 	@include background-default;
 	box-sizing: border-box;
@@ -574,34 +426,4 @@ ul.nav-mapa-site {
 			}
 		}
 	}
-}
-ul.nav-redes-sociais {
-	align-items: center;
-	display: flex;
-	justify-content: center;
-	width: 100%;
-	li, a {
-		float: left;
-		height: 32px;		
-		text-indent: -999999px;
-		width: 32px;
-	}
-	li:not(:last-child), a:not(:last-child) {
-		margin-right: 2rem;
-	}
-	.facebook {
-		background: url(img/facebook.png) center / 32px 32px;		
-	}
-	.github {
-		background: url(img/github.png) center / 32px 32px;
-	}
-	.instagram {
-		background: url(img/instagram.png) center / 32px 32px;
-	}
-	.linkedin {
-		background: url(img/linkedin.png) center / 32px 32px;	
-	}
-	.twitter {
-		background: url(img/twitter.png) center / 32px 32px;
-	}	
 }

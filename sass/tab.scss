@@ -1,35 +1,34 @@
 div.tab-group {
   background: #FFFFFF;
-  border: 1px solid #DCDCDC;
+  border: $border;
   box-sizing: border-box;
   float: left;
   height: auto;
   position: relative;
   width: 100%;
 }
-ul.tab-default {
+.tab {
   list-style: none;
   overflow: hidden;
   padding: 0;  
-  width: 100%;
+  width: 100%;  
   li {
     float: left;
   }
   a {
-    @include background-default;
-    @include border-radius-lefttop-righttop(5px); 
-    border-left: 1px solid #DCDCDC;
-    border-right: 1px solid #DCDCDC;
-    border-top: 1px solid #DCDCDC;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
-    color: #444444;
+    @include border-radius-lefttop-righttop($tab-border-radius); 
+    border-left: $border;
+    border-right: $border;
+    border-top: $border;
+    box-shadow: $tab-shadow;
+    color: $tab-color;
     float: left;
-    padding: 0.5rem 1.5rem;
+    padding: $tab-padding;
     position: relative;
     text-decoration: none;
     &:hover, &:hover::after, &:focus, &:focus::after {
       background: #FFFFFF;
-    }
+    } 
     &:hover {
       cursor: pointer;
     }
@@ -37,52 +36,57 @@ ul.tab-default {
       outline: 0;
     }
   }
+}
+ul.tab-lube {
+  @extend .tab;
+  a {
+    @include background-default;
+  }
   & .active a, & .active a::after {
-    @include background-lube;
-    color: #FFFFFF;
+    background: $color-lube;
+    color: $color-text-lube;
     z-index: 3;
   }
 }
 ul.tab-responsive {
-  @include background-ray-degrade;
+  @include background-nav-default;
   display: inline-flex;
   width: 100%;
   li {
-    border-right: 1px solid #DCDCDC;
-    display: inline-flex;     
-    justify-content: center;
+    @include display-inline-flex;
+    @include justify-content("center");
+    border-right: $border;
     list-style: none;
     text-align: center;
     width: 100%;  
     a, button {
-      color: #000000;
+      color: $color;
       height: 35px;
       justify-content: center;
       line-height: 35px;
-      padding: 0.5rem;
+      padding: $padding-tab-responsive;
       text-decoration: none;      
       width: 100%;  
     }
     &:hover {
-      background: #FFFFFF;
+      background: $color-tab-responsive;
       cursor: pointer;
     }
     &.active {
-      background: #FFFFFF;
+      background: $color-tab-responsive;
     }
   }
   &.active {
-    background: #FFFFFF;
+    background: $color-tab-responsive;
     border-bottom: none;
   }  
 }
-
 @for $i from 1 through 10 {
   div#content-tab#{$i} {
     box-sizing: border-box;
     display: none;
     float: left;
-    padding: 0.5rem;
+    padding: .5rem;
     width: 100%;
   }
 }

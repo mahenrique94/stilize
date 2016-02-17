@@ -1,17 +1,11 @@
 .text-center {
 	text-align: center;
 }
-
-
-
-
-
-
-
 .disabled, .readonly {
-	background: #F6F6F6;
+	background: $background-inactive;
+	color: $color-inactive;
 	&:hover {
-		cursor: not-allowed;
+		cursor: $cursor-inactive;
 	}
 }
 .font-bold {
@@ -30,11 +24,7 @@
 	display: inline-block;
 }
 .no-decoration {
-	text-decoration: none;
-	&:link, &:visited, &:hover, &:active {
-		color: #000000;
-		text-decoration: none;
-	}
+	@include link-no-decoration;
 }
 .no-bold {
 	font-weight: 100;
@@ -73,7 +63,7 @@
 }
 .row-input {
 	float: left;
-	margin-bottom: 0.625rem;
+	margin: $margin-col;
 	width: 100%;
 }
 .vertical-center {

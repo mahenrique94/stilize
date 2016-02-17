@@ -1,7 +1,12 @@
 /************************************************** PATTERNS **************************************************/
+$background-inactive: #F6F6F6;
 $border-color: #DCDCDC;
 $border: 1px solid $border-color;
+$color: #000000;
+$color-inactive: #BBBBBB;
+$cursor-inactive: not-allowed;
 $font-size: 1rem;
+$margin-col: 0 0 .625rem 0;
 $padding: 1rem;
 $padding-band: .3rem;
 
@@ -43,6 +48,16 @@ $border-kal: 1px solid darken($color-kal, 10%);
 $color-range: #FF6600;
 $color-text-range: #FFFFFF;
 $border-range: 1px solid darken($color-range, 10%);
+
+// TIE
+$color-tie: #FFFFFF;
+$color-text-tie: #000000;
+
+/************************************************** BACKGROUNDS **************************************************/
+// DEFAULT
+$color-default1: #FBFBFB;
+$color-default2: #F6F6F6;
+$background-default: $color-default1, $color-default2;
 
 /************************************************** BANNERS **************************************************/
 // BANNER
@@ -91,15 +106,25 @@ $button-padding-md: .5rem .8rem;
 $button-font-size-lg: 1rem;
 $button-padding-lg: .7rem .9rem;
 
-/************************************************** CURSOR **************************************************/
-$cursor: pointer;
-
 /************************************************** FONTS **************************************************/
 $font-size-brand: 1.5rem;
 
 /************************************************** FOOTERS **************************************************/
 // FOOTER
 $footer-padding: 1rem;
+
+/************************************************** FORMS **************************************************/
+$padding-form-data: .125rem;
+
+// VALID
+$background-valid: rgba(0, 255, 0, .2);
+$color-valid: #00FF00;
+$border-valid: 1px solid $color-valid !important;
+
+// INVALID
+$background-invalid: rgba(255, 0, 0, .2);
+$color-invalid: #FF0000;
+$border-invalid: 1px solid $color-invalid !important; 
 
 /************************************************** MEDIA-QUERIES **************************************************/
 $media-querie-mobile: "(min-width: 0px)";
@@ -122,8 +147,38 @@ $nav-padding-li: 0 .5rem;
 $nav-text-decoration: none;
 $nav-shadow: 1px 1px 10px rgba(0, 0, 0, .8);
 
+/************************************************** PAGINATION **************************************************/
+$background-pagination-active: rgba(0, 0, 0, .05);
+$border-radius-pages: .125rem;
+$margin-pages: .3125rem;
+$padding-pages: .2rem .5rem;
+$pagination-text-color: #424242;
 
+/************************************************** TABLES **************************************************/
+$table-color: #0052A6;
+$table-font-size-td: .75rem;
+$table-font-size-th: .9rem;
+$table-padding: .5rem;
 
+// TABLE-DEFAULT
+$table-default-hover: #DAF8FF;
+$table-default-color-even: #F7F7F7;
+$table-default-color-odd: #FFFFFF;
+
+// TABLE-KAL
+$table-kal-border: 1px solid #000000;
+$table-kal-color: #333333;
+$table-kal-padding: .3rem;
+
+/************************************************** TABS **************************************************/
+$tab-border-radius: .3125rem;
+$tab-color: #444444;
+$tab-padding: .5rem 1.5rem;
+$tab-shadow: 0 2px 2px rgba(0, 0, 0, .4);
+
+// TAB-RESPONSIVE
+$color-tab-responsive: #FFFFFF;
+$padding-tab-responsive: .5rem;
 
 
 $background-color: #FFFFFF;
@@ -132,5 +187,4 @@ $color-label-button: #005C99;
 $color-link-nav-left-category-slide: #595959;
 $font-color: #595959;
 $subtext-color: #B0B0B0;
-$text-color: #424242;
 $text-nav-tie: #B3B3B3;

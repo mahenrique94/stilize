@@ -1,206 +1,50 @@
 [class^=col-] {
-	margin-bottom: 0.625rem;
+	margin: $margin-col;
 	position: relative;
 }
-
 [class^=col-]:last-child {
 	margin-right: 0 !important;
 }
 
 /************************************************** XS = Extra Small(min-width: 0px) **************************************************/
 @media screen and #{$media-querie-mobile} {
-	.col-xs-1 {	
-		@include span(1 of 12);
-	}
-	.col-xs-2 {	
-		@include span(2 of 12);
-	}
-	.col-xs-3 {	
-		@include span(3 of 12);
-	}
-	.col-xs-4 {	
-		@include span(4 of 12);
-	}
-	.col-xs-5 {	
-		@include span(5 of 12);
-	}
-	.col-xs-6 {	
-		@include span(6 of 12);
-	}
-	.col-xs-7 {	
-		@include span(7 of 12);
-	}
-	.col-xs-8 {
-		@include span(8 of 12);
-	}
-	.col-xs-9 {
-		@include span(9 of 12);
-	}
-	.col-xs-10 {
-		@include span(10 of 12);
-	}
-	.col-xs-11 {
-		@include span(11 of 12);
-	}
-	.col-xs-12 {
-		@include span(12 of 12);
+	@for $i from 1 through 12 {
+		.col-xs-#{$i} {
+			@include span($i of 12);
+		}
 	}
 }
 
 /************************************************** SM = Small(min-width: 480px) **************************************************/
 @media screen and #{$media-querie-tablet} {
-	.col-sm-1 {	
-		@include span(1 of 12);
-	}
-	.col-sm-2 {	
-		@include span(2 of 12);
-	}
-	.col-sm-3 {	
-		@include span(3 of 12);
-	}
-	.col-sm-4 {	
-		@include span(4 of 12);
-	}
-	.col-sm-5 {	
-		@include span(5 of 12);
-	}
-	.col-sm-6 {	
-		@include span(6 of 12);
-	}
-	.col-sm-7 {	
-		@include span(7 of 12);
-	}
-	.col-sm-8 {
-		@include span(8 of 12);
-	}
-	.col-sm-9 {
-		@include span(9 of 12);
-	}
-	.col-sm-10 {
-		@include span(10 of 12);
-	}
-	.col-sm-11 {
-		@include span(11 of 12);
-	}
-	.col-sm-12 {
-		@include span(12 of 12);
+	@for $i from 1 through 12 {
+		.col-sm-#{$i} {
+			@include span($i of 12);
+		}
 	}
 }
 
 /************************************************** MD = Medium(min-width: 768px) **************************************************/
 @media screen and #{$media-querie-desktop} {
-	.col-md-1 {	
-		@include span(1 of 12);
-	}
-	.col-md-2 {	
-		@include span(2 of 12);
-	}
-	.col-md-3 {	
-		@include span(3 of 12);
-	}
-	.col-md-4 {	
-		@include span(4 of 12);
-	}
-	.col-md-5 {	
-		@include span(5 of 12);
-	}
-	.col-md-6 {	
-		@include span(6 of 12);
-	}
-	.col-md-7 {	
-		@include span(7 of 12);
-	}
-	.col-md-8 {
-		@include span(8 of 12);
-	}
-	.col-md-9 {
-		@include span(9 of 12);
-	}
-	.col-md-10 {
-		@include span(10 of 12);
-	}
-	.col-md-11 {
-		@include span(11 of 12);
-	}
-	.col-md-12 {
-		@include span(12 of 12);
+	@for $i from 1 through 12 {
+		.col-md-#{$i} {
+			@include span($i of 12);
+		}
 	}
 }
 
 /************************************************** LG = Large(min-width: 980px) **************************************************/
 @media screen and #{$media-querie-large-screen} {
-	.col-lg-1 {	
-		@include span(1 of 12);
-	}
-	.col-lg-2 {	
-		@include span(2 of 12);
-	}
-	.col-lg-3 {	
-		@include span(3 of 12);
-	}
-	.col-lg-4 {	
-		@include span(4 of 12);
-	}
-	.col-lg-5 {	
-		@include span(5 of 12);
-	}
-	.col-lg-6 {	
-		@include span(6 of 12);
-	}
-	.col-lg-7 {	
-		@include span(7 of 12);
-	}
-	.col-lg-8 {
-		@include span(8 of 12);
-	}
-	.col-lg-9 {
-		@include span(9 of 12);
-	}
-	.col-lg-10 {
-		@include span(10 of 12);
-	}
-	.col-lg-11 {
-		@include span(11 of 12);
-	}
-	.col-lg-12 {
-		@include span(12 of 12);
+	@for $i from 1 through 12 {
+		.col-lg-#{$i} {
+			@include span($i of 12);
+		}
 	}
 }
 
 /************************************************** NUMERO **************************************************/
-.col-1 {
-	@include span(1 of 12);
-}
-.col-2 {
-	@include span(2 of 12);
-}
-.col-3 {
-	@include span(3 of 12);
-}
-.col-4 {
-	@include span(4 of 12);
-}
-.col-5 {
-	@include span(5 of 12);
-}
-.col-6 {
-	@include span(6 of 12);
-}
-.col-7 {
-	@include span(7 of 12);
-}
-.col-8 {
-	@include span(8 of 12);
-}
-.col-9 {
-	@include span(9 of 12);
-}
-.col-10 {
-	@include span(10 of 12);	
-}
-.col-11 {
-	@include span(11 of 12);
-}
-.col-12 {
-	@include span(12 of 12);
+@for $i from 1 through 12 {
+	.col-#{$i} {
+		@include span($i of 12);
+	}
 }
