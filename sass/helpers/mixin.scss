@@ -6,6 +6,20 @@
 	background: -ms-linear-gradient($background-default);	
 	background: linear-gradient($background-default);	
 }
+@mixin background-default-hover {
+	background: -webkit-linear-gradient(lighten(#FAFAFA, 5%), lighten(#EBEBE0, 5%));
+	background: -moz-linear-gradient(lighten(#FAFAFA, 5%), lighten(#EBEBE0, 5%));
+	background: -o-linear-gradient(lighten(#FAFAFA, 5%), lighten(#EBEBE0, 5%));
+	background: -ms-linear-gradient(lighten(#FAFAFA, 5%), lighten(#EBEBE0, 5%));
+	background: linear-gradient(lighten(#FAFAFA, 5%), lighten(#EBEBE0, 5%));
+}
+@mixin background-th-table-default {	
+	background: -webkit-linear-gradient(top,  #F9F9F9 0%,#F9F9F9 50%,#F1F2F4 51%,#EBECEE 100%);
+	background: -moz-linear-gradient(top,  #F9F9F9 0%, #F9F9F9 50%, #F1F2F4 51%, #EBECEE 100%);			
+	background: -o-linear-gradient(top,  #F9F9F9 0%,#F9F9F9 50%,#F1F2F4 51%,#EBECEE 100%);
+	background: -ms-linear-gradient(top,  #F9F9F9 0%,#F9F9F9 50%,#F1F2F4 51%,#EBECEE 100%);
+	background: linear-gradient(to bottom,  #F9F9F9 0%,#F9F9F9 50%,#F1F2F4 51%,#EBECEE 100%);
+}
 
 /************************************************** BORDER **************************************************/
 @mixin border-radius($value) {
@@ -227,6 +241,11 @@
 		outline: none;
 	}	
 }
+@mixin nav-brand {
+	@include link-no-decoration;
+	color: #FFFFFF;
+	font-size: $font-size-brand;
+}
 @mixin transform($expression) {
 	-webkit-transform: #{$expression};
 	-moz-transform: #{$expression};
@@ -240,88 +259,4 @@
 	-o-transition: #{$expression};
 	-ms-transition: #{$expression};
 	transition: #{$expression};
-}
-
-
-
-
-
-@mixin background-lube {
-	background: $color-lube;
-}
-@mixin background-default-hover {
-	background: -webkit-linear-gradient(lighten(#FAFAFA, 5%), lighten(#EBEBE0, 5%));
-	background: -moz-linear-gradient(lighten(#FAFAFA, 5%), lighten(#EBEBE0, 5%));
-	background: -o-linear-gradient(lighten(#FAFAFA, 5%), lighten(#EBEBE0, 5%));
-	background: -ms-linear-gradient(lighten(#FAFAFA, 5%), lighten(#EBEBE0, 5%));
-	background: linear-gradient(lighten(#FAFAFA, 5%), lighten(#EBEBE0, 5%));
-}
-@mixin background-nav-kal-dropdown {
-	background: -webkit-linear-gradient(#A4A4A4 5%, #333333 60%, #191919);
-	background: -moz-linear-gradient(#A4A4A4 5%, #333333 60%, #191919);
-	background: -o-linear-gradient(#A4A4A4 5%, #333333 60%, #191919);
-	background: -ms-linear-gradient(#A4A4A4 5%, #333333 60%, #191919);
-	background: linear-gradient(#A4A4A4 5%, #333333 60%, #191919);
-}
-@mixin background-nav-default-hover {
-	background: -webkit-linear-gradient(#80B2FF, #1975FF);
-	background: -moz-linear-gradient(#80B2FF, #1975FF);
-	background: -o-linear-gradient(#80B2FF, #1975FF);
-	background: -ms-linear-gradient(#80B2FF, #1975FF);
-	background: linear-gradient(#80B2FF, #1975FF);
-}
-@mixin background-nav-default {
-	background: -webkit-linear-gradient(#FBFBFB, #F6F6F6);	
-	background: -moz-linear-gradient(#FBFBFB, #F6F6F6);	
-	background: -o-linear-gradient(#FBFBFB, #F6F6F6);	
-	background: -ms-linear-gradient(#FBFBFB, #F6F6F6);	
-	background: linear-gradient(#FBFBFB, #F6F6F6);	
-}
-@mixin background-nav-default-rotation {
-	background: -webkit-linear-gradient(to right bottom, #F6F6F6, #F2F2F2, #E6E6E6 80%, #DCDCDC);
-	background: -moz-linear-gradient(to right bottom, #F6F6F6, #F2F2F2, #E6E6E6 80%, #DCDCDC);
-	background: -o-linear-gradient(to right bottom, #F6F6F6, #F2F2F2, #E6E6E6 80%, #DCDCDC);
-	background: -ms-linear-gradient(to right bottom, #F6F6F6, #F2F2F2, #E6E6E6 80%, #DCDCDC);
-	background: linear-gradient(to right bottom, #F6F6F6, #F2F2F2, #E6E6E6 80%, #DCDCDC);
-}
-@mixin background-nav-default-rotation-hover {
-	background: -webkit-linear-gradient(to bottom, #595959, #404040, #333333);
-	background: -moz-linear-gradient(to bottom, #595959, #404040, #333333);
-	background: -o-linear-gradient(to bottom, #595959, #404040, #333333);
-	background: -ms-linear-gradient(to bottom, #595959, #404040, #333333);
-	background: linear-gradient(to bottom, #595959, #404040, #333333);
-}
-@mixin background-range {
-	background: -webkit-linear-gradient(to right bottom, #FFA64D, #FF8C1A, #FF8000, #FF6600);
-	background: -moz-linear-gradient(to right bottom, #FFA64D, #FF8C1A, #FF8000, #FF6600);
-	background: -o-linear-gradient(to right bottom, #FFA64D, #FF8C1A, #FF8000, #FF6600);
-	background: -ms-linear-gradient(to right bottom, #FFA64D, #FF8C1A, #FF8000, #FF6600);
-	background: linear-gradient(to right bottom, #FFA64D, #FF8C1A, #FF8000, #FF6600);
-}
-@mixin background-ray-degrade {
-	background: -webkit-linear-gradient(#FAFAFA, #F9F9F9, #F2F2F2, #E9E9E9);
-	background: -moz-linear-gradient(#FAFAFA, #F9F9F9, #F2F2F2, #E9E9E9);
-	background: -o-linear-gradient(#FAFAFA, #F9F9F9, #F2F2F2, #E9E9E9);
-	background: -ms-linear-gradient(#FAFAFA, #F9F9F9, #F2F2F2, #E9E9E9);
-	background: linear-gradient(#FAFAFA, #F9F9F9, #F2F2F2, #E9E9E9);
-}
-@mixin background-th-table-default {
-	background: #F9F9F9;
-	background: -webkit-linear-gradient(top,  #F9F9F9 0%,#F9F9F9 50%,#F1F2F4 51%,#EBECEE 100%);
-	background: -moz-linear-gradient(top,  #F9F9F9 0%, #F9F9F9 50%, #F1F2F4 51%, #EBECEE 100%);			
-	background: -o-linear-gradient(top,  #F9F9F9 0%,#F9F9F9 50%,#F1F2F4 51%,#EBECEE 100%);
-	background: -ms-linear-gradient(top,  #F9F9F9 0%,#F9F9F9 50%,#F1F2F4 51%,#EBECEE 100%);
-	background: linear-gradient(to bottom,  #F9F9F9 0%,#F9F9F9 50%,#F1F2F4 51%,#EBECEE 100%);
-}
-@mixin background-warning {
-	background: -webkit-linear-gradient(#FFF3D4, #FFEFC2);
-	background: -moz-linear-gradient(#FFF3D4, #FFEFC2);
-	background: -o-linear-gradient(#FFF3D4, #FFEFC2);
-	background: -ms-linear-gradient(#FFF3D4, #FFEFC2);
-	background: linear-gradient(#FFF3D4, #FFEFC2);
-}
-@mixin nav-brand {
-	@include link-no-decoration;
-	color: #FFFFFF;
-	font-size: $font-size-brand;
 }

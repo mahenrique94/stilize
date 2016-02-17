@@ -49,7 +49,7 @@ ul.tab-lube {
   }
 }
 ul.tab-responsive {
-  @include background-nav-default;
+  @include background-default;
   display: inline-flex;
   width: 100%;
   li {

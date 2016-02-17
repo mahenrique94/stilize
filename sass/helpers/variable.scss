@@ -134,18 +134,23 @@ $media-querie-large-screen: "(min-width: 1200px)";
 
 /************************************************** NAVS **************************************************/
 // NAV
+$nav-align-link: middle;
 $nav-box-sizing: border-box;
 $nav-display: inline-block;
 $nav-display-link: table-cell;
-$nav-align-link: middle;
 $nav-float: left;
+$nav-height: 3.5rem;
 $nav-margin-brand: 1rem;
 $nav-margin-li: 1rem;
-$nav-height: 3.5rem;
+$nav-min-width: 150px;
 $nav-padding: 1rem;
 $nav-padding-li: 0 .5rem;
 $nav-text-decoration: none;
 $nav-shadow: 1px 1px 10px rgba(0, 0, 0, .8);
+$nav-sub-height: 2rem;
+$nav-sub-padding-li: .5rem;
+
+// NAV-KAL
 
 /************************************************** PAGINATION **************************************************/
 $background-pagination-active: rgba(0, 0, 0, .05);
@@ -179,12 +184,3 @@ $tab-shadow: 0 2px 2px rgba(0, 0, 0, .4);
 // TAB-RESPONSIVE
 $color-tab-responsive: #FFFFFF;
 $padding-tab-responsive: .5rem;
-
-
-$background-color: #FFFFFF;
-$color-hover: #6E6E6E;
-$color-label-button: #005C99;
-$color-link-nav-left-category-slide: #595959;
-$font-color: #595959;
-$subtext-color: #B0B0B0;
-$text-nav-tie: #B3B3B3;
