@@ -2,6 +2,7 @@ nav.nav {
 	@extend %box-sizing;
 	box-shadow: $nav-shadow;
 	float: $nav-float;
+	padding: $nav-padding;
 	width: 100%;
 	a.nav-brand {
 		@include nav-brand;
@@ -46,7 +47,7 @@ nav.nav-default {
 	@extend .nav;	
 	@include background-default;
 	a.nav-brand {
-		color: $color !important;
+		color: $color;
 	}
 	ul {
 		li {
@@ -192,6 +193,43 @@ nav.nav-tie {
 		}
 	}
 }
+ul.nav-mapa-site {
+	float: left;	
+	@media screen and #{$media-querie-mobile} {
+		width: 100%;	
+	}
+	@media screen and #{$media-querie-tablet} {
+		width: initial;
+	}
+	@media screen and #{$media-querie-desktop} {
+		width: initial;
+	}
+	@media screen and #{$media-querie-large-screen} {
+		width: initial;
+	}
+	li {
+		line-height: 1.5;
+		&:first-child {		
+			color: #000000;	
+			font-size: 1.2rem;
+			font-weight: bold;
+		}
+		button {
+			background: transparent;
+			border: none;
+			color: #000000;
+			font-size: 0.8rem;
+			padding: 0;
+			&:hover {
+				cursor: pointer;
+				outline: none;
+			}
+			&:focus {
+				outline: none;
+			}
+		}
+	}
+}
 ul.nav-network-social {
 	@include align-items("center");
 	@include display-flex;
@@ -254,43 +292,6 @@ nav.nav-responsive {
 			}
 			&.active {
 				background: #FFFFFF;
-			}
-		}
-	}
-}
-ul.nav-mapa-site {
-	float: left;	
-	@media screen and #{$media-querie-mobile} {
-		width: 100%;	
-	}
-	@media screen and #{$media-querie-tablet} {
-		width: initial;
-	}
-	@media screen and #{$media-querie-desktop} {
-		width: initial;
-	}
-	@media screen and #{$media-querie-large-screen} {
-		width: initial;
-	}
-	li {
-		line-height: 1.5;
-		&:first-child {		
-			color: #000000;	
-			font-size: 1.2rem;
-			font-weight: bold;
-		}
-		button {
-			background: transparent;
-			border: none;
-			color: #B3B3B3;
-			font-size: 0.8rem;
-			padding: 0;
-			&:hover {
-				cursor: pointer;
-				outline: none;
-			}
-			&:focus {
-				outline: none;
 			}
 		}
 	}

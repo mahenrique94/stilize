@@ -1,7 +1,5 @@
-form {
+form.form-block {
 	display: inline-block;
-	float: left;
-	width: 100%;
 	div[class^=col] label {
 		float: inherit;
 		width: 100%;
@@ -21,37 +19,6 @@ form {
 	input[type=checkbox], input[type=radio] {
 		width: initial;
 	}	
-}
-form.form-newsletter {
-	float: right;
-	@media screen and #{$media-querie-mobile} {
-		width: 100%;
-	}
-	@media screen and #{$media-querie-tablet} {
-		width: 100%;
-	}
-	@media screen and #{$media-querie-desktop} {
-		width: initial;
-	}
-	@media screen and #{$media-querie-large-screen} {
-		width: initial;
-	}
-	label {
-		color: $color;
-		font-size: 1.2rem;
-	}
-	input.form-data {
-		border: $border;
-		box-sizing: border-box;
-		display: block;
-		color: $color;
-		font-size: $font-size;
-		padding: $padding-form-data;
-		width: 100%;		
-		&:focus {
-			outline: none;
-		}
-	}
 }
 a[disabled], button[disabled], input[readonly], input[disabled], select[disabled], textarea[readonly], textarea[disabled] {
 	background: $background-inactive;
