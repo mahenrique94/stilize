@@ -1,6 +1,7 @@
 .button {
 	@include border-radius($button-border-radius);
 	@include link-no-decoration;
+	display: inline-block;
 	margin: 0;
 	text: {
 		align: center;
@@ -12,11 +13,8 @@
 	background: transparent;
 }
 .button-modern {
-	box-sizing: border-box;
-	text-align: center;
-	&:hover {
-		cursor: pointer;
-	}
+	@extend .button;
+	border-radius: 0;
 }
 .btn-hidden {
 	opacity: 0;
@@ -27,50 +25,57 @@
 
 /************************************************** COLORFULL **************************************************/
 .btn-blue {
-	@include button-color-hover($color-blue, $color-text-blue);
 	@extend .button;
+	@include button-color-hover($color-blue, $color-text-blue);	
 	background: $color-blue;
 	border: $border-blue;
 	color: $color-text-blue;
 }
 .btn-der {
-	@include button-color-hover($color-der, $color-text-der);
 	@extend .button;
+	@include button-color-hover($color-der, $color-text-der);	
 	background: $color-der;
 	border: $border-der;
 	color: $color-text-der;
 }
 .btn-gary {
-	@include button-color-hover($color-gary, $color-text-gary);
 	@extend .button;
+	@include button-color-hover($color-gary, $color-text-gary);	
 	background: $color-gary;
 	border: $border-gary;
 	color: $color-text-gary;
 }
 .btn-lube {
-	@include button-color-hover($color-lube, $color-text-lube);
 	@extend .button;
+	@include button-color-hover($color-lube, $color-text-lube);	
 	background: $color-lube;
 	border: $border-lube;
 	color: $color-text-lube;
 }
 .btn-low {
-	@include button-color-hover($color-low, $color-text-low);
 	@extend .button;
+	@include button-color-hover($color-low, $color-text-low);	
 	background: $color-low;
 	border: $border-low;
 	color: $color-text-low;
 }
-.btn-kal {
-	@include button-color-hover($color-kal, $color-text-kal);
+.btn-lower {
 	@extend .button;
+	@include button-color-hover($color-lower, $color-text-lower);	
+	background: $color-lower;
+	border: $border-lower;
+	color: $color-text-lower;
+}
+.btn-kal {
+	@extend .button;
+	@include button-color-hover($color-kal, $color-text-kal);	
 	background: $color-kal;
 	border: $border-kal;
 	color: $color-text-kal;
 }
 .btn-range {
-	@include button-color-hover($color-range, $color-text-range);
 	@extend .button;
+	@include button-color-hover($color-range, $color-text-range);	
 	background: $color-range;
 	border: $border-range;
 	color: $color-text-range;
@@ -78,55 +83,124 @@
 
 /************************************************** BORDER-COLOR **************************************************/
 .btn-border-blue {
-	@include button-color-hover($color-text-blue, $color-blue);
 	@extend .button-transparent;	
+	@include button-color-hover($color-text-blue, $color-blue);	
 	border: $border-blue;
 	color: $color-blue;
 }
 .btn-border-der {
-	@include button-color-hover($color-text-der, $color-der);
 	@extend .button-transparent;	
+	@include button-color-hover($color-text-der, $color-der);	
 	border: $border-der;
 	color: $color-der;
 }
 .btn-border-gary {
-	@include button-color-hover($color-text-gary, $color-gary);
 	@extend .button-transparent;	
+	@include button-color-hover($color-text-gary, $color-gary);	
 	border: $border-gary;
 	color: $color-gary;
 }
 .btn-border-lube {
-	@include button-color-hover($color-text-lube, $color-lube);
 	@extend .button-transparent;	
+	@include button-color-hover($color-text-lube, $color-lube);	
 	border: $border-lube;
 	color: $color-lube;
 }
 .btn-border-low {
-	@include button-color-hover($color-text-low, $color-low);
 	@extend .button-transparent;	
+	@include button-color-hover($color-text-low, $color-low);	
 	border: $border-low;
 	color: $color-low;
 }
+.btn-border-lower {
+	@extend .button-transparent;
+	@include button-color-hover($color-text-lower,$color-lower);	
+	border: $border-lower;
+	color: $color-text-lower;
+}
 .btn-border-kal {
-	@include button-color-hover($color-text-kal, $color-kal);
 	@extend .button-transparent;	
+	@include button-color-hover($color-text-kal, $color-kal);	
 	border: $border-kal;
 	color: $color-kal;
 }
 .btn-border-range {
-	@include button-color-hover($color-text-range, $color-range);
 	@extend .button-transparent;	
+	@include button-color-hover($color-text-range, $color-range);	
 	border: $border-range;
 	color: $color-range;
 }
 
 /************************************************** MODERN **************************************************/
-.btn-booper {
+.btn-blue-modern {
+	@extend .button-modern;
+	@include button-color-hover($color-blue, $color-text-blue);	
+	background: $color-blue;
+	border: $border-blue;
+	color: $color-text-blue;
+}
+.btn-booper-modern {
 	@extend .button-modern;
 	@include button-color-hover($color-booper, $color-text-booper);
 	background: $color-booper;
 	border: $border-booper;	
 	color: $color-text-booper;
+}
+.btn-der-modern {
+	@extend .button-modern;
+	@include button-color-hover($color-der, $color-text-der);	
+	background: $color-der;
+	border: $border-der;
+	color: $color-text-der;
+}
+.btn-gary-modern {
+	@extend .button-modern;
+	@include button-color-hover($color-gary, $color-text-gary);	
+	background: $color-gary;
+	border: $border-gary;
+	color: $color-text-gary;
+}
+.btn-lube-modern {
+	@extend .button-modern;
+	@include button-color-hover($color-lube, $color-text-lube);	
+	background: $color-lube;
+	border: $border-lube;
+	color: $color-text-lube;
+}
+.btn-low-modern {
+	@extend .button-modern;
+	@include button-color-hover($color-low, $color-text-low);	
+	background: $color-low;
+	border: $border-low;
+	color: $color-text-low;
+}
+.btn-lower-modern {
+	@extend .button-modern;
+	@include button-color-hover($color-lower, $color-text-lower);	
+	background: $color-lower;
+	border: $border-lower;
+	color: $color-text-lower;
+}
+.btn-kal-modern {
+	@extend .button-modern;
+	@include button-color-hover($color-kal, $color-text-kal);	
+	background: $color-kal;
+	border: $border-kal;
+	color: $color-text-kal;
+}
+.btn-range-modern {
+	@extend .button-modern;
+	@include button-color-hover($color-range, $color-text-range);	
+	background: $color-range;
+	border: $border-range;
+	color: $color-text-range;
+}
+.btn-rangeless-modern {
+	@extend .button-modern;
+	@include button-color-hover($color-rangeless, $color-text-rangeless);	
+	background: $color-rangeless;
+	border: $border-rangeless;
+	color: $color-text-rangeless;
 }
 
 /************************************************** SIZES **************************************************/
@@ -143,19 +217,34 @@ a.btn-full {
 	font-size: $button-font-size-xs;
 	padding: $button-padding-xs;
 }
+a.btn-xs {
+	@extend .btn-xs;
+	padding: $a-padding-xs;
+}
 .btn-sm {
 	font-size: $button-font-size-sm;
 	padding: $button-padding-sm;
+}
+a.btn-sm {
+	@extend .btn-sm;
+	padding: $a-padding-sm;
 }
 .btn-md {
 	font-size: $button-font-size-md;
 	padding: $button-padding-md;
 }
+a.btn-md {
+	@extend .btn-md;
+	padding: $a-padding-md;
+}
 .btn-lg {
 	font-size: $button-font-size-lg;
 	padding: $button-padding-lg;
 }
-
+a.btn-lg {
+	@extend .btn-lg;
+	padding: $a-padding-lg;
+}
 
 
 

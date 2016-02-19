@@ -1,37 +1,56 @@
-form.form-block {
-	display: inline-block;
+.form {
+	box-sizing: border-box;
+	display: inline-block;	
+	width: 100%;
 	div[class^=col] label {
 		float: inherit;
 		width: 100%;
 	}	
+	.form-body {
+		box-sizing: inherit;
+		display: inherit;
+		padding: $form-padding;
+		width: inherit;
+	}
 	.form-data {
 		border: $border;
 		box-sizing: border-box;
 		color: $color;
 		float: inherit;
-		font-size: $font-size;
-		padding: $padding-form-data;
-		width: 100%;		
+		width: 100%;
 		&:focus {
+			border: 1px solid #000000;
 			outline: none;
 		}
+	}
+}
+
+form.form-block {
+	@extend .form;		
+	.form-data {
+		font-size: $font-size;
+		padding: $form-data-padding;
 	}
 	input[type=checkbox], input[type=radio] {
 		width: initial;
 	}	
 }
 form.form-modern {
-	display: inline-block;
+	@extend .form;
 	input {
-			border: $border;
-			box-sizing: border-box;
-			color: #000000;
-			padding: $padding-form-data-modern;
-			width: 100%;			
-			&:focus {
-				outline: none;
-			}
-		}
+		padding: $form-data-modern-padding;					
+	}
+}
+form.form-search {
+	@extend .form;
+	width: 50%;
+	.form-data {		
+		float: left;
+		padding: $form-data-modern-padding;
+	}
+	select {
+		height: 35px;
+	}
 }
 a[disabled], button[disabled], input[readonly], input[disabled], select[disabled], textarea[readonly], textarea[disabled] {
 	background: $background-inactive;

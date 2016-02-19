@@ -100,3 +100,10 @@
 		padding: $padding-band;
 	}
 }
+
+/************************************************** BAND-NAV **************************************************/
+.band-nav-default {
+	@extend .band;
+	@include background-default;
+	padding: 1rem;
+}
