@@ -20,6 +20,19 @@ form.form-block {
 		width: initial;
 	}	
 }
+form.form-modern {
+	display: inline-block;
+	input {
+			border: $border;
+			box-sizing: border-box;
+			color: #000000;
+			padding: $padding-form-data-modern;
+			width: 100%;			
+			&:focus {
+				outline: none;
+			}
+		}
+}
 a[disabled], button[disabled], input[readonly], input[disabled], select[disabled], textarea[readonly], textarea[disabled] {
 	background: $background-inactive;
 	color: $color-inactive !important;

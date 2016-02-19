@@ -1,7 +1,6 @@
 .button {
 	@include border-radius($button-border-radius);
 	@include link-no-decoration;
-	color: $button-color;
 	margin: 0;
 	text: {
 		align: center;
@@ -11,6 +10,13 @@
 .button-transparent {
 	@extend .button;	
 	background: transparent;
+}
+.button-modern {
+	box-sizing: border-box;
+	text-align: center;
+	&:hover {
+		cursor: pointer;
+	}
 }
 .btn-hidden {
 	opacity: 0;
@@ -112,6 +118,15 @@
 	@extend .button-transparent;	
 	border: $border-range;
 	color: $color-range;
+}
+
+/************************************************** MODERN **************************************************/
+.btn-booper {
+	@extend .button-modern;
+	@include button-color-hover($color-booper, $color-text-booper);
+	background: $color-booper;
+	border: $border-booper;	
+	color: $color-text-booper;
 }
 
 /************************************************** SIZES **************************************************/

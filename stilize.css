@@ -699,7 +699,6 @@ div.box-group {
   -o-border-radius: 0.3125rem;
   -ms-border-radius: 0.3125rem;
   border-radius: 0.3125rem;
-  color: #000000;
   margin: 0;
   text-align: center;
   text-decoration: none; }
@@ -712,6 +711,12 @@ div.box-group {
 
 .button-transparent, .btn-border-blue, .btn-border-der, .btn-border-gary, .btn-border-lube, .btn-border-low, .btn-border-kal, .btn-border-range {
   background: transparent; }
+
+.button-modern, .btn-booper {
+  box-sizing: border-box;
+  text-align: center; }
+  .button-modern:hover, .btn-booper:hover {
+    cursor: pointer; }
 
 .btn-hidden {
   opacity: 0; }
@@ -825,6 +830,15 @@ div.box-group {
   .btn-border-range:hover {
     background: #FF6600;
     color: #FFFFFF; }
+
+/************************************************** MODERN **************************************************/
+.btn-booper {
+  background: #6FD4DB;
+  border: 1px solid #46c8d1;
+  color: #FFFFFF; }
+  .btn-booper:hover {
+    background: #FFFFFF;
+    color: #6FD4DB; }
 
 /************************************************** SIZES **************************************************/
 .btn-full {
@@ -1080,6 +1094,17 @@ form.form-block {
       outline: none; }
   form.form-block input[type=checkbox], form.form-block input[type=radio] {
     width: initial; }
+
+form.form-modern {
+  display: inline-block; }
+  form.form-modern input {
+    border: 1px solid #DCDCDC;
+    box-sizing: border-box;
+    color: #000000;
+    padding: 1rem;
+    width: 100%; }
+    form.form-modern input:focus {
+      outline: none; }
 
 a[disabled], button[disabled], input[readonly], input[disabled], select[disabled], textarea[readonly], textarea[disabled] {
   background: #F6F6F6;

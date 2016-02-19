@@ -19,6 +19,11 @@ $color-blue: #0000FF;
 $color-text-blue: #FFFFFF;
 $border-blue: 1px solid darken($color-blue, 10%);
 
+// BOOPER
+$color-booper: #6FD4DB;
+$color-text-booper: #FFFFFF;
+$border-booper: 1px solid darken($color-booper, 10%);
+
 // DER
 $color-der: #F57373;
 $color-text-der: #FFFFFF;
@@ -115,6 +120,7 @@ $footer-padding: 1rem;
 
 /************************************************** FORMS **************************************************/
 $padding-form-data: .125rem;
+$padding-form-data-modern: 1rem;
 
 // VALID
 $background-valid: rgba(0, 255, 0, .2);
