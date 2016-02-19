@@ -397,22 +397,31 @@ nav.nav-responsive {
   width: 100%; }
 
 .alert-dialog {
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -o-align-items: center;
+  -ms-align-items: center;
   align-items: center;
-  background: rgba(0, 0, 0, 0.5);
-  display: flex;
-  height: 100%;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -o-justify-content: center;
+  -ms-justify-content: center;
   justify-content: center;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -o-flex;
+  display: -ms-flex;
+  display: flex;
+  background: rgba(0, 0, 0, 0.5);
+  height: 100%;
   position: fixed;
-  z-index: 1000;
-  width: 100%; }
-  .alert-dialog h2 {
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -o-border-radius: 5px;
-    -ms-border-radius: 5px;
-    border-radius: 5px;
-    background: #F2F2F2;
-    padding: 1rem; }
+  width: 100%;
+  z-index: 1000; }
+  .alert-dialog h1, .alert-dialog h2, .alert-dialog h3, .alert-dialog h4, .alert-dialog h5, .alert-dialog h6 {
+    background: #FFFFFF;
+    height: 20%;
+    padding: 1rem;
+    width: 30%; }
 
 /************************************************** COLORS **************************************************/
 .alert-der {
