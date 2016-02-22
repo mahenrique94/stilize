@@ -28,11 +28,11 @@ jQuery(document).ready(function () {
 	/** @auth Matheus
 	 * UPPERCASE PARA INPUTS, SELECTS E TEXTAREAS, TANTO VISUAL COMO INTERNAMENTE
 	 */
-	jQuery('input:not(.no-upper), textarea:not(.no-upper), select:not(.no-upper)').css('text-transform', 'uppercase');
-	jQuery('input:not(.no-upper), textarea:not(.no-upper), select:not(.no-upper)').keyup(function(event) {
-		this.value = this.value.toUpperCase();
-		return event.preventDefault();
-	});
+//	jQuery('input:not(.no-upper), textarea:not(.no-upper), select:not(.no-upper)').css('text-transform', 'uppercase');
+//	jQuery('input:not(.no-upper), textarea:not(.no-upper), select:not(.no-upper)').keyup(function(event) {
+//		this.value = this.value.toUpperCase();
+//		return event.preventDefault();
+//	});
 	
 	/** @auth Matheus
 	 * ESCONDER ELEMENTOS DEPOIS DE 2 SEGUNDOS
@@ -49,8 +49,7 @@ jQuery(document).ready(function () {
 	jQuery('li.active a').each(function() {
 		var idActive = $(this).attr('href').replace('#', '');
 		jQuery('div#' + idActive).fadeIn();
-	})
-	
+	});
 	jQuery('ul[class^=tab] a').click(function(e) {
         e.preventDefault();
         if($(this).closest('li').attr('class') == 'active') {
@@ -86,7 +85,7 @@ jQuery(document).ready(function () {
 	})
 	
 	/** @auth Matheus
-	 *  EXECUTANDOS FUNCAO PARA STICKY FOOTER
+	 *  EXECUTANDO FUNCAO PARA STICKY FOOTER
 	 */
 	stickyFooter();
 	

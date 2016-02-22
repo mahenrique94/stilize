@@ -442,8 +442,8 @@ nav.nav-responsive {
   -o-border-radius: 0.3125rem;
   -ms-border-radius: 0.3125rem;
   border-radius: 0.3125rem;
-  background: #E6E6E6;
-  border: 1px solid #cdcdcd;
+  background: #CBCBCB;
+  border: 1px solid #b2b2b2;
   color: #FFFFFF; }
 
 .alert-low {
@@ -491,6 +491,8 @@ nav.nav-responsive {
   float: left;
   width: 100%;
   padding: 0.3rem; }
+  .band label, .band-der label, .band-gary label, .band-low label, .band-lube label, .band-kal label, .band-range label, .band-nav-default label {
+    line-height: 2; }
 
 .band-der {
   background: #F57373;
@@ -507,15 +509,15 @@ nav.nav-responsive {
     padding: 0.3rem; }
 
 .band-gary {
-  background: #E6E6E6;
+  background: #CBCBCB;
   color: #FFFFFF; }
 
 .band-gary-modern {
-  border-top: 1px solid #E6E6E6;
+  border-top: 1px solid #CBCBCB;
   float: left;
   width: 100%; }
   .band-gary-modern label {
-    background: #E6E6E6;
+    background: #CBCBCB;
     color: #FFFFFF;
     float: left;
     padding: 0.3rem; }
@@ -664,7 +666,7 @@ fieldset.block, fieldset.block-gary, fieldset.block-lube, fieldset.block-kal, fi
 
 /************************************************** STYLES **************************************************/
 fieldset.block-gary legend.block-header {
-  background: #E6E6E6; }
+  background: #CBCBCB; }
   fieldset.block-gary legend.block-header .block-title {
     color: #FFFFFF; }
 
@@ -751,12 +753,12 @@ div.box-group {
     color: #F57373; }
 
 .btn-gary {
-  background: #E6E6E6;
-  border: 1px solid #cdcdcd;
+  background: #CBCBCB;
+  border: 1px solid #b2b2b2;
   color: #FFFFFF; }
   .btn-gary:hover {
     background: #FFFFFF;
-    color: #E6E6E6; }
+    color: #CBCBCB; }
 
 .btn-lube {
   background: #0099FF;
@@ -814,10 +816,10 @@ div.box-group {
     color: #FFFFFF; }
 
 .btn-border-gary {
-  border: 1px solid #cdcdcd;
-  color: #E6E6E6; }
+  border: 1px solid #b2b2b2;
+  color: #CBCBCB; }
   .btn-border-gary:hover {
-    background: #E6E6E6;
+    background: #CBCBCB;
     color: #FFFFFF; }
 
 .btn-border-lube {
@@ -881,12 +883,12 @@ div.box-group {
     color: #F57373; }
 
 .btn-gary-modern {
-  background: #E6E6E6;
-  border: 1px solid #cdcdcd;
+  background: #CBCBCB;
+  border: 1px solid #b2b2b2;
   color: #FFFFFF; }
   .btn-gary-modern:hover {
     background: #FFFFFF;
-    color: #E6E6E6; }
+    color: #CBCBCB; }
 
 .btn-lube-modern {
   background: #0099FF;
@@ -1178,7 +1180,7 @@ footer.footer-kal {
   color: #FFFFFF; }
 
 footer.footer-gary {
-  background: #E6E6E6;
+  background: #CBCBCB;
   color: #FFFFFF; }
 
 footer.footer-tie {
@@ -1190,8 +1192,7 @@ footer.footer-tie {
   display: inline-block;
   width: 100%; }
   .form div[class^=col] label, form.form-block div[class^=col] label, form.form-modern div[class^=col] label, form.form-search div[class^=col] label {
-    float: inherit;
-    width: 100%; }
+    float: inherit; }
   .form .form-body, form.form-block .form-body, form.form-modern .form-body, form.form-search .form-body {
     box-sizing: inherit;
     display: inherit;
@@ -1215,9 +1216,13 @@ form.form-block input[type=checkbox], form.form-block input[type=radio] {
 
 form.form-modern input {
   padding: 0.6rem; }
+form.form-modern select {
+  height: 35px; }
 
 form.form-search {
   width: 50%; }
+  form.form-search div[class^=col-] {
+    margin-bottom: 0; }
   form.form-search .form-data {
     float: left;
     padding: 0.6rem; }
@@ -4323,12 +4328,13 @@ section.panel-login {
   section.panel-login form :-ms-input-placeholder {
     color: #595959; }
 
-div.tab-group {
+.tab-group {
   background: #FFFFFF;
   border: 1px solid #DCDCDC;
   box-sizing: border-box;
   float: left;
   height: auto;
+  padding: 1rem;
   position: relative;
   width: 100%; }
 
@@ -4600,7 +4606,7 @@ table.table-kal {
   background: #F57373 !important; }
 
 .bg-gary {
-  background: #E6E6E6 !important; }
+  background: #CBCBCB !important; }
 
 .bg-kal {
   background: #303030 !important; }
@@ -4622,6 +4628,9 @@ table.table-kal {
 
 .no-border {
   border: none !important; }
+
+.no-border-bottom {
+  border-bottom: none !important; }
 
 /************************************************** BOTTOM **************************************************/
 .border-bottom-black-3px {
