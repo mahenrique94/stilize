@@ -486,7 +486,7 @@ nav.nav-responsive {
   border: 1px solid #cc5200;
   color: #FFFFFF; }
 
-.band, .band-der, .band-gary, .band-low, .band-lube, .band-kal, .band-range, .band-nav-default {
+.band, .band-der, .band-gary, .band-low, .band-lube, .band-kal, .band-range, .band-rangeless, .band-nav-default {
   box-sizing: border-box;
   float: left;
   width: 100%;
@@ -496,11 +496,11 @@ nav.nav-responsive {
   background: #F57373;
   color: #FFFFFF; }
 
-.band-der-modern {
+.band-modern-der {
   border-top: 1px solid #F57373;
   float: left;
   width: 100%; }
-  .band-der-modern label {
+  .band-modern-der label {
     background: #F57373;
     color: #FFFFFF;
     float: left;
@@ -510,11 +510,11 @@ nav.nav-responsive {
   background: #E6E6E6;
   color: #FFFFFF; }
 
-.band-gary-modern {
+.band-modern-gary {
   border-top: 1px solid #E6E6E6;
   float: left;
   width: 100%; }
-  .band-gary-modern label {
+  .band-modern-gary label {
     background: #E6E6E6;
     color: #FFFFFF;
     float: left;
@@ -524,11 +524,11 @@ nav.nav-responsive {
   background: #FFEA00;
   color: #FFFFFF; }
 
-.band-low-modern {
+.band-modern-low {
   border-top: 1px solid #FFEA00;
   float: left;
   width: 100%; }
-  .band-low-modern label {
+  .band-modern-low label {
     background: #FFEA00;
     color: #FFFFFF;
     float: left;
@@ -538,11 +538,11 @@ nav.nav-responsive {
   background: #0099FF;
   color: #FFFFFF; }
 
-.band-lube-modern {
+.band-modern-lube {
   border-top: 1px solid #0099FF;
   float: left;
   width: 100%; }
-  .band-lube-modern label {
+  .band-modern-lube label {
     background: #0099FF;
     color: #FFFFFF;
     float: left;
@@ -552,11 +552,11 @@ nav.nav-responsive {
   background: #303030;
   color: #FFFFFF; }
 
-.band-kal-modern {
+.band-modern-kal {
   border-top: 1px solid #303030;
   float: left;
   width: 100%; }
-  .band-kal-modern label {
+  .band-modern-kal label {
     background: #303030;
     color: #FFFFFF;
     float: left;
@@ -566,12 +566,26 @@ nav.nav-responsive {
   background: #FF6600;
   color: #FFFFFF; }
 
-.band-range-modern {
+.band-modern-range {
   border-top: 1px solid #FF6600;
   float: left;
   width: 100%; }
-  .band-range-modern label {
+  .band-modern-range label {
     background: #FF6600;
+    color: #FFFFFF;
+    float: left;
+    padding: 0.3rem; }
+
+.band-rangeless {
+  background: #FBB12F;
+  color: #FFFFFF; }
+
+.band-modern-rangeless {
+  border-top: 1px solid #FBB12F;
+  float: left;
+  width: 100%; }
+  .band-modern-rangeless label {
+    background: #FBB12F;
     color: #FFFFFF;
     float: left;
     padding: 0.3rem; }
