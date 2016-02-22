@@ -1,9 +1,10 @@
-div.tab-group {
+.tab-group {
   background: #FFFFFF;
   border: $border;
   box-sizing: border-box;
   float: left;
   height: auto;
+  padding: 1rem;
   position: relative;
   width: 100%;
 }

@@ -4,7 +4,6 @@
 	width: 100%;
 	div[class^=col] label {
 		float: inherit;
-		width: 100%;
 	}	
 	.form-body {
 		box-sizing: inherit;
@@ -40,10 +39,16 @@ form.form-modern {
 	input {
 		padding: $form-data-modern-padding;					
 	}
+	select {
+		height: 35px;
+	}
 }
 form.form-search {
 	@extend .form;
 	width: 50%;
+	div[class^=col-] {
+		margin-bottom: 0;
+	}
 	.form-data {		
 		float: left;
 		padding: $form-data-modern-padding;

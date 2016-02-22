@@ -3,6 +3,9 @@
 	float: left;
 	width: 100%;
 	padding: $padding-band;
+	label {
+		line-height: 2;
+	}
 }
 .band-der {
 	@extend .band;
