@@ -38,6 +38,31 @@
     }
   }
 }
+.tab-responsive {
+  display: inline-flex;
+  width: 100%;
+  li {
+    @include display-inline-flex;
+    @include justify-content("center");
+    list-style: none;
+    text-align: center;
+    width: 100%; 
+    a, button {
+      height: 35px;
+      justify-content: center;
+      line-height: 35px;
+      padding: $padding-tab-responsive;
+      text-decoration: none;      
+      width: 100%;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &.active {
+    border-bottom: none;
+  }
+}
 ul.tab-lube {
   @extend .tab;
   a {
@@ -49,37 +74,42 @@ ul.tab-lube {
     z-index: 3;
   }
 }
-ul.tab-responsive {
-  @include background-default;
-  display: inline-flex;
-  width: 100%;
-  li {
-    @include display-inline-flex;
-    @include justify-content("center");
-    border-right: $border;
-    list-style: none;
-    text-align: center;
-    width: 100%;  
+ul.tab-responsive-default {
+  @extend .tab-responsive;
+  @include background-default;  
+  li {    
+    border-right: $border;    
     a, button {
-      color: $color;
-      height: 35px;
-      justify-content: center;
-      line-height: 35px;
-      padding: $padding-tab-responsive;
-      text-decoration: none;      
-      width: 100%;  
+      color: $color;      
     }
-    &:hover {
-      background: $color-tab-responsive;
-      cursor: pointer;
-    }
-    &.active {
-      background: $color-tab-responsive;
+    &.active, &:hover {
+      background: $color-tab-responsive;      
     }
   }
   &.active {
-    background: $color-tab-responsive;
-    border-bottom: none;
+    background: $color-tab-responsive;    
+  }  
+}
+ul.tab-responsive-rangeless {
+  @extend .tab-responsive;
+  background: $color-rangeless;
+  li {    
+    border-right: $border-rangeless;    
+    a, button {
+      color: $color-text-rangeless;      
+      &:hover {
+        color: $color-rangeless;  
+      }
+    }
+    &.active, &:hover {
+      background: $color-text-rangeless;      
+    }
+    &.active a, &.active button {
+      color: $color-rangeless;  
+    }
+  }
+  &.active {
+    background: $color-text-rangeless;
   }  
 }
 @for $i from 1 through 10 {

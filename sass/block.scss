@@ -23,6 +23,15 @@ fieldset.block {
 }
 
 /************************************************** STYLES **************************************************/
+fieldset.block-default {
+	@extend .block;
+	legend.block-header {		
+		@include background-default;
+		.block-title {
+			color: $color;
+		}
+	}
+}
 fieldset.block-gary {
 	@extend .block;
 	legend.block-header {		
