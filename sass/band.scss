@@ -12,7 +12,7 @@
 	background: $color-der;
 	color: $color-text-der;
 }
-.band-der-modern {
+.band-modern-der {
 	border-top: 1px solid $color-der;
 	float: left;
 	width: 100%;
@@ -28,7 +28,7 @@
 	background: $color-gary;
 	color: $color-text-gary;
 }
-.band-gary-modern {
+.band-modern-gary {
 	border-top: 1px solid $color-gary;
 	float: left;
 	width: 100%;
@@ -44,7 +44,7 @@
 	background: $color-low;
 	color: $color-text-low;
 }
-.band-low-modern {
+.band-modern-low {
 	border-top: 1px solid $color-low;
 	float: left;
 	width: 100%;
@@ -60,7 +60,7 @@
 	background: $color-lube;
 	color: $color-text-lube;
 }
-.band-lube-modern {
+.band-modern-lube {
 	border-top: 1px solid $color-lube;
 	float: left;
 	width: 100%;
@@ -76,7 +76,7 @@
 	background: $color-kal;
 	color: $color-text-kal;
 }
-.band-kal-modern {
+.band-modern-kal {
 	border-top: 1px solid $color-kal;
 	float: left;
 	width: 100%;
@@ -92,13 +92,29 @@
 	background: $color-range;
 	color: $color-text-range;
 }
-.band-range-modern {
+.band-modern-range {
 	border-top: 1px solid $color-range;
 	float: left;
 	width: 100%;
 	label {
 		background: $color-range;		
 		color: $color-text-range;
+		float: left;
+		padding: $padding-band;
+	}
+}
+.band-rangeless {
+	@extend .band;
+	background: $color-rangeless;
+	color: $color-text-rangeless;
+}
+.band-modern-rangeless {
+	border-top: 1px solid $color-rangeless;
+	float: left;
+	width: 100%;
+	label {
+		background: $color-rangeless;		
+		color: $color-text-rangeless;
 		float: left;
 		padding: $padding-band;
 	}
