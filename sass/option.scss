@@ -33,7 +33,7 @@
 	float: none !important;
 }
 .no-margin {
-	margin: 0;
+	margin: 0 !important;
 }
 .no-margin-bottom {
 	margin-bottom: 0;
@@ -105,6 +105,6 @@
 i, em {
 	font-style: italic;
 }
-strong {
+b, strong {
 	font-weight: bold;
 }

@@ -1,0 +1,9 @@
+.two-column {
+	& > * {
+		@include calc(width, "50% - .5rem", !important);		
+		float: left;
+	}
+	& > *:first-child {
+		margin-right: 1rem;
+	}
+}

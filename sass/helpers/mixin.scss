@@ -188,12 +188,12 @@
 		border-width: $px;
 	}
 }
-@mixin calc($property, $expression) {
-	#{$property}: -webkit-calc(#{$expression});
-	#{$property}: -moz-calc(#{$expression});
-	#{$property}: -o-calc(#{$expression});
-	#{$property}: -ms-calc(#{$expression});
-	#{$property}: calc(#{$expression});
+@mixin calc($property, $expression, $important: null) {
+	#{$property}: -webkit-calc(#{$expression}) $important;
+	#{$property}: -moz-calc(#{$expression}) $important;
+	#{$property}: -o-calc(#{$expression}) $important;
+	#{$property}: -ms-calc(#{$expression}) $important;
+	#{$property}: calc(#{$expression}) $important;
 }
 @mixin button-color-hover($color, $text-color) {
 	&:hover {

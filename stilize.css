@@ -672,11 +672,11 @@ fieldset.block, fieldset.block-default, fieldset.block-gary, fieldset.block-lube
     padding: 0.5rem 0.9rem;
     position: absolute;
     top: 0;
-    width: inherit; }
+    width: 100%; }
   fieldset.block .block-title, fieldset.block-default .block-title, fieldset.block-gary .block-title, fieldset.block-lube .block-title, fieldset.block-kal .block-title, fieldset.block-tie .block-title {
     font-size: 1rem; }
   fieldset.block .block-body, fieldset.block-default .block-body, fieldset.block-gary .block-body, fieldset.block-lube .block-body, fieldset.block-kal .block-body, fieldset.block-tie .block-body {
-    padding: 0.5rem 0 0 0.15rem; }
+    padding: 1rem; }
 
 /************************************************** STYLES **************************************************/
 fieldset.block-default legend.block-header {
@@ -1049,6 +1049,16 @@ a.btn-lg {
     cursor: pointer; }
   .btn-right-input:active {
     outline: none; }
+
+.two-column > * {
+  width: -webkit-calc(50% - .5rem) !important;
+  width: -moz-calc(50% - .5rem) !important;
+  width: -o-calc(50% - .5rem) !important;
+  width: -ms-calc(50% - .5rem) !important;
+  width: calc(50% - .5rem) !important;
+  float: left; }
+.two-column > *:first-child {
+  margin-right: 1rem; }
 
 .clearfix:before,
 .clearfix:after {
@@ -4777,7 +4787,7 @@ table.table-kal {
   float: none !important; }
 
 .no-margin {
-  margin: 0; }
+  margin: 0 !important; }
 
 .no-margin-bottom {
   margin-bottom: 0; }
@@ -4890,7 +4900,7 @@ table.table-kal {
 i, em {
   font-style: italic; }
 
-strong {
+b, strong {
   font-weight: bold; }
 
 /************************************************** HGROUP **************************************************/
