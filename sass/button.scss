@@ -31,6 +31,12 @@
 	border: $border-blue;
 	color: $color-text-blue;
 }
+.btn-default {
+	@extend .button;
+	@include background-default;
+	border: $border;
+	color: $color;
+}
 .btn-der {
 	@extend .button;
 	@include button-color-hover($color-der, $color-text-der);	
