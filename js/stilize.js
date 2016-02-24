@@ -23,7 +23,7 @@ jQuery(document).ready(function () {
 	/** @auth Matheus
 	 * ADICIONAR MODAL EM TODAS AS PAGINAS
 	 */
-	jQuery('body').append('<div class="bg-modal"><div class="modal-lg"><iframe id="iframe-modal"></iframe></div></div>');
+	jQuery('body').append('<div class="bg-modal"><div class="modal"><iframe id="iframe-modal"></iframe></div></div>');
 	
 	/** @auth Matheus
 	 * UPPERCASE PARA INPUTS, SELECTS E TEXTAREAS, TANTO VISUAL COMO INTERNAMENTE
@@ -98,7 +98,7 @@ function openBox($obj) {
 	if (($obj.href || $obj.formAction) != undefined)
 		jQuery('iframe').attr('src', ($obj.href || $obj.formAction));
 	jQuery('div.bg-modal').fadeToggle(300);
-	jQuery('div.modal-lg').fadeToggle(300);
+	jQuery('div.modal').fadeToggle(300);
 	return false;
 }
 
