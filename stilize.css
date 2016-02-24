@@ -59,9 +59,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/************************************************** BACKGROUND **************************************************/
-/************************************************** BORDER **************************************************/
-/************************************************** EXPRESSION **************************************************/
 /************************************************** PATTERNS **************************************************/
 /************************************************** ALERT **************************************************/
 /************************************************** COLORS **************************************************/
@@ -85,9 +82,12 @@ ul.pagination-default li.page-default a, ul.pagination-default li.page-default b
   color: #424242;
   text-decoration: none; }
 
-nav.nav a.nav-brand:link, nav.nav-default a.nav-brand:link, nav.nav-kal a.nav-brand:link, nav.nav-tie a.nav-brand:link, nav.nav a.nav-brand:visited, nav.nav-default a.nav-brand:visited, nav.nav-kal a.nav-brand:visited, nav.nav-tie a.nav-brand:visited, nav.nav a.nav-brand:hover, nav.nav-default a.nav-brand:hover, nav.nav-kal a.nav-brand:hover, nav.nav-tie a.nav-brand:hover, nav.nav a.nav-brand:active, nav.nav-default a.nav-brand:active, nav.nav-kal a.nav-brand:active, nav.nav-tie a.nav-brand:active, .button:link, .button-transparent:link, .btn-border-blue:link, .btn-border-der:link, .btn-border-gary:link, .btn-border-lube:link, .btn-border-low:link, .btn-border-lower:link, .btn-border-kal:link, .btn-border-range:link, .button-modern:link, .btn-blue-modern:link, .btn-booper-modern:link, .btn-der-modern:link, .btn-gary-modern:link, .btn-lube-modern:link, .btn-low-modern:link, .btn-lower-modern:link, .btn-kal-modern:link, .btn-range-modern:link, .btn-rangeless-modern:link, .btn-blue:link, .btn-default:link, .btn-der:link, .btn-gary:link, .btn-lube:link, .btn-low:link, .btn-lower:link, .btn-kal:link, .btn-range:link, .button:visited, .button-transparent:visited, .btn-border-blue:visited, .btn-border-der:visited, .btn-border-gary:visited, .btn-border-lube:visited, .btn-border-low:visited, .btn-border-lower:visited, .btn-border-kal:visited, .btn-border-range:visited, .button-modern:visited, .btn-blue-modern:visited, .btn-booper-modern:visited, .btn-der-modern:visited, .btn-gary-modern:visited, .btn-lube-modern:visited, .btn-low-modern:visited, .btn-lower-modern:visited, .btn-kal-modern:visited, .btn-range-modern:visited, .btn-rangeless-modern:visited, .btn-blue:visited, .btn-default:visited, .btn-der:visited, .btn-gary:visited, .btn-lube:visited, .btn-low:visited, .btn-lower:visited, .btn-kal:visited, .btn-range:visited, .button:hover, .button-transparent:hover, .btn-border-blue:hover, .btn-border-der:hover, .btn-border-gary:hover, .btn-border-lube:hover, .btn-border-low:hover, .btn-border-lower:hover, .btn-border-kal:hover, .btn-border-range:hover, .button-modern:hover, .btn-blue-modern:hover, .btn-booper-modern:hover, .btn-der-modern:hover, .btn-gary-modern:hover, .btn-lube-modern:hover, .btn-low-modern:hover, .btn-lower-modern:hover, .btn-kal-modern:hover, .btn-range-modern:hover, .btn-rangeless-modern:hover, .btn-blue:hover, .btn-default:hover, .btn-der:hover, .btn-gary:hover, .btn-lube:hover, .btn-low:hover, .btn-lower:hover, .btn-kal:hover, .btn-range:hover, .button:active, .button-transparent:active, .btn-border-blue:active, .btn-border-der:active, .btn-border-gary:active, .btn-border-lube:active, .btn-border-low:active, .btn-border-lower:active, .btn-border-kal:active, .btn-border-range:active, .button-modern:active, .btn-blue-modern:active, .btn-booper-modern:active, .btn-der-modern:active, .btn-gary-modern:active, .btn-lube-modern:active, .btn-low-modern:active, .btn-lower-modern:active, .btn-kal-modern:active, .btn-range-modern:active, .btn-rangeless-modern:active, .btn-blue:active, .btn-default:active, .btn-der:active, .btn-gary:active, .btn-lube:active, .btn-low:active, .btn-lower:active, .btn-kal:active, .btn-range:active, .btn-right-input:link, .btn-right-input:visited, .btn-right-input:hover, .btn-right-input:active, footer.footer a:link, footer.footer-kal a:link, footer.footer-gary a:link, footer.footer-tie a:link, footer.footer a:visited, footer.footer-kal a:visited, footer.footer-gary a:visited, footer.footer-tie a:visited, footer.footer a:hover, footer.footer-kal a:hover, footer.footer-gary a:hover, footer.footer-tie a:hover, footer.footer a:active, footer.footer-kal a:active, footer.footer-gary a:active, footer.footer-tie a:active, .no-decoration:link, .no-decoration:visited, .no-decoration:hover, .no-decoration:active {
+nav.nav a.nav-brand:link, nav.nav-default a.nav-brand:link, nav.nav-kal a.nav-brand:link, nav.nav-tie a.nav-brand:link, nav.nav a.nav-brand:visited, nav.nav-default a.nav-brand:visited, nav.nav-kal a.nav-brand:visited, nav.nav-tie a.nav-brand:visited, nav.nav a.nav-brand:hover, nav.nav-default a.nav-brand:hover, nav.nav-kal a.nav-brand:hover, nav.nav-tie a.nav-brand:hover, nav.nav a.nav-brand:active, nav.nav-default a.nav-brand:active, nav.nav-kal a.nav-brand:active, nav.nav-tie a.nav-brand:active, .button:link, .button-transparent:link, .btn-border-blue:link, .btn-border-der:link, .btn-border-gary:link, .btn-border-lube:link, .btn-border-low:link, .btn-border-lower:link, .btn-border-kal:link, .btn-border-range:link, .button-modern:link, .btn-blue-modern:link, .btn-booper-modern:link, .btn-der-modern:link, .btn-gary-modern:link, .btn-lube-modern:link, .btn-low-modern:link, .btn-lower-modern:link, .btn-kal-modern:link, .btn-range-modern:link, .btn-rangeless-modern:link, .btn-blue:link, .btn-default:link, .btn-der:link, .btn-gary:link, .btn-lube:link, .btn-low:link, .btn-lower:link, .btn-kal:link, .btn-range:link, .button:visited, .button-transparent:visited, .btn-border-blue:visited, .btn-border-der:visited, .btn-border-gary:visited, .btn-border-lube:visited, .btn-border-low:visited, .btn-border-lower:visited, .btn-border-kal:visited, .btn-border-range:visited, .button-modern:visited, .btn-blue-modern:visited, .btn-booper-modern:visited, .btn-der-modern:visited, .btn-gary-modern:visited, .btn-lube-modern:visited, .btn-low-modern:visited, .btn-lower-modern:visited, .btn-kal-modern:visited, .btn-range-modern:visited, .btn-rangeless-modern:visited, .btn-blue:visited, .btn-default:visited, .btn-der:visited, .btn-gary:visited, .btn-lube:visited, .btn-low:visited, .btn-lower:visited, .btn-kal:visited, .btn-range:visited, .button:hover, .button-transparent:hover, .btn-border-blue:hover, .btn-border-der:hover, .btn-border-gary:hover, .btn-border-lube:hover, .btn-border-low:hover, .btn-border-lower:hover, .btn-border-kal:hover, .btn-border-range:hover, .button-modern:hover, .btn-blue-modern:hover, .btn-booper-modern:hover, .btn-der-modern:hover, .btn-gary-modern:hover, .btn-lube-modern:hover, .btn-low-modern:hover, .btn-lower-modern:hover, .btn-kal-modern:hover, .btn-range-modern:hover, .btn-rangeless-modern:hover, .btn-blue:hover, .btn-default:hover, .btn-der:hover, .btn-gary:hover, .btn-lube:hover, .btn-low:hover, .btn-lower:hover, .btn-kal:hover, .btn-range:hover, .button:active, .button-transparent:active, .btn-border-blue:active, .btn-border-der:active, .btn-border-gary:active, .btn-border-lube:active, .btn-border-low:active, .btn-border-lower:active, .btn-border-kal:active, .btn-border-range:active, .button-modern:active, .btn-blue-modern:active, .btn-booper-modern:active, .btn-der-modern:active, .btn-gary-modern:active, .btn-lube-modern:active, .btn-low-modern:active, .btn-lower-modern:active, .btn-kal-modern:active, .btn-range-modern:active, .btn-rangeless-modern:active, .btn-blue:active, .btn-default:active, .btn-der:active, .btn-gary:active, .btn-lube:active, .btn-low:active, .btn-lower:active, .btn-kal:active, .btn-range:active, footer.footer a:link, footer.footer-kal a:link, footer.footer-gary a:link, footer.footer-tie a:link, footer.footer a:visited, footer.footer-kal a:visited, footer.footer-gary a:visited, footer.footer-tie a:visited, footer.footer a:hover, footer.footer-kal a:hover, footer.footer-gary a:hover, footer.footer-tie a:hover, footer.footer a:active, footer.footer-kal a:active, footer.footer-gary a:active, footer.footer-tie a:active, .no-decoration:link, .no-decoration:visited, .no-decoration:hover, .no-decoration:active {
   text-decoration: none; }
 
+/************************************************** BACKGROUND **************************************************/
+/************************************************** BORDER **************************************************/
+/************************************************** EXPRESSION **************************************************/
 nav.nav, nav.nav-default, nav.nav-kal, nav.nav-tie {
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8);
   float: left;
@@ -775,6 +775,12 @@ div.box-group {
   background: linear-gradient(#FBFBFB, #F6F6F6);
   border: 1px solid #DCDCDC;
   color: #000000; }
+  .btn-default:hover {
+    background: -webkit-linear-gradient(white, white);
+    background: -moz-linear-gradient(white, white);
+    background: -o-linear-gradient(white, white);
+    background: -ms-linear-gradient(white, white);
+    background: linear-gradient(white, white); }
 
 .btn-der {
   background: #F57373;
@@ -1015,50 +1021,6 @@ a.btn-lg {
   outline: none;
   padding: 0; }
 
-.btn-right-input {
-  background: -webkit-linear-gradient(#FBFBFB, #F6F6F6);
-  background: -moz-linear-gradient(#FBFBFB, #F6F6F6);
-  background: -o-linear-gradient(#FBFBFB, #F6F6F6);
-  background: -ms-linear-gradient(#FBFBFB, #F6F6F6);
-  background: linear-gradient(#FBFBFB, #F6F6F6);
-  -webkit-border-bottom-left-radius: 0px;
-  -moz-border-bottom-left-radius: 0px;
-  -o-border-bottom-left-radius: 0px;
-  -ms-border-bottom-left-radius: 0px;
-  border-bottom-left-radius: 0px;
-  -webkit-border-bottom-right-radius: 5px;
-  -moz-border-bottom-right-radius: 5px;
-  -o-border-bottom-right-radius: 5px;
-  -ms-border-bottom-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-  -webkit-border-top-left-radius: 0px;
-  -moz-border-top-left-radius: 0px;
-  -o-border-top-left-radius: 0px;
-  -ms-border-top-left-radius: 0px;
-  border-top-left-radius: 0px;
-  -webkit-border-top-right-radius: 5px;
-  -moz-border-top-right-radius: 5px;
-  -o-border-top-right-radius: 5px;
-  -ms-border-top-right-radius: 5px;
-  border-top-right-radius: 5px;
-  border: 1px solid #DCDCDC;
-  color: #000000;
-  font-size: 0.9em;
-  padding: 0.3rem 0.5rem;
-  text-align: center;
-  text-shadow: 1px 1px 5px #FFFFFF; }
-  .btn-right-input:focus {
-    outline: none; }
-  .btn-right-input:hover {
-    background: -webkit-linear-gradient(white, #f5f5f0);
-    background: -moz-linear-gradient(white, #f5f5f0);
-    background: -o-linear-gradient(white, #f5f5f0);
-    background: -ms-linear-gradient(white, #f5f5f0);
-    background: linear-gradient(white, #f5f5f0);
-    cursor: pointer; }
-  .btn-right-input:active {
-    outline: none; }
-
 .two-column > * {
   width: -webkit-calc(50% - .5rem) !important;
   width: -moz-calc(50% - .5rem) !important;
@@ -1249,6 +1211,8 @@ footer.footer-tie {
     .form .form-data:focus, form.form-block .form-data:focus, form.form-modern .form-data:focus, form.form-search .form-data:focus {
       border: 1px solid #000000;
       outline: none; }
+  .form input[type=checkbox], form.form-block input[type=checkbox], form.form-modern input[type=checkbox], form.form-search input[type=checkbox], .form input[type=radio], form.form-block input[type=radio], form.form-modern input[type=radio], form.form-search input[type=radio] {
+    clear: both; }
 
 form.form-block .form-data {
   font-size: 1rem;
@@ -4424,10 +4388,10 @@ section.panel-login {
     .tab a:focus, ul.tab-lube a:focus {
       outline: 0; }
 
-.tab-responsive, ul.tab-responsive-default, ul.tab-responsive-rangeless {
+.tab-responsive, ul.tab-responsive-default, ul.tab-responsive-rangeless, ul.tab-responsive-kal {
   display: inline-flex;
   width: 100%; }
-  .tab-responsive li, ul.tab-responsive-default li, ul.tab-responsive-rangeless li {
+  .tab-responsive li, ul.tab-responsive-default li, ul.tab-responsive-rangeless li, ul.tab-responsive-kal li {
     display: -webkit-inline-flex;
     display: -moz-inline-flex;
     display: -o-inline-flex;
@@ -4441,16 +4405,16 @@ section.panel-login {
     list-style: none;
     text-align: center;
     width: 100%; }
-    .tab-responsive li a, ul.tab-responsive-default li a, ul.tab-responsive-rangeless li a, .tab-responsive li button, ul.tab-responsive-default li button, ul.tab-responsive-rangeless li button {
+    .tab-responsive li a, ul.tab-responsive-default li a, ul.tab-responsive-rangeless li a, ul.tab-responsive-kal li a, .tab-responsive li button, ul.tab-responsive-default li button, ul.tab-responsive-rangeless li button, ul.tab-responsive-kal li button {
       height: 35px;
       justify-content: center;
       line-height: 35px;
       padding: 0.5rem;
       text-decoration: none;
       width: 100%; }
-    .tab-responsive li:hover, ul.tab-responsive-default li:hover, ul.tab-responsive-rangeless li:hover {
+    .tab-responsive li:hover, ul.tab-responsive-default li:hover, ul.tab-responsive-rangeless li:hover, ul.tab-responsive-kal li:hover {
       cursor: pointer; }
-  .tab-responsive.active, ul.active.tab-responsive-default, ul.active.tab-responsive-rangeless {
+  .tab-responsive.active, ul.active.tab-responsive-default, ul.active.tab-responsive-rangeless, ul.active.tab-responsive-kal {
     border-bottom: none; }
 
 ul.tab-lube a {
@@ -4492,6 +4456,21 @@ ul.tab-responsive-rangeless {
     ul.tab-responsive-rangeless li.active a, ul.tab-responsive-rangeless li.active button {
       color: #FBB12F; }
   ul.tab-responsive-rangeless.active {
+    background: #FFFFFF; }
+
+ul.tab-responsive-kal {
+  background: #303030; }
+  ul.tab-responsive-kal li {
+    border-right: 1px solid #171717; }
+    ul.tab-responsive-kal li a, ul.tab-responsive-kal li button {
+      color: #FFFFFF; }
+      ul.tab-responsive-kal li a:hover, ul.tab-responsive-kal li button:hover {
+        color: #303030; }
+    ul.tab-responsive-kal li.active, ul.tab-responsive-kal li:hover {
+      background: #FFFFFF; }
+    ul.tab-responsive-kal li.active a, ul.tab-responsive-kal li.active button {
+      color: #303030; }
+  ul.tab-responsive-kal.active {
     background: #FFFFFF; }
 
 div#content-tab1 {

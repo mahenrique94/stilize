@@ -1,17 +1,19 @@
 /************************************************** BACKGROUND **************************************************/
-@mixin background-default {
+@mixin background-default($hover: false) {
 	background: -webkit-linear-gradient($background-default);	
 	background: -moz-linear-gradient($background-default);	
 	background: -o-linear-gradient($background-default);	
 	background: -ms-linear-gradient($background-default);	
 	background: linear-gradient($background-default);	
-}
-@mixin background-default-hover {
-	background: -webkit-linear-gradient(lighten(#FAFAFA, 5%), lighten(#EBEBE0, 5%));
-	background: -moz-linear-gradient(lighten(#FAFAFA, 5%), lighten(#EBEBE0, 5%));
-	background: -o-linear-gradient(lighten(#FAFAFA, 5%), lighten(#EBEBE0, 5%));
-	background: -ms-linear-gradient(lighten(#FAFAFA, 5%), lighten(#EBEBE0, 5%));
-	background: linear-gradient(lighten(#FAFAFA, 5%), lighten(#EBEBE0, 5%));
+	@if $hover {
+		&:hover {
+			background: -webkit-linear-gradient($background-default-hover);	
+			background: -moz-linear-gradient($background-default-hover);	
+			background: -o-linear-gradient($background-default-hover);	
+			background: -ms-linear-gradient($background-default-hover);	
+			background: linear-gradient($background-default-hover);	
+		}
+	}
 }
 @mixin background-th-table-default {	
 	background: -webkit-linear-gradient(top,  #F9F9F9 0%,#F9F9F9 50%,#F1F2F4 51%,#EBECEE 100%);
