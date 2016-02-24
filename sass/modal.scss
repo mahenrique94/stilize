@@ -1,4 +1,4 @@
-div.bg-modal {
+.bg-modal {
 	background-color: rgba(0, 0, 0, 0.5);
 	display: none;	
 	height: 100%;	
@@ -8,7 +8,7 @@ div.bg-modal {
 	width: 100%;
 	z-index: 1000;
 }
-div.modal {
+.modal {
 	@include border-radius(5px);
 	@include calc(width, "100% - 100px");
 	@include calc(height, "100% - 100px");
@@ -24,6 +24,6 @@ div.modal {
 		@include border-radius-lefttop-righttop(10px);
 		@include calc(width, "100% - 1px");
 		@include calc(height, "100% - 0px");		    
-		border: 1px solid #DCDCDC;
+		border: $border;
 	}
 }
