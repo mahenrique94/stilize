@@ -3,7 +3,7 @@ HTMLCollection.prototype.forEach = Array.prototype.forEach;
 
 document.addEventListener('DOMContentLoaded', function(e) {
 	
-	/** @auth Matheus, João, Fernando
+	/** @auth Matheus, Fernando e João
 	 * MOSTRAR E ESCONDER MODAL AO CLICAR UMA OU DUAS VEZES NOS SELETORES ABAIXO
 	 */
 	document.querySelectorAll('[data-toggle=modal], div.bg-modal').forEach(function($e, i, n) {
@@ -91,7 +91,7 @@ jQuery(document).ready(function () {
 	
 });
 
-/** @auth Matheus e Fernando
+/** @auth Matheus, Fernando e João
  * ABRIR E FECHAR OPENBOX
  */
 function openBox($obj) {
@@ -103,7 +103,7 @@ function openBox($obj) {
 }
 
 /** @auth Matheus
- * MOSTRAR OU ESCONDER ELEMENTO INFORMADO NOS PARAETROS
+ * MOSTRAR OU ESCONDER ELEMENTO INFORMADO NOS PARAMETROS
  */
 function toggleElement(element, type, parametro) {
 	for(var i = 0; i < element.length; i++) {

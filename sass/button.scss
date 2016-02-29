@@ -31,6 +31,12 @@
 	border: $border-blue;
 	color: $color-text-blue;
 }
+.btn-default {
+	@extend .button;
+	@include background-default(true);
+	border: $border;
+	color: $color;
+}
 .btn-der {
 	@extend .button;
 	@include button-color-hover($color-der, $color-text-der);	
@@ -146,6 +152,12 @@
 	border: $border-booper;	
 	color: $color-text-booper;
 }
+.btn-default-modern {
+	@extend .button-modern;
+	@include background-default(true);
+	border: $border;
+	color: $color;
+}
 .btn-der-modern {
 	@extend .button-modern;
 	@include button-color-hover($color-der, $color-text-der);	
@@ -258,32 +270,4 @@ a.btn-lg {
 	font-size: 1rem;
 	outline: none;
 	padding: 0;	
-}
-.btn-right-input {
-	@include background-default;
-	@include border-radius-righttop-rightbottom(5px);
-	border: 1px solid #DCDCDC;
-	color: #000000;
-	font-size: 0.9em;	
-	padding: 0.3rem 0.5rem;
-	text-align: center;
-	text-shadow: 1px 1px 5px #FFFFFF;	
-	&:link {
-		@extend %link-no-decoration;
-	}
-	&:visited {
-		@extend %link-no-decoration;
-	}	
-	&:focus {
-		outline: none;
-	}
-	&:hover {		
-		@extend %link-no-decoration;
-		@include background-default-hover;
-		cursor: pointer;		
-	}
-	&:active {
-		@extend %link-no-decoration;
-		outline: none;
-	}	
 }
