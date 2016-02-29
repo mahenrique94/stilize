@@ -1,3 +1,16 @@
+@font-face {
+	font: {
+		family: 'stilize';
+		style: normal;
+		weight: normal;
+	}
+  	src: url('fonts/stilize.eot?17838187');
+  	src: url('fonts/stilize.eot?17838187#iefix') format('embedded-opentype'),
+        url('fonts/stilize.woff?17838187') format('woff'),
+        url('fonts/stilize.ttf?17838187') format('truetype'),
+        url('fonts/stilize.svg?17838187#stilize') format('svg');
+}
+
 @import 'susy';
 
 @import 'sass/base/reset';
@@ -19,6 +32,7 @@
 @import 'sass/config';
 @import 'sass/container';
 @import 'sass/header';
+@import 'sass/icon';
 @import 'sass/figure';
 @import 'sass/font';
 @import 'sass/footer';
