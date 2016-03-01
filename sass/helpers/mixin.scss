@@ -24,6 +24,13 @@
 }
 
 /************************************************** BORDER **************************************************/
+@mixin animation($expression) {
+	-webkit-animation: #{$expression};
+	-moz-animation: #{$expression};
+	-o-animation: #{$expression};
+	-ms-animation: #{$expression};
+	animation: #{$expression};
+}
 @mixin border-radius($value) {
 	-webkit-border-radius: $value;
 	-moz-border-radius: $value;
