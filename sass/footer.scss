@@ -1,5 +1,6 @@
 footer.footer {
-	box-sizing: border-box;
+	box-shadow: $footer-shadow;
+	box-sizing: border-box;	
 	clear:both;
 	float: left;
 	font-size: 0.8rem;
@@ -11,6 +12,7 @@ footer.footer {
 		color: inherit;
 		&:hover {
 			cursor: pointer;
+			text-decoration: underline;
 		}
 	}
 }

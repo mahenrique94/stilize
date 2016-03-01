@@ -132,7 +132,7 @@ function getFinal() {
  *  IMPLEMENTANDO STICKY FOOTER
  */
 function stickyFooter() {
-	applySticky(jQuery('#wrap > section#content, #wrap + footer'), 'padding-bottom, margin-top');
+	applySticky(jQuery('#wrap > #content, #wrap + footer'), 'padding-bottom, margin-top');
 }
 function applySticky(elements, styles) {
 	var properties = styles.split(',');
