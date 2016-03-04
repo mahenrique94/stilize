@@ -89,6 +89,13 @@ jQuery(document).ready(function () {
 	 */
 	stickyFooter();
 	
+	/** @auth Matheus
+	 *  FUNCAO PARA MOSTRAR E ESCONDER COLLAPSE EM EFEITO SLIDE
+	 */
+	jQuery('[data-toggle=collapse]').click(function(e) {
+		jQuery($(this).attr('href')).slideToggle();
+	});
+	
 });
 
 /** @auth Matheus, Fernando e João
@@ -147,4 +154,15 @@ function applySticky(elements, styles) {
 }
 function getHeight(obj) {
 	return $(obj).css('height');
+}
+
+/** @auth Matheus
+ *  FUNCAO PARA MUDAR O ICONE DE + PARA - OU - PARA + 
+ */
+function toggleIconSquaredPlusToMinus(obj) {
+	var icon = jQuery(obj).find('i');
+	if ($(icon).attr('class') == 'icon-plus-squared')
+		$(icon).removeClass().addClass('icon-minus-squared');
+	else
+		$(icon).removeClass().addClass('icon-plus-squared');
 }

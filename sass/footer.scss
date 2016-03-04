@@ -16,15 +16,19 @@ footer.footer {
 		}
 	}
 }
-footer.footer-kal {
+footer.footer-default {
 	@extend .footer;
-	background: $color-kal;
-	color: $color-text-kal;		
+	@include background-default;
 }
 footer.footer-gary {
     @extend .footer;
     background: $color-gary;
     color: $color-text-gary;
+}
+footer.footer-kal {
+	@extend .footer;
+	background: $color-kal;
+	color: $color-text-kal;		
 }
 footer.footer-tie {
     @extend .footer;

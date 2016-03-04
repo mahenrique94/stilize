@@ -63,6 +63,17 @@
     border-bottom: none;
   }
 }
+ul.tab-kal {
+  @extend .tab;
+  a {
+    @include background-default;
+  }
+  & .active a, & .active a::after {
+    background: $color-kal;
+    color: $color-text-kal;
+    z-index: 3;
+  }
+}
 ul.tab-lube {
   @extend .tab;
   a {
@@ -139,7 +150,6 @@ ul.tab-responsive-kal {
     box-sizing: border-box;
     display: none;
     float: left;
-    padding: .5rem;
     width: 100%;
   }
 }

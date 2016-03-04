@@ -124,5 +124,13 @@
 .band-nav-default {
 	@extend .band;
 	@include background-default;
-	padding: 1rem;
+	padding: $band-nav-padding;
+}
+.band-nav-kal {
+	@extend .band;
+	background: $color-kal;
+	padding: $band-nav-padding;
+	label {
+		color: $color-text-kal;
+	}
 }

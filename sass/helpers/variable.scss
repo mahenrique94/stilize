@@ -75,6 +75,10 @@ $color-default2: #F6F6F6;
 $background-default: $color-default1, $color-default2;
 $background-default-hover: lighten($color-default1, 20%), lighten($color-default2, 20%);
 
+/************************************************** BANDS **************************************************/
+// BAND-NAV
+$band-nav-padding: 1rem;
+
 /************************************************** BANNERS **************************************************/
 // BANNER
 $banner-color: #000000;
@@ -125,6 +129,9 @@ $a-padding-md: .5rem .8rem;
 $button-font-size-lg: 1rem;
 $button-padding-lg: .7rem .9rem;
 $a-padding-lg: .7rem .9rem;
+
+/************************************************** COLLAPSES **************************************************/
+$collapse-color-link: #000000;
 
 /************************************************** FONTS **************************************************/
 $font-size-brand: 1.5rem;
