@@ -1,0 +1,19 @@
+select.ss[data-list] {
+	display: none;
+}
+ul.ss-list {
+	background: #FFFFFF;
+	border: 1px solid #DCDCDC;
+	display: none;
+	height: 200px;
+	margin: 0;
+	overflow-y: scroll;
+	padding: 0;
+	position: absolute;
+	width: 100%;
+	z-index: 1010;
+	li.ss-option {
+    	list-style: none;
+    	padding: .5rem;
+  	}
+}
