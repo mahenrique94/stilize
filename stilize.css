@@ -58,11 +58,10 @@ ul.ss-list {
   background: #FFFFFF;
   border: 1px solid #DCDCDC;
   display: none;
-  height: 200px;
+  height: 160px;
   margin: 0;
   overflow-y: scroll;
   padding: 0;
-  position: absolute;
   width: 100%;
   z-index: 1010; }
   ul.ss-list li.ss-option {
@@ -2130,6 +2129,9 @@ input[type=search]::-webkit-search-results-decoration {
     height: -ms-calc(100% - 0px);
     height: calc(100% - 0px);
     border: 1px solid #DCDCDC; }
+
+[class*=step-]:not(.active) {
+  display: none; }
 
 nav.nav, nav.nav-default, nav.nav-kal, nav.nav-tie {
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8);

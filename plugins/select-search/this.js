@@ -1,5 +1,5 @@
-/** @Select Search
- *  Plugin desenvolvido por Matheus Castiglioni
+/** Select Search
+ *  @Plugin desenvolvido por Matheus Castiglioni
  *  www.matheuscastiglioni.com.br
  *  Realizar filtros em selects tornando-os select search
  */ 

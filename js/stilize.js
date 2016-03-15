@@ -96,6 +96,14 @@ jQuery(document).ready(function () {
 		jQuery($(this).attr('href')).slideToggle();
 	});
 	
+	/** @auth Matheus
+	 *  FUNCAO PARA MOSTRAR E ESCONDER DIVS DO CADASTRO PASSO-A-PASSO
+	 */
+	jQuery('button[data-current][data-next]').click(function() {
+		jQuery('.' + $(this).data('current')).toggle();
+		jQuery('.' + $(this).data('next')).toggle();
+	});
+	
 });
 
 /** @auth Matheus, Fernando e João
