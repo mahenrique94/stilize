@@ -62,6 +62,7 @@ ul.ss-list {
   margin: 0;
   overflow-y: scroll;
   padding: 0;
+  position: absolute;
   width: 100%;
   z-index: 1010; }
   ul.ss-list li.ss-option {

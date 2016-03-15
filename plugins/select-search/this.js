@@ -46,7 +46,6 @@ function buildList(obj) {
 	else
 		jQuery('.ss-body[id=' + $(obj).data('list') + ']').append('<input class="form-data ss-filter" data-list="' + $(obj).data('list') + '" type="search">');
 	if ($(obj).find('option:selected'))
-		console.log($(this).text());
 		jQuery('input[data-list=' + $(obj).data('list') + ']').val($(this).text());
 	jQuery('.ss-body[id=' + $(obj).data('list') + ']').append('<ul class="ss-list" id="' + $(obj).data('list') + '" role="combobox"></ul>');	
 	// Buscando todos os options do select e adicionando na lista e fazendo a inserção na página HTML do elemento
