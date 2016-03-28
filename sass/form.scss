@@ -22,9 +22,10 @@
 			outline: none;
 		}
 	}
-	input[type=checkbox], input[type=radio] {
+	input[type=checkbox].form-data, input[type=radio].form-data {
 		clear: both;
 		display: block;
+		width: initial;
 	}
 }
 
@@ -34,9 +35,6 @@ form.form-block {
 		font-size: $font-size;
 		padding: $form-data-padding;
 	}
-	input[type=checkbox], input[type=radio] {
-		width: initial;
-	}	
 }
 form.form-modern {
 	@extend .form;
@@ -45,7 +43,7 @@ form.form-modern {
 	}
 	select {
 		height: 35px;
-	}
+	}	
 }
 form.form-search {
 	@extend .form;

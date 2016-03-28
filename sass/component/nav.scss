@@ -142,6 +142,39 @@ nav.nav-kal {
 		}
 	}
 }
+nav.nav-square {
+	float: left;
+	width: 100%;
+	ul.nav-row {
+		@include display-flex;
+		@include justify-content("flex-start");
+		margin-bottom: 1rem;
+		li {			
+			margin-right: 1.25rem;
+			a {
+				@include border-radius(.2rem);
+				background: rgba(255, 255, 255, .8);
+				border: 1px solid #DCDCDC;
+				display: table-cell;
+				height: 50px;
+				padding: 1rem;
+				text-align: center;
+				width: 100px;
+				color: #000000;
+				text-decoration: none;
+				vertical-align: middle;
+				i {
+					display: block;
+					margin-bottom: 5px;
+				}
+			}
+			&:last-child {
+				margin-right: 0;
+			}
+		}		
+
+	}
+}
 nav.nav-tie {
 	@extend .nav;	
 	background: $color-tie;	
