@@ -49,6 +49,11 @@ $color-lube: #0099FF;
 $color-text-lube: #FFFFFF;
 $border-lube: 1px solid darken($color-lube, 10%);
 
+//LUBE-LIGHT
+$color-lube-light: #E6F7FF;
+$color-text-lube-light: #000000;
+$border-lube-light: 1px solid darken($color-lube-light, 10%);
+
 // KAL
 $color-kal: #303030;
 $color-text-kal: #FFFFFF;
@@ -89,6 +94,7 @@ $banner-margin: 0 0 3rem 0;
 
 /************************************************** BLOCKS **************************************************/
 $block-border-radius: .3125rem;
+$block-margin: 0 .1rem;
 $block-padding: 2rem 0 0 0;
 
 // LEGEND

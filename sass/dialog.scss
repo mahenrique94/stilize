@@ -1,0 +1,46 @@
+.dialog {
+	@include display-flex;
+	@include align-items(center);
+	float: left;
+	margin-bottom: 1rem;
+	width: 100%;	
+	&-user {
+		float: left;
+		font-size: .8rem;
+		width: 15%;
+	}
+	&-message {
+		@include border-radius(.5rem);
+		border: 1px solid #DCDCDC;
+		float: right;			
+		padding: 1rem;
+		position: relative;
+		width: 85%;
+		.message {
+			float: left;
+			font-size: .7rem;
+			margin-bottom: .5rem;
+			width: 100%;
+		}
+		.date {
+			float: right;
+			font-size: .6rem;
+		}
+		&-shadow {
+			box-shadow: 0 2px 10px rgba(0,0,0,.5);
+		}
+		&:before {
+			background: #DCDCDC;
+			content: '';
+			height: 25px;		
+			left: -15.5px;
+			position: absolute;
+			top: 10px;
+			transform: translateY(.5rem) rotate(47deg);
+			width: 27.5px;	
+		}
+	}
+	&:last-child {
+		margin-bottom: 0;
+	}
+}

@@ -6,6 +6,14 @@
 	label {
 		line-height: 2;
 	}
+	&-shadow {
+		box-shadow: 0 0 7px #666666;
+	}
+}
+.band-default {
+	@extend .band;
+	@include background-default;
+	color: #000000;
 }
 .band-der {
 	@extend .band;

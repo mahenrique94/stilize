@@ -196,13 +196,23 @@ ul.pagination-default li.page-default a, ul.pagination-default li.page-default b
   border: 1px solid #cc5200;
   color: #FFFFFF; }
 
-.band, .band-der, .band-gary, .band-low, .band-lube, .band-kal, .band-range, .band-rangeless, .band-nav-default, .band-nav-kal {
+.band, .band-default, .band-der, .band-gary, .band-low, .band-lube, .band-kal, .band-range, .band-rangeless, .band-nav-default, .band-nav-kal {
   box-sizing: border-box;
   float: left;
   width: 100%;
   padding: 0.3rem; }
-  .band label, .band-der label, .band-gary label, .band-low label, .band-lube label, .band-kal label, .band-range label, .band-rangeless label, .band-nav-default label, .band-nav-kal label {
+  .band label, .band-default label, .band-der label, .band-gary label, .band-low label, .band-lube label, .band-kal label, .band-range label, .band-rangeless label, .band-nav-default label, .band-nav-kal label {
     line-height: 2; }
+  .band-shadow {
+    box-shadow: 0 0 7px #666666; }
+
+.band-default {
+  background: -webkit-linear-gradient(#FBFBFB, #F6F6F6);
+  background: -moz-linear-gradient(#FBFBFB, #F6F6F6);
+  background: -o-linear-gradient(#FBFBFB, #F6F6F6);
+  background: -ms-linear-gradient(#FBFBFB, #F6F6F6);
+  background: linear-gradient(#FBFBFB, #F6F6F6);
+  color: #000000; }
 
 .band-der {
   background: #F57373;
@@ -351,18 +361,24 @@ ul.pagination-default li.page-default a, ul.pagination-default li.page-default b
   background: #303030;
   color: #FFFFFF; }
 
-fieldset.block, fieldset.block-default, fieldset.block-gary, fieldset.block-lube, fieldset.block-kal, fieldset.block-tie {
+.block, fieldset.block-default, fieldset.block-gary, fieldset.block-lube, fieldset.block-kal, fieldset.block-rangeless, fieldset.block-tie {
   -webkit-border-radius: 0.3125rem;
   -moz-border-radius: 0.3125rem;
   -o-border-radius: 0.3125rem;
   -ms-border-radius: 0.3125rem;
   border-radius: 0.3125rem;
+  width: -webkit-calc(100% - .2rem);
+  width: -moz-calc(100% - .2rem);
+  width: -o-calc(100% - .2rem);
+  width: -ms-calc(100% - .2rem);
+  width: calc(100% - .2rem);
   border: 1px solid #DCDCDC;
   box-sizing: border-box;
+  float: left;
+  margin: 0 0.1rem;
   padding: 2rem 0 0 0;
-  position: relative;
-  width: 100%; }
-  fieldset.block legend.block-header, fieldset.block-default legend.block-header, fieldset.block-gary legend.block-header, fieldset.block-lube legend.block-header, fieldset.block-kal legend.block-header, fieldset.block-tie legend.block-header {
+  position: relative; }
+  .block legend.block-header, fieldset.block-default legend.block-header, fieldset.block-gary legend.block-header, fieldset.block-lube legend.block-header, fieldset.block-kal legend.block-header, fieldset.block-rangeless legend.block-header, fieldset.block-tie legend.block-header {
     -webkit-border-bottom-right-radius: 0px;
     -moz-border-bottom-right-radius: 0px;
     -o-border-bottom-right-radius: 0px;
@@ -389,9 +405,15 @@ fieldset.block, fieldset.block-default, fieldset.block-gary, fieldset.block-lube
     position: absolute;
     top: 0;
     width: 100%; }
-  fieldset.block .block-title, fieldset.block-default .block-title, fieldset.block-gary .block-title, fieldset.block-lube .block-title, fieldset.block-kal .block-title, fieldset.block-tie .block-title {
+  .block .block-title, fieldset.block-default .block-title, fieldset.block-gary .block-title, fieldset.block-lube .block-title, fieldset.block-kal .block-title, fieldset.block-rangeless .block-title, fieldset.block-tie .block-title {
     font-size: 1rem; }
-  fieldset.block .block-body, fieldset.block-default .block-body, fieldset.block-gary .block-body, fieldset.block-lube .block-body, fieldset.block-kal .block-body, fieldset.block-tie .block-body {
+    .block .block-title-shadow, fieldset.block-default .block-title-shadow, fieldset.block-gary .block-title-shadow, fieldset.block-lube .block-title-shadow, fieldset.block-kal .block-title-shadow, fieldset.block-rangeless .block-title-shadow, fieldset.block-tie .block-title-shadow {
+      text-shadow: 2px 1px 5px #595959; }
+  .block .block-body, fieldset.block-default .block-body, fieldset.block-gary .block-body, fieldset.block-lube .block-body, fieldset.block-kal .block-body, fieldset.block-rangeless .block-body, fieldset.block-tie .block-body {
+    box-sizing: inherit;
+    float: inherit;
+    width: 100%; }
+  .block .block-body-padding, fieldset.block-default .block-body-padding, fieldset.block-gary .block-body-padding, fieldset.block-lube .block-body-padding, fieldset.block-kal .block-body-padding, fieldset.block-rangeless .block-body-padding, fieldset.block-tie .block-body-padding {
     padding: 1rem; }
 
 /************************************************** STYLES **************************************************/
@@ -417,6 +439,11 @@ fieldset.block-lube legend.block-header {
 fieldset.block-kal legend.block-header {
   background: #303030; }
   fieldset.block-kal legend.block-header .block-title {
+    color: #FFFFFF; }
+
+fieldset.block-rangeless legend.block-header {
+  background: #FBB12F; }
+  fieldset.block-rangeless legend.block-header .block-title {
     color: #FFFFFF; }
 
 fieldset.block-tie legend.block-header .block-title {
@@ -757,11 +784,11 @@ a.btn-lg {
   text-decoration: none; }
 
 .two-column > * {
-  width: -webkit-calc(50% - .5rem) !important;
-  width: -moz-calc(50% - .5rem) !important;
-  width: -o-calc(50% - .5rem) !important;
-  width: -ms-calc(50% - .5rem) !important;
-  width: calc(50% - .5rem) !important;
+  width: -webkit-calc(50% - .7rem) !important;
+  width: -moz-calc(50% - .7rem) !important;
+  width: -o-calc(50% - .7rem) !important;
+  width: -ms-calc(50% - .7rem) !important;
+  width: calc(50% - .7rem) !important;
   float: left; }
 .two-column > *:first-child {
   margin-right: 1rem; }
@@ -839,6 +866,57 @@ section#content {
     width: 100%; }
     .container-center header.container-header h1.container-brand {
       font-size: 1.5em; }
+
+.dialog {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -o-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -o-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  float: left;
+  margin-bottom: 1rem;
+  width: 100%; }
+  .dialog-user {
+    float: left;
+    font-size: .8rem;
+    width: 15%; }
+  .dialog-message {
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid #DCDCDC;
+    float: right;
+    padding: 1rem;
+    position: relative;
+    width: 85%; }
+    .dialog-message .message {
+      float: left;
+      font-size: .7rem;
+      margin-bottom: .5rem;
+      width: 100%; }
+    .dialog-message .date {
+      float: right;
+      font-size: .6rem; }
+    .dialog-message-shadow {
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); }
+    .dialog-message:before {
+      background: #DCDCDC;
+      content: '';
+      height: 25px;
+      left: -15.5px;
+      position: absolute;
+      top: 10px;
+      transform: translateY(0.5rem) rotate(47deg);
+      width: 27.5px; }
+  .dialog:last-child {
+    margin-bottom: 0; }
 
 [class^=icon-]:before, [class*=icon-]:before {
   display: inline-block;
@@ -1966,6 +2044,18 @@ section#content {
   content: '\e8ff'; }
 
 /* '' */
+.icon-reply-all:before {
+  content: '\e900'; }
+
+/* '' */
+.icon-reply:before {
+  content: '\e901'; }
+
+/* '' */
+.icon-forward:before {
+  content: '\e902'; }
+
+/* '' */
 .figure-round img {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -2064,6 +2154,7 @@ footer.footer-tie {
   .form .form-body, form.form-block .form-body, form.form-modern .form-body, form.form-search .form-body {
     box-sizing: inherit;
     display: inherit;
+    float: left;
     padding: 1rem;
     width: inherit; }
   .form .form-data, form.form-block .form-data, form.form-modern .form-data, form.form-search .form-data {
@@ -3123,6 +3214,11 @@ div#content-tab10 {
   box-sizing: border-box;
   display: none;
   float: left;
+  width: 100%; }
+
+.table-scroll {
+  float: left;
+  overflow-y: scroll;
   width: 100%; }
 
 table.table-default {
