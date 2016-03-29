@@ -1,6 +1,5 @@
 .form {
 	box-sizing: border-box;
-	display: inline-block;	
 	width: 100%;
 	div[class^=col] label {
 		float: inherit;
@@ -47,7 +46,6 @@ form.form-modern {
 }
 form.form-search {
 	@extend .form;
-	width: 50%;
 	div[class^=col-] {
 		margin-bottom: 0;
 	}

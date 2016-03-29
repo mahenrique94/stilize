@@ -178,8 +178,10 @@ nav.nav-square {
 nav.nav-tie {
 	@extend .nav;	
 	background: $color-tie;	
-	a.nav-brand {
-		color: $color-text-tie;
+	h1, a.nav-brand {
+		color: $color-text-tie;	
+		display: inline-block;
+		float: inherit;
 	}
 	ul {
 		li {

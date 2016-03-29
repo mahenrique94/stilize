@@ -2058,7 +2058,6 @@ footer.footer-tie {
 
 .form, form.form-block, form.form-modern, form.form-search {
   box-sizing: border-box;
-  display: inline-block;
   width: 100%; }
   .form div[class^=col] label, form.form-block div[class^=col] label, form.form-modern div[class^=col] label, form.form-search div[class^=col] label {
     float: inherit; }
@@ -2090,15 +2089,13 @@ form.form-modern input {
 form.form-modern select {
   height: 35px; }
 
-form.form-search {
-  width: 50%; }
-  form.form-search div[class^=col-] {
-    margin-bottom: 0; }
-  form.form-search .form-data {
-    float: left;
-    padding: 0.6rem; }
-  form.form-search select {
-    height: 35px; }
+form.form-search div[class^=col-] {
+  margin-bottom: 0; }
+form.form-search .form-data {
+  float: left;
+  padding: 0.6rem; }
+form.form-search select {
+  height: 35px; }
 
 a[disabled], button[disabled], input[readonly], input[disabled], select[disabled], textarea[readonly], textarea[disabled] {
   background: #F6F6F6;
@@ -2699,8 +2696,10 @@ nav.nav-square {
 
 nav.nav-tie {
   background: #FFFFFF; }
-  nav.nav-tie a.nav-brand {
-    color: #000000; }
+  nav.nav-tie h1, nav.nav-tie a.nav-brand {
+    color: #000000;
+    display: inline-block;
+    float: inherit; }
   nav.nav-tie ul li a {
     color: #000000; }
   nav.nav-tie ul li:hover {
