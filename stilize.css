@@ -878,11 +878,9 @@ section#content {
   -o-align-items: center;
   -ms-align-items: center;
   align-items: center;
-  float: left;
   margin-bottom: 1rem;
   width: 100%; }
   .dialog-user {
-    float: left;
     font-size: .8rem;
     width: 15%; }
   .dialog-message {
@@ -892,7 +890,6 @@ section#content {
     -ms-border-radius: 0.5rem;
     border-radius: 0.5rem;
     border: 1px solid #DCDCDC;
-    float: right;
     padding: 1rem;
     position: relative;
     width: 85%; }
@@ -906,17 +903,29 @@ section#content {
       font-size: .6rem; }
     .dialog-message-shadow {
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); }
-    .dialog-message:before {
-      background: #DCDCDC;
-      content: '';
-      height: 25px;
-      left: -15.5px;
-      position: absolute;
-      top: 10px;
-      transform: translateY(0.5rem) rotate(47deg);
-      width: 27.5px; }
   .dialog:last-child {
     margin-bottom: 0; }
+  .dialog:nth-child(even) .dialog-user {
+    order: 2;
+    text-align: right; }
+  .dialog:nth-child(even) .dialog-message:before {
+    background: #DCDCDC;
+    content: '';
+    height: 25px;
+    position: absolute;
+    right: -15.5px;
+    top: 10px;
+    transform: translateY(0.5rem) rotate(47deg);
+    width: 27.5px; }
+  .dialog:nth-child(odd) .dialog-message:before {
+    background: #DCDCDC;
+    content: '';
+    height: 25px;
+    left: -15.5px;
+    position: absolute;
+    top: 10px;
+    transform: translateY(0.5rem) rotate(47deg);
+    width: 27.5px; }
 
 [class^=icon-]:before, [class*=icon-]:before {
   display: inline-block;
