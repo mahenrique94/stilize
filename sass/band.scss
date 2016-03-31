@@ -4,10 +4,14 @@
 	width: 100%;
 	padding: $padding-band;
 	label {
-		line-height: 2;
+		// line-height: 2;
+		margin-bottom: .275rem;
 	}
 	&-shadow {
 		box-shadow: 0 0 7px #666666;
+	}	
+	div[class^=col-] {
+		margin-bottom: 0;
 	}
 }
 .band-default {

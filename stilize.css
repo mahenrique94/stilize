@@ -202,9 +202,11 @@ ul.pagination-default li.page-default a, ul.pagination-default li.page-default b
   width: 100%;
   padding: 0.3rem; }
   .band label, .band-default label, .band-der label, .band-gary label, .band-low label, .band-lube label, .band-kal label, .band-range label, .band-rangeless label, .band-nav-default label, .band-nav-kal label {
-    line-height: 2; }
+    margin-bottom: .275rem; }
   .band-shadow {
     box-shadow: 0 0 7px #666666; }
+  .band div[class^=col-], .band-default div[class^=col-], .band-der div[class^=col-], .band-gary div[class^=col-], .band-low div[class^=col-], .band-lube div[class^=col-], .band-kal div[class^=col-], .band-range div[class^=col-], .band-rangeless div[class^=col-], .band-nav-default div[class^=col-], .band-nav-kal div[class^=col-] {
+    margin-bottom: 0; }
 
 .band-default {
   background: -webkit-linear-gradient(#FBFBFB, #F6F6F6);
@@ -2189,8 +2191,6 @@ form.form-modern input {
 form.form-modern select {
   height: 35px; }
 
-form.form-search div[class^=col-] {
-  margin-bottom: 0; }
 form.form-search .form-data {
   float: left;
   padding: 0.6rem; }

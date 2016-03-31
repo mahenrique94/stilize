@@ -46,10 +46,7 @@ form.form-modern {
 	}	
 }
 form.form-search {
-	@extend .form;
-	div[class^=col-] {
-		margin-bottom: 0;
-	}
+	@extend .form;	
 	.form-data {		
 		float: left;
 		padding: $form-data-modern-padding;
