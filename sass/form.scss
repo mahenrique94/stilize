@@ -32,7 +32,7 @@
 form.form-block {
 	@extend .form;		
 	.form-data {
-		font-size: $font-size;
+		font-size: .8rem;
 		padding: $form-data-padding;
 	}
 }
