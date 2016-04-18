@@ -1,4 +1,4 @@
-.banner {
+div.banner {
 	@include align-items(center);
 	@include justify-content(center);
 	color: $banner-color;
@@ -22,12 +22,12 @@
 }
 
 /************************************************** THEMES **************************************************/
-.banner-lube {
+div.banner-lube {
 	@extend .banner;
 	background: $color-lube;
 	color: $color-text-lube;	
 }
-.banner-kal {
+div.banner-kal {
 	@extend .banner;
 	background: $color-kal;
 	color: $color-text-kal;	

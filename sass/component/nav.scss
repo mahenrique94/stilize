@@ -142,6 +142,42 @@ nav.nav-kal {
 		}
 	}
 }
+nav.nav-responsive {	
+	float: left;
+	width: 100%;
+	ul {
+		@include background-default;
+		border: $border;
+		display: inline-flex;	
+		width: 100%;
+		li {
+			@include display-inline-flex;
+			@include justify-content("center");
+			border-right: $border;
+			
+			list-style: none;
+			text-align: center;
+			width: 100%;	
+			a, button {
+				@include justify-content("center");
+				color: $color;
+				height: 35px;				
+				line-height: 35px;
+				text-decoration: none;			
+				width: 100%;	
+			}
+			a:hover, button:hover {
+				cursor: pointer;
+			}
+			&:hover {
+				background: #FFFFFF;
+			}
+			&.active {
+				background: #FFFFFF;
+			}
+		}
+	}
+}
 nav.nav-tie {
 	@extend .nav;	
 	background: $color-tie;	
@@ -189,109 +225,6 @@ nav.nav-tie {
 				&:last-child {
 					border-bottom: none;
 				}
-			}
-		}
-	}
-}
-ul.nav-mapa-site {
-	float: left;	
-	@media screen and #{$media-querie-mobile} {
-		width: 100%;	
-	}
-	@media screen and #{$media-querie-tablet} {
-		width: initial;
-	}
-	@media screen and #{$media-querie-desktop} {
-		width: initial;
-	}
-	@media screen and #{$media-querie-large-screen} {
-		width: initial;
-	}
-	li {
-		line-height: 1.5;
-		&:first-child {		
-			color: #000000;	
-			font-size: 1.2rem;
-			font-weight: bold;
-		}
-		button {
-			background: transparent;
-			border: none;
-			color: #000000;
-			font-size: 0.8rem;
-			padding: 0;
-			&:hover {
-				cursor: pointer;
-				outline: none;
-			}
-			&:focus {
-				outline: none;
-			}
-		}
-	}
-}
-ul.nav-network-social {
-	@include align-items("center");
-	@include display-flex;
-	@include justify-content("center");
-	width: 100%;
-	li, a {
-		float: left;
-		height: 32px;		
-		text-indent: -999999px;
-		width: 32px;
-	}
-	li:not(:last-child), a:not(:last-child) {
-		margin-right: 2rem;
-	}
-	.facebook {
-		background: url(img/facebook.png) center / 32px 32px;		
-	}
-	.github {
-		background: url(img/github.png) center / 32px 32px;
-	}
-	.instagram {
-		background: url(img/instagram.png) center / 32px 32px;
-	}
-	.linkedin {
-		background: url(img/linkedin.png) center / 32px 32px;	
-	}
-	.twitter {
-		background: url(img/twitter.png) center / 32px 32px;
-	}	
-}
-nav.nav-responsive {	
-	float: left;
-	width: 100%;
-	ul {
-		@include background-default;
-		border: $border;
-		display: inline-flex;	
-		width: 100%;
-		li {
-			@include display-inline-flex;
-			@include justify-content("center");
-			border-right: $border;
-			
-			list-style: none;
-			text-align: center;
-			width: 100%;	
-			a, button {
-				@include justify-content("center");
-				color: $color;
-				height: 35px;				
-				line-height: 35px;
-				text-decoration: none;			
-				width: 100%;	
-			}
-			a:hover, button:hover {
-				cursor: pointer;
-			}
-			&:hover {
-				background: #FFFFFF;
-			}
-			&.active {
-				background: #FFFFFF;
 			}
 		}
 	}
