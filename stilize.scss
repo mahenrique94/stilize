@@ -1,3 +1,7 @@
+// Fontes utilizadas para criar os ícons.
+// Desenvolvidas por www.fontello.com
+// Caso surja a necessidade de uma fonte onde não se encontra no site, basta vetorizá-la em Corel ou Ilustrator, exportar como .svg,
+// realizar importação e conversão(.svg para font) no site.
 @font-face {
 	font: {
 		family: 'stilize';
@@ -11,17 +15,31 @@
         url('fonts/stilize.svg?17838187#stilize') format('svg');
 }
 
+// Framework utilizado para controle de grid.
+// Importação para que os grids responsivos funcionem corretamente.
+// Arquivos de configuração localiza-se em sass/helpers/susy.
 @import 'susy';
 
+// Resetando todos os estilos padrões de diversos navegadores,
+// para que possam ficar todos com o mesmo estilo definidos abaixo.
 @import 'sass/base/reset';
 
+// Importação de arquivos referente aos plugins do framework.
+// Para uma melhor separação de pastas e responsabilidades, as importações encontram-se em /plugins
+@import 'plugins/select-search/this'; // @select search, realizar filtros em selects
+
+// Importação de váriaveis, placholders e mixins,
+// nos ajuda em economia e manutenção de código.
+// Como podem ser aproveitados em todo o framework são impotados antes de todos os arquivos
 @import 'sass/helpers/variable';
 @import 'sass/helpers/placeholder';
 @import 'sass/helpers/mixin';
 @import 'sass/helpers/susy';
 
-@import 'sass/component/nav';
-
+// Importação das funcionalidades e recursos do framework
+// Qualquer novo recurso ou funcionalidade deve ser aqui importado
+// Realizado essa hierarquia de arquivos onde o nome do recurso será o nome do arquivo
+// para que a manutenção dos mesmoos seja fácil
 @import 'sass/alert';
 @import 'sass/band';
 @import 'sass/banner';
@@ -32,6 +50,7 @@
 @import 'sass/column';
 @import 'sass/config';
 @import 'sass/container';
+@import 'sass/dialog';
 @import 'sass/header';
 @import 'sass/icon';
 @import 'sass/figure';
@@ -40,12 +59,21 @@
 @import 'sass/form';
 @import 'sass/grid';
 @import 'sass/modal';
+@import 'sass/step';
+
+// Localizado em pasta separa pois por questões de padronização do sass
+// Arquivos que trabalham com menu devem ficar localizados em /component
+@import 'sass/component/nav';
 @import 'sass/pagination';
 @import 'sass/panel';
 @import 'sass/tab';
 @import 'sass/table';
 @import 'sass/tooltip';
 
+// Arquivos importados fora da ordem alfabética pois eles precisam sobrescrever as definições e regras padrão dos demais arquivos
+// Caso colocasse na ordem eles não surtiram efeito, tendo a necessidade de informar !important no final de suas declarações
+// Para evitar tal uso, estamos utilizando a regra css, onde os arquivos que são importados por ultimo sobrescrevem as mudanças
+// nos anteriores
 @import 'sass/background';
 @import 'sass/border';
 @import 'sass/color';

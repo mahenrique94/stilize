@@ -1,6 +1,5 @@
 .form {
 	box-sizing: border-box;
-	display: inline-block;	
 	width: 100%;
 	div[class^=col] label {
 		float: inherit;
@@ -8,6 +7,7 @@
 	.form-body {
 		box-sizing: inherit;
 		display: inherit;
+		float: left;
 		padding: $form-padding;
 		width: inherit;
 	}
@@ -22,21 +22,19 @@
 			outline: none;
 		}
 	}
-	input[type=checkbox], input[type=radio] {
+	input[type=checkbox].form-data, input[type=radio].form-data {
 		clear: both;
 		display: block;
+		width: initial;
 	}
 }
 
 form.form-block {
 	@extend .form;		
 	.form-data {
-		font-size: $font-size;
+		font-size: .8rem;
 		padding: $form-data-padding;
 	}
-	input[type=checkbox], input[type=radio] {
-		width: initial;
-	}	
 }
 form.form-modern {
 	@extend .form;
@@ -45,14 +43,10 @@ form.form-modern {
 	}
 	select {
 		height: 35px;
-	}
+	}	
 }
 form.form-search {
-	@extend .form;
-	width: 50%;
-	div[class^=col-] {
-		margin-bottom: 0;
-	}
+	@extend .form;	
 	.form-data {		
 		float: left;
 		padding: $form-data-modern-padding;

@@ -1,6 +1,6 @@
 .two-column {
 	& > * {
-		@include calc(width, "50% - .5rem", !important);		
+		@include calc(width, "50% - .7rem", !important);		
 		float: left;
 	}
 	& > *:first-child {

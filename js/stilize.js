@@ -26,15 +26,6 @@ jQuery(document).ready(function () {
 	jQuery('body').append('<div class="bg-modal"><div class="modal"><iframe id="iframe-modal"></iframe></div></div>');
 	
 	/** @auth Matheus
-	 * UPPERCASE PARA INPUTS, SELECTS E TEXTAREAS, TANTO VISUAL COMO INTERNAMENTE
-	 */
-	jQuery('input:not(.no-upper), textarea:not(.no-upper), select:not(.no-upper)').css('text-transform', 'uppercase');
-	jQuery('input:not(.no-upper), textarea:not(.no-upper), select:not(.no-upper)').keyup(function(event) {
-		this.value = this.value.toUpperCase();
-		return event.preventDefault();
-	});
-	
-	/** @auth Matheus
 	 * ESCONDER ELEMENTOS DEPOIS DE 2 SEGUNDOS
 	 */
 	if(!jQuery('.time-out').is(':empty')) {
@@ -94,6 +85,14 @@ jQuery(document).ready(function () {
 	 */
 	jQuery('[data-toggle=collapse]').click(function(e) {
 		jQuery($(this).attr('href')).slideToggle();
+	});
+	
+	/** @auth Matheus
+	 *  FUNCAO PARA MOSTRAR E ESCONDER DIVS DO CADASTRO PASSO-A-PASSO
+	 */
+	jQuery('button[data-current][data-next]').click(function() {
+		jQuery('.' + $(this).data('current')).toggle();
+		jQuery('.' + $(this).data('next')).toggle();
 	});
 	
 });
