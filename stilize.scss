@@ -24,9 +24,9 @@
 // para que possam ficar todos com o mesmo estilo definidos abaixo.
 @import 'sass/base/reset';
 
-// Importação de arquivos referente aos plugins do framework.
-// Para uma melhor separação de pastas e responsabilidades, as importações encontram-se em /plugins
-@import 'plugins/select-search/this'; // @select search, realizar filtros em selects
+// Plugins,
+// para uma melhor separação de pastas e responsabilidades, as importações encontram-se em /plugins
+@import 'plugins/select2/select2'; // @Select2 - https://select2.github.io/
 
 // Importação de váriaveis, placholders e mixins,
 // nos ajuda em economia e manutenção de código.
