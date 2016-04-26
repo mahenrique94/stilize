@@ -225,54 +225,6 @@ nav.nav-kal {
       nav.nav-kal ul ul li:last-child {
         border-bottom: none; }
 
-nav.nav-tie {
-  background: #FFFFFF; }
-  nav.nav-tie a.nav-brand {
-    color: #000000; }
-  nav.nav-tie ul li a {
-    color: #000000; }
-  nav.nav-tie ul li:hover {
-    background: #000000; }
-  nav.nav-tie ul li:hover > a {
-    color: #FFFFFF; }
-  nav.nav-tie ul li:hover > ul {
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -o-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
-    opacity: 100; }
-  nav.nav-tie ul ul {
-    -webkit-transform: scale(0);
-    -moz-transform: scale(0);
-    -o-transform: scale(0);
-    -ms-transform: scale(0);
-    transform: scale(0);
-    -webkit-transition: all 0.3s linear;
-    -moz-transition: all 0.3s linear;
-    -o-transition: all 0.3s linear;
-    -ms-transition: all 0.3s linear;
-    transition: all 0.3s linear;
-    background: #FFFFFF;
-    opacity: 0;
-    top: 3.5rem;
-    z-index: 1; }
-    nav.nav-tie ul ul li {
-      border-bottom: 1px solid #DADADA;
-      float: none;
-      height: 2rem;
-      margin: 0;
-      padding: 0.5rem;
-      min-width: 150px;
-      white-space: nowrap; }
-      nav.nav-tie ul ul li a {
-        display: block;
-        height: initial; }
-      nav.nav-tie ul ul li ul {
-        left: 150px; }
-      nav.nav-tie ul ul li:last-child {
-        border-bottom: none; }
-
 ul.nav-mapa-site {
   float: left; }
   @media screen and (min-width: 0px) {
@@ -333,6 +285,8 @@ ul.nav-network-social {
     background: url(img/facebook.png) center/32px 32px; }
   ul.nav-network-social .github {
     background: url(img/github.png) center/32px 32px; }
+  ul.nav-network-social .googleplus {
+    background: url(img/googleplus.png) center/32px 32px; }
   ul.nav-network-social .instagram {
     background: url(img/instagram.png) center/32px 32px; }
   ul.nav-network-social .linkedin {
@@ -384,6 +338,54 @@ nav.nav-responsive {
         background: #FFFFFF; }
       nav.nav-responsive ul li.active {
         background: #FFFFFF; }
+
+nav.nav-tie {
+  background: #FFFFFF; }
+  nav.nav-tie a.nav-brand {
+    color: #000000; }
+  nav.nav-tie ul li a {
+    color: #000000; }
+  nav.nav-tie ul li:hover {
+    background: #000000; }
+  nav.nav-tie ul li:hover > a {
+    color: #FFFFFF; }
+  nav.nav-tie ul li:hover > ul {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 100; }
+  nav.nav-tie ul ul {
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -o-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+    background: #FFFFFF;
+    opacity: 0;
+    top: 3.5rem;
+    z-index: 1; }
+    nav.nav-tie ul ul li {
+      border-bottom: 1px solid #DADADA;
+      float: none;
+      height: 2rem;
+      margin: 0;
+      padding: 0.5rem;
+      min-width: 150px;
+      white-space: nowrap; }
+      nav.nav-tie ul ul li a {
+        display: block;
+        height: initial; }
+      nav.nav-tie ul ul li ul {
+        left: 150px; }
+      nav.nav-tie ul ul li:last-child {
+        border-bottom: none; }
 
 .alert, .alert-der, .alert-gary, .alert-low, .alert-lube, .alert-kal, .alert-range {
   box-sizing: border-box;
@@ -2417,8 +2419,7 @@ input[type=search]::-webkit-search-results-decoration {
     border: 1px solid #DCDCDC; }
 
 ul.pagination-default {
-  display: inline-block;
-  margin-top: 0.3125rem; }
+  display: inline-block; }
   ul.pagination-default li.page-default {
     display: inherit;
     float: left;

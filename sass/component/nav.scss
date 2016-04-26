@@ -142,57 +142,6 @@ nav.nav-kal {
 		}
 	}
 }
-nav.nav-tie {
-	@extend .nav;	
-	background: $color-tie;	
-	a.nav-brand {
-		color: $color-text-tie;
-	}
-	ul {
-		li {
-			a {
-				color: $color-text-tie;
-			}
-			&:hover {
-				background: $color-text-tie;
-			}
-			&:hover > a {
-				color: $color-tie;	
-			}
-			&:hover > ul {
-				@include transform("scale(1)");
-				opacity: 100;
-			}
-		}
-		ul {			
-			@include transform("scale(0)");
-			@include transition("all 0.3s linear");
-			background: $color-tie;	
-			opacity: 0;
-			top: $nav-height;
-			z-index: 1;
-			li {
-				border-bottom: 1px solid #DADADA;								
-				float: none;
-				height: $nav-sub-height;				
-				margin: 0;
-				padding: $nav-sub-padding-li;
-				min-width: $nav-min-width;	
-				white-space: nowrap;
-				a {
-					display: block;
-					height: initial;
-				}
-				ul {
-					left: $nav-min-width;
-				}							
-				&:last-child {
-					border-bottom: none;
-				}
-			}
-		}
-	}
-}
 ul.nav-mapa-site {
 	float: left;	
 	@media screen and #{$media-querie-mobile} {
@@ -250,6 +199,9 @@ ul.nav-network-social {
 	.github {
 		background: url(img/github.png) center / 32px 32px;
 	}
+	.googleplus {
+		background: url(img/googleplus.png) center / 32px 32px;
+	}
 	.instagram {
 		background: url(img/instagram.png) center / 32px 32px;
 	}
@@ -292,6 +244,57 @@ nav.nav-responsive {
 			}
 			&.active {
 				background: #FFFFFF;
+			}
+		}
+	}
+}
+nav.nav-tie {
+	@extend .nav;	
+	background: $color-tie;	
+	a.nav-brand {
+		color: $color-text-tie;
+	}
+	ul {
+		li {
+			a {
+				color: $color-text-tie;
+			}
+			&:hover {
+				background: $color-text-tie;
+			}
+			&:hover > a {
+				color: $color-tie;	
+			}
+			&:hover > ul {
+				@include transform("scale(1)");
+				opacity: 100;
+			}
+		}
+		ul {			
+			@include transform("scale(0)");
+			@include transition("all 0.3s linear");
+			background: $color-tie;	
+			opacity: 0;
+			top: $nav-height;
+			z-index: 1;
+			li {
+				border-bottom: 1px solid #DADADA;								
+				float: none;
+				height: $nav-sub-height;				
+				margin: 0;
+				padding: $nav-sub-padding-li;
+				min-width: $nav-min-width;	
+				white-space: nowrap;
+				a {
+					display: block;
+					height: initial;
+				}
+				ul {
+					left: $nav-min-width;
+				}							
+				&:last-child {
+					border-bottom: none;
+				}
 			}
 		}
 	}
