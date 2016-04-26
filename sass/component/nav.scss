@@ -142,76 +142,6 @@ nav.nav-kal {
 		}
 	}
 }
-ul.nav-mapa-site {
-	float: left;	
-	@media screen and #{$media-querie-mobile} {
-		width: 100%;	
-	}
-	@media screen and #{$media-querie-tablet} {
-		width: initial;
-	}
-	@media screen and #{$media-querie-desktop} {
-		width: initial;
-	}
-	@media screen and #{$media-querie-large-screen} {
-		width: initial;
-	}
-	li {
-		line-height: 1.5;
-		&:first-child {		
-			color: #000000;	
-			font-size: 1.2rem;
-			font-weight: bold;
-		}
-		button {
-			background: transparent;
-			border: none;
-			color: #000000;
-			font-size: 0.8rem;
-			padding: 0;
-			&:hover {
-				cursor: pointer;
-				outline: none;
-			}
-			&:focus {
-				outline: none;
-			}
-		}
-	}
-}
-ul.nav-network-social {
-	@include align-items("center");
-	@include display-flex;
-	@include justify-content("center");
-	width: 100%;
-	li, a {
-		float: left;
-		height: 32px;		
-		text-indent: -999999px;
-		width: 32px;
-	}
-	li:not(:last-child), a:not(:last-child) {
-		margin-right: 2rem;
-	}
-	.facebook {
-		background: url(img/facebook.png) center / 32px 32px;		
-	}
-	.github {
-		background: url(img/github.png) center / 32px 32px;
-	}
-	.googleplus {
-		background: url(img/googleplus.png) center / 32px 32px;
-	}
-	.instagram {
-		background: url(img/instagram.png) center / 32px 32px;
-	}
-	.linkedin {
-		background: url(img/linkedin.png) center / 32px 32px;	
-	}
-	.twitter {
-		background: url(img/twitter.png) center / 32px 32px;
-	}	
-}
 nav.nav-responsive {	
 	float: left;
 	width: 100%;
@@ -248,11 +178,45 @@ nav.nav-responsive {
 		}
 	}
 }
+nav.nav-square {
+	float: left;
+	width: 100%;
+	ul.nav-row {
+		@include display-flex;
+		@include justify-content("flex-start");
+		margin-bottom: 1rem;
+		li {			
+			margin-right: 1.25rem;
+			a {
+				@include border-radius(.2rem);
+				background: rgba(255, 255, 255, .8);
+				border: 1px solid #DCDCDC;
+				display: table-cell;
+				height: 50px;
+				padding: 1rem;
+				text-align: center;
+				width: 100px;
+				color: #000000;
+				text-decoration: none;
+				vertical-align: middle;
+				i {
+					display: block;
+					margin-bottom: 5px;
+				}
+			}
+			&:last-child {
+				margin-right: 0;
+			}
+		}		
+	}
+}
 nav.nav-tie {
 	@extend .nav;	
 	background: $color-tie;	
-	a.nav-brand {
-		color: $color-text-tie;
+	h1, a.nav-brand {
+		color: $color-text-tie;	
+		display: inline-block;
+		float: inherit;
 	}
 	ul {
 		li {
