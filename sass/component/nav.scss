@@ -142,6 +142,59 @@ nav.nav-kal {
 		}
 	}
 }
+nav.nav-lube {
+	@extend .nav;	
+	background: $color-lube;	
+	h1, a.nav-brand {
+		color: $color-text-lube;	
+		display: inline-block;
+		float: inherit;
+	}
+	ul {
+		li {
+			a {
+				color: $color-text-lube;
+			}
+			&:hover {
+				background: $color-text-lube;
+			}
+			&:hover > a {
+				color: $color-lube;	
+			}
+			&:hover > ul {
+				@include transform("scale(1)");
+				opacity: 100;
+			}
+		}
+		ul {			
+			@include transform("scale(0)");
+			@include transition("all 0.3s linear");
+			background: $color-lube;	
+			opacity: 0;
+			top: $nav-height;
+			z-index: 1;
+			li {
+				border-bottom: 1px solid #DADADA;								
+				float: none;
+				height: $nav-sub-height;				
+				margin: 0;
+				padding: $nav-sub-padding-li;
+				min-width: $nav-min-width;	
+				white-space: nowrap;
+				a {
+					display: block;
+					height: initial;
+				}
+				ul {
+					left: $nav-min-width;
+				}							
+				&:last-child {
+					border-bottom: none;
+				}
+			}
+		}
+	}
+}
 nav.nav-responsive {	
 	float: left;
 	width: 100%;

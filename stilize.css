@@ -604,14 +604,14 @@ table {
 /************************************************** PAGINATION **************************************************/
 /************************************************** TABLES **************************************************/
 /************************************************** TABS **************************************************/
-div.box-group, nav.nav, nav.nav-default, nav.nav-kal, nav.nav-tie, nav.nav ul ul li, nav.nav-default ul ul li, nav.nav-kal ul ul li, nav.nav-tie ul ul li {
+div.box-group, nav.nav, nav.nav-default, nav.nav-kal, nav.nav-lube, nav.nav-tie, nav.nav ul ul li, nav.nav-default ul ul li, nav.nav-kal ul ul li, nav.nav-lube ul ul li, nav.nav-tie ul ul li {
   box-sizing: border-box; }
 
 ul.pagination-default li.page-default a, ul.pagination-default li.page-default button, ul.pagination-lube li.page-lube a, ul.pagination-lube li.page-lube button {
   color: #424242;
   text-decoration: none; }
 
-.button:link, .button-transparent:link, .btn-border-blue:link, .btn-border-der:link, .btn-border-gary:link, .btn-border-lube:link, .btn-border-low:link, .btn-border-lower:link, .btn-border-kal:link, .btn-border-range:link, .button-modern:link, .btn-blue-modern:link, .btn-booper-modern:link, .btn-default-modern:link, .btn-der-modern:link, .btn-gary-modern:link, .btn-lube-modern:link, .btn-low-modern:link, .btn-lower-modern:link, .btn-kal-modern:link, .btn-range-modern:link, .btn-rangeless-modern:link, .btn-blue:link, .btn-default:link, .btn-der:link, .btn-gary:link, .btn-lube:link, .btn-low:link, .btn-lower:link, .btn-kal:link, .btn-range:link, .button:visited, .button-transparent:visited, .btn-border-blue:visited, .btn-border-der:visited, .btn-border-gary:visited, .btn-border-lube:visited, .btn-border-low:visited, .btn-border-lower:visited, .btn-border-kal:visited, .btn-border-range:visited, .button-modern:visited, .btn-blue-modern:visited, .btn-booper-modern:visited, .btn-default-modern:visited, .btn-der-modern:visited, .btn-gary-modern:visited, .btn-lube-modern:visited, .btn-low-modern:visited, .btn-lower-modern:visited, .btn-kal-modern:visited, .btn-range-modern:visited, .btn-rangeless-modern:visited, .btn-blue:visited, .btn-default:visited, .btn-der:visited, .btn-gary:visited, .btn-lube:visited, .btn-low:visited, .btn-lower:visited, .btn-kal:visited, .btn-range:visited, .button:hover, .button-transparent:hover, .btn-border-blue:hover, .btn-border-der:hover, .btn-border-gary:hover, .btn-border-lube:hover, .btn-border-low:hover, .btn-border-lower:hover, .btn-border-kal:hover, .btn-border-range:hover, .button-modern:hover, .btn-blue-modern:hover, .btn-booper-modern:hover, .btn-default-modern:hover, .btn-der-modern:hover, .btn-gary-modern:hover, .btn-lube-modern:hover, .btn-low-modern:hover, .btn-lower-modern:hover, .btn-kal-modern:hover, .btn-range-modern:hover, .btn-rangeless-modern:hover, .btn-blue:hover, .btn-default:hover, .btn-der:hover, .btn-gary:hover, .btn-lube:hover, .btn-low:hover, .btn-lower:hover, .btn-kal:hover, .btn-range:hover, .button:active, .button-transparent:active, .btn-border-blue:active, .btn-border-der:active, .btn-border-gary:active, .btn-border-lube:active, .btn-border-low:active, .btn-border-lower:active, .btn-border-kal:active, .btn-border-range:active, .button-modern:active, .btn-blue-modern:active, .btn-booper-modern:active, .btn-default-modern:active, .btn-der-modern:active, .btn-gary-modern:active, .btn-lube-modern:active, .btn-low-modern:active, .btn-lower-modern:active, .btn-kal-modern:active, .btn-range-modern:active, .btn-rangeless-modern:active, .btn-blue:active, .btn-default:active, .btn-der:active, .btn-gary:active, .btn-lube:active, .btn-low:active, .btn-lower:active, .btn-kal:active, .btn-range:active, footer.footer a:link, footer.footer-default a:link, footer.footer-gary a:link, footer.footer-kal a:link, footer.footer-tie a:link, footer.footer a:visited, footer.footer-default a:visited, footer.footer-gary a:visited, footer.footer-kal a:visited, footer.footer-tie a:visited, footer.footer a:hover, footer.footer-default a:hover, footer.footer-gary a:hover, footer.footer-kal a:hover, footer.footer-tie a:hover, footer.footer a:active, footer.footer-default a:active, footer.footer-gary a:active, footer.footer-kal a:active, footer.footer-tie a:active, nav.nav a.nav-brand:link, nav.nav-default a.nav-brand:link, nav.nav-kal a.nav-brand:link, nav.nav-tie a.nav-brand:link, nav.nav a.nav-brand:visited, nav.nav-default a.nav-brand:visited, nav.nav-kal a.nav-brand:visited, nav.nav-tie a.nav-brand:visited, nav.nav a.nav-brand:hover, nav.nav-default a.nav-brand:hover, nav.nav-kal a.nav-brand:hover, nav.nav-tie a.nav-brand:hover, nav.nav a.nav-brand:active, nav.nav-default a.nav-brand:active, nav.nav-kal a.nav-brand:active, nav.nav-tie a.nav-brand:active, .no-decoration:link, .no-decoration:visited, .no-decoration:hover, .no-decoration:active {
+.button:link, .button-transparent:link, .btn-border-blue:link, .btn-border-der:link, .btn-border-gary:link, .btn-border-lube:link, .btn-border-low:link, .btn-border-lower:link, .btn-border-kal:link, .btn-border-range:link, .button-modern:link, .btn-blue-modern:link, .btn-booper-modern:link, .btn-default-modern:link, .btn-der-modern:link, .btn-gary-modern:link, .btn-lube-modern:link, .btn-low-modern:link, .btn-lower-modern:link, .btn-kal-modern:link, .btn-range-modern:link, .btn-rangeless-modern:link, .btn-blue:link, .btn-default:link, .btn-der:link, .btn-gary:link, .btn-lube:link, .btn-low:link, .btn-lower:link, .btn-kal:link, .btn-range:link, .button:visited, .button-transparent:visited, .btn-border-blue:visited, .btn-border-der:visited, .btn-border-gary:visited, .btn-border-lube:visited, .btn-border-low:visited, .btn-border-lower:visited, .btn-border-kal:visited, .btn-border-range:visited, .button-modern:visited, .btn-blue-modern:visited, .btn-booper-modern:visited, .btn-default-modern:visited, .btn-der-modern:visited, .btn-gary-modern:visited, .btn-lube-modern:visited, .btn-low-modern:visited, .btn-lower-modern:visited, .btn-kal-modern:visited, .btn-range-modern:visited, .btn-rangeless-modern:visited, .btn-blue:visited, .btn-default:visited, .btn-der:visited, .btn-gary:visited, .btn-lube:visited, .btn-low:visited, .btn-lower:visited, .btn-kal:visited, .btn-range:visited, .button:hover, .button-transparent:hover, .btn-border-blue:hover, .btn-border-der:hover, .btn-border-gary:hover, .btn-border-lube:hover, .btn-border-low:hover, .btn-border-lower:hover, .btn-border-kal:hover, .btn-border-range:hover, .button-modern:hover, .btn-blue-modern:hover, .btn-booper-modern:hover, .btn-default-modern:hover, .btn-der-modern:hover, .btn-gary-modern:hover, .btn-lube-modern:hover, .btn-low-modern:hover, .btn-lower-modern:hover, .btn-kal-modern:hover, .btn-range-modern:hover, .btn-rangeless-modern:hover, .btn-blue:hover, .btn-default:hover, .btn-der:hover, .btn-gary:hover, .btn-lube:hover, .btn-low:hover, .btn-lower:hover, .btn-kal:hover, .btn-range:hover, .button:active, .button-transparent:active, .btn-border-blue:active, .btn-border-der:active, .btn-border-gary:active, .btn-border-lube:active, .btn-border-low:active, .btn-border-lower:active, .btn-border-kal:active, .btn-border-range:active, .button-modern:active, .btn-blue-modern:active, .btn-booper-modern:active, .btn-default-modern:active, .btn-der-modern:active, .btn-gary-modern:active, .btn-lube-modern:active, .btn-low-modern:active, .btn-lower-modern:active, .btn-kal-modern:active, .btn-range-modern:active, .btn-rangeless-modern:active, .btn-blue:active, .btn-default:active, .btn-der:active, .btn-gary:active, .btn-lube:active, .btn-low:active, .btn-lower:active, .btn-kal:active, .btn-range:active, footer.footer a:link, footer.footer-default a:link, footer.footer-gary a:link, footer.footer-kal a:link, footer.footer-lube a:link, footer.footer-tie a:link, footer.footer a:visited, footer.footer-default a:visited, footer.footer-gary a:visited, footer.footer-kal a:visited, footer.footer-lube a:visited, footer.footer-tie a:visited, footer.footer a:hover, footer.footer-default a:hover, footer.footer-gary a:hover, footer.footer-kal a:hover, footer.footer-lube a:hover, footer.footer-tie a:hover, footer.footer a:active, footer.footer-default a:active, footer.footer-gary a:active, footer.footer-kal a:active, footer.footer-lube a:active, footer.footer-tie a:active, nav.nav a.nav-brand:link, nav.nav-default a.nav-brand:link, nav.nav-kal a.nav-brand:link, nav.nav-lube a.nav-brand:link, nav.nav-tie a.nav-brand:link, nav.nav a.nav-brand:visited, nav.nav-default a.nav-brand:visited, nav.nav-kal a.nav-brand:visited, nav.nav-lube a.nav-brand:visited, nav.nav-tie a.nav-brand:visited, nav.nav a.nav-brand:hover, nav.nav-default a.nav-brand:hover, nav.nav-kal a.nav-brand:hover, nav.nav-lube a.nav-brand:hover, nav.nav-tie a.nav-brand:hover, nav.nav a.nav-brand:active, nav.nav-default a.nav-brand:active, nav.nav-kal a.nav-brand:active, nav.nav-lube a.nav-brand:active, nav.nav-tie a.nav-brand:active, .no-decoration:link, .no-decoration:visited, .no-decoration:hover, .no-decoration:active {
   text-decoration: none; }
 
 /************************************************** BACKGROUND **************************************************/
@@ -2685,7 +2685,7 @@ figure.figure-md img {
 .font-10x {
   font-size: 2.3rem; }
 
-footer.footer, footer.footer-default, footer.footer-gary, footer.footer-kal, footer.footer-tie {
+footer.footer, footer.footer-default, footer.footer-gary, footer.footer-kal, footer.footer-lube, footer.footer-tie {
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8);
   box-sizing: border-box;
   clear: both;
@@ -2694,15 +2694,15 @@ footer.footer, footer.footer-default, footer.footer-gary, footer.footer-kal, foo
   padding: 1rem;
   position: relative;
   width: 100%; }
-  footer.footer a, footer.footer-default a, footer.footer-gary a, footer.footer-kal a, footer.footer-tie a {
+  footer.footer a, footer.footer-default a, footer.footer-gary a, footer.footer-kal a, footer.footer-lube a, footer.footer-tie a {
     color: inherit; }
-    footer.footer a:focus, footer.footer-default a:focus, footer.footer-gary a:focus, footer.footer-kal a:focus, footer.footer-tie a:focus {
+    footer.footer a:focus, footer.footer-default a:focus, footer.footer-gary a:focus, footer.footer-kal a:focus, footer.footer-lube a:focus, footer.footer-tie a:focus {
       outline: none; }
-    footer.footer a:hover, footer.footer-default a:hover, footer.footer-gary a:hover, footer.footer-kal a:hover, footer.footer-tie a:hover {
+    footer.footer a:hover, footer.footer-default a:hover, footer.footer-gary a:hover, footer.footer-kal a:hover, footer.footer-lube a:hover, footer.footer-tie a:hover {
       cursor: pointer; }
-    footer.footer a:active, footer.footer-default a:active, footer.footer-gary a:active, footer.footer-kal a:active, footer.footer-tie a:active {
+    footer.footer a:active, footer.footer-default a:active, footer.footer-gary a:active, footer.footer-kal a:active, footer.footer-lube a:active, footer.footer-tie a:active {
       outline: none; }
-    footer.footer a:hover, footer.footer-default a:hover, footer.footer-gary a:hover, footer.footer-kal a:hover, footer.footer-tie a:hover {
+    footer.footer a:hover, footer.footer-default a:hover, footer.footer-gary a:hover, footer.footer-kal a:hover, footer.footer-lube a:hover, footer.footer-tie a:hover {
       cursor: pointer;
       text-decoration: underline; }
 
@@ -2719,6 +2719,10 @@ footer.footer-gary {
 
 footer.footer-kal {
   background: #303030;
+  color: #FFFFFF; }
+
+footer.footer-lube {
+  background: #0099FF;
   color: #FFFFFF; }
 
 footer.footer-tie {
@@ -3180,43 +3184,43 @@ input[type=search]::-webkit-search-results-decoration {
 [class*=step-]:not(.active) {
   display: none; }
 
-nav.nav, nav.nav-default, nav.nav-kal, nav.nav-tie {
+nav.nav, nav.nav-default, nav.nav-kal, nav.nav-lube, nav.nav-tie {
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8);
   float: left;
   padding: 0 1rem;
   width: 100%; }
-  nav.nav a.nav-brand, nav.nav-default a.nav-brand, nav.nav-kal a.nav-brand, nav.nav-tie a.nav-brand {
+  nav.nav a.nav-brand, nav.nav-default a.nav-brand, nav.nav-kal a.nav-brand, nav.nav-lube a.nav-brand, nav.nav-tie a.nav-brand {
     color: #FFFFFF;
     font-size: 1.5rem;
     float: inherit;
     margin: 1rem 1rem 1rem 0; }
-    nav.nav a.nav-brand:focus, nav.nav-default a.nav-brand:focus, nav.nav-kal a.nav-brand:focus, nav.nav-tie a.nav-brand:focus {
+    nav.nav a.nav-brand:focus, nav.nav-default a.nav-brand:focus, nav.nav-kal a.nav-brand:focus, nav.nav-lube a.nav-brand:focus, nav.nav-tie a.nav-brand:focus {
       outline: none; }
-    nav.nav a.nav-brand:hover, nav.nav-default a.nav-brand:hover, nav.nav-kal a.nav-brand:hover, nav.nav-tie a.nav-brand:hover {
+    nav.nav a.nav-brand:hover, nav.nav-default a.nav-brand:hover, nav.nav-kal a.nav-brand:hover, nav.nav-lube a.nav-brand:hover, nav.nav-tie a.nav-brand:hover {
       cursor: pointer; }
-    nav.nav a.nav-brand:active, nav.nav-default a.nav-brand:active, nav.nav-kal a.nav-brand:active, nav.nav-tie a.nav-brand:active {
+    nav.nav a.nav-brand:active, nav.nav-default a.nav-brand:active, nav.nav-kal a.nav-brand:active, nav.nav-lube a.nav-brand:active, nav.nav-tie a.nav-brand:active {
       outline: none; }
-  nav.nav ul, nav.nav-default ul, nav.nav-kal ul, nav.nav-tie ul {
+  nav.nav ul, nav.nav-default ul, nav.nav-kal ul, nav.nav-lube ul, nav.nav-tie ul {
     float: inherit; }
-    nav.nav ul li, nav.nav-default ul li, nav.nav-kal ul li, nav.nav-tie ul li {
+    nav.nav ul li, nav.nav-default ul li, nav.nav-kal ul li, nav.nav-lube ul li, nav.nav-tie ul li {
       float: inherit;
       height: 3.5rem;
       margin-right: 1rem;
       padding: 0 0.5rem;
       position: relative; }
-      nav.nav ul li a, nav.nav-default ul li a, nav.nav-kal ul li a, nav.nav-tie ul li a {
+      nav.nav ul li a, nav.nav-default ul li a, nav.nav-kal ul li a, nav.nav-lube ul li a, nav.nav-tie ul li a {
         display: table-cell;
         height: inherit;
         text-decoration: none;
         vertical-align: middle; }
-    nav.nav ul ul, nav.nav-default ul ul, nav.nav-kal ul ul, nav.nav-tie ul ul {
+    nav.nav ul ul, nav.nav-default ul ul, nav.nav-kal ul ul, nav.nav-lube ul ul, nav.nav-tie ul ul {
       box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8);
       left: 0;
       position: absolute; }
-      nav.nav ul ul li ul, nav.nav-default ul ul li ul, nav.nav-kal ul ul li ul, nav.nav-tie ul ul li ul {
+      nav.nav ul ul li ul, nav.nav-default ul ul li ul, nav.nav-kal ul ul li ul, nav.nav-lube ul ul li ul, nav.nav-tie ul ul li ul {
         position: absolute;
         top: 0; }
-      nav.nav ul ul li a, nav.nav-default ul ul li a, nav.nav-kal ul ul li a, nav.nav-tie ul ul li a {
+      nav.nav ul ul li a, nav.nav-default ul ul li a, nav.nav-kal ul ul li a, nav.nav-lube ul ul li a, nav.nav-tie ul ul li a {
         float: inherit;
         white-space: nowrap;
         width: 100%; }
@@ -3321,6 +3325,56 @@ nav.nav-kal {
       nav.nav-kal ul ul li ul {
         left: 150px; }
       nav.nav-kal ul ul li:last-child {
+        border-bottom: none; }
+
+nav.nav-lube {
+  background: #0099FF; }
+  nav.nav-lube h1, nav.nav-lube a.nav-brand {
+    color: #FFFFFF;
+    display: inline-block;
+    float: inherit; }
+  nav.nav-lube ul li a {
+    color: #FFFFFF; }
+  nav.nav-lube ul li:hover {
+    background: #FFFFFF; }
+  nav.nav-lube ul li:hover > a {
+    color: #0099FF; }
+  nav.nav-lube ul li:hover > ul {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 100; }
+  nav.nav-lube ul ul {
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -o-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+    background: #0099FF;
+    opacity: 0;
+    top: 3.5rem;
+    z-index: 1; }
+    nav.nav-lube ul ul li {
+      border-bottom: 1px solid #DADADA;
+      float: none;
+      height: 2rem;
+      margin: 0;
+      padding: 0.5rem;
+      min-width: 150px;
+      white-space: nowrap; }
+      nav.nav-lube ul ul li a {
+        display: block;
+        height: initial; }
+      nav.nav-lube ul ul li ul {
+        left: 150px; }
+      nav.nav-lube ul ul li:last-child {
         border-bottom: none; }
 
 nav.nav-responsive {

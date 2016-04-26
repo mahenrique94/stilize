@@ -30,6 +30,11 @@ footer.footer-kal {
 	background: $color-kal;
 	color: $color-text-kal;		
 }
+footer.footer-lube {
+	@extend .footer;
+	background: $color-lube;
+	color: $color-text-lube;		
+}
 footer.footer-tie {
     @extend .footer;
 	background: $color-tie;
