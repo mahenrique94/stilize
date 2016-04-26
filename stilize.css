@@ -599,6 +599,7 @@ table {
 /************************************************** FONTS **************************************************/
 /************************************************** FOOTERS **************************************************/
 /************************************************** FORMS **************************************************/
+/************************************************** FORM-GROUP **************************************************/
 /************************************************** MEDIA-QUERIES **************************************************/
 /************************************************** NAVS **************************************************/
 /************************************************** PAGINATION **************************************************/
@@ -2796,6 +2797,30 @@ input[type=search]::-webkit-search-cancel-button,
 input[type=search]::-webkit-search-results-button,
 input[type=search]::-webkit-search-results-decoration {
   display: none; }
+
+.form-data-group {
+  display: table; }
+  .form-data-group .form-data {
+    border-right: 0; }
+  .form-data-group .form-data-group-text {
+    background: #F2F2F2;
+    border: 1px solid #DCDCDC;
+    box-sizing: border-box;
+    display: table-cell;
+    font-size: .8rem;
+    line-height: 0;
+    padding: 1rem;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 1%; }
+  .form-data-group .form-data-group-btn {
+    display: table-cell;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 1%; }
+    .form-data-group .form-data-group-btn button {
+      border-radius: 0; }
 
 [class^=col-] {
   margin: 0 0 0.625rem 0;
