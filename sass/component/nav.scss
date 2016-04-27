@@ -94,6 +94,46 @@ nav.nav-default {
 		}
 	}
 }
+nav.nav-group {
+	ul {
+		@include align-items("center");
+		@include display-flex;
+		@include justify-content("center");
+		bottom: 0;
+		position: fixed;
+		width: 100%;
+		z-index: 1;
+		li {						
+			width: 100%;			
+			button, a {
+				border: 0;
+				background: transparent;
+				display: inline-block;
+				font-size: 1rem;
+				height: 100%;
+				padding: 1rem;
+				text : {
+					align: center;
+					decoration: none;	
+				}
+				width: 100%;
+				&:hover {
+					cursor: pointer;
+				}
+			}
+			button {
+				line-height: 1.1;
+			}
+		}
+	}
+	&-default {
+		ul {
+			li {
+				@include background-default(true);
+			}
+		}
+	}
+}
 nav.nav-kal {
 	@extend .nav;
 	background: $color-kal;	
@@ -191,42 +231,6 @@ nav.nav-lube {
 				&:last-child {
 					border-bottom: none;
 				}
-			}
-		}
-	}
-}
-nav.nav-responsive {	
-	float: left;
-	width: 100%;
-	ul {
-		@include background-default;
-		border: $border;
-		display: inline-flex;	
-		width: 100%;
-		li {
-			@include display-inline-flex;
-			@include justify-content("center");
-			border-right: $border;
-			
-			list-style: none;
-			text-align: center;
-			width: 100%;	
-			a, button {
-				@include justify-content("center");
-				color: $color;
-				height: 35px;				
-				line-height: 35px;
-				text-decoration: none;			
-				width: 100%;	
-			}
-			a:hover, button:hover {
-				cursor: pointer;
-			}
-			&:hover {
-				background: #FFFFFF;
-			}
-			&.active {
-				background: #FFFFFF;
 			}
 		}
 	}

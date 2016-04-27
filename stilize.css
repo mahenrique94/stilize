@@ -3306,6 +3306,55 @@ nav.nav-default {
       nav.nav-default ul ul li:last-child {
         border-bottom: none; }
 
+nav.nav-group ul {
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -o-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -o-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -o-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1; }
+  nav.nav-group ul li {
+    width: 100%; }
+    nav.nav-group ul li button, nav.nav-group ul li a {
+      border: 0;
+      background: transparent;
+      display: inline-block;
+      font-size: 1rem;
+      height: 100%;
+      padding: 1rem;
+      text-align: center;
+      text-decoration: none;
+      width: 100%; }
+      nav.nav-group ul li button:hover, nav.nav-group ul li a:hover {
+        cursor: pointer; }
+    nav.nav-group ul li button {
+      line-height: 1.1; }
+nav.nav-group-default ul li {
+  background: -webkit-linear-gradient(#FBFBFB, #F6F6F6);
+  background: -moz-linear-gradient(#FBFBFB, #F6F6F6);
+  background: -o-linear-gradient(#FBFBFB, #F6F6F6);
+  background: -ms-linear-gradient(#FBFBFB, #F6F6F6);
+  background: linear-gradient(#FBFBFB, #F6F6F6); }
+  nav.nav-group-default ul li:hover {
+    background: -webkit-linear-gradient(white, white);
+    background: -moz-linear-gradient(white, white);
+    background: -o-linear-gradient(white, white);
+    background: -ms-linear-gradient(white, white);
+    background: linear-gradient(white, white); }
+
 nav.nav-kal {
   background: #303030; }
   nav.nav-kal ul li a {
@@ -3401,51 +3450,6 @@ nav.nav-lube {
         left: 150px; }
       nav.nav-lube ul ul li:last-child {
         border-bottom: none; }
-
-nav.nav-responsive {
-  float: left;
-  width: 100%; }
-  nav.nav-responsive ul {
-    background: -webkit-linear-gradient(#FBFBFB, #F6F6F6);
-    background: -moz-linear-gradient(#FBFBFB, #F6F6F6);
-    background: -o-linear-gradient(#FBFBFB, #F6F6F6);
-    background: -ms-linear-gradient(#FBFBFB, #F6F6F6);
-    background: linear-gradient(#FBFBFB, #F6F6F6);
-    border: 1px solid #DCDCDC;
-    display: inline-flex;
-    width: 100%; }
-    nav.nav-responsive ul li {
-      display: -webkit-inline-flex;
-      display: -moz-inline-flex;
-      display: -o-inline-flex;
-      display: -ms-inline-flex;
-      display: inline-flex;
-      -webkit-justify-content: center;
-      -moz-justify-content: center;
-      -o-justify-content: center;
-      -ms-justify-content: center;
-      justify-content: center;
-      border-right: 1px solid #DCDCDC;
-      list-style: none;
-      text-align: center;
-      width: 100%; }
-      nav.nav-responsive ul li a, nav.nav-responsive ul li button {
-        -webkit-justify-content: center;
-        -moz-justify-content: center;
-        -o-justify-content: center;
-        -ms-justify-content: center;
-        justify-content: center;
-        color: #000000;
-        height: 35px;
-        line-height: 35px;
-        text-decoration: none;
-        width: 100%; }
-      nav.nav-responsive ul li a:hover, nav.nav-responsive ul li button:hover {
-        cursor: pointer; }
-      nav.nav-responsive ul li:hover {
-        background: #FFFFFF; }
-      nav.nav-responsive ul li.active {
-        background: #FFFFFF; }
 
 nav.nav-square {
   float: left;
