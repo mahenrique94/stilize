@@ -21,8 +21,15 @@
 		vertical-align: $form-data-group-vertical-align;
 		white-space: $form-data-group-white-space;
 		width: $form-data-group-width;		
-		& button {
+		button, a {
 			border-radius: 0;
+		}		
+		button {
+			padding: .52rem .6rem;
+		}
+		a {
+			margin-top: 16px;
+			padding: .63rem;
 		}
 	}
 }

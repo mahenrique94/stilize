@@ -69,6 +69,11 @@ $color-rangeless: #FBB12F;
 $color-text-rangeless: #FFFFFF;
 $border-rangeless: 1px solid darken($color-rangeless, 10%);
 
+// REN
+$color-ren: #00CC99;
+$color-text-ren: #FFFFFF;
+$border-ren: 1px solid darken($color-ren, 10%);
+
 // TIE
 $color-tie: #FFFFFF;
 $color-text-tie: #000000;
@@ -150,6 +155,7 @@ $footer-shadow: 1px 1px 10px rgba(0, 0, 0, .8);
 /************************************************** FORMS **************************************************/
 $form-padding: 1rem;
 $form-data-padding: .125rem;
+$form-data-padding-bigger: .5rem;
 
 // FORM-MODERN
 $form-data-modern-padding: .6rem;

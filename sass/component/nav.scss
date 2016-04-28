@@ -95,12 +95,11 @@ nav.nav-default {
 	}
 }
 nav.nav-group {
+	width: 100%;
 	ul {
 		@include align-items("center");
 		@include display-flex;
-		@include justify-content("center");
-		bottom: 0;
-		position: fixed;
+		@include justify-content("center");		
 		width: 100%;
 		z-index: 1;
 		li {						
@@ -130,6 +129,27 @@ nav.nav-group {
 		ul {
 			li {
 				@include background-default(true);
+			}
+		}
+	}
+	&-lube {
+		ul {
+			li {
+				background: $color-lube;
+				border-right: 1px solid $color-text-lube;
+				button, a {
+					color: $color-text-lube;	
+					&:hover {
+						color: $color-lube;
+					}				
+				}
+				&:hover {
+					background: $color-text-lube;					
+					border: 1px solid $color-lube;
+				}
+				&:last-child {
+					border-right: 0;
+				}
 			}
 		}
 	}
@@ -319,4 +339,16 @@ nav.nav-tie {
 			}
 		}
 	}
+}
+
+/************************************************** OPTIONS **************************************************/
+.nax-fixed-bottom {
+	bottom: 0;
+	position: fixed;
+	z-index: 1;
+}
+.nax-fixed-top {
+	position: fixed;
+	top: 0;
+	z-index: 1;
 }

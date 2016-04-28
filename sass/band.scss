@@ -146,3 +146,11 @@
 		color: $color-text-kal;
 	}
 }
+.band-nav-lube {
+	@extend .band;
+	background: $color-lube;
+	padding: $band-nav-padding;
+	label {
+		color: $color-text-lube;
+	}
+}

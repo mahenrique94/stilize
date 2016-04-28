@@ -28,14 +28,6 @@
 		width: initial;
 	}
 }
-
-form.form-block {
-	@extend .form;		
-	.form-data {
-		font-size: .8rem;
-		padding: $form-data-padding;
-	}
-}
 form.form-modern {
 	@extend .form;
 	input {
