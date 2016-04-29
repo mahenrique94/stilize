@@ -49,9 +49,6 @@
 		}
 	}
 }
-.alert-error {
-	@extends .color-red;
-}
 .alert-full {
 	width: 100%;
 }
@@ -59,11 +56,15 @@
 	position: absolute;
 	right: 20px;
 	top: 20px;
-	z-index: 1;	
+	z-index: 1000;
+	h4 {
+		line-height: 2;
+	}	
+	i {
+		font-size: 1.5rem;
+	}
 }
-.alert-success {
-	@extend .color-green-dark;
-}
+
 /************************************************** COLORS **************************************************/
 .alert-der {
 	@extend .alert;
@@ -71,6 +72,13 @@
 	background: $color-der;	
 	border: $border-der;	
 	color: $color-text-der;
+}
+.alert-error {
+	@extend .alert;
+	@include border-radius($border-radius-alert);
+	background: $color-error;	
+	border: $border-error;	
+	color: $color-text-error;
 }
 .alert-gary {
 	@extend .alert;
@@ -113,4 +121,11 @@
 	background: $color-ren;	
 	border: $border-ren;	
 	color: $color-text-ren;
+}
+.alert-success {
+	@extend .alert;
+	@include border-radius($border-radius-alert);
+	background: $color-success;	
+	border: $border-success;	
+	color: $color-text-success;
 }

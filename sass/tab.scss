@@ -4,7 +4,6 @@
   box-sizing: border-box;
   float: left;
   height: auto;
-  padding: 1rem;
   position: relative;
   width: 100%;
 }
@@ -143,6 +142,28 @@ ul.tab-responsive-kal {
   }
   &.active {
     background: $color-text-kal;
+  }  
+}
+ul.tab-responsive-lube {
+  @extend .tab-responsive;
+  background: $color-lube;
+  li {    
+    border-right: $border-lube;    
+    a, button {
+      color: $color-text-lube;      
+      &:hover {
+        color: $color-lube;  
+      }
+    }
+    &.active, &:hover {
+      background: $color-text-lube;      
+    }
+    &.active a, &.active button {
+      color: $color-lube;  
+    }
+  }
+  &.active {
+    background: $color-text-lube;
   }  
 }
 @for $i from 1 through 10 {

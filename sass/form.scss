@@ -1,8 +1,9 @@
 .form {
 	box-sizing: border-box;
 	width: 100%;
-	div[class^=col] label {
+	div[class^=col] label:first-child {
 		float: inherit;
+		width: 100%;
 	}	
 	.form-body {
 		box-sizing: inherit;
@@ -23,8 +24,6 @@
 		}
 	}
 	input[type=checkbox].form-data, input[type=radio].form-data {
-		clear: both;
-		display: block;
 		width: initial;
 	}
 }
@@ -36,16 +35,6 @@ form.form-modern {
 	select {
 		height: 35px;
 	}	
-}
-form.form-search {
-	@extend .form;	
-	.form-data {		
-		float: left;
-		padding: $form-data-modern-padding;
-	}
-	select {
-		height: 35px;
-	}
 }
 a[disabled], button[disabled], input[readonly], input[disabled], select[disabled], textarea[readonly], textarea[disabled] {
 	background: $background-inactive;

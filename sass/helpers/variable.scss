@@ -29,6 +29,11 @@ $color-der: #F57373;
 $color-text-der: #FFFFFF;
 $border-der: 1px solid darken($color-der, 10%);
 
+// ERROR
+$color-error: #FFE6E6;
+$color-text-error: #FF5050;
+$border-error: 1px solid darken($color-error, 10%);
+
 // GARY
 $color-gary: #CBCBCB;
 $color-text-gary: #FFFFFF;
@@ -73,6 +78,11 @@ $border-rangeless: 1px solid darken($color-rangeless, 10%);
 $color-ren: #00CC99;
 $color-text-ren: #FFFFFF;
 $border-ren: 1px solid darken($color-ren, 10%);
+
+// SUCCESS
+$color-success: #E6FFF9;
+$color-text-success: #00CC99;
+$border-success: 1px solid darken($color-success, 10%);
 
 // TIE
 $color-tie: #FFFFFF;
