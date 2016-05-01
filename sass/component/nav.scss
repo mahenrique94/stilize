@@ -132,6 +132,27 @@ nav.nav-group {
 			}
 		}
 	}
+	&-derer {
+		ul {
+			li {
+				background: $color-derer;
+				border-right: 1px solid $color-text-derer;
+				button, a {
+					color: $color-text-derer;	
+					&:hover {
+						color: $color-derer;
+					}				
+				}
+				&:hover {
+					background: $color-text-derer;					
+					border: 1px solid $color-derer;
+				}
+				&:last-child {
+					border-right: 0;
+				}
+			}
+		}
+	}
 	&-lube {
 		ul {
 			li {

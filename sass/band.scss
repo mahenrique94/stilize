@@ -138,6 +138,14 @@
 	@include background-default;
 	padding: $band-nav-padding;
 }
+.band-nav-derer {
+	@extend .band;
+	background: $color-derer;
+	padding: $band-nav-padding;
+	label {
+	color: $color-text-derer;
+	}
+}
 .band-nav-kal {
 	@extend .band;
 	background: $color-kal;

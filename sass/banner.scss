@@ -1,4 +1,4 @@
-div.banner {
+.banner {
 	@include align-items(center);
 	@include justify-content(center);
 	color: $banner-color;
@@ -20,8 +20,14 @@ div.banner {
 		width: 50%;
 	}
 }
+.banner-text {
+	font-size: 5rem;
+	padding: 5rem 0;
+	text-align: center;
+	width: 100%;	
+}
 
-/************************************************** THEMES **************************************************/
+/************************************************** THEMES BANNER **************************************************/
 div.banner-lube {
 	@extend .banner;
 	background: $color-lube;
@@ -31,4 +37,11 @@ div.banner-kal {
 	@extend .banner;
 	background: $color-kal;
 	color: $color-text-kal;	
+}
+
+/************************************************** THEMES BANNER-TEXT **************************************************/
+div.banner-text-derer {
+	@extend .banner-text;
+	background: $color-derer;
+	color: $color-text-derer;
 }

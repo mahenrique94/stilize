@@ -2508,7 +2508,7 @@ ul.pagination-default li.page-default a, ul.pagination-default li.page-default b
   color: #424242;
   text-decoration: none; }
 
-.button:link, .button-transparent:link, .btn-border-blue:link, .btn-border-der:link, .btn-border-gary:link, .btn-border-lube:link, .btn-border-low:link, .btn-border-lower:link, .btn-border-kal:link, .btn-border-range:link, .button-modern:link, .btn-blue-modern:link, .btn-booper-modern:link, .btn-default-modern:link, .btn-der-modern:link, .btn-gary-modern:link, .btn-lube-modern:link, .btn-low-modern:link, .btn-lower-modern:link, .btn-kal-modern:link, .btn-range-modern:link, .btn-rangeless-modern:link, .btn-blue:link, .btn-default:link, .btn-der:link, .btn-gary:link, .btn-lube:link, .btn-low:link, .btn-lower:link, .btn-kal:link, .btn-range:link, .button:visited, .button-transparent:visited, .btn-border-blue:visited, .btn-border-der:visited, .btn-border-gary:visited, .btn-border-lube:visited, .btn-border-low:visited, .btn-border-lower:visited, .btn-border-kal:visited, .btn-border-range:visited, .button-modern:visited, .btn-blue-modern:visited, .btn-booper-modern:visited, .btn-default-modern:visited, .btn-der-modern:visited, .btn-gary-modern:visited, .btn-lube-modern:visited, .btn-low-modern:visited, .btn-lower-modern:visited, .btn-kal-modern:visited, .btn-range-modern:visited, .btn-rangeless-modern:visited, .btn-blue:visited, .btn-default:visited, .btn-der:visited, .btn-gary:visited, .btn-lube:visited, .btn-low:visited, .btn-lower:visited, .btn-kal:visited, .btn-range:visited, .button:hover, .button-transparent:hover, .btn-border-blue:hover, .btn-border-der:hover, .btn-border-gary:hover, .btn-border-lube:hover, .btn-border-low:hover, .btn-border-lower:hover, .btn-border-kal:hover, .btn-border-range:hover, .button-modern:hover, .btn-blue-modern:hover, .btn-booper-modern:hover, .btn-default-modern:hover, .btn-der-modern:hover, .btn-gary-modern:hover, .btn-lube-modern:hover, .btn-low-modern:hover, .btn-lower-modern:hover, .btn-kal-modern:hover, .btn-range-modern:hover, .btn-rangeless-modern:hover, .btn-blue:hover, .btn-default:hover, .btn-der:hover, .btn-gary:hover, .btn-lube:hover, .btn-low:hover, .btn-lower:hover, .btn-kal:hover, .btn-range:hover, .button:active, .button-transparent:active, .btn-border-blue:active, .btn-border-der:active, .btn-border-gary:active, .btn-border-lube:active, .btn-border-low:active, .btn-border-lower:active, .btn-border-kal:active, .btn-border-range:active, .button-modern:active, .btn-blue-modern:active, .btn-booper-modern:active, .btn-default-modern:active, .btn-der-modern:active, .btn-gary-modern:active, .btn-lube-modern:active, .btn-low-modern:active, .btn-lower-modern:active, .btn-kal-modern:active, .btn-range-modern:active, .btn-rangeless-modern:active, .btn-blue:active, .btn-default:active, .btn-der:active, .btn-gary:active, .btn-lube:active, .btn-low:active, .btn-lower:active, .btn-kal:active, .btn-range:active, footer.footer a:link, footer.footer-default a:link, footer.footer-gary a:link, footer.footer-kal a:link, footer.footer-lube a:link, footer.footer-tie a:link, footer.footer a:visited, footer.footer-default a:visited, footer.footer-gary a:visited, footer.footer-kal a:visited, footer.footer-lube a:visited, footer.footer-tie a:visited, footer.footer a:hover, footer.footer-default a:hover, footer.footer-gary a:hover, footer.footer-kal a:hover, footer.footer-lube a:hover, footer.footer-tie a:hover, footer.footer a:active, footer.footer-default a:active, footer.footer-gary a:active, footer.footer-kal a:active, footer.footer-lube a:active, footer.footer-tie a:active, nav.nav a.nav-brand:link, nav.nav-default a.nav-brand:link, nav.nav-kal a.nav-brand:link, nav.nav-lube a.nav-brand:link, nav.nav-tie a.nav-brand:link, nav.nav a.nav-brand:visited, nav.nav-default a.nav-brand:visited, nav.nav-kal a.nav-brand:visited, nav.nav-lube a.nav-brand:visited, nav.nav-tie a.nav-brand:visited, nav.nav a.nav-brand:hover, nav.nav-default a.nav-brand:hover, nav.nav-kal a.nav-brand:hover, nav.nav-lube a.nav-brand:hover, nav.nav-tie a.nav-brand:hover, nav.nav a.nav-brand:active, nav.nav-default a.nav-brand:active, nav.nav-kal a.nav-brand:active, nav.nav-lube a.nav-brand:active, nav.nav-tie a.nav-brand:active, .no-decoration:link, .no-decoration:visited, .no-decoration:hover, .no-decoration:active {
+.button:link, .button-transparent:link, .btn-border-blue:link, .btn-border-der:link, .btn-border-gary:link, .btn-border-lube:link, .btn-border-low:link, .btn-border-lower:link, .btn-border-kal:link, .btn-border-range:link, .button-modern:link, .btn-blue-modern:link, .btn-booper-modern:link, .btn-default-modern:link, .btn-der-modern:link, .btn-gary-modern:link, .btn-lube-modern:link, .btn-low-modern:link, .btn-lower-modern:link, .btn-kal-modern:link, .btn-range-modern:link, .btn-rangeless-modern:link, .btn-blue:link, .btn-default:link, .btn-der:link, .btn-derer:link, .btn-gary:link, .btn-lube:link, .btn-low:link, .btn-lower:link, .btn-kal:link, .btn-range:link, .button:visited, .button-transparent:visited, .btn-border-blue:visited, .btn-border-der:visited, .btn-border-gary:visited, .btn-border-lube:visited, .btn-border-low:visited, .btn-border-lower:visited, .btn-border-kal:visited, .btn-border-range:visited, .button-modern:visited, .btn-blue-modern:visited, .btn-booper-modern:visited, .btn-default-modern:visited, .btn-der-modern:visited, .btn-gary-modern:visited, .btn-lube-modern:visited, .btn-low-modern:visited, .btn-lower-modern:visited, .btn-kal-modern:visited, .btn-range-modern:visited, .btn-rangeless-modern:visited, .btn-blue:visited, .btn-default:visited, .btn-der:visited, .btn-derer:visited, .btn-gary:visited, .btn-lube:visited, .btn-low:visited, .btn-lower:visited, .btn-kal:visited, .btn-range:visited, .button:hover, .button-transparent:hover, .btn-border-blue:hover, .btn-border-der:hover, .btn-border-gary:hover, .btn-border-lube:hover, .btn-border-low:hover, .btn-border-lower:hover, .btn-border-kal:hover, .btn-border-range:hover, .button-modern:hover, .btn-blue-modern:hover, .btn-booper-modern:hover, .btn-default-modern:hover, .btn-der-modern:hover, .btn-gary-modern:hover, .btn-lube-modern:hover, .btn-low-modern:hover, .btn-lower-modern:hover, .btn-kal-modern:hover, .btn-range-modern:hover, .btn-rangeless-modern:hover, .btn-blue:hover, .btn-default:hover, .btn-der:hover, .btn-derer:hover, .btn-gary:hover, .btn-lube:hover, .btn-low:hover, .btn-lower:hover, .btn-kal:hover, .btn-range:hover, .button:active, .button-transparent:active, .btn-border-blue:active, .btn-border-der:active, .btn-border-gary:active, .btn-border-lube:active, .btn-border-low:active, .btn-border-lower:active, .btn-border-kal:active, .btn-border-range:active, .button-modern:active, .btn-blue-modern:active, .btn-booper-modern:active, .btn-default-modern:active, .btn-der-modern:active, .btn-gary-modern:active, .btn-lube-modern:active, .btn-low-modern:active, .btn-lower-modern:active, .btn-kal-modern:active, .btn-range-modern:active, .btn-rangeless-modern:active, .btn-blue:active, .btn-default:active, .btn-der:active, .btn-derer:active, .btn-gary:active, .btn-lube:active, .btn-low:active, .btn-lower:active, .btn-kal:active, .btn-range:active, footer.footer a:link, footer.footer-default a:link, footer.footer-gary a:link, footer.footer-kal a:link, footer.footer-lube a:link, footer.footer-tie a:link, footer.footer a:visited, footer.footer-default a:visited, footer.footer-gary a:visited, footer.footer-kal a:visited, footer.footer-lube a:visited, footer.footer-tie a:visited, footer.footer a:hover, footer.footer-default a:hover, footer.footer-gary a:hover, footer.footer-kal a:hover, footer.footer-lube a:hover, footer.footer-tie a:hover, footer.footer a:active, footer.footer-default a:active, footer.footer-gary a:active, footer.footer-kal a:active, footer.footer-lube a:active, footer.footer-tie a:active, nav.nav a.nav-brand:link, nav.nav-default a.nav-brand:link, nav.nav-kal a.nav-brand:link, nav.nav-lube a.nav-brand:link, nav.nav-tie a.nav-brand:link, nav.nav a.nav-brand:visited, nav.nav-default a.nav-brand:visited, nav.nav-kal a.nav-brand:visited, nav.nav-lube a.nav-brand:visited, nav.nav-tie a.nav-brand:visited, nav.nav a.nav-brand:hover, nav.nav-default a.nav-brand:hover, nav.nav-kal a.nav-brand:hover, nav.nav-lube a.nav-brand:hover, nav.nav-tie a.nav-brand:hover, nav.nav a.nav-brand:active, nav.nav-default a.nav-brand:active, nav.nav-kal a.nav-brand:active, nav.nav-lube a.nav-brand:active, nav.nav-tie a.nav-brand:active, .no-decoration:link, .no-decoration:visited, .no-decoration:hover, .no-decoration:active {
   text-decoration: none; }
 
 /************************************************** BACKGROUND **************************************************/
@@ -2700,16 +2700,16 @@ ul.pagination-default li.page-default a, ul.pagination-default li.page-default b
   border: 1px solid #b3ffed;
   color: #00CC99; }
 
-.band, .band-default, .band-der, .band-gary, .band-low, .band-lube, .band-kal, .band-range, .band-rangeless, .band-nav-default, .band-nav-kal, .band-nav-lube {
+.band, .band-default, .band-der, .band-gary, .band-low, .band-lube, .band-kal, .band-range, .band-rangeless, .band-nav-default, .band-nav-derer, .band-nav-kal, .band-nav-lube {
   box-sizing: border-box;
   float: left;
   width: 100%;
   padding: 0.3rem; }
-  .band label, .band-default label, .band-der label, .band-gary label, .band-low label, .band-lube label, .band-kal label, .band-range label, .band-rangeless label, .band-nav-default label, .band-nav-kal label, .band-nav-lube label {
+  .band label, .band-default label, .band-der label, .band-gary label, .band-low label, .band-lube label, .band-kal label, .band-range label, .band-rangeless label, .band-nav-default label, .band-nav-derer label, .band-nav-kal label, .band-nav-lube label {
     margin-bottom: .275rem; }
   .band-shadow {
     box-shadow: 0 0 7px #666666; }
-  .band div[class^=col-], .band-default div[class^=col-], .band-der div[class^=col-], .band-gary div[class^=col-], .band-low div[class^=col-], .band-lube div[class^=col-], .band-kal div[class^=col-], .band-range div[class^=col-], .band-rangeless div[class^=col-], .band-nav-default div[class^=col-], .band-nav-kal div[class^=col-], .band-nav-lube div[class^=col-] {
+  .band div[class^=col-], .band-default div[class^=col-], .band-der div[class^=col-], .band-gary div[class^=col-], .band-low div[class^=col-], .band-lube div[class^=col-], .band-kal div[class^=col-], .band-range div[class^=col-], .band-rangeless div[class^=col-], .band-nav-default div[class^=col-], .band-nav-derer div[class^=col-], .band-nav-kal div[class^=col-], .band-nav-lube div[class^=col-] {
     margin-bottom: 0; }
 
 .band-default {
@@ -2827,6 +2827,12 @@ ul.pagination-default li.page-default a, ul.pagination-default li.page-default b
   background: linear-gradient(#FBFBFB, #F6F6F6);
   padding: 1rem; }
 
+.band-nav-derer {
+  background: #FF5050;
+  padding: 1rem; }
+  .band-nav-derer label {
+    color: #FFFFFF; }
+
 .band-nav-kal {
   background: #303030;
   padding: 1rem; }
@@ -2839,7 +2845,7 @@ ul.pagination-default li.page-default a, ul.pagination-default li.page-default b
   .band-nav-lube label {
     color: #FFFFFF; }
 
-div.banner, div.banner-lube, div.banner-kal {
+.banner, div.banner-lube, div.banner-kal {
   -webkit-align-items: center;
   -moz-align-items: center;
   -o-align-items: center;
@@ -2853,18 +2859,24 @@ div.banner, div.banner-lube, div.banner-kal {
   color: #000000;
   display: flex;
   height: 649px; }
-  div.banner h1, div.banner-lube h1, div.banner-kal h1 {
+  .banner h1, div.banner-lube h1, div.banner-kal h1 {
     font-size: 2rem;
     font-weight: bold;
     margin: 0 0 3rem 0; }
-  div.banner p, div.banner-lube p, div.banner-kal p {
+  .banner p, div.banner-lube p, div.banner-kal p {
     font-size: 1.5rem;
     margin: 0 0 3rem 0;
     text-align: justify; }
-  div.banner .banner-center, div.banner-lube .banner-center, div.banner-kal .banner-center {
+  .banner .banner-center, div.banner-lube .banner-center, div.banner-kal .banner-center {
     width: 50%; }
 
-/************************************************** THEMES **************************************************/
+.banner-text, div.banner-text-derer {
+  font-size: 5rem;
+  padding: 5rem 0;
+  text-align: center;
+  width: 100%; }
+
+/************************************************** THEMES BANNER **************************************************/
 div.banner-lube {
   background: #0099FF;
   color: #FFFFFF; }
@@ -2873,7 +2885,12 @@ div.banner-kal {
   background: #303030;
   color: #FFFFFF; }
 
-.block, fieldset.block-default, fieldset.block-gary, fieldset.block-lube, fieldset.block-kal, fieldset.block-rangeless, fieldset.block-tie {
+/************************************************** THEMES BANNER-TEXT **************************************************/
+div.banner-text-derer {
+  background: #FF5050;
+  color: #FFFFFF; }
+
+.block, fieldset.block-default, fieldset.block-derer, fieldset.block-gary, fieldset.block-lube, fieldset.block-kal, fieldset.block-rangeless, fieldset.block-tie {
   -webkit-border-radius: 0.3125rem;
   -moz-border-radius: 0.3125rem;
   -o-border-radius: 0.3125rem;
@@ -2890,7 +2907,7 @@ div.banner-kal {
   margin: 0 0.1rem;
   padding: 2rem 0 0 0;
   position: relative; }
-  .block legend.block-header, fieldset.block-default legend.block-header, fieldset.block-gary legend.block-header, fieldset.block-lube legend.block-header, fieldset.block-kal legend.block-header, fieldset.block-rangeless legend.block-header, fieldset.block-tie legend.block-header {
+  .block legend.block-header, fieldset.block-default legend.block-header, fieldset.block-derer legend.block-header, fieldset.block-gary legend.block-header, fieldset.block-lube legend.block-header, fieldset.block-kal legend.block-header, fieldset.block-rangeless legend.block-header, fieldset.block-tie legend.block-header {
     -webkit-border-bottom-right-radius: 0px;
     -moz-border-bottom-right-radius: 0px;
     -o-border-bottom-right-radius: 0px;
@@ -2917,15 +2934,15 @@ div.banner-kal {
     position: absolute;
     top: 0;
     width: 100%; }
-  .block .block-title, fieldset.block-default .block-title, fieldset.block-gary .block-title, fieldset.block-lube .block-title, fieldset.block-kal .block-title, fieldset.block-rangeless .block-title, fieldset.block-tie .block-title {
+  .block .block-title, fieldset.block-default .block-title, fieldset.block-derer .block-title, fieldset.block-gary .block-title, fieldset.block-lube .block-title, fieldset.block-kal .block-title, fieldset.block-rangeless .block-title, fieldset.block-tie .block-title {
     font-size: 1rem; }
-    .block .block-title-shadow, fieldset.block-default .block-title-shadow, fieldset.block-gary .block-title-shadow, fieldset.block-lube .block-title-shadow, fieldset.block-kal .block-title-shadow, fieldset.block-rangeless .block-title-shadow, fieldset.block-tie .block-title-shadow {
+    .block .block-title-shadow, fieldset.block-default .block-title-shadow, fieldset.block-derer .block-title-shadow, fieldset.block-gary .block-title-shadow, fieldset.block-lube .block-title-shadow, fieldset.block-kal .block-title-shadow, fieldset.block-rangeless .block-title-shadow, fieldset.block-tie .block-title-shadow {
       text-shadow: 2px 1px 5px #595959; }
-  .block .block-body, fieldset.block-default .block-body, fieldset.block-gary .block-body, fieldset.block-lube .block-body, fieldset.block-kal .block-body, fieldset.block-rangeless .block-body, fieldset.block-tie .block-body {
+  .block .block-body, fieldset.block-default .block-body, fieldset.block-derer .block-body, fieldset.block-gary .block-body, fieldset.block-lube .block-body, fieldset.block-kal .block-body, fieldset.block-rangeless .block-body, fieldset.block-tie .block-body {
     box-sizing: inherit;
     float: inherit;
     width: 100%; }
-  .block .block-body-padding, fieldset.block-default .block-body-padding, fieldset.block-gary .block-body-padding, fieldset.block-lube .block-body-padding, fieldset.block-kal .block-body-padding, fieldset.block-rangeless .block-body-padding, fieldset.block-tie .block-body-padding {
+  .block .block-body-padding, fieldset.block-default .block-body-padding, fieldset.block-derer .block-body-padding, fieldset.block-gary .block-body-padding, fieldset.block-lube .block-body-padding, fieldset.block-kal .block-body-padding, fieldset.block-rangeless .block-body-padding, fieldset.block-tie .block-body-padding {
     padding: 1rem; }
 
 /************************************************** STYLES **************************************************/
@@ -2937,6 +2954,11 @@ fieldset.block-default legend.block-header {
   background: linear-gradient(#FBFBFB, #F6F6F6); }
   fieldset.block-default legend.block-header .block-title {
     color: #000000; }
+
+fieldset.block-derer legend.block-header {
+  background: #FF5050; }
+  fieldset.block-derer legend.block-header .block-title {
+    color: #FFFFFF; }
 
 fieldset.block-gary legend.block-header {
   background: #CBCBCB; }
@@ -2984,7 +3006,7 @@ div.box-group {
     display: initial;
     padding: 1rem; }
 
-.button, .button-transparent, .btn-border-blue, .btn-border-der, .btn-border-gary, .btn-border-lube, .btn-border-low, .btn-border-lower, .btn-border-kal, .btn-border-range, .button-modern, .btn-blue-modern, .btn-booper-modern, .btn-default-modern, .btn-der-modern, .btn-gary-modern, .btn-lube-modern, .btn-low-modern, .btn-lower-modern, .btn-kal-modern, .btn-range-modern, .btn-rangeless-modern, .btn-blue, .btn-default, .btn-der, .btn-gary, .btn-lube, .btn-low, .btn-lower, .btn-kal, .btn-range {
+.button, .button-transparent, .btn-border-blue, .btn-border-der, .btn-border-gary, .btn-border-lube, .btn-border-low, .btn-border-lower, .btn-border-kal, .btn-border-range, .button-modern, .btn-blue-modern, .btn-booper-modern, .btn-default-modern, .btn-der-modern, .btn-gary-modern, .btn-lube-modern, .btn-low-modern, .btn-lower-modern, .btn-kal-modern, .btn-range-modern, .btn-rangeless-modern, .btn-blue, .btn-default, .btn-der, .btn-derer, .btn-gary, .btn-lube, .btn-low, .btn-lower, .btn-kal, .btn-range {
   -webkit-border-radius: 0.3125rem;
   -moz-border-radius: 0.3125rem;
   -o-border-radius: 0.3125rem;
@@ -2994,11 +3016,11 @@ div.box-group {
   margin: 0;
   text-align: center;
   text-decoration: none; }
-  .button:focus, .button-transparent:focus, .btn-border-blue:focus, .btn-border-der:focus, .btn-border-gary:focus, .btn-border-lube:focus, .btn-border-low:focus, .btn-border-lower:focus, .btn-border-kal:focus, .btn-border-range:focus, .button-modern:focus, .btn-blue-modern:focus, .btn-booper-modern:focus, .btn-default-modern:focus, .btn-der-modern:focus, .btn-gary-modern:focus, .btn-lube-modern:focus, .btn-low-modern:focus, .btn-lower-modern:focus, .btn-kal-modern:focus, .btn-range-modern:focus, .btn-rangeless-modern:focus, .btn-blue:focus, .btn-default:focus, .btn-der:focus, .btn-gary:focus, .btn-lube:focus, .btn-low:focus, .btn-lower:focus, .btn-kal:focus, .btn-range:focus {
+  .button:focus, .button-transparent:focus, .btn-border-blue:focus, .btn-border-der:focus, .btn-border-gary:focus, .btn-border-lube:focus, .btn-border-low:focus, .btn-border-lower:focus, .btn-border-kal:focus, .btn-border-range:focus, .button-modern:focus, .btn-blue-modern:focus, .btn-booper-modern:focus, .btn-default-modern:focus, .btn-der-modern:focus, .btn-gary-modern:focus, .btn-lube-modern:focus, .btn-low-modern:focus, .btn-lower-modern:focus, .btn-kal-modern:focus, .btn-range-modern:focus, .btn-rangeless-modern:focus, .btn-blue:focus, .btn-default:focus, .btn-der:focus, .btn-derer:focus, .btn-gary:focus, .btn-lube:focus, .btn-low:focus, .btn-lower:focus, .btn-kal:focus, .btn-range:focus {
     outline: none; }
-  .button:hover, .button-transparent:hover, .btn-border-blue:hover, .btn-border-der:hover, .btn-border-gary:hover, .btn-border-lube:hover, .btn-border-low:hover, .btn-border-lower:hover, .btn-border-kal:hover, .btn-border-range:hover, .button-modern:hover, .btn-blue-modern:hover, .btn-booper-modern:hover, .btn-default-modern:hover, .btn-der-modern:hover, .btn-gary-modern:hover, .btn-lube-modern:hover, .btn-low-modern:hover, .btn-lower-modern:hover, .btn-kal-modern:hover, .btn-range-modern:hover, .btn-rangeless-modern:hover, .btn-blue:hover, .btn-default:hover, .btn-der:hover, .btn-gary:hover, .btn-lube:hover, .btn-low:hover, .btn-lower:hover, .btn-kal:hover, .btn-range:hover {
+  .button:hover, .button-transparent:hover, .btn-border-blue:hover, .btn-border-der:hover, .btn-border-gary:hover, .btn-border-lube:hover, .btn-border-low:hover, .btn-border-lower:hover, .btn-border-kal:hover, .btn-border-range:hover, .button-modern:hover, .btn-blue-modern:hover, .btn-booper-modern:hover, .btn-default-modern:hover, .btn-der-modern:hover, .btn-gary-modern:hover, .btn-lube-modern:hover, .btn-low-modern:hover, .btn-lower-modern:hover, .btn-kal-modern:hover, .btn-range-modern:hover, .btn-rangeless-modern:hover, .btn-blue:hover, .btn-default:hover, .btn-der:hover, .btn-derer:hover, .btn-gary:hover, .btn-lube:hover, .btn-low:hover, .btn-lower:hover, .btn-kal:hover, .btn-range:hover {
     cursor: pointer; }
-  .button:active, .button-transparent:active, .btn-border-blue:active, .btn-border-der:active, .btn-border-gary:active, .btn-border-lube:active, .btn-border-low:active, .btn-border-lower:active, .btn-border-kal:active, .btn-border-range:active, .button-modern:active, .btn-blue-modern:active, .btn-booper-modern:active, .btn-default-modern:active, .btn-der-modern:active, .btn-gary-modern:active, .btn-lube-modern:active, .btn-low-modern:active, .btn-lower-modern:active, .btn-kal-modern:active, .btn-range-modern:active, .btn-rangeless-modern:active, .btn-blue:active, .btn-default:active, .btn-der:active, .btn-gary:active, .btn-lube:active, .btn-low:active, .btn-lower:active, .btn-kal:active, .btn-range:active {
+  .button:active, .button-transparent:active, .btn-border-blue:active, .btn-border-der:active, .btn-border-gary:active, .btn-border-lube:active, .btn-border-low:active, .btn-border-lower:active, .btn-border-kal:active, .btn-border-range:active, .button-modern:active, .btn-blue-modern:active, .btn-booper-modern:active, .btn-default-modern:active, .btn-der-modern:active, .btn-gary-modern:active, .btn-lube-modern:active, .btn-low-modern:active, .btn-lower-modern:active, .btn-kal-modern:active, .btn-range-modern:active, .btn-rangeless-modern:active, .btn-blue:active, .btn-default:active, .btn-der:active, .btn-derer:active, .btn-gary:active, .btn-lube:active, .btn-low:active, .btn-lower:active, .btn-kal:active, .btn-range:active {
     outline: none; }
 
 .button-transparent, .btn-border-blue, .btn-border-der, .btn-border-gary, .btn-border-lube, .btn-border-low, .btn-border-lower, .btn-border-kal, .btn-border-range {
@@ -3047,6 +3069,14 @@ div.box-group {
   .btn-der:hover {
     background: #FFFFFF;
     color: #F57373; }
+
+.btn-derer {
+  background: #FF5050;
+  border: 1px solid #ff1d1d;
+  color: #FFFFFF; }
+  .btn-derer:hover {
+    background: #FFFFFF;
+    color: #FF5050; }
 
 .btn-gary {
   background: #CBCBCB;
@@ -6492,6 +6522,18 @@ nav.nav-group {
       background: -o-linear-gradient(white, white);
       background: -ms-linear-gradient(white, white);
       background: linear-gradient(white, white); }
+  nav.nav-group-derer ul li {
+    background: #FF5050;
+    border-right: 1px solid #FFFFFF; }
+    nav.nav-group-derer ul li button, nav.nav-group-derer ul li a {
+      color: #FFFFFF; }
+      nav.nav-group-derer ul li button:hover, nav.nav-group-derer ul li a:hover {
+        color: #FF5050; }
+    nav.nav-group-derer ul li:hover {
+      background: #FFFFFF;
+      border: 1px solid #FF5050; }
+    nav.nav-group-derer ul li:last-child {
+      border-right: 0; }
   nav.nav-group-lube ul li {
     background: #0099FF;
     border-right: 1px solid #FFFFFF; }
@@ -6774,8 +6816,6 @@ section.panel-login {
     font-size: 1.4rem;
     margin-bottom: 0.5rem;
     text-align: center; }
-  section.panel-login form input:first-child {
-    border-bottom: none !important; }
   section.panel-login form ::-webkit-input-placeholder {
     color: #595959; }
   section.panel-login form ::-moz-placeholder {

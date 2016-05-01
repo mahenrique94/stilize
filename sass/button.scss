@@ -47,6 +47,13 @@
 	border: $border-der;
 	color: $color-text-der;
 }
+.btn-derer {
+	@extend .button;
+	@include button-color-hover($color-derer, $color-text-derer);	
+	background: $color-derer;
+	border: $border-derer;
+	color: $color-text-derer;
+}
 .btn-gary {
 	@extend .button;
 	@include button-color-hover($color-gary, $color-text-gary);	
