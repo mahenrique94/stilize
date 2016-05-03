@@ -22,6 +22,9 @@
 			border: 1px solid #000000;
 			outline: none;
 		}
+		&:only-child {
+			margin-top: 1rem;
+		}
 	}
 	input[type=checkbox].form-data, input[type=radio].form-data {
 		width: initial;
