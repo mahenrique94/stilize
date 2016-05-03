@@ -3,8 +3,8 @@
   font-family: 'stilize';
   font-style: normal;
   font-weight: normal;
-  src: url("fonts/stilize.eot?31755284");
-  src: url("fonts/stilize.eot?31755284#iefix") format("embedded-opentype"), url("fonts/stilize.woff2?31755284") format("woff2"), url("fonts/stilize.woff?31755284") format("woff"), url("fonts/stilize.ttf?31755284") format("truetype"), url("fonts/stilize.svg?31755284#stilize") format("svg"); }
+  src: url("fonts/stilize.eot?19498044");
+  src: url("fonts/stilize.eot?19498044#iefix") format("embedded-opentype"), url("fonts/stilize.woff2?19498044") format("woff2"), url("fonts/stilize.woff?19498044") format("woff"), url("fonts/stilize.ttf?19498044") format("truetype"), url("fonts/stilize.svg?19498044#stilize") format("svg"); }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -5867,15 +5867,15 @@ section#content {
   content: '\e9e0'; }
 
 /* '' */
-.icon-foursquare:before {
+.icon-behance:before {
   content: '\e9e1'; }
 
 /* '' */
-.icon-behance:before {
+.icon-behance-squared:before {
   content: '\e9e2'; }
 
 /* '' */
-.icon-behance-squared:before {
+.icon-foursquare:before {
   content: '\e9e3'; }
 
 /* '' */
@@ -6179,6 +6179,14 @@ section#content {
   content: '\ea2e'; }
 
 /* '' */
+.icon-lamp:before {
+  content: '\ea2f'; }
+
+/* '' */
+.icon-qrcode:before {
+  content: '\ea30'; }
+
+/* '' */
 .figure-round img {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -6996,60 +7004,80 @@ div#content-tab1 {
   display: none;
   float: left;
   width: 100%; }
+  div#content-tab1 .tab-content-body {
+    padding: 1rem; }
 
 div#content-tab2 {
   box-sizing: border-box;
   display: none;
   float: left;
   width: 100%; }
+  div#content-tab2 .tab-content-body {
+    padding: 1rem; }
 
 div#content-tab3 {
   box-sizing: border-box;
   display: none;
   float: left;
   width: 100%; }
+  div#content-tab3 .tab-content-body {
+    padding: 1rem; }
 
 div#content-tab4 {
   box-sizing: border-box;
   display: none;
   float: left;
   width: 100%; }
+  div#content-tab4 .tab-content-body {
+    padding: 1rem; }
 
 div#content-tab5 {
   box-sizing: border-box;
   display: none;
   float: left;
   width: 100%; }
+  div#content-tab5 .tab-content-body {
+    padding: 1rem; }
 
 div#content-tab6 {
   box-sizing: border-box;
   display: none;
   float: left;
   width: 100%; }
+  div#content-tab6 .tab-content-body {
+    padding: 1rem; }
 
 div#content-tab7 {
   box-sizing: border-box;
   display: none;
   float: left;
   width: 100%; }
+  div#content-tab7 .tab-content-body {
+    padding: 1rem; }
 
 div#content-tab8 {
   box-sizing: border-box;
   display: none;
   float: left;
   width: 100%; }
+  div#content-tab8 .tab-content-body {
+    padding: 1rem; }
 
 div#content-tab9 {
   box-sizing: border-box;
   display: none;
   float: left;
   width: 100%; }
+  div#content-tab9 .tab-content-body {
+    padding: 1rem; }
 
 div#content-tab10 {
   box-sizing: border-box;
   display: none;
   float: left;
   width: 100%; }
+  div#content-tab10 .tab-content-body {
+    padding: 1rem; }
 
 .table-scroll {
   float: left;

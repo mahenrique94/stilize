@@ -170,7 +170,10 @@ ul.tab-responsive-lube {
   div#content-tab#{$i} {
     box-sizing: border-box;
     display: none;
-    float: left;
+    float: left;    
     width: 100%;
+    .tab-content-body {
+      padding: 1rem;
+    }
   }
 }
