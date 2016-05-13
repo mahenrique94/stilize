@@ -57,7 +57,8 @@ table {
   display: inline-block;
   margin: 0;
   position: relative;
-  vertical-align: middle; }
+  vertical-align: middle;
+  width: 100% !important; }
 
 .select2-container .select2-selection--single {
   box-sizing: border-box;
@@ -6894,7 +6895,8 @@ section.panel-login {
     float: left;
     padding: 0.5rem 1.5rem;
     position: relative;
-    text-decoration: none; }
+    text-decoration: none;
+    white-space: nowrap; }
     .tab a:hover, ul.tab-kal a:hover, ul.tab-lube a:hover, .tab a:hover::after, ul.tab-kal a:hover::after, ul.tab-lube a:hover::after, .tab a:focus, ul.tab-kal a:focus, ul.tab-lube a:focus, .tab a:focus::after, ul.tab-kal a:focus::after, ul.tab-lube a:focus::after {
       background: #FFFFFF; }
     .tab a:hover, ul.tab-kal a:hover, ul.tab-lube a:hover {
@@ -6925,7 +6927,8 @@ section.panel-login {
       line-height: 35px;
       padding: 0.5rem;
       text-decoration: none;
-      width: 100%; }
+      width: 100%;
+      white-space: nowrap; }
     .tab-responsive li:hover, ul.tab-responsive-default li:hover, ul.tab-responsive-rangeless li:hover, ul.tab-responsive-kal li:hover, ul.tab-responsive-lube li:hover {
       cursor: pointer; }
   .tab-responsive.active, ul.active.tab-responsive-default, ul.active.tab-responsive-rangeless, ul.active.tab-responsive-kal, ul.active.tab-responsive-lube {

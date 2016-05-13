@@ -26,6 +26,7 @@
     padding: $tab-padding;
     position: relative;
     text-decoration: none;
+    white-space: nowrap;
     &:hover, &:hover::after, &:focus, &:focus::after {
       background: #FFFFFF;
     } 
@@ -53,6 +54,7 @@
       padding: $padding-tab-responsive;
       text-decoration: none;      
       width: 100%;
+      white-space: nowrap;
     }
     &:hover {
       cursor: pointer;
