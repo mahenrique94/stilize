@@ -131,7 +131,10 @@ function identityUrl() {
 }
 function getFinal() {
 	var url = identityUrl();
-	return url.substring(url.lastIndexOf('/') + 1);
+	url = url.substring(url.lastIndexOf('/') + 1);
+	if (url.length > 1)
+		url = url.substring(0, url.lastIndexOf('?'));
+	return url;
 }
 
 /** @auth Matheus

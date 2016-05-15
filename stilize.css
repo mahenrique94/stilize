@@ -3,8 +3,8 @@
   font-family: 'stilize';
   font-style: normal;
   font-weight: normal;
-  src: url("fonts/stilize.eot?19498044");
-  src: url("fonts/stilize.eot?19498044#iefix") format("embedded-opentype"), url("fonts/stilize.woff2?19498044") format("woff2"), url("fonts/stilize.woff?19498044") format("woff"), url("fonts/stilize.ttf?19498044") format("truetype"), url("fonts/stilize.svg?19498044#stilize") format("svg"); }
+  src: url("fonts/stilize.eot?73038696");
+  src: url("fonts/stilize.eot?73038696#iefix") format("embedded-opentype"), url("fonts/stilize.woff2?73038696") format("woff2"), url("fonts/stilize.woff?73038696") format("woff"), url("fonts/stilize.ttf?73038696") format("truetype"), url("fonts/stilize.svg?73038696#stilize") format("svg"); }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -57,7 +57,8 @@ table {
   display: inline-block;
   margin: 0;
   position: relative;
-  vertical-align: middle; }
+  vertical-align: middle;
+  width: 100% !important; }
 
 .select2-container .select2-selection--single {
   box-sizing: border-box;
@@ -2870,21 +2871,21 @@ nav.nav-tie {
         border-bottom: none; }
 
 /************************************************** OPTIONS **************************************************/
-.nax-fixed-bottom {
+.nav-fixed-bottom {
   bottom: 0;
   position: fixed;
   z-index: 1; }
 
-.nax-fixed-top {
+.nav-fixed-top {
   position: fixed;
   top: 0;
   z-index: 1; }
 
-.alert, .alert-der, .alert-error, .alert-gary, .alert-low, .alert-lube, .alert-kal, .alert-range, .alert-ren, .alert-success {
+.alert, .alert-der, .alert-error, .alert-gary, .alert-info, .alert-low, .alert-lube, .alert-kal, .alert-range, .alert-ren, .alert-success {
   box-sizing: border-box;
   display: inline-block;
   padding: 1rem; }
-  .alert h1, .alert-der h1, .alert-error h1, .alert-gary h1, .alert-low h1, .alert-lube h1, .alert-kal h1, .alert-range h1, .alert-ren h1, .alert-success h1, .alert h2, .alert-der h2, .alert-error h2, .alert-gary h2, .alert-low h2, .alert-lube h2, .alert-kal h2, .alert-range h2, .alert-ren h2, .alert-success h2, .alert h3, .alert-der h3, .alert-error h3, .alert-gary h3, .alert-low h3, .alert-lube h3, .alert-kal h3, .alert-range h3, .alert-ren h3, .alert-success h3, .alert h4, .alert-der h4, .alert-error h4, .alert-gary h4, .alert-low h4, .alert-lube h4, .alert-kal h4, .alert-range h4, .alert-ren h4, .alert-success h4, .alert h5, .alert-der h5, .alert-error h5, .alert-gary h5, .alert-low h5, .alert-lube h5, .alert-kal h5, .alert-range h5, .alert-ren h5, .alert-success h5, .alert h6, .alert-der h6, .alert-error h6, .alert-gary h6, .alert-low h6, .alert-lube h6, .alert-kal h6, .alert-range h6, .alert-ren h6, .alert-success h6 {
+  .alert h1, .alert-der h1, .alert-error h1, .alert-gary h1, .alert-info h1, .alert-low h1, .alert-lube h1, .alert-kal h1, .alert-range h1, .alert-ren h1, .alert-success h1, .alert h2, .alert-der h2, .alert-error h2, .alert-gary h2, .alert-info h2, .alert-low h2, .alert-lube h2, .alert-kal h2, .alert-range h2, .alert-ren h2, .alert-success h2, .alert h3, .alert-der h3, .alert-error h3, .alert-gary h3, .alert-info h3, .alert-low h3, .alert-lube h3, .alert-kal h3, .alert-range h3, .alert-ren h3, .alert-success h3, .alert h4, .alert-der h4, .alert-error h4, .alert-gary h4, .alert-info h4, .alert-low h4, .alert-lube h4, .alert-kal h4, .alert-range h4, .alert-ren h4, .alert-success h4, .alert h5, .alert-der h5, .alert-error h5, .alert-gary h5, .alert-info h5, .alert-low h5, .alert-lube h5, .alert-kal h5, .alert-range h5, .alert-ren h5, .alert-success h5, .alert h6, .alert-der h6, .alert-error h6, .alert-gary h6, .alert-info h6, .alert-low h6, .alert-lube h6, .alert-kal h6, .alert-range h6, .alert-ren h6, .alert-success h6 {
     float: left;
     margin-right: .5rem; }
 
@@ -3005,6 +3006,16 @@ nav.nav-tie {
   background: #CBCBCB;
   border: 1px solid #b2b2b2;
   color: #FFFFFF; }
+
+.alert-info {
+  -webkit-border-radius: 0.3125rem;
+  -moz-border-radius: 0.3125rem;
+  -o-border-radius: 0.3125rem;
+  -ms-border-radius: 0.3125rem;
+  border-radius: 0.3125rem;
+  background: #FFF5CC;
+  border: 1px solid #ffeb99;
+  color: #E6B800; }
 
 .alert-low {
   -webkit-border-radius: 0.3125rem;
@@ -6187,6 +6198,10 @@ section#content {
   content: '\ea30'; }
 
 /* '' */
+.icon-bag:before {
+  content: '\ea31'; }
+
+/* '' */
 .figure-round img {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -6880,7 +6895,8 @@ section.panel-login {
     float: left;
     padding: 0.5rem 1.5rem;
     position: relative;
-    text-decoration: none; }
+    text-decoration: none;
+    white-space: nowrap; }
     .tab a:hover, ul.tab-kal a:hover, ul.tab-lube a:hover, .tab a:hover::after, ul.tab-kal a:hover::after, ul.tab-lube a:hover::after, .tab a:focus, ul.tab-kal a:focus, ul.tab-lube a:focus, .tab a:focus::after, ul.tab-kal a:focus::after, ul.tab-lube a:focus::after {
       background: #FFFFFF; }
     .tab a:hover, ul.tab-kal a:hover, ul.tab-lube a:hover {
@@ -6911,7 +6927,8 @@ section.panel-login {
       line-height: 35px;
       padding: 0.5rem;
       text-decoration: none;
-      width: 100%; }
+      width: 100%;
+      white-space: nowrap; }
     .tab-responsive li:hover, ul.tab-responsive-default li:hover, ul.tab-responsive-rangeless li:hover, ul.tab-responsive-kal li:hover, ul.tab-responsive-lube li:hover {
       cursor: pointer; }
   .tab-responsive.active, ul.active.tab-responsive-default, ul.active.tab-responsive-rangeless, ul.active.tab-responsive-kal, ul.active.tab-responsive-lube {

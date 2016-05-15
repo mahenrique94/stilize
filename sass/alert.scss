@@ -87,6 +87,13 @@
 	border: $border-gary;	
 	color: $color-text-gary;
 }
+.alert-info {
+	@extend .alert;
+	@include border-radius($border-radius-alert);
+	background: $color-info;	
+	border: $border-info;	
+	color: $color-text-info;
+}
 .alert-low {
 	@extend .alert;	
 	@include border-radius($border-radius-alert);
