@@ -224,6 +224,13 @@
 	display: -ms-inline-flex;
 	display: inline-flex;
 }
+@mixin filter($expression) {
+	-webkit-filter: #{$expression};
+	-moz-filter: #{$expression};
+	-o-filter: #{$expression};
+	-ms-filter: #{$expression};
+	filter: #{$expression};
+}
 @mixin justify-content($value) {
 	-webkit-justify-content: #{$value};
 	-moz-justify-content: #{$value};
