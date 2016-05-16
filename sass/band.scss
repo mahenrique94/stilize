@@ -27,6 +27,43 @@
 	background: $color-der;
 	color: $color-text-der;
 }
+.band-gary {
+	@extend .band;
+	background: $color-gary;
+	color: $color-text-gary;
+}
+.band-kal {
+	@extend .band;
+	background: $color-kal;
+	color: $color-text-kal;
+}
+.band-low {
+	@extend .band;
+	background: $color-low;
+	color: $color-text-low;
+}
+.band-lube {
+	@extend .band;
+	background: $color-lube;
+	color: $color-text-lube;
+}
+.band-luber {
+	@extend .band;
+	background: $color-luber;
+	color: $color-text-luber;
+}
+.band-range {
+	@extend .band;
+	background: $color-range;
+	color: $color-text-range;
+}
+.band-rangeless {
+	@extend .band;
+	background: $color-rangeless;
+	color: $color-text-rangeless;
+}
+
+/************************************************** BAND-MODERN **************************************************/
 .band-modern-der {
 	border-top: 1px solid $color-der;
 	float: left;
@@ -37,11 +74,6 @@
 		float: left;
 		padding: $padding-band;
 	}
-}
-.band-gary {
-	@extend .band;
-	background: $color-gary;
-	color: $color-text-gary;
 }
 .band-modern-gary {
 	border-top: 1px solid $color-gary;
@@ -54,10 +86,16 @@
 		padding: $padding-band;
 	}
 }
-.band-low {
-	@extend .band;
-	background: $color-low;
-	color: $color-text-low;
+.band-modern-kal {
+	border-top: 1px solid $color-kal;
+	float: left;
+	width: 100%;
+	label {
+		background: $color-kal;		
+		color: $color-text-kal;
+		float: left;
+		padding: $padding-band;
+	}
 }
 .band-modern-low {
 	border-top: 1px solid $color-low;
@@ -70,11 +108,6 @@
 		padding: $padding-band;
 	}
 }
-.band-lube {
-	@extend .band;
-	background: $color-lube;
-	color: $color-text-lube;
-}
 .band-modern-lube {
 	border-top: 1px solid $color-lube;
 	float: left;
@@ -86,27 +119,6 @@
 		padding: $padding-band;
 	}
 }
-.band-kal {
-	@extend .band;
-	background: $color-kal;
-	color: $color-text-kal;
-}
-.band-modern-kal {
-	border-top: 1px solid $color-kal;
-	float: left;
-	width: 100%;
-	label {
-		background: $color-kal;		
-		color: $color-text-kal;
-		float: left;
-		padding: $padding-band;
-	}
-}
-.band-range {
-	@extend .band;
-	background: $color-range;
-	color: $color-text-range;
-}
 .band-modern-range {
 	border-top: 1px solid $color-range;
 	float: left;
@@ -117,11 +129,6 @@
 		float: left;
 		padding: $padding-band;
 	}
-}
-.band-rangeless {
-	@extend .band;
-	background: $color-rangeless;
-	color: $color-text-rangeless;
 }
 .band-modern-rangeless {
 	border-top: 1px solid $color-rangeless;
@@ -163,5 +170,13 @@
 	padding: $band-nav-padding;
 	label {
 		color: $color-text-lube;
+	}
+}
+.band-nav-luber {
+	@extend .band;
+	background: $color-luber;
+	padding: $band-nav-padding;
+	label {
+		color: $color-text-luber;
 	}
 }
