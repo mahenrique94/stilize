@@ -26,12 +26,12 @@ jQuery(document).ready(function () {
 	jQuery('body').append('<div class="bg-modal"><div class="modal"><iframe id="iframe-modal"></iframe></div></div>');
 	
 	/** @auth Matheus
-	 * ESCONDER ELEMENTOS DEPOIS DE 2 SEGUNDOS
+	 * ESCONDER ELEMENTOS DEPOIS DE 3 SEGUNDOS
 	 */
 	if(!jQuery('.time-out').is(':empty')) {
 		setTimeout(function () {
            jQuery('.time-out').toggle(); 
-        }, 2000);
+        }, 3000);
     }
 	
 	/** @auth Matheus
