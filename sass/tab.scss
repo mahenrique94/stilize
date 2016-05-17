@@ -4,7 +4,6 @@
   box-sizing: border-box;
   float: left;
   height: auto;
-  padding: 1rem;
   position: relative;
   width: 100%;
 }
@@ -27,6 +26,7 @@
     padding: $tab-padding;
     position: relative;
     text-decoration: none;
+    white-space: nowrap;
     &:hover, &:hover::after, &:focus, &:focus::after {
       background: #FFFFFF;
     } 
@@ -54,6 +54,7 @@
       padding: $padding-tab-responsive;
       text-decoration: none;      
       width: 100%;
+      white-space: nowrap;
     }
     &:hover {
       cursor: pointer;
@@ -145,11 +146,36 @@ ul.tab-responsive-kal {
     background: $color-text-kal;
   }  
 }
+ul.tab-responsive-lube {
+  @extend .tab-responsive;
+  background: $color-lube;
+  li {    
+    border-right: $border-lube;    
+    a, button {
+      color: $color-text-lube;      
+      &:hover {
+        color: $color-lube;  
+      }
+    }
+    &.active, &:hover {
+      background: $color-text-lube;      
+    }
+    &.active a, &.active button {
+      color: $color-lube;  
+    }
+  }
+  &.active {
+    background: $color-text-lube;
+  }  
+}
 @for $i from 1 through 10 {
   div#content-tab#{$i} {
     box-sizing: border-box;
     display: none;
-    float: left;
+    float: left;    
     width: 100%;
+    .tab-content-body {
+      padding: 1rem;
+    }
   }
 }

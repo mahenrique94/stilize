@@ -42,6 +42,15 @@ fieldset.block-default {
 		}
 	}
 }
+fieldset.block-derer {
+	@extend .block;
+	legend.block-header {		
+		background: $color-derer;
+		.block-title {
+			color: $color-text-derer;
+		}
+	}
+}
 fieldset.block-gary {
 	@extend .block;
 	legend.block-header {		

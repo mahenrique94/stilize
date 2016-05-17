@@ -1,6 +1,3 @@
-.text-center {
-	text-align: center;
-}
 .disabled, .readonly {
 	background: $background-inactive;
 	color: $color-inactive;
@@ -68,6 +65,12 @@
 	float: left;
 	margin: $margin-col;
 	width: 100%;
+}
+.text-center {
+	text-align: center;
+}
+.text-upper {
+	text-transform: uppercase;
 }
 .vertical-center {
 	@include align-items("center");

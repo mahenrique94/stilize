@@ -26,12 +26,12 @@ jQuery(document).ready(function () {
 	jQuery('body').append('<div class="bg-modal"><div class="modal"><iframe id="iframe-modal"></iframe></div></div>');
 	
 	/** @auth Matheus
-	 * ESCONDER ELEMENTOS DEPOIS DE 2 SEGUNDOS
+	 * ESCONDER ELEMENTOS DEPOIS DE 3 SEGUNDOS
 	 */
 	if(!jQuery('.time-out').is(':empty')) {
 		setTimeout(function () {
            jQuery('.time-out').toggle(); 
-        }, 2000);
+        }, 3000);
     }
 	
 	/** @auth Matheus
@@ -132,7 +132,10 @@ function identityUrl() {
 }
 function getFinal() {
 	var url = identityUrl();
-	return url.substring(url.lastIndexOf('/') + 1);
+	url = url.substring(url.lastIndexOf('/') + 1);
+	if (url.length > 1)
+		url = url.substring(0, url.lastIndexOf('?'));
+	return url;
 }
 
 /** @auth Matheus
