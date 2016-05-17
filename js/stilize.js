@@ -83,7 +83,8 @@ jQuery(document).ready(function () {
 	/** @auth Matheus
 	 *  FUNCAO PARA MOSTRAR E ESCONDER COLLAPSE EM EFEITO SLIDE
 	 */
-	jQuery('[data-toggle=collapse]').click(function(e) {
+	jQuery('[data-toggle=collapse]').click(function() {
+		event.preventDefault();
 		jQuery($(this).attr('href')).slideToggle();
 	});
 	
