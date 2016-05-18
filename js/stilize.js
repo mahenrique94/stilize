@@ -3,30 +3,25 @@ HTMLCollection.prototype.forEach = Array.prototype.forEach;
 
 document.addEventListener('DOMContentLoaded', function(e) {
 	
-	/** @auth Matheus, Fernando e João
-	 * MOSTRAR E ESCONDER MODAL AO CLICAR UMA OU DUAS VEZES NOS SELETORES ABAIXO
+	/** @auth Matheus
+	 * Mostrar e esconder modal ao clicar uma ou duas vezes nos seletores abaixo
 	 */
-	document.querySelectorAll('[data-toggle=modal], div.bg-modal').forEach(function($e, i, n) {
-		$e.ondblclick = function(event) {
-			return openBox($e);
-		};			
-		$e.onclick = function(event) {
-			if ($e.nodeName.toLowerCase() == 'input')
-				return true;
-			return openBox($e);
-		}
+	jQuery(document).on('click dblclick', '[data-toggle=modal], div.bg-modal', function(event) {
+		if (event.target.nodeName.toLowerCase() == 'input' && event.type == 'click')
+			return false;
+		return openBox(this);
 	});
 	
 });
 
 jQuery(document).ready(function () {
 	/** @auth Matheus
-	 * ADICIONAR MODAL EM TODAS AS PAGINAS
+	 * Adicionar modal em todas as páginas
 	 */
 	jQuery('body').append('<div class="bg-modal"><div class="modal"><iframe id="iframe-modal"></iframe></div></div>');
 	
 	/** @auth Matheus
-	 * ESCONDER ELEMENTOS DEPOIS DE 3 SEGUNDOS
+	 * Esconder elementos depois de 3 segundos
 	 */
 	if(!jQuery('.time-out').is(':empty')) {
 		setTimeout(function () {
@@ -35,7 +30,7 @@ jQuery(document).ready(function () {
     }
 	
 	/** @auth Matheus
-	 *  INICIO TABS
+	 *  Mostrando e escondendo tabs de acordo com a clicada
 	 */
 	jQuery('li.active a').each(function() {
 		var idActive = $(this).attr('href').replace('#', '');
@@ -52,18 +47,15 @@ jQuery(document).ready(function () {
           jQuery('#content-' + $(this).attr('id')).attr({'aria-expanded' : 'true', 'aria-hidden' : 'false'}).fadeIn();
         }
     });
-	/**
-	 * FIM TABS
-	 */
 	
 	/** @auth Matheus
-	 * SETANDO LI ATIVO DE ACORDO COM URL
+	 * Setando li ativo de acordo com url
 	 */
 //	jQuery('li[id=' + getFinal() + ']').addClass('active');
 	
 	
 	/** @auth Matheus
-	 * REALIZANDO SLIDE NO MENU
+	 * Realizando slide no menu
 	 */
 	jQuery('[data-slide=true]').click(function() {
 		if (jQuery(this).find('span').hasClass('icon-circle-arrow-down')) {
@@ -76,19 +68,19 @@ jQuery(document).ready(function () {
 	})
 	
 	/** @auth Matheus
-	 *  EXECUTANDO FUNCAO PARA STICKY FOOTER
+	 *  Executando função para sticky footer
 	 */
 	stickyFooter();
 	
 	/** @auth Matheus
-	 *  FUNCAO PARA MOSTRAR E ESCONDER COLLAPSE EM EFEITO SLIDE
+	 *  Função para mostrar e esconder collapse em efeito slide
 	 */
 	jQuery('[data-toggle=collapse]').click(function(e) {
 		jQuery($(this).attr('href')).slideToggle();
 	});
 	
 	/** @auth Matheus
-	 *  FUNCAO PARA MOSTRAR E ESCONDER DIVS DO CADASTRO PASSO-A-PASSO
+	 *  Função para mostrar e esconder divs de cadastro passo-a-passo
 	 */
 	jQuery('button[data-current][data-next]').click(function() {
 		jQuery('.' + $(this).data('current')).toggle();
@@ -98,7 +90,7 @@ jQuery(document).ready(function () {
 });
 
 /** @auth Matheus, Fernando e João
- * ABRIR E FECHAR OPENBOX
+ * Abrir e fechar openbox
  */
 function openBox($obj) {
 	if (($obj.href || $obj.formAction) != undefined)
@@ -109,7 +101,7 @@ function openBox($obj) {
 }
 
 /** @auth Matheus
- * MOSTRAR OU ESCONDER ELEMENTO INFORMADO NOS PARAMETROS
+ * Mostrar ou esconder elemento(s) informado(s) nos parâmetros
  */
 function toggleElement(element, type, parametro) {
 	for(var i = 0; i < element.length; i++) {
@@ -124,7 +116,7 @@ function toggleElement(element, type, parametro) {
 }
 
 /** @auth Matheus
- * IDENTIFICAR URL PARA ATIVAR LI
+ * Identificar url para ativar li
  */
 function identityUrl() {
 	return window.location.href;
@@ -138,7 +130,7 @@ function getFinal() {
 }
 
 /** @auth Matheus
- *  IMPLEMENTANDO STICKY FOOTER
+ *  Implementando sticky footer
  */
 function stickyFooter() {
 	applySticky(jQuery('#wrap > #content, #wrap + footer'), 'padding-bottom, margin-top');
@@ -159,7 +151,7 @@ function getHeight(obj) {
 }
 
 /** @auth Matheus
- *  FUNCAO PARA MUDAR O ICONE DE + PARA - OU - PARA + 
+ *  Função para mudar o ícon de (+ para -) ou (- para +) 
  */
 function toggleIconSquaredPlusToMinus(obj) {
 	var icon = jQuery(obj).find('i');
