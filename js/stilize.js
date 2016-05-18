@@ -3,6 +3,12 @@ HTMLCollection.prototype.forEach = Array.prototype.forEach;
 
 document.addEventListener('DOMContentLoaded', function(e) {
 	
+	jQuery('select.ss').select2({
+		allowClear: true,
+		placeholder: 'Faça sua busca aqui',
+		theme: "classic"
+	});
+	
 	/** @auth Matheus, Fernando e João
 	 * MOSTRAR E ESCONDER MODAL AO CLICAR UMA OU DUAS VEZES NOS SELETORES ABAIXO
 	 */
