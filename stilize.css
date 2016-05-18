@@ -385,13 +385,10 @@ table {
   padding: 6px; }
 
 .select2-container--classic .select2-selection--single {
-  background-color: #f7f7f7;
-  border: 1px solid #aaa;
+  border: 1px solid #DCDCDC;
   border-radius: 4px;
   outline: 0;
-  background-image: -webkit-linear-gradient(top, white 50%, #eeeeee 100%);
-  background-image: -o-linear-gradient(top, white 50%, #eeeeee 100%);
-  background-image: linear-gradient(to bottom, white 50%, #eeeeee 100%);
+  padding: .15rem;
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFFFF', endColorstr='#FFEEEEEE', GradientType=0); }
 
@@ -412,19 +409,15 @@ table {
   color: #999; }
 
 .select2-container--classic .select2-selection--single .select2-selection__arrow {
-  background-color: #ddd;
   border: none;
-  border-left: 1px solid #aaa;
+  border-left: 1px solid #DCDCDC;
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
-  height: 28px;
+  height: 33px;
   position: absolute;
   top: 1px;
   right: 1px;
-  width: 20px;
-  background-image: -webkit-linear-gradient(top, #eeeeee 50%, #cccccc 100%);
-  background-image: -o-linear-gradient(top, #eeeeee 50%, #cccccc 100%);
-  background-image: linear-gradient(to bottom, #eeeeee 50%, #cccccc 100%);
+  width: 25px;
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFEEEEEE', endColorstr='#FFCCCCCC', GradientType=0); }
 
@@ -467,9 +460,9 @@ table {
   border-top: none;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
-  background-image: -webkit-linear-gradient(top, white 0%, #eeeeee 50%);
-  background-image: -o-linear-gradient(top, white 0%, #eeeeee 50%);
-  background-image: linear-gradient(to bottom, white 0%, #eeeeee 50%);
+  background-image: -webkit-linear-gradient(top, #E6F5FF 0%, #B3E0FF 50%);
+  background-image: -o-linear-gradient(top, #E6F5FF 0%, #B3E0FF 50%);
+  background-image: linear-gradient(to bottom, #E6F5FF 0%, #B3E0FF 50%);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFFFF', endColorstr='#FFEEEEEE', GradientType=0); }
 
@@ -2612,9 +2605,9 @@ nav.nav-default {
       nav.nav-default ul ul li:last-child {
         border-bottom: none; }
 
-nav.nav-group {
+.nav-group, .nav-group-default, .nav-group-derer, .nav-group-kal, .nav-group-lube {
   width: 100%; }
-  nav.nav-group ul {
+  .nav-group ul, .nav-group-default ul, .nav-group-derer ul, .nav-group-kal ul, .nav-group-lube ul {
     -webkit-align-items: center;
     -moz-align-items: center;
     -o-align-items: center;
@@ -2632,9 +2625,9 @@ nav.nav-group {
     justify-content: center;
     width: 100%;
     z-index: 1; }
-    nav.nav-group ul li {
+    .nav-group ul li, .nav-group-default ul li, .nav-group-derer ul li, .nav-group-kal ul li, .nav-group-lube ul li {
       width: 100%; }
-      nav.nav-group ul li button, nav.nav-group ul li a {
+      .nav-group ul li button, .nav-group-default ul li button, .nav-group-derer ul li button, .nav-group-kal ul li button, .nav-group-lube ul li button, .nav-group ul li a, .nav-group-default ul li a, .nav-group-derer ul li a, .nav-group-kal ul li a, .nav-group-lube ul li a {
         border: 0;
         background: transparent;
         display: inline-block;
@@ -2644,45 +2637,57 @@ nav.nav-group {
         text-align: center;
         text-decoration: none;
         width: 100%; }
-        nav.nav-group ul li button:hover, nav.nav-group ul li a:hover {
+        .nav-group ul li button:hover, .nav-group-default ul li button:hover, .nav-group-derer ul li button:hover, .nav-group-kal ul li button:hover, .nav-group-lube ul li button:hover, .nav-group ul li a:hover, .nav-group-default ul li a:hover, .nav-group-derer ul li a:hover, .nav-group-kal ul li a:hover, .nav-group-lube ul li a:hover {
           cursor: pointer; }
-      nav.nav-group ul li button {
+      .nav-group ul li button, .nav-group-default ul li button, .nav-group-derer ul li button, .nav-group-kal ul li button, .nav-group-lube ul li button {
         line-height: 1.1; }
-  nav.nav-group-default ul li {
+  .nav-group-default ul li {
     background: -webkit-linear-gradient(#FBFBFB, #F6F6F6);
     background: -moz-linear-gradient(#FBFBFB, #F6F6F6);
     background: -o-linear-gradient(#FBFBFB, #F6F6F6);
     background: -ms-linear-gradient(#FBFBFB, #F6F6F6);
     background: linear-gradient(#FBFBFB, #F6F6F6); }
-    nav.nav-group-default ul li:hover {
+    .nav-group-default ul li:hover {
       background: -webkit-linear-gradient(white, white);
       background: -moz-linear-gradient(white, white);
       background: -o-linear-gradient(white, white);
       background: -ms-linear-gradient(white, white);
       background: linear-gradient(white, white); }
-  nav.nav-group-derer ul li {
+  .nav-group-derer ul li {
     background: #FF5050;
     border-right: 1px solid #FFFFFF; }
-    nav.nav-group-derer ul li button, nav.nav-group-derer ul li a {
+    .nav-group-derer ul li button, .nav-group-derer ul li a {
       color: #FFFFFF; }
-      nav.nav-group-derer ul li button:hover, nav.nav-group-derer ul li a:hover {
+      .nav-group-derer ul li button:hover, .nav-group-derer ul li a:hover {
         color: #FF5050; }
-    nav.nav-group-derer ul li:hover {
+    .nav-group-derer ul li:hover {
       background: #FFFFFF;
       border: 1px solid #FF5050; }
-    nav.nav-group-derer ul li:last-child {
+    .nav-group-derer ul li:last-child {
       border-right: 0; }
-  nav.nav-group-lube ul li {
+  .nav-group-kal ul li {
+    background: #303030;
+    border-right: 1px solid #FFFFFF; }
+    .nav-group-kal ul li button, .nav-group-kal ul li a {
+      color: #FFFFFF; }
+      .nav-group-kal ul li button:hover, .nav-group-kal ul li a:hover {
+        color: #303030; }
+    .nav-group-kal ul li:hover {
+      background: #FFFFFF;
+      border: 1px solid #303030; }
+    .nav-group-kal ul li:last-child {
+      border-right: 0; }
+  .nav-group-lube ul li {
     background: #0099FF;
     border-right: 1px solid #FFFFFF; }
-    nav.nav-group-lube ul li button, nav.nav-group-lube ul li a {
+    .nav-group-lube ul li button, .nav-group-lube ul li a {
       color: #FFFFFF; }
-      nav.nav-group-lube ul li button:hover, nav.nav-group-lube ul li a:hover {
+      .nav-group-lube ul li button:hover, .nav-group-lube ul li a:hover {
         color: #0099FF; }
-    nav.nav-group-lube ul li:hover {
+    .nav-group-lube ul li:hover {
       background: #FFFFFF;
       border: 1px solid #0099FF; }
-    nav.nav-group-lube ul li:last-child {
+    .nav-group-lube ul li:last-child {
       border-right: 0; }
 
 nav.nav-kal {
@@ -3077,18 +3082,18 @@ nav.nav-tie {
   border: 1px solid #b3ffed;
   color: #00CC99; }
 
-.band, .band-default, .band-der, .band-gary, .band-low, .band-lube, .band-kal, .band-range, .band-rangeless, .band-nav-default, .band-nav-derer, .band-nav-kal, .band-nav-lube {
+.band, .band-default, .band-der, .band-gary, .band-kal, .band-low, .band-lube, .band-luber, .band-range, .band-rangeless, .band-nav-default, .band-nav-derer, .band-nav-kal, .band-nav-lube, .band-nav-luber {
   box-sizing: border-box;
   float: left;
   width: 100%;
   padding: 0.3rem; }
-  .band label, .band-default label, .band-der label, .band-gary label, .band-low label, .band-lube label, .band-kal label, .band-range label, .band-rangeless label, .band-nav-default label, .band-nav-derer label, .band-nav-kal label, .band-nav-lube label {
+  .band label, .band-default label, .band-der label, .band-gary label, .band-kal label, .band-low label, .band-lube label, .band-luber label, .band-range label, .band-rangeless label, .band-nav-default label, .band-nav-derer label, .band-nav-kal label, .band-nav-lube label, .band-nav-luber label {
     margin-bottom: .275rem; }
   .band-shadow {
     box-shadow: 0 0 7px #666666; }
-  .band div[class^=col-], .band-default div[class^=col-], .band-der div[class^=col-], .band-gary div[class^=col-], .band-low div[class^=col-], .band-lube div[class^=col-], .band-kal div[class^=col-], .band-range div[class^=col-], .band-rangeless div[class^=col-], .band-nav-default div[class^=col-], .band-nav-derer div[class^=col-], .band-nav-kal div[class^=col-], .band-nav-lube div[class^=col-] {
+  .band div[class^=col-], .band-default div[class^=col-], .band-der div[class^=col-], .band-gary div[class^=col-], .band-kal div[class^=col-], .band-low div[class^=col-], .band-lube div[class^=col-], .band-luber div[class^=col-], .band-range div[class^=col-], .band-rangeless div[class^=col-], .band-nav-default div[class^=col-], .band-nav-derer div[class^=col-], .band-nav-kal div[class^=col-], .band-nav-lube div[class^=col-], .band-nav-luber div[class^=col-] {
     margin-bottom: 0; }
-  .band input, .band-default input, .band-der input, .band-gary input, .band-low input, .band-lube input, .band-kal input, .band-range input, .band-rangeless input, .band-nav-default input, .band-nav-derer input, .band-nav-kal input, .band-nav-lube input, .band select, .band-default select, .band-der select, .band-gary select, .band-low select, .band-lube select, .band-kal select, .band-range select, .band-rangeless select, .band-nav-default select, .band-nav-derer select, .band-nav-kal select, .band-nav-lube select {
+  .band input, .band-default input, .band-der input, .band-gary input, .band-kal input, .band-low input, .band-lube input, .band-luber input, .band-range input, .band-rangeless input, .band-nav-default input, .band-nav-derer input, .band-nav-kal input, .band-nav-lube input, .band-nav-luber input, .band select, .band-default select, .band-der select, .band-gary select, .band-kal select, .band-low select, .band-lube select, .band-luber select, .band-range select, .band-rangeless select, .band-nav-default select, .band-nav-derer select, .band-nav-kal select, .band-nav-lube select, .band-nav-luber select {
     margin-top: 0 !important; }
 
 .band-default {
@@ -3103,6 +3108,35 @@ nav.nav-tie {
   background: #F57373;
   color: #FFFFFF; }
 
+.band-gary {
+  background: #CBCBCB;
+  color: #FFFFFF; }
+
+.band-kal {
+  background: #303030;
+  color: #FFFFFF; }
+
+.band-low {
+  background: #FFEA00;
+  color: #FFFFFF; }
+
+.band-lube {
+  background: #0099FF;
+  color: #FFFFFF; }
+
+.band-luber {
+  background: #2A4881;
+  color: #FFFFFF; }
+
+.band-range {
+  background: #FF6600;
+  color: #FFFFFF; }
+
+.band-rangeless {
+  background: #FBB12F;
+  color: #FFFFFF; }
+
+/************************************************** BAND-MODERN **************************************************/
 .band-modern-der {
   border-top: 1px solid #F57373;
   float: left;
@@ -3112,10 +3146,6 @@ nav.nav-tie {
     color: #FFFFFF;
     float: left;
     padding: 0.3rem; }
-
-.band-gary {
-  background: #CBCBCB;
-  color: #FFFFFF; }
 
 .band-modern-gary {
   border-top: 1px solid #CBCBCB;
@@ -3127,9 +3157,15 @@ nav.nav-tie {
     float: left;
     padding: 0.3rem; }
 
-.band-low {
-  background: #FFEA00;
-  color: #FFFFFF; }
+.band-modern-kal {
+  border-top: 1px solid #303030;
+  float: left;
+  width: 100%; }
+  .band-modern-kal label {
+    background: #303030;
+    color: #FFFFFF;
+    float: left;
+    padding: 0.3rem; }
 
 .band-modern-low {
   border-top: 1px solid #FFEA00;
@@ -3141,10 +3177,6 @@ nav.nav-tie {
     float: left;
     padding: 0.3rem; }
 
-.band-lube {
-  background: #0099FF;
-  color: #FFFFFF; }
-
 .band-modern-lube {
   border-top: 1px solid #0099FF;
   float: left;
@@ -3155,24 +3187,6 @@ nav.nav-tie {
     float: left;
     padding: 0.3rem; }
 
-.band-kal {
-  background: #303030;
-  color: #FFFFFF; }
-
-.band-modern-kal {
-  border-top: 1px solid #303030;
-  float: left;
-  width: 100%; }
-  .band-modern-kal label {
-    background: #303030;
-    color: #FFFFFF;
-    float: left;
-    padding: 0.3rem; }
-
-.band-range {
-  background: #FF6600;
-  color: #FFFFFF; }
-
 .band-modern-range {
   border-top: 1px solid #FF6600;
   float: left;
@@ -3182,10 +3196,6 @@ nav.nav-tie {
     color: #FFFFFF;
     float: left;
     padding: 0.3rem; }
-
-.band-rangeless {
-  background: #FBB12F;
-  color: #FFFFFF; }
 
 .band-modern-rangeless {
   border-top: 1px solid #FBB12F;
@@ -3222,6 +3232,12 @@ nav.nav-tie {
   background: #0099FF;
   padding: 1rem; }
   .band-nav-lube label {
+    color: #FFFFFF; }
+
+.band-nav-luber {
+  background: #2A4881;
+  padding: 1rem; }
+  .band-nav-luber label {
     color: #FFFFFF; }
 
 .banner, div.banner-lube, div.banner-kal {
@@ -7281,6 +7297,9 @@ table.table-kal {
   color: #0000FF; }
 
 .color-cancel {
+  color: #FF5050; }
+
+.color-error {
   color: #FF5050; }
 
 .color-green {

@@ -4,6 +4,15 @@ HTMLCollection.prototype.forEach = Array.prototype.forEach;
 document.addEventListener('DOMContentLoaded', function(e) {
 	
 	/** @auth Matheus
+	 * Atilizar select2 para selects que contenham a classe ss
+	 */
+	jQuery('select.ss').select2({
+		allowClear: true,
+		placeholder: 'Faça sua busca aqui',
+		theme: "classic"
+	});
+	
+	/** @auth Matheus
 	 * Mostrar e esconder modal ao clicar uma ou duas vezes nos seletores abaixo
 	 */
 	jQuery(document).on('click dblclick', '[data-toggle=modal], div.bg-modal', function(event) {
@@ -75,7 +84,8 @@ jQuery(document).ready(function () {
 	/** @auth Matheus
 	 *  Função para mostrar e esconder collapse em efeito slide
 	 */
-	jQuery('[data-toggle=collapse]').click(function(e) {
+	jQuery('[data-toggle=collapse]').click(function() {
+		event.preventDefault();
 		jQuery($(this).attr('href')).slideToggle();
 	});
 	

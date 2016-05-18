@@ -64,10 +64,15 @@ $color-lube: #0099FF;
 $color-text-lube: #FFFFFF;
 $border-lube: 1px solid darken($color-lube, 10%);
 
-//LUBE-LIGHT
-$color-lube-light: #E6F7FF;
-$color-text-lube-light: #000000;
-$border-lube-light: 1px solid darken($color-lube-light, 10%);
+// LUBER
+$color-luber: #2A4881;
+$color-text-luber: #FFFFFF;
+$border-luber: 1px solid darken($color-luber, 10%);
+
+//LUBELESS
+$color-lubeless: #E6F7FF;
+$color-text-lubeless: #000000;
+$border-lubeless: 1px solid darken($color-lubeless, 10%);
 
 // KAL
 $color-kal: #303030;

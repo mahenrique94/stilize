@@ -94,7 +94,7 @@ nav.nav-default {
 		}
 	}
 }
-nav.nav-group {
+.nav-group {
 	width: 100%;
 	ul {
 		@include align-items("center");
@@ -126,6 +126,7 @@ nav.nav-group {
 		}
 	}
 	&-default {
+		@extend .nav-group;
 		ul {
 			li {
 				@include background-default(true);
@@ -133,6 +134,7 @@ nav.nav-group {
 		}
 	}
 	&-derer {
+		@extend .nav-group;
 		ul {
 			li {
 				background: $color-derer;
@@ -153,7 +155,30 @@ nav.nav-group {
 			}
 		}
 	}
+	&-kal {
+		@extend .nav-group;
+		ul {
+			li {
+				background: $color-kal;
+				border-right: 1px solid $color-text-kal;
+				button, a {
+					color: $color-text-kal;	
+					&:hover {
+						color: $color-kal;
+					}				
+				}
+				&:hover {
+					background: $color-text-kal;					
+					border: 1px solid $color-kal;
+				}
+				&:last-child {
+					border-right: 0;
+				}
+			}
+		}
+	}
 	&-lube {
+		@extend .nav-group;
 		ul {
 			li {
 				background: $color-lube;
