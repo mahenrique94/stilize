@@ -3261,6 +3261,16 @@ div.banner-text-derer {
   text-align: center;
   width: 100%; }
 
+.block-full {
+  height: 100%;
+  width: 100%; }
+
+.block-full-height {
+  height: 100%; }
+
+.block-full-width {
+  width: 100%; }
+
 fieldset.block-default legend.block-header {
   background: -webkit-linear-gradient(#FBFBFB, #F6F6F6);
   background: -moz-linear-gradient(#FBFBFB, #F6F6F6);
