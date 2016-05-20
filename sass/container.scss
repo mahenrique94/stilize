@@ -9,7 +9,7 @@
 .container-center {
 	@include container();
 	@include span(10 of 12);
-	background: #FFFFFF;
+	background: transparent;
 	float: none !important;
 	margin: 0 auto !important;
 	padding: $padding;	
