@@ -1,0 +1,28 @@
+@import 'tab-responsive-styles';
+
+.tab-responsive {
+  display: inline-flex;
+  width: 100%;
+  li {
+    @include display-inline-flex;
+    @include justify-content("center");
+    list-style: none;
+    text-align: center;
+    width: 100%; 
+    a, button {
+      height: 35px;
+      justify-content: center;
+      line-height: 35px;
+      padding: $padding-tab-responsive;
+      text-decoration: none;      
+      width: 100%;
+      white-space: nowrap;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &.active {
+    border-bottom: none;
+  }
+}

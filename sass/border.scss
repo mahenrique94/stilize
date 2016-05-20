@@ -1,40 +1,7 @@
+@import 'border-bottom';
+@import 'border-options';
+@import 'border-top';
+
 .border-box {
 	box-sizing: border-box;
-}
-.no-border {
-	border: none !important;
-}
-.no-border-bottom {
-	border-bottom: none !important;
-}
-
-/************************************************** BOTTOM **************************************************/
-.border-bottom-black-3px {
-	@include border(bottom, 3px, solid, #000000);
-}
-.border-bottom-dcdcdc {
-	@include border(bottom, 1px, solid, #DCDCDC);
-}
-.border-bottom-lube-3px {
-	@include border(bottom, 3px, solid, $color-lube);
-}
-.border-bottom-kal-3px {
-	@include border(bottom, 3px, solid, $color-kal);
-}
-.border-bottom-range-3px {
-	@include border(bottom, 3px, solid, $color-range);
-}
-
-/************************************************** TOP **************************************************/
-.border-top-black-3px {
-	@include border(top, 3px, solid, #000000);
-}
-.border-top-lube-3px {
-	@include border(top, 3px, solid, $color-lube);
-}
-.border-top-kal-3px {
-	@include border(top, 3px, solid, $color-kal);
-}
-.border-top-range-3px {
-	@include border(top, 3px, solid, $color-range);
 }

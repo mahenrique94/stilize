@@ -1,0 +1,74 @@
+.nav-group-default {
+    @extend .nav-group;
+    ul {
+        li {
+            @include background-default(true);
+        }
+    }
+}
+.nav-group-derer {
+    @extend .nav-group;
+    ul {
+        li {
+            background: $color-derer;
+            border-right: 1px solid $color-text-derer;
+            button, a {
+                color: $color-text-derer;	
+                &:hover {
+                    color: $color-derer;
+                }				
+            }
+            &:hover {
+                background: $color-text-derer;					
+                border: 1px solid $color-derer;
+            }
+            &:last-child {
+                border-right: 0;
+            }
+        }
+    }
+}
+.nav-group-kal {
+    @extend .nav-group;
+    ul {
+        li {
+            background: $color-kal;
+            border-right: 1px solid $color-text-kal;
+            button, a {
+                color: $color-text-kal;	
+                &:hover {
+                    color: $color-kal;
+                }				
+            }
+            &:hover {
+                background: $color-text-kal;					
+                border: 1px solid $color-kal;
+            }
+            &:last-child {
+                border-right: 0;
+            }
+        }
+    }
+}
+.nav-group-lube {
+    @extend .nav-group;
+    ul {
+        li {
+            background: $color-lube;
+            border-right: 1px solid $color-text-lube;
+            button, a {
+                color: $color-text-lube;	
+                &:hover {
+                    color: $color-lube;
+                }				
+            }
+            &:hover {
+                background: $color-text-lube;					
+                border: 1px solid $color-lube;
+            }
+            &:last-child {
+                border-right: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+.wallpait {
+	@include border-radius(5px);	
+	background: #F6F6F6;
+	border: 1px solid #DCDCDC;
+	box-sizing: border-box;
+	clear: both;
+	padding: 0.5rem 1rem;	
+	position: relative;
+	width: 100%;
+	label.wallpait-tag {
+		@include border-radius-righttop(5px);
+		background: #FFFFFF;
+		float: right;
+		padding: 0.5rem;
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+}

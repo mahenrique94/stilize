@@ -1,0 +1,7 @@
+a[disabled], button[disabled], input[readonly], input[disabled], select[disabled], textarea[readonly], textarea[disabled] {
+	background: $background-inactive;
+	color: $color-inactive !important;
+	&:hover {
+		cursor: $cursor-inactive;
+	}
+}

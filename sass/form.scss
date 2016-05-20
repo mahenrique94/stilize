@@ -1,3 +1,8 @@
+@import 'form-group';
+@import 'form-modern';
+@import 'form-options';
+@import 'form-validate';
+
 .form {
 	box-sizing: border-box;
 	width: 100%;
@@ -29,30 +34,6 @@
 	input[type=checkbox].form-data, input[type=radio].form-data {
 		width: initial;
 	}
-}
-form.form-modern {
-	@extend .form;
-	input {
-		padding: $form-data-modern-padding;					
-	}
-	select {
-		height: 35px;
-	}	
-}
-a[disabled], button[disabled], input[readonly], input[disabled], select[disabled], textarea[readonly], textarea[disabled] {
-	background: $background-inactive;
-	color: $color-inactive !important;
-	&:hover {
-		cursor: $cursor-inactive;
-	}
-}
-input.validate:invalid, select.validate:invalid, textarea.validate:invalid {
-	background: $background-invalid;
-	border: $border-invalid;
-}
-input.validate:focus:valid, textarea.validate:focus:valid {
-	background: $background-valid;
-	border: $border-valid;	
 }
 input[type=search] {
 	background: #FFFFFF url(icon/search.png) right no-repeat !important;	

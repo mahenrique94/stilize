@@ -1,177 +1,8 @@
-/************************************************** BACKGROUND **************************************************/
-@mixin background-default($hover: false) {
-	background: -webkit-linear-gradient($background-default);	
-	background: -moz-linear-gradient($background-default);	
-	background: -o-linear-gradient($background-default);	
-	background: -ms-linear-gradient($background-default);	
-	background: linear-gradient($background-default);	
-	@if $hover {
-		&:hover {
-			background: -webkit-linear-gradient($background-default-hover);	
-			background: -moz-linear-gradient($background-default-hover);	
-			background: -o-linear-gradient($background-default-hover);	
-			background: -ms-linear-gradient($background-default-hover);	
-			background: linear-gradient($background-default-hover);	
-		}
-	}
-}
-@mixin background-th-table-default {	
-	background: -webkit-linear-gradient(top,  #F9F9F9 0%,#F9F9F9 50%,#F1F2F4 51%,#EBECEE 100%);
-	background: -moz-linear-gradient(top,  #F9F9F9 0%, #F9F9F9 50%, #F1F2F4 51%, #EBECEE 100%);			
-	background: -o-linear-gradient(top,  #F9F9F9 0%,#F9F9F9 50%,#F1F2F4 51%,#EBECEE 100%);
-	background: -ms-linear-gradient(top,  #F9F9F9 0%,#F9F9F9 50%,#F1F2F4 51%,#EBECEE 100%);
-	background: linear-gradient(to bottom,  #F9F9F9 0%,#F9F9F9 50%,#F1F2F4 51%,#EBECEE 100%);
-}
+@import 'mixin-background';
+@import 'mixin-border';
+@import 'mixin-button';
+@import 'mixin-display';
 
-/************************************************** BORDER **************************************************/
-@mixin animation($expression) {
-	-webkit-animation: #{$expression};
-	-moz-animation: #{$expression};
-	-o-animation: #{$expression};
-	-ms-animation: #{$expression};
-	animation: #{$expression};
-}
-@mixin border-radius($value) {
-	-webkit-border-radius: $value;
-	-moz-border-radius: $value;
-	-o-border-radius: $value;
-	-ms-border-radius: $value;
-	border-radius: $value;
-}
-@mixin border-radius-lefttop-leftbottom($value) {
-	-webkit-border-bottom-left-radius: $value;	
-	-moz-border-bottom-left-radius: $value;	
-	-o-border-bottom-left-radius: $value;	
-	-ms-border-bottom-left-radius: $value;	
-	border-bottom-left-radius: $value;
-	-webkit-border-top-left-radius: $value;
-	-moz-border-top-left-radius: $value;
-	-o-border-top-left-radius: $value;
-	-ms-border-top-left-radius: $value;
-	border-top-left-radius: $value;	
-	-webkit-border-bottom-right-radius: 0px;	
-	-moz-border-bottom-right-radius: 0px;	
-	-o-border-bottom-right-radius: 0px;	
-	-ms-border-bottom-right-radius: 0px;	
-	border-bottom-right-radius: 0px;
-	-webkit-border-top-right-radius: 0px;
-	-moz-border-top-right-radius: 0px;
-	-o-border-top-right-radius: 0px;
-	-ms-border-top-right-radius: 0px;
-	border-top-right-radius: 0px;	
-}
-@mixin border-radius-lefttop-righttop($value) {
-	-webkit-border-bottom-right-radius: 0px;
-	-moz-border-bottom-right-radius: 0px;
-	-o-border-bottom-right-radius: 0px;
-	-ms-border-bottom-right-radius: 0px;
-	border-bottom-right-radius: 0px;
-	-webkit-border-bottom-left-radius: 0px;	
-	-moz-border-bottom-left-radius: 0px;	
-	-o-border-bottom-left-radius: 0px;	
-	-ms-border-bottom-left-radius: 0px;	
-	border-bottom-left-radius: 0px;
-	-webkit-border-top-left-radius: $value;
-	-moz-border-top-left-radius: $value;
-	-o-border-top-left-radius: $value;
-	-ms-border-top-left-radius: $value;
-	border-top-left-radius: $value;
-	-webkit-border-top-right-radius: $value;	
-	-moz-border-top-right-radius: $value;	
-	-o-border-top-right-radius: $value;	
-	-ms-border-top-right-radius: $value;	
-	border-top-right-radius: $value;	
-}
-@mixin border-radius-righttop($value) {
-	-webkit-border-bottom-left-radius: 0px;
-	-moz-border-bottom-left-radius: 0px;
-	-o-border-bottom-left-radius: 0px;
-	-ms-border-bottom-left-radius: 0px;
-	border-bottom-left-radius: 0px;		
-	-webkit-border-bottom-right-radius: 0px;
-	-moz-border-bottom-right-radius: 0px;
-	-o-border-bottom-right-radius: 0px;
-	-ms-border-bottom-right-radius: 0px;
-	border-bottom-right-radius: 0px;		
-	-webkit-border-top-left-radius: 0px;
-	-moz-border-top-left-radius: 0px;
-	-o-border-top-left-radius: 0px;
-	-ms-border-top-left-radius: 0px;
-	border-top-left-radius: 0px;		
-	-webkit-border-top-right-radius: $value;
-	-moz-border-top-right-radius: $value;
-	-o-border-top-right-radius: $value;
-	-ms-border-top-right-radius: $value;
-	border-top-right-radius: $value;		
-}
-@mixin border-radius-rightbottom-leftbottom($value) {
-	-webkit-border-bottom-left-radius: $value;
-	-moz-border-bottom-left-radius: $value;
-	-o-border-bottom-left-radius: $value;
-	-ms-border-bottom-left-radius: $value;
-	border-bottom-left-radius: $value;
-	-webkit-border-bottom-right-radius: $value;
-	-moz-border-bottom-right-radius: $value;
-	-o-border-bottom-right-radius: $value;
-	-ms-border-bottom-right-radius: $value;
-	border-bottom-right-radius: $value;
-	-webkit-border-top-left-radius: 0px;
-	-moz-border-top-left-radius: 0px;
-	-o-border-top-left-radius: 0px;
-	-ms-border-top-left-radius: 0px;
-	border-top-left-radius: 0px;
-	-webkit-border-top-right-radius: 0px;
-	-moz-border-top-right-radius: 0px;
-	-o-border-top-right-radius: 0px;
-	-ms-border-top-right-radius: 0px;
-	border-top-right-radius: 0px;	
-}
-@mixin border-radius-righttop-rightbottom($value) {
-	-webkit-border-bottom-left-radius: 0px;	
-	-moz-border-bottom-left-radius: 0px;	
-	-o-border-bottom-left-radius: 0px;	
-	-ms-border-bottom-left-radius: 0px;	
-	border-bottom-left-radius: 0px;
-	-webkit-border-bottom-right-radius: $value;
-	-moz-border-bottom-right-radius: $value;	
-	-o-border-bottom-right-radius: $value;	
-	-ms-border-bottom-right-radius: $value;	
-	border-bottom-right-radius: $value;		
-	-webkit-border-top-left-radius: 0px;
-	-moz-border-top-left-radius: 0px;
-	-o-border-top-left-radius: 0px;
-	-ms-border-top-left-radius: 0px;
-	border-top-left-radius: 0px;
-	-webkit-border-top-right-radius: $value;
-	-moz-border-top-right-radius: $value;
-	-o-border-top-right-radius: $value;
-	-ms-border-top-right-radius: $value;
-	border-top-right-radius: $value;	
-}
-@mixin border-radius-righttop-rightbottom-leftbottom($value) {
-	-webkit-border-bottom-left-radius: $value;
-	-moz-border-bottom-left-radius: $value;
-	-o-border-bottom-left-radius: $value;
-	-ms-border-bottom-left-radius: $value;
-	border-bottom-left-radius: $value;
-	-webkit-border-bottom-right-radius: $value;
-	-moz-border-bottom-right-radius: $value;
-	-o-border-bottom-right-radius: $value;
-	-ms-border-bottom-right-radius: $value;
-	border-bottom-right-radius: $value;
-	-webkit-border-top-left-radius: 0px;
-	-moz-border-top-left-radius: 0px;
-	-o-border-top-left-radius: 0px;
-	-ms-border-top-left-radius: 0px;
-	border-top-left-radius: 0px;
-	-webkit-border-top-right-radius: $value;
-	-moz-border-top-right-radius: $value;
-	-o-border-top-right-radius: $value;
-	-ms-border-top-right-radius: $value;
-	border-top-right-radius: $value;		
-}
-
-/************************************************** EXPRESSION **************************************************/
 @mixin align-items($value) {
 	-webkit-align-items: #{$value};
 	-moz-align-items: #{$value};
@@ -179,23 +10,12 @@
 	-ms-align-items: #{$value};
 	align-items: #{$value};
 }
-@mixin background-linear($expression) {
-	background: -webkit-linear-gradient(#{$expression});
-	background: -moz-linear-gradient(#{$expression});
-	background: -o-linear-gradient(#{$expression});
-	background: -ms-linear-gradient(#{$expression});
-	background: linear-gradient(#{$expression});
-}
-@mixin border($position, $px, $style, $color) {
-	@if $position != null {
-		border-#{$position}-color: $color;	
-		border-#{$position}-style: $style;
-		border-#{$position}-width: $px;	
-	} @else {
-		border-color: $color;	
-		border-style: $style;
-		border-width: $px;
-	}
+@mixin animation($expression) {
+	-webkit-animation: #{$expression};
+	-moz-animation: #{$expression};
+	-o-animation: #{$expression};
+	-ms-animation: #{$expression};
+	animation: #{$expression};
 }
 @mixin calc($property, $expression, $important: null) {
 	#{$property}: -webkit-calc(#{$expression}) $important;
@@ -203,26 +23,6 @@
 	#{$property}: -o-calc(#{$expression}) $important;
 	#{$property}: -ms-calc(#{$expression}) $important;
 	#{$property}: calc(#{$expression}) $important;
-}
-@mixin button-color-hover($color, $text-color) {
-	&:hover {
-		background: $text-color;
-		color: $color;
-	}
-}
-@mixin display-flex {
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -o-flex;
-	display: -ms-flex;
-	display: flex;
-}
-@mixin display-inline-flex {
-	display: -webkit-inline-flex;
-	display: -moz-inline-flex;
-	display: -o-inline-flex;
-	display: -ms-inline-flex;
-	display: inline-flex;
 }
 @mixin filter($expression) {
 	-webkit-filter: #{$expression};

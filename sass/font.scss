@@ -1,8 +1,1 @@
-/************************************************** SIZES **************************************************/
-$font-for-size: .5rem;
-@for $i from 1 through 10 {	
-	.font-#{$i}x {
-		font-size: $font-for-size;
-	}
-	$font-for-size: $font-for-size + .2;
-}
+@import 'font-sizes';

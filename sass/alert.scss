@@ -1,3 +1,7 @@
+@import 'alert-dialog';
+@import 'alert-options';
+@import 'alert-styles';
+
 .alert {
 	box-sizing: border-box;
 	display: inline-block;
@@ -6,51 +10,6 @@
 		float: left;
 		margin-right: .5rem;
 	}	
-}
-.alert-dialog {
-	@include align-items("center");
-	@include justify-content("center");
-	@include display-flex;
-	background: rgba(0, 0, 0, 0.5);
-	height: 100%;
-	position: fixed;	
-	width: 100%;
-	z-index: 1000;
-	.box {
-		background: #FFFFFF;
-		height: 20%;
-		padding: 1rem;
-		width: 30%;
-		h1, h2, h3, h4, h5, h6 {
-			margin-bottom: 2.5rem;
-		}
-	}	
-}
-.alert-dialog-modern {
-	@extend .alert-dialog;
-	.box {
-		@include border-radius(.5rem);
-		padding: 0;
-		.alert-title {
-			@include background-default;
-			@include border-radius-lefttop-righttop(.5rem);
-			box-sizing: border-box;
-			color: #000000;
-			float: left;
-			padding: .5rem 1rem;
-			text-align: left;
-			width: 100%;
-		}
-		.alert-body {
-			box-sizing: border-box;
-			float: left;
-			padding: 1rem;
-			width: 100%;
-		}
-	}
-}
-.alert-full {
-	width: 100%;
 }
 .alert-info-system {
 	position: absolute;
@@ -63,76 +22,4 @@
 	i {
 		font-size: 1.5rem;
 	}
-}
-
-/************************************************** COLORS **************************************************/
-.alert-der {
-	@extend .alert;
-	@include border-radius($border-radius-alert);
-	background: $color-der;	
-	border: $border-der;	
-	color: $color-text-der;
-}
-.alert-error {
-	@extend .alert;
-	@include border-radius($border-radius-alert);
-	background: $color-error;	
-	border: $border-error;	
-	color: $color-text-error;
-}
-.alert-gary {
-	@extend .alert;
-	@include border-radius($border-radius-alert);
-	background: $color-gary;	
-	border: $border-gary;	
-	color: $color-text-gary;
-}
-.alert-info {
-	@extend .alert;
-	@include border-radius($border-radius-alert);
-	background: $color-info;	
-	border: $border-info;	
-	color: $color-text-info;
-}
-.alert-low {
-	@extend .alert;	
-	@include border-radius($border-radius-alert);
-	background: $color-low;	
-	border: $border-low;	
-	color: $color-text-low;
-}
-.alert-lube {
-	@extend .alert;
-	@include border-radius($border-radius-alert);
-	background: $color-lube;	
-	border: $border-lube;
-	color: $color-text-lube;	
-}
-.alert-kal {
-	@extend .alert;
-	@include border-radius($border-radius-alert);
-	background: $color-kal;	
-	border: $border-kal;	
-	color: $color-text-kal;
-}
-.alert-range {
-	@extend .alert;
-	@include border-radius($border-radius-alert);
-	background: $color-range;	
-	border: $border-range;
-	color: $color-text-range;	
-}
-.alert-ren {
-	@extend .alert;
-	@include border-radius($border-radius-alert);
-	background: $color-ren;	
-	border: $border-ren;	
-	color: $color-text-ren;
-}
-.alert-success {
-	@extend .alert;
-	@include border-radius($border-radius-alert);
-	background: $color-success;	
-	border: $border-success;	
-	color: $color-text-success;
 }

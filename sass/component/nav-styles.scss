@@ -1,0 +1,205 @@
+nav.nav-default {
+	@extend .nav;	
+	@include background-default;
+	a.nav-brand {
+		color: $color;
+	}
+	ul {
+		li {
+			a {
+				color: $color;
+			}
+			&:hover {
+				background: $color-kal;
+			}
+			&:hover > a {
+				color: $color-text-kal;
+			}
+			&:hover > ul {
+				@include transform("scale(1)");
+				opacity: 100;
+			}
+		}
+		ul {
+			@include background-default;			
+			@include transform("scale(0)");
+			@include transition("all 0.3s linear");
+			opacity: 0;
+			top: $nav-height;
+			z-index: 1;
+			li {
+				border-bottom: 1px solid #DADADA;								
+				float: none;
+				height: $nav-sub-height;				
+				margin: 0;
+				padding: $nav-sub-padding-li;
+				min-width: $nav-min-width;	
+				white-space: nowrap;
+				a {
+					display: block;
+					height: initial;
+				}
+				ul {
+					left: $nav-min-width;
+				}							
+				&:last-child {
+					border-bottom: none;
+				}
+			}
+		}
+	}
+}
+nav.nav-kal {
+	@extend .nav;
+	background: $color-kal;	
+	ul {
+		li {
+			a {
+				color: $color-text-kal;
+			}
+			&:hover {
+				background: $color-text-kal;
+			}
+			&:hover > a {
+				color: $color-kal;	
+			}
+			&:hover > ul {
+				@include transform("scale(1)");
+				opacity: 100;
+			}
+		}
+		ul {			
+			@include transform("scale(0)");
+			@include transition("all 0.3s linear");
+			background: $color-kal;	
+			opacity: 0;
+			top: $nav-height;
+			z-index: 1;
+			li {
+				border-bottom: 1px solid #F9F9F9;								
+				float: none;
+				height: $nav-sub-height;				
+				margin: 0;
+				padding: $nav-sub-padding-li;
+				min-width: $nav-min-width;	
+				white-space: nowrap;
+				a {
+					display: block;
+					height: initial;
+				}
+				ul {
+					left: $nav-min-width;
+				}							
+				&:last-child {
+					border-bottom: none;
+				}
+			}
+		}
+	}
+}
+nav.nav-lube {
+	@extend .nav;	
+	background: $color-lube;	
+	h1, a.nav-brand {
+		color: $color-text-lube;	
+		display: inline-block;
+		float: inherit;
+	}
+	ul {
+		li {
+			a {
+				color: $color-text-lube;
+			}
+			&:hover {
+				background: $color-text-lube;
+			}
+			&:hover > a {
+				color: $color-lube;	
+			}
+			&:hover > ul {
+				@include transform("scale(1)");
+				opacity: 100;
+			}
+		}
+		ul {			
+			@include transform("scale(0)");
+			@include transition("all 0.3s linear");
+			background: $color-lube;	
+			opacity: 0;
+			top: $nav-height;
+			z-index: 1;
+			li {
+				border-bottom: 1px solid #DADADA;								
+				float: none;
+				height: $nav-sub-height;				
+				margin: 0;
+				padding: $nav-sub-padding-li;
+				min-width: $nav-min-width;	
+				white-space: nowrap;
+				a {
+					display: block;
+					height: initial;
+				}
+				ul {
+					left: $nav-min-width;
+				}							
+				&:last-child {
+					border-bottom: none;
+				}
+			}
+		}
+	}
+}
+nav.nav-tie {
+	@extend .nav;	
+	background: $color-tie;	
+	h1, a.nav-brand {
+		color: $color-text-tie;	
+		display: inline-block;
+		float: inherit;
+	}
+	ul {
+		li {
+			a {
+				color: $color-text-tie;
+			}
+			&:hover {
+				background: $color-text-tie;
+			}
+			&:hover > a {
+				color: $color-tie;	
+			}
+			&:hover > ul {
+				@include transform("scale(1)");
+				opacity: 100;
+			}
+		}
+		ul {			
+			@include transform("scale(0)");
+			@include transition("all 0.3s linear");
+			background: $color-tie;	
+			opacity: 0;
+			top: $nav-height;
+			z-index: 1;
+			li {
+				border-bottom: 1px solid #DADADA;								
+				float: none;
+				height: $nav-sub-height;				
+				margin: 0;
+				padding: $nav-sub-padding-li;
+				min-width: $nav-min-width;	
+				white-space: nowrap;
+				a {
+					display: block;
+					height: initial;
+				}
+				ul {
+					left: $nav-min-width;
+				}							
+				&:last-child {
+					border-bottom: none;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,37 @@
+.band-nav-default {
+	@extend .band;
+	@include background-default;
+	padding: $band-nav-padding;
+}
+.band-nav-derer {
+	@extend .band;
+	background: $color-derer;
+	padding: $band-nav-padding;
+	label {
+	color: $color-text-derer;
+	}
+}
+.band-nav-kal {
+	@extend .band;
+	background: $color-kal;
+	padding: $band-nav-padding;
+	label {
+		color: $color-text-kal;
+	}
+}
+.band-nav-lube {
+	@extend .band;
+	background: $color-lube;
+	padding: $band-nav-padding;
+	label {
+		color: $color-text-lube;
+	}
+}
+.band-nav-luber {
+	@extend .band;
+	background: $color-luber;
+	padding: $band-nav-padding;
+	label {
+		color: $color-text-luber;
+	}
+}

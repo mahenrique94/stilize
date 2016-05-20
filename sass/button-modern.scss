@@ -1,0 +1,6 @@
+@import 'button-modern-styles';
+
+.button-modern {
+	@extend .button;
+	border-radius: 0;
+}

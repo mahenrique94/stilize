@@ -1,0 +1,62 @@
+fieldset.block-default {
+	@extend .block;
+	legend.block-header {		
+		@include background-default;
+		.block-title {
+			color: $color;
+		}
+	}
+}
+fieldset.block-derer {
+	@extend .block;
+	legend.block-header {		
+		background: $color-derer;
+		.block-title {
+			color: $color-text-derer;
+		}
+	}
+}
+fieldset.block-gary {
+	@extend .block;
+	legend.block-header {		
+		background: $color-gary;
+		.block-title {
+			color: $color-text-gary;
+		}
+	}
+}
+fieldset.block-lube {
+	@extend .block;
+	legend.block-header {		
+		background: $color-lube;
+		.block-title {
+			color: $color-text-lube;
+		}
+	}
+}
+fieldset.block-kal {
+	@extend .block;
+	legend.block-header {		
+		background: $color-kal;
+		.block-title {
+			color: $color-text-kal;
+		}
+	}
+}
+fieldset.block-rangeless {
+	@extend .block;
+	legend.block-header {		
+		background: $color-rangeless;
+		.block-title {
+			color: $color-text-rangeless;
+		}
+	}
+}
+fieldset.block-tie {
+	@extend .block;
+	legend.block-header {
+		.block-title {
+			color: #595959;
+		}
+	}
+}

@@ -1,0 +1,70 @@
+.alert-der {
+	@extend .alert;
+	@include border-radius($border-radius-alert);
+	background: $color-der;	
+	border: $border-der;	
+	color: $color-text-der;
+}
+.alert-error {
+	@extend .alert;
+	@include border-radius($border-radius-alert);
+	background: $color-error;	
+	border: $border-error;	
+	color: $color-text-error;
+}
+.alert-gary {
+	@extend .alert;
+	@include border-radius($border-radius-alert);
+	background: $color-gary;	
+	border: $border-gary;	
+	color: $color-text-gary;
+}
+.alert-info {
+	@extend .alert;
+	@include border-radius($border-radius-alert);
+	background: $color-info;	
+	border: $border-info;	
+	color: $color-text-info;
+}
+.alert-low {
+	@extend .alert;	
+	@include border-radius($border-radius-alert);
+	background: $color-low;	
+	border: $border-low;	
+	color: $color-text-low;
+}
+.alert-lube {
+	@extend .alert;
+	@include border-radius($border-radius-alert);
+	background: $color-lube;	
+	border: $border-lube;
+	color: $color-text-lube;	
+}
+.alert-kal {
+	@extend .alert;
+	@include border-radius($border-radius-alert);
+	background: $color-kal;	
+	border: $border-kal;	
+	color: $color-text-kal;
+}
+.alert-range {
+	@extend .alert;
+	@include border-radius($border-radius-alert);
+	background: $color-range;	
+	border: $border-range;
+	color: $color-text-range;	
+}
+.alert-ren {
+	@extend .alert;
+	@include border-radius($border-radius-alert);
+	background: $color-ren;	
+	border: $border-ren;	
+	color: $color-text-ren;
+}
+.alert-success {
+	@extend .alert;
+	@include border-radius($border-radius-alert);
+	background: $color-success;	
+	border: $border-success;	
+	color: $color-text-success;
+}

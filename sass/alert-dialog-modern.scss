@@ -1,0 +1,23 @@
+.alert-dialog-modern {
+	@extend .alert-dialog;
+	.box {
+		@include border-radius(.5rem);
+		padding: 0;
+		.alert-title {
+			@include background-default;
+			@include border-radius-lefttop-righttop(.5rem);
+			box-sizing: border-box;
+			color: #000000;
+			float: left;
+			padding: .5rem 1rem;
+			text-align: left;
+			width: 100%;
+		}
+		.alert-body {
+			box-sizing: border-box;
+			float: left;
+			padding: 1rem;
+			width: 100%;
+		}
+	}
+}

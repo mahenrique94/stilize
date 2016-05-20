@@ -1,3 +1,6 @@
+@import 'banner-styles';
+@import 'banner-text';
+
 .banner {
 	@include align-items(center);
 	@include justify-content(center);
@@ -25,23 +28,4 @@
 	padding: 5rem 0;
 	text-align: center;
 	width: 100%;	
-}
-
-/************************************************** THEMES BANNER **************************************************/
-div.banner-lube {
-	@extend .banner;
-	background: $color-lube;
-	color: $color-text-lube;	
-}
-div.banner-kal {
-	@extend .banner;
-	background: $color-kal;
-	color: $color-text-kal;	
-}
-
-/************************************************** THEMES BANNER-TEXT **************************************************/
-div.banner-text-derer {
-	@extend .banner-text;
-	background: $color-derer;
-	color: $color-text-derer;
 }

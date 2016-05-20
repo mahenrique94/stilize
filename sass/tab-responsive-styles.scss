@@ -1,0 +1,82 @@
+ul.tab-responsive-default {
+  @extend .tab-responsive;
+  @include background-default;  
+  li {    
+    border-right: $border;    
+    a, button {
+      color: $color;      
+    }
+    &.active, &:hover {
+      background: $color-tab-responsive;      
+    }
+  }
+  &.active {
+    background: $color-tab-responsive;    
+  }  
+}
+ul.tab-responsive-rangeless {
+  @extend .tab-responsive;
+  background: $color-rangeless;
+  li {    
+    border-right: $border-rangeless;    
+    a, button {
+      color: $color-text-rangeless;      
+      &:hover {
+        color: $color-rangeless;  
+      }
+    }
+    &.active, &:hover {
+      background: $color-text-rangeless;      
+    }
+    &.active a, &.active button {
+      color: $color-rangeless;  
+    }
+  }
+  &.active {
+    background: $color-text-rangeless;
+  }  
+}
+ul.tab-responsive-kal {
+  @extend .tab-responsive;
+  background: $color-kal;
+  li {    
+    border-right: $border-kal;    
+    a, button {
+      color: $color-text-kal;      
+      &:hover {
+        color: $color-kal;  
+      }
+    }
+    &.active, &:hover {
+      background: $color-text-kal;      
+    }
+    &.active a, &.active button {
+      color: $color-kal;  
+    }
+  }
+  &.active {
+    background: $color-text-kal;
+  }  
+}
+ul.tab-responsive-lube {
+  @extend .tab-responsive;
+  background: $color-lube;
+  li {    
+    border-right: $border-lube;    
+    a, button {
+      color: $color-text-lube;      
+      &:hover {
+        color: $color-lube;  
+      }
+    }
+    &.active, &:hover {
+      background: $color-text-lube;      
+    }
+    &.active a, &.active button {
+      color: $color-lube;  
+    }
+  }
+  &.active {
+    background: $color-text-lube;
+  }  
+}

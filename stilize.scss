@@ -53,7 +53,6 @@
 @import 'sass/block';
 @import 'sass/box';
 @import 'sass/button';
-@import 'sass/buttongroup';
 @import 'sass/collapse';
 @import 'sass/column';
 @import 'sass/config';
@@ -65,7 +64,6 @@
 @import 'sass/font';
 @import 'sass/footer';
 @import 'sass/form';
-@import 'sass/formgroup';
 @import 'sass/grid';
 @import 'sass/modal';
 @import 'sass/pagination';
@@ -74,6 +72,7 @@
 @import 'sass/tab';
 @import 'sass/table';
 @import 'sass/tooltip';
+@import 'sass/wallpait';
 
 // Arquivos importados fora da ordem alfabética pois eles precisam sobrescrever as definições e regras padrão dos demais arquivos
 // Caso colocasse na ordem eles não surtiriam efeito, tendo a necessidade de informar !important no final de suas declarações
