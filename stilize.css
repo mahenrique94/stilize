@@ -6322,8 +6322,8 @@ form.form-modern select {
   height: 35px; }
 
 a[disabled], button[disabled], input[readonly], input[disabled], select[disabled], textarea[readonly], textarea[disabled] {
-  background: #F6F6F6;
-  color: #BBBBBB !important; }
+  background: #F9F9F9;
+  color: #808080 !important; }
   a[disabled]:hover, button[disabled]:hover, input[readonly]:hover, input[disabled]:hover, select[disabled]:hover, textarea[readonly]:hover, textarea[disabled]:hover {
     cursor: not-allowed; }
 
@@ -7335,8 +7335,8 @@ table.table-kal {
   color: #FFFFFF; }
 
 .disabled, .readonly {
-  background: #F6F6F6;
-  color: #BBBBBB; }
+  background: #F9F9F9;
+  color: #808080; }
   .disabled:hover, .readonly:hover {
     cursor: not-allowed; }
 

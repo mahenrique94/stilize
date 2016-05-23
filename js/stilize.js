@@ -6,13 +6,13 @@ document.addEventListener('DOMContentLoaded', function(e) {
 	/** @auth Matheus
 	 * Utilizar select2 para selects que contenham a classe ss
 	 */
-//	if (typeof select2 === 'function') {
+	if (linkCheck('http://localhost:8080/cetus/stylesheets/stilize/plugins/select2/select2.js')) {
 		jQuery('select.ss').select2({
 			allowClear: true,
 			placeholder: 'Faça sua busca aqui',
 			theme: "classic"
 		});
-//	}
+	}
 	
 	/** @auth Matheus
 	 * Mostrar e esconder modal ao clicar uma ou duas vezes nos seletores abaixo
@@ -171,4 +171,16 @@ function toggleIconSquaredPlusToMinus(obj) {
 		$(icon).removeClass().addClass('icon-minus-squared');
 	else
 		$(icon).removeClass().addClass('icon-plus-squared');
+}
+
+/** @auth Matheus
+ *  @param url
+ *  @returns Boolean
+ *  Verificando se arquivos carregados no sistema 
+ */
+function linkCheck(url) {
+	var http = new XMLHttpRequest();
+	http.open('HEAD', url, false);
+	http.send();
+	return http.status != 404;
 }
