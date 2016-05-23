@@ -423,11 +423,11 @@
   border-bottom: none;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
-  background-image: -webkit-linear-gradient(top, #eeeeee 50%, white 100%);
-  background-image: -o-linear-gradient(top, #eeeeee 50%, white 100%);
-  background-image: linear-gradient(to bottom, #eeeeee 50%, white 100%);
+  background-image: -webkit-linear-gradient(top, #E6F5FF 0%, #B3E0FF 50%);
+  background-image: -o-linear-gradient(top, #E6F5FF 0%, #B3E0FF 50%);
+  background-image: linear-gradient(to bottom, #E6F5FF 0%, #B3E0FF 50%);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFEEEEEE', endColorstr='#FFFFFFFF', GradientType=0); 
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFFFF', endColorstr='#FFEEEEEE', GradientType=0); 
 }
 .select2-container--classic .select2-selection--multiple {
   background-color: white;

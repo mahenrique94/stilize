@@ -6,13 +6,13 @@ document.addEventListener('DOMContentLoaded', function(e) {
 	/** @auth Matheus
 	 * Utilizar select2 para selects que contenham a classe ss
 	 */
-	if (typeof select2 === 'function') {
+//	if (typeof select2 === 'function') {
 		jQuery('select.ss').select2({
 			allowClear: true,
 			placeholder: 'Faça sua busca aqui',
 			theme: "classic"
 		});
-	}
+//	}
 	
 	/** @auth Matheus
 	 * Mostrar e esconder modal ao clicar uma ou duas vezes nos seletores abaixo
