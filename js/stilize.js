@@ -4,17 +4,6 @@ HTMLCollection.prototype.forEach = Array.prototype.forEach;
 document.addEventListener('DOMContentLoaded', function(e) {
 	
 	/** @auth Matheus
-	 * Utilizar select2 para selects que contenham a classe ss
-	 */
-	if (linkCheck('http://localhost:8080/cetus/stylesheets/stilize/plugins/select2/select2.js')) {
-		jQuery('select.ss').select2({
-			allowClear: true,
-			placeholder: 'Faça sua busca aqui',
-			theme: "classic"
-		});
-	}
-	
-	/** @auth Matheus
 	 * Mostrar e esconder modal ao clicar uma ou duas vezes nos seletores abaixo
 	 */
 	jQuery(document).on('click dblclick', '[data-toggle=modal], div.bg-modal', function(event) {
@@ -176,7 +165,7 @@ function toggleIconSquaredPlusToMinus(obj) {
 /** @auth Matheus
  *  @param url
  *  @returns Boolean
- *  Verificando se arquivos carregados no sistema 
+ *  Verificando arquivos carregados no sistema 
  */
 function linkCheck(url) {
 	var http = new XMLHttpRequest();
