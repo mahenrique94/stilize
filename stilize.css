@@ -2834,7 +2834,7 @@ nav.nav, nav.nav-default, nav.nav-kal, nav.nav-lube, nav.nav-tie {
   nav.nav a.nav-brand, nav.nav-default a.nav-brand, nav.nav-kal a.nav-brand, nav.nav-lube a.nav-brand, nav.nav-tie a.nav-brand {
     color: #FFFFFF;
     font-size: 1.5rem;
-    float: inherit;
+    float: left;
     margin: 1rem 1rem 1rem 0; }
     nav.nav a.nav-brand:focus, nav.nav-default a.nav-brand:focus, nav.nav-kal a.nav-brand:focus, nav.nav-lube a.nav-brand:focus, nav.nav-tie a.nav-brand:focus {
       outline: none; }
@@ -2843,7 +2843,7 @@ nav.nav, nav.nav-default, nav.nav-kal, nav.nav-lube, nav.nav-tie {
     nav.nav a.nav-brand:active, nav.nav-default a.nav-brand:active, nav.nav-kal a.nav-brand:active, nav.nav-lube a.nav-brand:active, nav.nav-tie a.nav-brand:active {
       outline: none; }
   nav.nav ul, nav.nav-default ul, nav.nav-kal ul, nav.nav-lube ul, nav.nav-tie ul {
-    float: inherit; }
+    float: left; }
     nav.nav ul li, nav.nav-default ul li, nav.nav-kal ul li, nav.nav-lube ul li, nav.nav-tie ul li {
       float: inherit;
       height: 3.5rem;
