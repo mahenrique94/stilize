@@ -2571,8 +2571,9 @@ nav.nav a.nav-brand:link, nav.nav-default a.nav-brand:link, nav.nav-kal a.nav-br
     .nav-group ul li, .nav-group-default ul li, .nav-group-derer ul li, .nav-group-kal ul li, .nav-group-lube ul li {
       width: 100%; }
       .nav-group ul li button, .nav-group-default ul li button, .nav-group-derer ul li button, .nav-group-kal ul li button, .nav-group-lube ul li button, .nav-group ul li a, .nav-group-default ul li a, .nav-group-derer ul li a, .nav-group-kal ul li a, .nav-group-lube ul li a {
-        border: 0;
         background: transparent;
+        border: 0;
+        box-sizing: border-box;
         display: inline-block;
         font-size: 1rem;
         height: 100%;
