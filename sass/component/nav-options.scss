@@ -8,3 +8,49 @@
 	top: 0;
 	z-index: 1;
 }
+.nav-mobile {
+	@media screen and #{$media-querie-mobile} {
+		display: initial;	
+	}
+	@media screen and #{$media-querie-tablet} {
+		display: none;
+	}
+	@media screen and #{$media-querie-desktop} {
+		display: none;
+	}
+	@media screen and #{$media-querie-large-screen} {
+		display: none;
+	}
+}
+.nav-responsive {
+	ul {
+		@media screen and #{$media-querie-mobile} {
+			display: block;
+			width: 100%;
+			li:not(.nav-mobile) {
+				display: none;
+			}			
+		}
+		@media screen and #{$media-querie-tablet} {
+			@include display-flex;
+			width: initial;
+			li:not(.nav-mobile) {
+				display: initial;
+			}
+		}
+		@media screen and #{$media-querie-desktop} {
+			@include display-flex;
+			width: initial;
+			li:not(.nav-mobile) {
+				display: initial;
+			}
+		}
+		@media screen and #{$media-querie-large-screen} {
+			@include display-flex;
+			width: initial;
+			li:not(.nav-mobile) {
+				display: initial;
+			}
+		}
+	}
+}
