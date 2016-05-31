@@ -91,16 +91,18 @@ jQuery(document).ready(function () {
 	/** @auth Matheus
 	 *  Slide nav-mobile
 	 */
-	document.querySelector('.nav-mobile a').addEventListener('click', function() {
-		event.preventDefault();
-		if (this.dataset.slide == 'false') {
-			jQuery(this).parent().siblings('li').slideDown();
-			this.dataset.slide = true;
-		} else {
-			jQuery(this).parent().siblings('li').slideUp();
-			this.dataset.slide = false;
-		}
-	});
+	if (document.querySelector('.nav-mobile a') != undefined) {
+		document.querySelector('.nav-mobile a').addEventListener('click', function() {
+			event.preventDefault();
+			if (this.dataset.slide == 'false') {
+				jQuery(this).parent().siblings('li').slideDown();
+				this.dataset.slide = true;
+			} else {
+				jQuery(this).parent().siblings('li').slideUp();
+				this.dataset.slide = false;
+			}
+		});
+	}
 	
 });
 

@@ -1,7 +1,7 @@
 @import 'grid-sizes';
 
 [class^=col-] {
-	margin: $margin-col;
+	margin-bottom: $margin-col-bottom;
 	position: relative;
 }
 [class^=col-]:last-child {
