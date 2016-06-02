@@ -2486,6 +2486,47 @@ ul.pagination-default li.page-default a, ul.pagination-default li.page-default b
 nav.nav a.nav-brand:link, nav.nav-default a.nav-brand:link, nav.nav-kal a.nav-brand:link, nav.nav-lube a.nav-brand:link, nav.nav-tie a.nav-brand:link, nav.nav a.nav-brand:visited, nav.nav-default a.nav-brand:visited, nav.nav-kal a.nav-brand:visited, nav.nav-lube a.nav-brand:visited, nav.nav-tie a.nav-brand:visited, nav.nav a.nav-brand:hover, nav.nav-default a.nav-brand:hover, nav.nav-kal a.nav-brand:hover, nav.nav-lube a.nav-brand:hover, nav.nav-tie a.nav-brand:hover, nav.nav a.nav-brand:active, nav.nav-default a.nav-brand:active, nav.nav-kal a.nav-brand:active, nav.nav-lube a.nav-brand:active, nav.nav-tie a.nav-brand:active, .button:link, .btn-blue:link, .btn-default:link, .btn-der:link, .btn-derer:link, .btn-gary:link, .btn-lube:link, .btn-low:link, .btn-lower:link, .btn-kal:link, .btn-range:link, .button-modern:link, .btn-blue-modern:link, .btn-booper-modern:link, .btn-default-modern:link, .btn-der-modern:link, .btn-gary-modern:link, .btn-lube-modern:link, .btn-low-modern:link, .btn-lower-modern:link, .btn-kal-modern:link, .btn-range-modern:link, .btn-rangeless-modern:link, .button-transparent:link, .btn-border-blue:link, .btn-border-der:link, .btn-border-gary:link, .btn-border-lube:link, .btn-border-low:link, .btn-border-lower:link, .btn-border-kal:link, .btn-border-range:link, .button:visited, .btn-blue:visited, .btn-default:visited, .btn-der:visited, .btn-derer:visited, .btn-gary:visited, .btn-lube:visited, .btn-low:visited, .btn-lower:visited, .btn-kal:visited, .btn-range:visited, .button-modern:visited, .btn-blue-modern:visited, .btn-booper-modern:visited, .btn-default-modern:visited, .btn-der-modern:visited, .btn-gary-modern:visited, .btn-lube-modern:visited, .btn-low-modern:visited, .btn-lower-modern:visited, .btn-kal-modern:visited, .btn-range-modern:visited, .btn-rangeless-modern:visited, .button-transparent:visited, .btn-border-blue:visited, .btn-border-der:visited, .btn-border-gary:visited, .btn-border-lube:visited, .btn-border-low:visited, .btn-border-lower:visited, .btn-border-kal:visited, .btn-border-range:visited, .button:hover, .btn-blue:hover, .btn-default:hover, .btn-der:hover, .btn-derer:hover, .btn-gary:hover, .btn-lube:hover, .btn-low:hover, .btn-lower:hover, .btn-kal:hover, .btn-range:hover, .button-modern:hover, .btn-blue-modern:hover, .btn-booper-modern:hover, .btn-default-modern:hover, .btn-der-modern:hover, .btn-gary-modern:hover, .btn-lube-modern:hover, .btn-low-modern:hover, .btn-lower-modern:hover, .btn-kal-modern:hover, .btn-range-modern:hover, .btn-rangeless-modern:hover, .button-transparent:hover, .btn-border-blue:hover, .btn-border-der:hover, .btn-border-gary:hover, .btn-border-lube:hover, .btn-border-low:hover, .btn-border-lower:hover, .btn-border-kal:hover, .btn-border-range:hover, .button:active, .btn-blue:active, .btn-default:active, .btn-der:active, .btn-derer:active, .btn-gary:active, .btn-lube:active, .btn-low:active, .btn-lower:active, .btn-kal:active, .btn-range:active, .button-modern:active, .btn-blue-modern:active, .btn-booper-modern:active, .btn-default-modern:active, .btn-der-modern:active, .btn-gary-modern:active, .btn-lube-modern:active, .btn-low-modern:active, .btn-lower-modern:active, .btn-kal-modern:active, .btn-range-modern:active, .btn-rangeless-modern:active, .button-transparent:active, .btn-border-blue:active, .btn-border-der:active, .btn-border-gary:active, .btn-border-lube:active, .btn-border-low:active, .btn-border-lower:active, .btn-border-kal:active, .btn-border-range:active, footer.footer a:link, footer.footer-default a:link, footer.footer-gary a:link, footer.footer-kal a:link, footer.footer-lube a:link, footer.footer-tie a:link, footer.footer a:visited, footer.footer-default a:visited, footer.footer-gary a:visited, footer.footer-kal a:visited, footer.footer-lube a:visited, footer.footer-tie a:visited, footer.footer a:hover, footer.footer-default a:hover, footer.footer-gary a:hover, footer.footer-kal a:hover, footer.footer-lube a:hover, footer.footer-tie a:hover, footer.footer a:active, footer.footer-default a:active, footer.footer-gary a:active, footer.footer-kal a:active, footer.footer-lube a:active, footer.footer-tie a:active, .no-decoration:link, .no-decoration:visited, .no-decoration:hover, .no-decoration:active {
   text-decoration: none; }
 
+nav.nav, nav.nav-default, nav.nav-kal, nav.nav-lube, nav.nav-tie {
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8);
+  float: left;
+  padding: 0 1rem;
+  width: 100%; }
+  nav.nav a.nav-brand, nav.nav-default a.nav-brand, nav.nav-kal a.nav-brand, nav.nav-lube a.nav-brand, nav.nav-tie a.nav-brand {
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    float: left;
+    margin: 1rem 1rem 1rem 0; }
+    nav.nav a.nav-brand:focus, nav.nav-default a.nav-brand:focus, nav.nav-kal a.nav-brand:focus, nav.nav-lube a.nav-brand:focus, nav.nav-tie a.nav-brand:focus {
+      outline: none; }
+    nav.nav a.nav-brand:hover, nav.nav-default a.nav-brand:hover, nav.nav-kal a.nav-brand:hover, nav.nav-lube a.nav-brand:hover, nav.nav-tie a.nav-brand:hover {
+      cursor: pointer; }
+    nav.nav a.nav-brand:active, nav.nav-default a.nav-brand:active, nav.nav-kal a.nav-brand:active, nav.nav-lube a.nav-brand:active, nav.nav-tie a.nav-brand:active {
+      outline: none; }
+  nav.nav ul, nav.nav-default ul, nav.nav-kal ul, nav.nav-lube ul, nav.nav-tie ul {
+    float: left; }
+    nav.nav ul li, nav.nav-default ul li, nav.nav-kal ul li, nav.nav-lube ul li, nav.nav-tie ul li {
+      float: inherit;
+      height: 3.5rem;
+      margin-right: 1rem;
+      padding: 0 0.5rem;
+      position: relative; }
+      nav.nav ul li a, nav.nav-default ul li a, nav.nav-kal ul li a, nav.nav-lube ul li a, nav.nav-tie ul li a {
+        display: table-cell;
+        height: inherit;
+        text-decoration: none;
+        vertical-align: middle; }
+    nav.nav ul ul, nav.nav-default ul ul, nav.nav-kal ul ul, nav.nav-lube ul ul, nav.nav-tie ul ul {
+      box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8);
+      left: 0;
+      position: absolute; }
+      nav.nav ul ul li ul, nav.nav-default ul ul li ul, nav.nav-kal ul ul li ul, nav.nav-lube ul ul li ul, nav.nav-tie ul ul li ul {
+        position: absolute;
+        top: 0; }
+      nav.nav ul ul li a, nav.nav-default ul ul li a, nav.nav-kal ul ul li a, nav.nav-lube ul ul li a, nav.nav-tie ul ul li a {
+        float: inherit;
+        white-space: nowrap;
+        width: 100%; }
+
 .nav-fixed-bottom {
   bottom: 0;
   position: fixed;
@@ -2495,6 +2536,56 @@ nav.nav a.nav-brand:link, nav.nav-default a.nav-brand:link, nav.nav-kal a.nav-br
   position: fixed;
   top: 0;
   z-index: 1; }
+
+@media screen and (min-width: 0px) {
+  .nav-mobile {
+    display: initial; } }
+@media screen and (min-width: 768px) {
+  .nav-mobile {
+    display: none; } }
+@media screen and (min-width: 992px) {
+  .nav-mobile {
+    display: none; } }
+@media screen and (min-width: 1200px) {
+  .nav-mobile {
+    display: none; } }
+
+@media screen and (min-width: 0px) {
+  .nav-responsive ul {
+    display: block;
+    width: 100%; }
+    .nav-responsive ul li:not(.nav-mobile) {
+      display: none; } }
+@media screen and (min-width: 768px) {
+  .nav-responsive ul {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -o-flex;
+    display: -ms-flex;
+    display: flex;
+    width: initial; }
+    .nav-responsive ul li:not(.nav-mobile) {
+      display: initial; } }
+@media screen and (min-width: 992px) {
+  .nav-responsive ul {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -o-flex;
+    display: -ms-flex;
+    display: flex;
+    width: initial; }
+    .nav-responsive ul li:not(.nav-mobile) {
+      display: initial; } }
+@media screen and (min-width: 1200px) {
+  .nav-responsive ul {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -o-flex;
+    display: -ms-flex;
+    display: flex;
+    width: initial; }
+    .nav-responsive ul li:not(.nav-mobile) {
+      display: initial; } }
 
 .nav-group-default ul li {
   background: -webkit-linear-gradient(#FBFBFB, #F6F6F6);
@@ -2826,47 +2917,6 @@ nav.nav-tie {
         left: 150px; }
       nav.nav-tie ul ul li:last-child {
         border-bottom: none; }
-
-nav.nav, nav.nav-default, nav.nav-kal, nav.nav-lube, nav.nav-tie {
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8);
-  float: left;
-  padding: 0 1rem;
-  width: 100%; }
-  nav.nav a.nav-brand, nav.nav-default a.nav-brand, nav.nav-kal a.nav-brand, nav.nav-lube a.nav-brand, nav.nav-tie a.nav-brand {
-    color: #FFFFFF;
-    font-size: 1.5rem;
-    float: left;
-    margin: 1rem 1rem 1rem 0; }
-    nav.nav a.nav-brand:focus, nav.nav-default a.nav-brand:focus, nav.nav-kal a.nav-brand:focus, nav.nav-lube a.nav-brand:focus, nav.nav-tie a.nav-brand:focus {
-      outline: none; }
-    nav.nav a.nav-brand:hover, nav.nav-default a.nav-brand:hover, nav.nav-kal a.nav-brand:hover, nav.nav-lube a.nav-brand:hover, nav.nav-tie a.nav-brand:hover {
-      cursor: pointer; }
-    nav.nav a.nav-brand:active, nav.nav-default a.nav-brand:active, nav.nav-kal a.nav-brand:active, nav.nav-lube a.nav-brand:active, nav.nav-tie a.nav-brand:active {
-      outline: none; }
-  nav.nav ul, nav.nav-default ul, nav.nav-kal ul, nav.nav-lube ul, nav.nav-tie ul {
-    float: left; }
-    nav.nav ul li, nav.nav-default ul li, nav.nav-kal ul li, nav.nav-lube ul li, nav.nav-tie ul li {
-      float: inherit;
-      height: 3.5rem;
-      margin-right: 1rem;
-      padding: 0 0.5rem;
-      position: relative; }
-      nav.nav ul li a, nav.nav-default ul li a, nav.nav-kal ul li a, nav.nav-lube ul li a, nav.nav-tie ul li a {
-        display: table-cell;
-        height: inherit;
-        text-decoration: none;
-        vertical-align: middle; }
-    nav.nav ul ul, nav.nav-default ul ul, nav.nav-kal ul ul, nav.nav-lube ul ul, nav.nav-tie ul ul {
-      box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8);
-      left: 0;
-      position: absolute; }
-      nav.nav ul ul li ul, nav.nav-default ul ul li ul, nav.nav-kal ul ul li ul, nav.nav-lube ul ul li ul, nav.nav-tie ul ul li ul {
-        position: absolute;
-        top: 0; }
-      nav.nav ul ul li a, nav.nav-default ul ul li a, nav.nav-kal ul ul li a, nav.nav-lube ul ul li a, nav.nav-tie ul ul li a {
-        float: inherit;
-        white-space: nowrap;
-        width: 100%; }
 
 .alert-dialog-modern .box {
   -webkit-border-radius: 0.5rem;
@@ -6637,7 +6687,7 @@ input[type=search]::-webkit-search-results-decoration {
     margin-left: 0;
     margin-right: 0; } }
 [class^=col-] {
-  margin: 0 0 0.625rem 0;
+  margin-bottom: 0.625rem;
   position: relative; }
 
 [class^=col-]:last-child {
@@ -7414,11 +7464,6 @@ table.table-kal {
 
 .row {
   float: left;
-  width: 100%; }
-
-.row-input {
-  float: left;
-  margin: 0 0 0.625rem 0;
   width: 100%; }
 
 .text-center {
