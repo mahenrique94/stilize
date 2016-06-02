@@ -45,7 +45,7 @@ nav.nav {
 }
 
 // Importado por ultimo para não sobrescrever algumas regras css
-@import 'nav-options';
 @import 'nav-group';
 @import 'nav-square';
 @import 'nav-styles';
+@import 'nav-options';

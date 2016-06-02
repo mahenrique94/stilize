@@ -22,6 +22,19 @@
 		display: none;
 	}
 }
+.nav-reduced {
+	ul {		
+		li {
+			ul {
+				font-size: .8rem;
+				li {
+					height: 1.5rem;
+					padding: .3rem;
+				}
+			}
+		}
+	}
+}
 .nav-responsive {
 	ul {
 		@media screen and #{$media-querie-mobile} {
