@@ -10,6 +10,19 @@
 		float: left;
 		margin-right: .5rem;
 	}	
+	button.alert-close {
+		background: transparent;
+		border: none;
+		position: absolute;
+		right: 0;
+		top: -2px;
+		i {
+			font-size: 1rem;
+		}		
+		&:focus {
+			outline: 0;
+		}
+	}
 }
 .alert-info-system {
 	position: absolute;
