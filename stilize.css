@@ -2760,10 +2760,8 @@ nav.nav-kal {
 
 nav.nav-lube {
   background: #0099FF; }
-  nav.nav-lube h1, nav.nav-lube a.nav-brand {
-    color: #FFFFFF;
-    display: inline-block;
-    float: inherit; }
+  nav.nav-lube a.nav-brand {
+    color: #FFFFFF; }
   nav.nav-lube ul li a {
     color: #FFFFFF; }
   nav.nav-lube ul li:hover {
@@ -2810,10 +2808,8 @@ nav.nav-lube {
 
 nav.nav-tie {
   background: #FFFFFF; }
-  nav.nav-tie h1, nav.nav-tie a.nav-brand {
-    color: #000000;
-    display: inline-block;
-    float: inherit; }
+  nav.nav-tie a.nav-brand {
+    color: #000000; }
   nav.nav-tie ul li a {
     color: #000000; }
   nav.nav-tie ul li:hover {
@@ -2884,8 +2880,8 @@ nav.nav-tie {
 .nav-reduced ul li ul {
   font-size: .8rem; }
   .nav-reduced ul li ul li {
-    height: 1.5rem !important;
-    padding: .3rem !important; }
+    height: 1.5rem;
+    padding: .3rem; }
 
 @media screen and (min-width: 0px) {
   .nav-responsive ul {

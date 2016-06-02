@@ -100,10 +100,8 @@ nav.nav-kal {
 nav.nav-lube {
 	@extend .nav;	
 	background: $color-lube;	
-	h1, a.nav-brand {
+	a.nav-brand {
 		color: $color-text-lube;	
-		display: inline-block;
-		float: inherit;
 	}
 	ul {
 		li {
@@ -153,10 +151,8 @@ nav.nav-lube {
 nav.nav-tie {
 	@extend .nav;	
 	background: $color-tie;	
-	h1, a.nav-brand {
+	a.nav-brand {
 		color: $color-text-tie;	
-		display: inline-block;
-		float: inherit;
 	}
 	ul {
 		li {
