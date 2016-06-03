@@ -88,20 +88,6 @@ jQuery(document).ready(function () {
 		jQuery('.' + $(this).data('next')).toggle();
 	});
 	
-	/** @auth Matheus
-	 *  Slide nav-mobile
-	 */
-	document.querySelector('.nav-mobile a').addEventListener('click', function() {
-		event.preventDefault();
-		if (this.dataset.slide == 'false') {
-			jQuery(this).parent().siblings('li').slideDown();
-			this.dataset.slide = true;
-		} else {
-			jQuery(this).parent().siblings('li').slideUp();
-			this.dataset.slide = false;
-		}
-	});
-	
 });
 
 /** @auth Matheus, Fernando e João
@@ -186,4 +172,18 @@ function linkCheck(url) {
 	http.open('HEAD', url, false);
 	http.send();
 	return http.status != 404;
+}
+
+/** @auth Matheus
+ *  Slide nav-mobile
+ */
+function slideNavResponsive(obj) {
+	event.preventDefault();
+	if (obj.dataset.slide == 'false') {
+		jQuery(obj).parent().siblings('li').slideDown();
+		obj.dataset.slide = true;
+	} else {
+		jQuery(obj).parent().siblings('li').slideUp();
+		obj.dataset.slide = false;
+	}
 }
