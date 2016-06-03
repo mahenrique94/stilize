@@ -18,7 +18,7 @@ jQuery(document).ready(function () {
 	/** @auth Matheus
 	 * Adicionar modal em todas as páginas
 	 */
-	jQuery('body').append('<div class="bg-modal"><div class="modal"><iframe id="iframe-modal"></iframe></div></div>');
+	jQuery('body').append('<div class="bg-modal"><div class="modal"><iframe id="iframe-modal" name="iframe-modal"></iframe></div></div>');
 	
 	/** @auth Matheus
 	 * Esconder elementos depois de 3 segundos
