@@ -2614,6 +2614,9 @@ nav.nav, nav.nav-default, nav.nav-kal, nav.nav-lube, nav.nav-tie {
         width: 100%; }
         .nav-group ul li button:hover, .nav-group-default ul li button:hover, .nav-group-derer ul li button:hover, .nav-group-kal ul li button:hover, .nav-group-lube ul li button:hover, .nav-group ul li a:hover, .nav-group-default ul li a:hover, .nav-group-derer ul li a:hover, .nav-group-kal ul li a:hover, .nav-group-lube ul li a:hover {
           cursor: pointer; }
+      .nav-group ul li button[disabled], .nav-group-default ul li button[disabled], .nav-group-derer ul li button[disabled], .nav-group-kal ul li button[disabled], .nav-group-lube ul li button[disabled], .nav-group ul li a[disabled], .nav-group-default ul li a[disabled], .nav-group-derer ul li a[disabled], .nav-group-kal ul li a[disabled], .nav-group-lube ul li a[disabled] {
+        background: #F9F9F9;
+        cursor: not-allowed; }
       .nav-group ul li button, .nav-group-default ul li button, .nav-group-derer ul li button, .nav-group-kal ul li button, .nav-group-lube ul li button {
         line-height: 1.1; }
 

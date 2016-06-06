@@ -27,6 +27,10 @@
 					cursor: pointer;
 				}
 			}
+			button[disabled], a[disabled] {
+				background: $background-inactive;
+				cursor: $cursor-inactive 
+			}
 			button {
 				line-height: 1.1;
 			}
