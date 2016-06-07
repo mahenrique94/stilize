@@ -1,8 +1,10 @@
+/// <reference path="../model/Modal.ts"/>
+
 class ModalController {
 
-    private _modal : any = new Modal(document.querySelector('[class*=modal]'));
+    private _modal : Modal = new Modal(document.querySelectorAll('[class*=modal]'));
 
-    public static toggle() : void {
+    public toggle() : void {
         this._modal.toggle();
     }
 
