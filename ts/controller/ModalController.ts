@@ -2,7 +2,7 @@ class ModalController {
 
     private _modal : any = new Modal(document.querySelector('[class*=modal]'));
 
-    static toggle() {
+    public static toggle() : void {
         this._modal.toggle();
     }
 

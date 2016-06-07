@@ -19,7 +19,7 @@ var Modal = (function () {
         });
     };
     Modal.prototype._isHide = function (element) {
-        return element.style.display == 'none' || element.style.display == '';
+        return element.style.display == 'none' || element.style.display == '' || element.style.display == undefined;
     };
     return Modal;
 }());

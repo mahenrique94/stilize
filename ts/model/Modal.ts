@@ -20,7 +20,7 @@ class Modal {
     }
 
     private _isHide(element : any) {
-        return element.style.display == 'none' || element.style.display == '';
+        return element.style.display == 'none' || element.style.display == '' || element.style.display == undefined;
     }    
 
 }
