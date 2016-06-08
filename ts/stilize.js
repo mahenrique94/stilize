@@ -40,6 +40,31 @@ var Modal = (function () {
     };
     return Modal;
 }());
+/// <reference path="../model/Modal.ts"/>
+(function (classes) {
+    var ModalController = (function () {
+        function ModalController() {
+            this._modal = new Modal(document.querySelectorAll('[class*=modal]'));
+        }
+        ModalController.prototype.show = function (obj) {
+            event.preventDefault();
+            if (obj)
+                this._modal.show(obj.href || obj.formAction);
+            else
+                this._modal.close();
+        };
+        return ModalController;
+    }());
+    classes.ModalController = ModalController;
+})(window.classes || (window.classes = {}));
+(function ($, win) {
+    $.addEventListener('DOMContentLoaded', function () {
+        $.querySelectorAll('[data-controller]').forEach(function (element) {
+            var clazz = element.dataset.controller;
+            win[clazz] = new win.classes[clazz]();
+        });
+    });
+})(document, window);
 /// <reference path="../interface/ElementStilize.ts"/>
 var BgModal = (function () {
     function BgModal() {
@@ -47,7 +72,8 @@ var BgModal = (function () {
     BgModal.prototype.create = function () {
         var bgModal = document.createElement('div');
         bgModal.classList.add('bg-modal');
-        bgModal.setAttribute('onclick', 'new ModalController().show(this.href);');
+        bgModal.setAttribute('data-controller', 'ModalController');
+        bgModal.setAttribute('onclick', 'ModalController.show();');
         return bgModal;
     };
     return BgModal;
@@ -82,21 +108,11 @@ var ModalFactory = (function () {
     return ModalFactory;
 }());
 document.body.appendChild(ModalFactory.createModal());
-/// <reference path="../model/Modal.ts"/>
-var ModalController = (function () {
-    function ModalController() {
-        this._modal = new Modal(document.querySelectorAll('[class*=modal]'));
-    }
-    ModalController.prototype.show = function (url) {
-        if (url)
-            this._modal.show(url);
-        else
-            this._modal.close();
-    };
-    return ModalController;
-}());
-// Factory
-/// <reference path="factory/ModalFactory.ts"/>
 // Controllers
 /// <reference path="controller/ModalController.ts"/>
+// Factorys
+/// <reference path="factory/ControllerFactory.ts"/>
+/// <reference path="factory/ModalFactory.ts"/>
+// Helpers
 // Models
+// Views 
