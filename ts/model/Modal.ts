@@ -1,17 +1,37 @@
-class Modal {
+/// <reference path="../interface/ElementStilize.ts"/>
 
-    private _element : any;
+class Modal implements ElementStilize {
 
-    constructor(element) {
-        this._element = element;
+    private _elements : any;
+
+    constructor(elements) {
+        this._elements = elements;
     }
 
-    get element() : any {
-        return this._element;
+    get elements() : any {
+        return this._elements;
+    }
+
+    public close() : void {
+        this.toggle();
+    }
+
+    public create() : any {
+        let modal = document.createElement('div');
+        modal.classList.add('modal');        
+        return modal;
+    }
+
+    public show(url : string) : void {
+        event.preventDefault();
+        this._elements[2].src = url;
+        setTimeout(() => {
+            this.toggle();
+        }, 100);
     }
 
     public toggle() : void {
-        this._element.forEach(modal => {
+        this._elements.forEach(modal => {
             if (this._isHide(modal))
                 modal.style.display = 'block';
             else

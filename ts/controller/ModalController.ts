@@ -4,8 +4,11 @@ class ModalController {
 
     private _modal : Modal = new Modal(document.querySelectorAll('[class*=modal]'));
 
-    public toggle() : void {
-        this._modal.toggle();
+    public show(url? : string) : void {
+        if (url)
+            this._modal.show(url);
+        else
+            this._modal.close();
     }
 
 }

@@ -1,24 +1,7 @@
 NodeList.prototype.forEach = Array.prototype.forEach; 
 HTMLCollection.prototype.forEach = Array.prototype.forEach;
 
-document.addEventListener('DOMContentLoaded', function(e) {
-	
-	/** @auth Matheus
-	 * Mostrar e esconder modal ao clicar uma ou duas vezes nos seletores abaixo
-	 */
-	jQuery(document).on('click dblclick', '[data-toggle=modal], div.bg-modal', function(event) {
-		if (event.target.nodeName.toLowerCase() == 'input' && event.type == 'click')
-			return false;
-		return openBox(this);
-	});
-	
-});
-
 jQuery(document).ready(function () {
-	/** @auth Matheus
-	 * Adicionar modal em todas as páginas
-	 */
-	jQuery('body').append('<div class="bg-modal"><div class="modal"><iframe id="iframe-modal" name="iframe-modal"></iframe></div></div>');
 	
 	/** @auth Matheus
 	 * Esconder elementos depois de 3 segundos

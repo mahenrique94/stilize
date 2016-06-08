@@ -1,0 +1,5 @@
+interface ElementStilize {
+
+    create() : any; 
+
+}
