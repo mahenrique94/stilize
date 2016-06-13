@@ -23,7 +23,6 @@ class Modal implements ElementStilize {
     }
 
     public show(url : string) : void {
-        event.preventDefault();
         this._elements[2].src = url;
         setTimeout(() => {
             this.toggle();

@@ -6,7 +6,7 @@ class BgModal implements ElementStilize {
         let bgModal = document.createElement('div');
         bgModal.classList.add('bg-modal');
         bgModal.setAttribute('data-controller', 'ModalController');
-        bgModal.setAttribute('onclick', 'ModalController.show();');
+        bgModal.setAttribute('onclick', 'ModalController.show(null, event);');
         return bgModal;
     }
 

@@ -4,7 +4,8 @@ class ModalController {
 
     private _modal : Modal = new Modal(document.querySelectorAll('[class*=modal]'));
 
-    public show(obj? : any) : void {
+    public show(obj? : any, event? : any) : void {
+        event.preventDefault();
         if (obj)
             this._modal.show(obj.href || obj.formAction);
         else

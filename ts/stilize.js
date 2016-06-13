@@ -20,7 +20,6 @@ var Modal = (function () {
     };
     Modal.prototype.show = function (url) {
         var _this = this;
-        event.preventDefault();
         this._elements[2].src = url;
         setTimeout(function () {
             _this.toggle();
@@ -45,7 +44,8 @@ var ModalController = (function () {
     function ModalController() {
         this._modal = new Modal(document.querySelectorAll('[class*=modal]'));
     }
-    ModalController.prototype.show = function (obj) {
+    ModalController.prototype.show = function (obj, event) {
+        event.preventDefault();
         if (obj)
             this._modal.show(obj.href || obj.formAction);
         else
@@ -73,7 +73,7 @@ var BgModal = (function () {
         var bgModal = document.createElement('div');
         bgModal.classList.add('bg-modal');
         bgModal.setAttribute('data-controller', 'ModalController');
-        bgModal.setAttribute('onclick', 'ModalController.show();');
+        bgModal.setAttribute('onclick', 'ModalController.show(null, event);');
         return bgModal;
     };
     return BgModal;
