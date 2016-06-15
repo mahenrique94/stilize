@@ -37,3 +37,8 @@
 		}
 	}	
 }
+.nav-group-full {
+	ul {
+		@include flex-wrap("wrap");
+	}
+}

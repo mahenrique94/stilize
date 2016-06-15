@@ -2620,6 +2620,13 @@ nav.nav, nav.nav-default, nav.nav-kal, nav.nav-lube, nav.nav-tie {
       .nav-group ul li button, .nav-group-default ul li button, .nav-group-derer ul li button, .nav-group-kal ul li button, .nav-group-lube ul li button {
         line-height: 1.1; }
 
+.nav-group-full ul {
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
 nav.nav-square {
   float: left;
   width: 100%; }
