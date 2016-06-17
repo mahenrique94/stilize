@@ -15,21 +15,29 @@ jQuery(document).ready(function () {
 	/** @auth Matheus
 	 *  Mostrando e escondendo tabs de acordo com a clicada
 	 */
-	jQuery('li.active a').each(function() {
-		var idActive = $(this).attr('href').replace('#', '');
-		jQuery('div#' + idActive).fadeIn();
+	function showTab(obj) {
+		obj.style.display = 'block';
+		obj.setAttribute('aria-expanded', true);
+		obj.setAttribute('aria-hidden', false);
+	};
+	function hideTab(obj) {
+		obj.style.display = 'none';
+		obj.setAttribute('aria-expanded', false);
+		obj.setAttribute('aria-hidden', true);
+	};
+	var $tabActive = document.getElementsByClassName('active')[0];
+	if ($tabActive != null) {
+		showTab(document.getElementById($tabActive.getAttribute('aria-controls')));
+	}
+	document.querySelectorAll('ul[class^=tab] a').forEach(function($link) {
+		$link.addEventListener('click', function(e) {
+			e.preventDefault();
+			this.parentNode.parentNode.getElementsByClassName('active')[0].classList.remove('active');
+			this.parentNode.classList.add('active');
+			hideTab(document.querySelector('.tab-group div[aria-expanded=true]'));
+			showTab(document.getElementById(this.href.substring(this.href.lastIndexOf('#') + 1)));
+		});
 	});
-	jQuery('ul[class^=tab] a').click(function(e) {
-        e.preventDefault();
-        if($(this).closest('li').attr('class') == 'active') {
-        	return;
-        } else {             
-          jQuery('.tab-group').find('[id^=content]').attr({'aria-expanded' : 'false', 'aria-hidden' : 'true'}).hide();
-          jQuery('ul[class^=tab] li').removeAttr('class').attr('aria-selected', 'false');
-          $(this).parent().addClass('active').attr('aria-selected', 'true');
-          jQuery('#content-' + $(this).attr('id')).attr({'aria-expanded' : 'true', 'aria-hidden' : 'false'}).fadeIn();
-        }
-    });
 	
 	/** @auth Matheus
 	 * Setando li ativo de acordo com url
