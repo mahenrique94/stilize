@@ -7250,11 +7250,6 @@ ul.tab-lube .active a, ul.tab-lube .active a::after {
   color: #FFFFFF;
   z-index: 3; }
 
-.table-scroll {
-  float: left;
-  overflow-y: scroll;
-  width: 100%; }
-
 table.table-default {
   display: inline-table;
   width: 100%; }
@@ -7339,6 +7334,19 @@ table.table-kal {
       border: 1px solid #DCDCDC;
       color: #333333;
       padding: 0.3rem; }
+
+table.table-disabled tr {
+  background: #f3f3f3 !important;
+  color: #808080 !important; }
+
+table[class^=table] tr.table-row-pinted {
+  background: #FFFA89 !important;
+  color: #898300 !important; }
+
+.table-scroll {
+  float: left;
+  overflow-y: scroll;
+  width: 100%; }
 
 .tooltip-error {
   color: #FF0000;
