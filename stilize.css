@@ -2532,13 +2532,18 @@ nav.nav, nav.nav-default, nav.nav-kal, nav.nav-lube, nav.nav-tie {
   background: -moz-linear-gradient(#FBFBFB, #F6F6F6);
   background: -o-linear-gradient(#FBFBFB, #F6F6F6);
   background: -ms-linear-gradient(#FBFBFB, #F6F6F6);
-  background: linear-gradient(#FBFBFB, #F6F6F6); }
+  background: linear-gradient(#FBFBFB, #F6F6F6);
+  border-right: 1px solid #DCDCDC; }
   .nav-group-default ul li:hover {
     background: -webkit-linear-gradient(white, white);
     background: -moz-linear-gradient(white, white);
     background: -o-linear-gradient(white, white);
     background: -ms-linear-gradient(white, white);
     background: linear-gradient(white, white); }
+  .nav-group-default ul li button, .nav-group-default ul li a {
+    color: #303030; }
+  .nav-group-default ul li:last-child {
+    border-right: 0; }
 
 .nav-group-derer ul li {
   background: #FF5050;

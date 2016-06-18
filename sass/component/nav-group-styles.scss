@@ -3,6 +3,16 @@
     ul {
         li {
             @include background-default(true);
+            border-right: 1px solid #DCDCDC;
+            button, a {
+                color: #303030;	
+                // &:hover {
+                //     color: $color-kal;
+                // }				
+            }
+            &:last-child {
+                border-right: 0;
+            }
         }
     }
 }
