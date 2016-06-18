@@ -72,3 +72,25 @@
         }
     }
 }
+.nav-group-tie {
+    @extend .nav-group;
+    ul {
+        li {
+            background: $color-tie;
+            border-right: 1px solid $color-text-tie;
+            button, a {
+                color: $color-text-tie;	
+                &:hover {
+                    color: $color-tie;
+                }				
+            }
+            &:hover {
+                background: $color-text-tie;					
+                border: 1px solid $color-tie;
+            }
+            &:last-child {
+                border-right: 0;
+            }
+        }
+    }
+}
