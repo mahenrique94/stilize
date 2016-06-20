@@ -21,17 +21,19 @@ var Modal = (function () {
     Modal.prototype.show = function (url) {
         var _this = this;
         this._elements[2].src = url;
-        setTimeout(function () {
-            _this.toggle();
-        }, 100);
+        setTimeout(function () { return _this.toggle(); }, 150);
     };
     Modal.prototype.toggle = function () {
         var _this = this;
         this._elements.forEach(function (modal) {
-            if (_this._isHide(modal))
+            if (_this._isHide(modal)) {
                 modal.style.display = 'block';
-            else
+            }
+            else {
                 modal.style.display = 'none';
+                if (modal.tagName == 'IFRAME')
+                    modal.src = '';
+            }
         });
     };
     Modal.prototype._isHide = function (element) {

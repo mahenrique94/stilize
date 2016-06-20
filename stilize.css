@@ -2611,7 +2611,10 @@ nav.nav, nav.nav-default, nav.nav-kal, nav.nav-lube, nav.nav-tie {
         padding: 1rem;
         text-align: center;
         text-decoration: none;
+        white-space: nowrap;
         width: 100%; }
+        .nav-group ul li button:focus, .nav-group-default ul li button:focus, .nav-group-derer ul li button:focus, .nav-group-kal ul li button:focus, .nav-group-lube ul li button:focus, .nav-group ul li a:focus, .nav-group-default ul li a:focus, .nav-group-derer ul li a:focus, .nav-group-kal ul li a:focus, .nav-group-lube ul li a:focus {
+          outline: 0; }
         .nav-group ul li button:hover, .nav-group-default ul li button:hover, .nav-group-derer ul li button:hover, .nav-group-kal ul li button:hover, .nav-group-lube ul li button:hover, .nav-group ul li a:hover, .nav-group-default ul li a:hover, .nav-group-derer ul li a:hover, .nav-group-kal ul li a:hover, .nav-group-lube ul li a:hover {
           cursor: pointer; }
       .nav-group ul li button[disabled], .nav-group-default ul li button[disabled], .nav-group-derer ul li button[disabled], .nav-group-kal ul li button[disabled], .nav-group-lube ul li button[disabled], .nav-group ul li a[disabled], .nav-group-default ul li a[disabled], .nav-group-derer ul li a[disabled], .nav-group-kal ul li a[disabled], .nav-group-lube ul li a[disabled] {

@@ -24,17 +24,18 @@ class Modal implements ElementStilize {
 
     public show(url : string) : void {
         this._elements[2].src = url;
-        setTimeout(() => {
-            this.toggle();
-        }, 100);
+        setTimeout(() => this.toggle(), 150);        
     }
 
     public toggle() : void {
         this._elements.forEach(modal => {
-            if (this._isHide(modal))
+            if (this._isHide(modal)) {
                 modal.style.display = 'block';
-            else
+            } else {
                 modal.style.display = 'none';
+                if (modal.tagName == 'IFRAME')
+                    modal.src = '';
+            }
         });
     }
 

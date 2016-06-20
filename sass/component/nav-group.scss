@@ -22,7 +22,11 @@
 					align: center;
 					decoration: none;	
 				}
+				white-space: nowrap;
 				width: 100%;
+				&:focus {
+					outline: 0;
+				}
 				&:hover {
 					cursor: pointer;
 				}
