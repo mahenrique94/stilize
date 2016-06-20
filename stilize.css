@@ -2532,13 +2532,18 @@ nav.nav, nav.nav-default, nav.nav-kal, nav.nav-lube, nav.nav-tie {
   background: -moz-linear-gradient(#FBFBFB, #F6F6F6);
   background: -o-linear-gradient(#FBFBFB, #F6F6F6);
   background: -ms-linear-gradient(#FBFBFB, #F6F6F6);
-  background: linear-gradient(#FBFBFB, #F6F6F6); }
+  background: linear-gradient(#FBFBFB, #F6F6F6);
+  border-right: 1px solid #DCDCDC; }
   .nav-group-default ul li:hover {
     background: -webkit-linear-gradient(white, white);
     background: -moz-linear-gradient(white, white);
     background: -o-linear-gradient(white, white);
     background: -ms-linear-gradient(white, white);
     background: linear-gradient(white, white); }
+  .nav-group-default ul li button, .nav-group-default ul li a {
+    color: #303030; }
+  .nav-group-default ul li:last-child {
+    border-right: 0; }
 
 .nav-group-derer ul li {
   background: #FF5050;
@@ -2579,9 +2584,22 @@ nav.nav, nav.nav-default, nav.nav-kal, nav.nav-lube, nav.nav-tie {
   .nav-group-lube ul li:last-child {
     border-right: 0; }
 
-.nav-group, .nav-group-default, .nav-group-derer, .nav-group-kal, .nav-group-lube {
+.nav-group-tie ul li {
+  background: #FFFFFF;
+  border-right: 1px solid #000000; }
+  .nav-group-tie ul li button, .nav-group-tie ul li a {
+    color: #000000; }
+    .nav-group-tie ul li button:hover, .nav-group-tie ul li a:hover {
+      color: #FFFFFF; }
+  .nav-group-tie ul li:hover {
+    background: #000000;
+    border: 1px solid #FFFFFF; }
+  .nav-group-tie ul li:last-child {
+    border-right: 0; }
+
+.nav-group, .nav-group-default, .nav-group-derer, .nav-group-kal, .nav-group-lube, .nav-group-tie {
   width: 100%; }
-  .nav-group ul, .nav-group-default ul, .nav-group-derer ul, .nav-group-kal ul, .nav-group-lube ul {
+  .nav-group ul, .nav-group-default ul, .nav-group-derer ul, .nav-group-kal ul, .nav-group-lube ul, .nav-group-tie ul {
     -webkit-align-items: center;
     -moz-align-items: center;
     -o-align-items: center;
@@ -2599,9 +2617,9 @@ nav.nav, nav.nav-default, nav.nav-kal, nav.nav-lube, nav.nav-tie {
     justify-content: center;
     width: 100%;
     z-index: 1; }
-    .nav-group ul li, .nav-group-default ul li, .nav-group-derer ul li, .nav-group-kal ul li, .nav-group-lube ul li {
+    .nav-group ul li, .nav-group-default ul li, .nav-group-derer ul li, .nav-group-kal ul li, .nav-group-lube ul li, .nav-group-tie ul li {
       width: 100%; }
-      .nav-group ul li button, .nav-group-default ul li button, .nav-group-derer ul li button, .nav-group-kal ul li button, .nav-group-lube ul li button, .nav-group ul li a, .nav-group-default ul li a, .nav-group-derer ul li a, .nav-group-kal ul li a, .nav-group-lube ul li a {
+      .nav-group ul li button, .nav-group-default ul li button, .nav-group-derer ul li button, .nav-group-kal ul li button, .nav-group-lube ul li button, .nav-group-tie ul li button, .nav-group ul li a, .nav-group-default ul li a, .nav-group-derer ul li a, .nav-group-kal ul li a, .nav-group-lube ul li a, .nav-group-tie ul li a {
         background: transparent;
         border: 0;
         box-sizing: border-box;
@@ -2613,14 +2631,14 @@ nav.nav, nav.nav-default, nav.nav-kal, nav.nav-lube, nav.nav-tie {
         text-decoration: none;
         white-space: nowrap;
         width: 100%; }
-        .nav-group ul li button:focus, .nav-group-default ul li button:focus, .nav-group-derer ul li button:focus, .nav-group-kal ul li button:focus, .nav-group-lube ul li button:focus, .nav-group ul li a:focus, .nav-group-default ul li a:focus, .nav-group-derer ul li a:focus, .nav-group-kal ul li a:focus, .nav-group-lube ul li a:focus {
+        .nav-group ul li button:focus, .nav-group-default ul li button:focus, .nav-group-derer ul li button:focus, .nav-group-kal ul li button:focus, .nav-group-lube ul li button:focus, .nav-group-tie ul li button:focus, .nav-group ul li a:focus, .nav-group-default ul li a:focus, .nav-group-derer ul li a:focus, .nav-group-kal ul li a:focus, .nav-group-lube ul li a:focus, .nav-group-tie ul li a:focus {
           outline: 0; }
-        .nav-group ul li button:hover, .nav-group-default ul li button:hover, .nav-group-derer ul li button:hover, .nav-group-kal ul li button:hover, .nav-group-lube ul li button:hover, .nav-group ul li a:hover, .nav-group-default ul li a:hover, .nav-group-derer ul li a:hover, .nav-group-kal ul li a:hover, .nav-group-lube ul li a:hover {
+        .nav-group ul li button:hover, .nav-group-default ul li button:hover, .nav-group-derer ul li button:hover, .nav-group-kal ul li button:hover, .nav-group-lube ul li button:hover, .nav-group-tie ul li button:hover, .nav-group ul li a:hover, .nav-group-default ul li a:hover, .nav-group-derer ul li a:hover, .nav-group-kal ul li a:hover, .nav-group-lube ul li a:hover, .nav-group-tie ul li a:hover {
           cursor: pointer; }
-      .nav-group ul li button[disabled], .nav-group-default ul li button[disabled], .nav-group-derer ul li button[disabled], .nav-group-kal ul li button[disabled], .nav-group-lube ul li button[disabled], .nav-group ul li a[disabled], .nav-group-default ul li a[disabled], .nav-group-derer ul li a[disabled], .nav-group-kal ul li a[disabled], .nav-group-lube ul li a[disabled] {
+      .nav-group ul li button[disabled], .nav-group-default ul li button[disabled], .nav-group-derer ul li button[disabled], .nav-group-kal ul li button[disabled], .nav-group-lube ul li button[disabled], .nav-group-tie ul li button[disabled], .nav-group ul li a[disabled], .nav-group-default ul li a[disabled], .nav-group-derer ul li a[disabled], .nav-group-kal ul li a[disabled], .nav-group-lube ul li a[disabled], .nav-group-tie ul li a[disabled] {
         background: #F9F9F9;
         cursor: not-allowed; }
-      .nav-group ul li button, .nav-group-default ul li button, .nav-group-derer ul li button, .nav-group-kal ul li button, .nav-group-lube ul li button {
+      .nav-group ul li button, .nav-group-default ul li button, .nav-group-derer ul li button, .nav-group-kal ul li button, .nav-group-lube ul li button, .nav-group-tie ul li button {
         line-height: 1.1; }
 
 .nav-group-full ul {
@@ -7253,11 +7271,6 @@ ul.tab-lube .active a, ul.tab-lube .active a::after {
   color: #FFFFFF;
   z-index: 3; }
 
-.table-scroll {
-  float: left;
-  overflow-y: scroll;
-  width: 100%; }
-
 table.table-default {
   display: inline-table;
   width: 100%; }
@@ -7342,6 +7355,19 @@ table.table-kal {
       border: 1px solid #DCDCDC;
       color: #333333;
       padding: 0.3rem; }
+
+table.table-disabled tr {
+  background: #f3f3f3 !important;
+  color: #808080 !important; }
+
+table[class^=table] tr.table-row-pinted {
+  background: #FFFA89 !important;
+  color: #898300 !important; }
+
+.table-scroll {
+  float: left;
+  overflow-y: scroll;
+  width: 100%; }
 
 .tooltip-error {
   color: #FF0000;
