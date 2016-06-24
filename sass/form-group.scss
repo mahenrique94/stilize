@@ -7,7 +7,7 @@
 		background: #F2F2F2;
 		border: $form-data-group-text-border;
 		box-sizing: border-box;
-		display: $form-data-group-element-display;
+		display: $form-data-group-text-display;
 		font-size: .8rem;
 		line-height: 0;
 		padding: $form-data-group-text-padding;		
@@ -17,7 +17,7 @@
 		width: $form-data-group-width;
 	}
 	& .form-data-group-btn {		
-		display: $form-data-group-element-display;
+		display: $form-data-group-text-display;
 		vertical-align: $form-data-group-vertical-align;
 		white-space: $form-data-group-white-space;
 		width: $form-data-group-width;		
@@ -25,10 +25,10 @@
 			border-radius: 0;
 		}		
 		button {
-			padding: .52rem .6rem;
+			padding: $form-data-group-btn-button-padding;
 		}
 		a {
-			padding: .49rem .6rem;
+			padding: $form-data-group-btn-a-padding;
 		}
 	}
 }

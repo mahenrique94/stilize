@@ -22,13 +22,14 @@
 		box-sizing: border-box;
 		color: $color;
 		float: inherit;
+		font-size: .8rem;
 		width: 100%;
 		&:focus {
 			border: 1px solid #000000;
 			outline: none;
 		}
 		&:only-child {
-			margin-top: 1rem;
+			margin-top: 1.4rem;
 		}
 	}
 	input[type=checkbox].form-data, input[type=radio].form-data {
