@@ -11,6 +11,9 @@
 	background: $color-error;	
 	border: $border-error;	
 	color: $color-text-error;
+	button {
+		color: $color-text-error;
+	}
 }
 .alert-gary {
 	@extend .alert;

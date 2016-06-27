@@ -1,8 +1,3 @@
-@import 'nav-options';
-@import 'nav-group';
-@import 'nav-square';
-@import 'nav-styles';
-
 nav.nav {
 	@extend %box-sizing;
 	box-shadow: $nav-shadow;
@@ -48,3 +43,9 @@ nav.nav {
 		}
 	}
 }
+
+// Importado por ultimo para não sobrescrever algumas regras css
+@import 'nav-group';
+@import 'nav-square';
+@import 'nav-styles';
+@import 'nav-options';

@@ -1,7 +1,3 @@
-@import 'tab-group';
-@import 'tab-responsive';
-@import 'tab-styles';
-
 .tab {
   list-style: none;
   overflow: hidden;
@@ -44,3 +40,8 @@
     }
   }
 }
+
+// Importado por ultimo para não sobrescrever algumas regras css
+@import 'tab-group';
+@import 'tab-responsive';
+@import 'tab-styles';

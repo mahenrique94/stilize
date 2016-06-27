@@ -2486,65 +2486,46 @@ ul.pagination-default li.page-default a, ul.pagination-default li.page-default b
 nav.nav a.nav-brand:link, nav.nav-default a.nav-brand:link, nav.nav-kal a.nav-brand:link, nav.nav-lube a.nav-brand:link, nav.nav-tie a.nav-brand:link, nav.nav a.nav-brand:visited, nav.nav-default a.nav-brand:visited, nav.nav-kal a.nav-brand:visited, nav.nav-lube a.nav-brand:visited, nav.nav-tie a.nav-brand:visited, nav.nav a.nav-brand:hover, nav.nav-default a.nav-brand:hover, nav.nav-kal a.nav-brand:hover, nav.nav-lube a.nav-brand:hover, nav.nav-tie a.nav-brand:hover, nav.nav a.nav-brand:active, nav.nav-default a.nav-brand:active, nav.nav-kal a.nav-brand:active, nav.nav-lube a.nav-brand:active, nav.nav-tie a.nav-brand:active, .button:link, .btn-blue:link, .btn-default:link, .btn-der:link, .btn-derer:link, .btn-gary:link, .btn-lube:link, .btn-low:link, .btn-lower:link, .btn-kal:link, .btn-range:link, .button-modern:link, .btn-blue-modern:link, .btn-booper-modern:link, .btn-default-modern:link, .btn-der-modern:link, .btn-gary-modern:link, .btn-lube-modern:link, .btn-low-modern:link, .btn-lower-modern:link, .btn-kal-modern:link, .btn-range-modern:link, .btn-rangeless-modern:link, .button-transparent:link, .btn-border-blue:link, .btn-border-der:link, .btn-border-gary:link, .btn-border-lube:link, .btn-border-low:link, .btn-border-lower:link, .btn-border-kal:link, .btn-border-range:link, .button:visited, .btn-blue:visited, .btn-default:visited, .btn-der:visited, .btn-derer:visited, .btn-gary:visited, .btn-lube:visited, .btn-low:visited, .btn-lower:visited, .btn-kal:visited, .btn-range:visited, .button-modern:visited, .btn-blue-modern:visited, .btn-booper-modern:visited, .btn-default-modern:visited, .btn-der-modern:visited, .btn-gary-modern:visited, .btn-lube-modern:visited, .btn-low-modern:visited, .btn-lower-modern:visited, .btn-kal-modern:visited, .btn-range-modern:visited, .btn-rangeless-modern:visited, .button-transparent:visited, .btn-border-blue:visited, .btn-border-der:visited, .btn-border-gary:visited, .btn-border-lube:visited, .btn-border-low:visited, .btn-border-lower:visited, .btn-border-kal:visited, .btn-border-range:visited, .button:hover, .btn-blue:hover, .btn-default:hover, .btn-der:hover, .btn-derer:hover, .btn-gary:hover, .btn-lube:hover, .btn-low:hover, .btn-lower:hover, .btn-kal:hover, .btn-range:hover, .button-modern:hover, .btn-blue-modern:hover, .btn-booper-modern:hover, .btn-default-modern:hover, .btn-der-modern:hover, .btn-gary-modern:hover, .btn-lube-modern:hover, .btn-low-modern:hover, .btn-lower-modern:hover, .btn-kal-modern:hover, .btn-range-modern:hover, .btn-rangeless-modern:hover, .button-transparent:hover, .btn-border-blue:hover, .btn-border-der:hover, .btn-border-gary:hover, .btn-border-lube:hover, .btn-border-low:hover, .btn-border-lower:hover, .btn-border-kal:hover, .btn-border-range:hover, .button:active, .btn-blue:active, .btn-default:active, .btn-der:active, .btn-derer:active, .btn-gary:active, .btn-lube:active, .btn-low:active, .btn-lower:active, .btn-kal:active, .btn-range:active, .button-modern:active, .btn-blue-modern:active, .btn-booper-modern:active, .btn-default-modern:active, .btn-der-modern:active, .btn-gary-modern:active, .btn-lube-modern:active, .btn-low-modern:active, .btn-lower-modern:active, .btn-kal-modern:active, .btn-range-modern:active, .btn-rangeless-modern:active, .button-transparent:active, .btn-border-blue:active, .btn-border-der:active, .btn-border-gary:active, .btn-border-lube:active, .btn-border-low:active, .btn-border-lower:active, .btn-border-kal:active, .btn-border-range:active, footer.footer a:link, footer.footer-default a:link, footer.footer-gary a:link, footer.footer-kal a:link, footer.footer-lube a:link, footer.footer-tie a:link, footer.footer a:visited, footer.footer-default a:visited, footer.footer-gary a:visited, footer.footer-kal a:visited, footer.footer-lube a:visited, footer.footer-tie a:visited, footer.footer a:hover, footer.footer-default a:hover, footer.footer-gary a:hover, footer.footer-kal a:hover, footer.footer-lube a:hover, footer.footer-tie a:hover, footer.footer a:active, footer.footer-default a:active, footer.footer-gary a:active, footer.footer-kal a:active, footer.footer-lube a:active, footer.footer-tie a:active, .no-decoration:link, .no-decoration:visited, .no-decoration:hover, .no-decoration:active {
   text-decoration: none; }
 
-.nav-fixed-bottom {
-  bottom: 0;
-  position: fixed;
-  z-index: 1; }
-
-.nav-fixed-top {
-  position: fixed;
-  top: 0;
-  z-index: 1; }
-
-@media screen and (min-width: 0px) {
-  .nav-mobile {
-    display: initial; } }
-@media screen and (min-width: 768px) {
-  .nav-mobile {
-    display: none; } }
-@media screen and (min-width: 992px) {
-  .nav-mobile {
-    display: none; } }
-@media screen and (min-width: 1200px) {
-  .nav-mobile {
-    display: none; } }
-
-@media screen and (min-width: 0px) {
-  .nav-responsive ul {
-    display: block;
-    width: 100%; }
-    .nav-responsive ul li:not(.nav-mobile) {
-      display: none; } }
-@media screen and (min-width: 768px) {
-  .nav-responsive ul {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -o-flex;
-    display: -ms-flex;
-    display: flex;
-    width: initial; }
-    .nav-responsive ul li:not(.nav-mobile) {
-      display: initial; } }
-@media screen and (min-width: 992px) {
-  .nav-responsive ul {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -o-flex;
-    display: -ms-flex;
-    display: flex;
-    width: initial; }
-    .nav-responsive ul li:not(.nav-mobile) {
-      display: initial; } }
-@media screen and (min-width: 1200px) {
-  .nav-responsive ul {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -o-flex;
-    display: -ms-flex;
-    display: flex;
-    width: initial; }
-    .nav-responsive ul li:not(.nav-mobile) {
-      display: initial; } }
+nav.nav, nav.nav-default, nav.nav-kal, nav.nav-lube, nav.nav-tie {
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8);
+  float: left;
+  padding: 0 1rem;
+  width: 100%; }
+  nav.nav a.nav-brand, nav.nav-default a.nav-brand, nav.nav-kal a.nav-brand, nav.nav-lube a.nav-brand, nav.nav-tie a.nav-brand {
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    float: left;
+    margin: 1rem 1rem 1rem 0; }
+    nav.nav a.nav-brand:focus, nav.nav-default a.nav-brand:focus, nav.nav-kal a.nav-brand:focus, nav.nav-lube a.nav-brand:focus, nav.nav-tie a.nav-brand:focus {
+      outline: none; }
+    nav.nav a.nav-brand:hover, nav.nav-default a.nav-brand:hover, nav.nav-kal a.nav-brand:hover, nav.nav-lube a.nav-brand:hover, nav.nav-tie a.nav-brand:hover {
+      cursor: pointer; }
+    nav.nav a.nav-brand:active, nav.nav-default a.nav-brand:active, nav.nav-kal a.nav-brand:active, nav.nav-lube a.nav-brand:active, nav.nav-tie a.nav-brand:active {
+      outline: none; }
+  nav.nav ul, nav.nav-default ul, nav.nav-kal ul, nav.nav-lube ul, nav.nav-tie ul {
+    float: left; }
+    nav.nav ul li, nav.nav-default ul li, nav.nav-kal ul li, nav.nav-lube ul li, nav.nav-tie ul li {
+      float: inherit;
+      height: 3.5rem;
+      margin-right: 1rem;
+      padding: 0 0.5rem;
+      position: relative; }
+      nav.nav ul li a, nav.nav-default ul li a, nav.nav-kal ul li a, nav.nav-lube ul li a, nav.nav-tie ul li a {
+        display: table-cell;
+        height: inherit;
+        text-decoration: none;
+        vertical-align: middle; }
+    nav.nav ul ul, nav.nav-default ul ul, nav.nav-kal ul ul, nav.nav-lube ul ul, nav.nav-tie ul ul {
+      box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8);
+      left: 0;
+      position: absolute; }
+      nav.nav ul ul li ul, nav.nav-default ul ul li ul, nav.nav-kal ul ul li ul, nav.nav-lube ul ul li ul, nav.nav-tie ul ul li ul {
+        position: absolute;
+        top: 0; }
+      nav.nav ul ul li a, nav.nav-default ul ul li a, nav.nav-kal ul ul li a, nav.nav-lube ul ul li a, nav.nav-tie ul ul li a {
+        float: inherit;
+        white-space: nowrap;
+        width: 100%; }
 
 .nav-group-default ul li {
   background: -webkit-linear-gradient(#FBFBFB, #F6F6F6);
@@ -2779,10 +2760,8 @@ nav.nav-kal {
 
 nav.nav-lube {
   background: #0099FF; }
-  nav.nav-lube h1, nav.nav-lube a.nav-brand {
-    color: #FFFFFF;
-    display: inline-block;
-    float: inherit; }
+  nav.nav-lube a.nav-brand {
+    color: #FFFFFF; }
   nav.nav-lube ul li a {
     color: #FFFFFF; }
   nav.nav-lube ul li:hover {
@@ -2829,10 +2808,8 @@ nav.nav-lube {
 
 nav.nav-tie {
   background: #FFFFFF; }
-  nav.nav-tie h1, nav.nav-tie a.nav-brand {
-    color: #000000;
-    display: inline-block;
-    float: inherit; }
+  nav.nav-tie a.nav-brand {
+    color: #000000; }
   nav.nav-tie ul li a {
     color: #000000; }
   nav.nav-tie ul li:hover {
@@ -2877,46 +2854,71 @@ nav.nav-tie {
       nav.nav-tie ul ul li:last-child {
         border-bottom: none; }
 
-nav.nav, nav.nav-default, nav.nav-kal, nav.nav-lube, nav.nav-tie {
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8);
-  float: left;
-  padding: 0 1rem;
-  width: 100%; }
-  nav.nav a.nav-brand, nav.nav-default a.nav-brand, nav.nav-kal a.nav-brand, nav.nav-lube a.nav-brand, nav.nav-tie a.nav-brand {
-    color: #FFFFFF;
-    font-size: 1.5rem;
-    float: left;
-    margin: 1rem 1rem 1rem 0; }
-    nav.nav a.nav-brand:focus, nav.nav-default a.nav-brand:focus, nav.nav-kal a.nav-brand:focus, nav.nav-lube a.nav-brand:focus, nav.nav-tie a.nav-brand:focus {
-      outline: none; }
-    nav.nav a.nav-brand:hover, nav.nav-default a.nav-brand:hover, nav.nav-kal a.nav-brand:hover, nav.nav-lube a.nav-brand:hover, nav.nav-tie a.nav-brand:hover {
-      cursor: pointer; }
-    nav.nav a.nav-brand:active, nav.nav-default a.nav-brand:active, nav.nav-kal a.nav-brand:active, nav.nav-lube a.nav-brand:active, nav.nav-tie a.nav-brand:active {
-      outline: none; }
-  nav.nav ul, nav.nav-default ul, nav.nav-kal ul, nav.nav-lube ul, nav.nav-tie ul {
-    float: left; }
-    nav.nav ul li, nav.nav-default ul li, nav.nav-kal ul li, nav.nav-lube ul li, nav.nav-tie ul li {
-      float: inherit;
-      height: 3.5rem;
-      margin-right: 1rem;
-      padding: 0 0.5rem;
-      position: relative; }
-      nav.nav ul li a, nav.nav-default ul li a, nav.nav-kal ul li a, nav.nav-lube ul li a, nav.nav-tie ul li a {
-        display: table-cell;
-        height: inherit;
-        text-decoration: none;
-        vertical-align: middle; }
-    nav.nav ul ul, nav.nav-default ul ul, nav.nav-kal ul ul, nav.nav-lube ul ul, nav.nav-tie ul ul {
-      box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8);
-      left: 0;
-      position: absolute; }
-      nav.nav ul ul li ul, nav.nav-default ul ul li ul, nav.nav-kal ul ul li ul, nav.nav-lube ul ul li ul, nav.nav-tie ul ul li ul {
-        position: absolute;
-        top: 0; }
-      nav.nav ul ul li a, nav.nav-default ul ul li a, nav.nav-kal ul ul li a, nav.nav-lube ul ul li a, nav.nav-tie ul ul li a {
-        float: inherit;
-        white-space: nowrap;
-        width: 100%; }
+.nav-fixed-bottom {
+  bottom: 0;
+  position: fixed;
+  z-index: 1; }
+
+.nav-fixed-top {
+  position: fixed;
+  top: 0;
+  z-index: 1; }
+
+@media screen and (min-width: 0px) {
+  .nav-mobile {
+    display: initial; } }
+@media screen and (min-width: 768px) {
+  .nav-mobile {
+    display: none; } }
+@media screen and (min-width: 992px) {
+  .nav-mobile {
+    display: none; } }
+@media screen and (min-width: 1200px) {
+  .nav-mobile {
+    display: none; } }
+
+.nav-reduced ul li ul {
+  font-size: .8rem; }
+  .nav-reduced ul li ul li {
+    height: 1.5rem;
+    padding: .3rem; }
+
+@media screen and (min-width: 0px) {
+  .nav-responsive ul {
+    display: block;
+    width: 100%; }
+    .nav-responsive ul li:not(.nav-mobile) {
+      display: none; } }
+@media screen and (min-width: 768px) {
+  .nav-responsive ul {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -o-flex;
+    display: -ms-flex;
+    display: flex;
+    width: initial; }
+    .nav-responsive ul li:not(.nav-mobile) {
+      display: initial; } }
+@media screen and (min-width: 992px) {
+  .nav-responsive ul {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -o-flex;
+    display: -ms-flex;
+    display: flex;
+    width: initial; }
+    .nav-responsive ul li:not(.nav-mobile) {
+      display: initial; } }
+@media screen and (min-width: 1200px) {
+  .nav-responsive ul {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -o-flex;
+    display: -ms-flex;
+    display: flex;
+    width: initial; }
+    .nav-responsive ul li:not(.nav-mobile) {
+      display: initial; } }
 
 .alert-dialog-modern .box {
   -webkit-border-radius: 0.5rem;
@@ -3014,6 +3016,8 @@ nav.nav, nav.nav-default, nav.nav-kal, nav.nav-lube, nav.nav-tie {
   background: #FFE6E6;
   border: 1px solid #ffb3b3;
   color: #FF5050; }
+  .alert-error button {
+    color: #FF5050; }
 
 .alert-gary {
   -webkit-border-radius: 0.3125rem;
@@ -3102,6 +3106,16 @@ nav.nav, nav.nav-default, nav.nav-kal, nav.nav-lube, nav.nav-tie {
   .alert h1, .alert-der h1, .alert-error h1, .alert-gary h1, .alert-info h1, .alert-low h1, .alert-lube h1, .alert-kal h1, .alert-range h1, .alert-ren h1, .alert-success h1, .alert h2, .alert-der h2, .alert-error h2, .alert-gary h2, .alert-info h2, .alert-low h2, .alert-lube h2, .alert-kal h2, .alert-range h2, .alert-ren h2, .alert-success h2, .alert h3, .alert-der h3, .alert-error h3, .alert-gary h3, .alert-info h3, .alert-low h3, .alert-lube h3, .alert-kal h3, .alert-range h3, .alert-ren h3, .alert-success h3, .alert h4, .alert-der h4, .alert-error h4, .alert-gary h4, .alert-info h4, .alert-low h4, .alert-lube h4, .alert-kal h4, .alert-range h4, .alert-ren h4, .alert-success h4, .alert h5, .alert-der h5, .alert-error h5, .alert-gary h5, .alert-info h5, .alert-low h5, .alert-lube h5, .alert-kal h5, .alert-range h5, .alert-ren h5, .alert-success h5, .alert h6, .alert-der h6, .alert-error h6, .alert-gary h6, .alert-info h6, .alert-low h6, .alert-lube h6, .alert-kal h6, .alert-range h6, .alert-ren h6, .alert-success h6 {
     float: left;
     margin-right: .5rem; }
+  .alert button.alert-close, .alert-der button.alert-close, .alert-error button.alert-close, .alert-gary button.alert-close, .alert-info button.alert-close, .alert-low button.alert-close, .alert-lube button.alert-close, .alert-kal button.alert-close, .alert-range button.alert-close, .alert-ren button.alert-close, .alert-success button.alert-close {
+    background: transparent;
+    border: none;
+    position: absolute;
+    right: 0;
+    top: -2px; }
+    .alert button.alert-close i, .alert-der button.alert-close i, .alert-error button.alert-close i, .alert-gary button.alert-close i, .alert-info button.alert-close i, .alert-low button.alert-close i, .alert-lube button.alert-close i, .alert-kal button.alert-close i, .alert-range button.alert-close i, .alert-ren button.alert-close i, .alert-success button.alert-close i {
+      font-size: 1rem; }
+    .alert button.alert-close:focus, .alert-der button.alert-close:focus, .alert-error button.alert-close:focus, .alert-gary button.alert-close:focus, .alert-info button.alert-close:focus, .alert-low button.alert-close:focus, .alert-lube button.alert-close:focus, .alert-kal button.alert-close:focus, .alert-range button.alert-close:focus, .alert-ren button.alert-close:focus, .alert-success button.alert-close:focus {
+      outline: 0; }
 
 .alert-info-system {
   position: absolute;
@@ -6675,7 +6689,7 @@ input[type=search]::-webkit-search-results-decoration {
     margin-left: 0;
     margin-right: 0; } }
 [class^=col-] {
-  margin: 0 0 0.625rem 0;
+  margin-bottom: 0.625rem;
   position: relative; }
 
 [class^=col-]:last-child {
@@ -6892,127 +6906,6 @@ section.panel-login {
 [class*=step-]:not(.active) {
   display: none; }
 
-.tab-group {
-  background: #FFFFFF;
-  border: 1px solid #DCDCDC;
-  box-sizing: border-box;
-  float: left;
-  height: auto;
-  position: relative;
-  width: 100%; }
-
-ul.tab-responsive-default {
-  background: -webkit-linear-gradient(#FBFBFB, #F6F6F6);
-  background: -moz-linear-gradient(#FBFBFB, #F6F6F6);
-  background: -o-linear-gradient(#FBFBFB, #F6F6F6);
-  background: -ms-linear-gradient(#FBFBFB, #F6F6F6);
-  background: linear-gradient(#FBFBFB, #F6F6F6); }
-  ul.tab-responsive-default li {
-    border-right: 1px solid #DCDCDC; }
-    ul.tab-responsive-default li a, ul.tab-responsive-default li button {
-      color: #000000; }
-    ul.tab-responsive-default li.active, ul.tab-responsive-default li:hover {
-      background: #FFFFFF; }
-  ul.tab-responsive-default.active {
-    background: #FFFFFF; }
-
-ul.tab-responsive-rangeless {
-  background: #FBB12F; }
-  ul.tab-responsive-rangeless li {
-    border-right: 1px solid #f29c05; }
-    ul.tab-responsive-rangeless li a, ul.tab-responsive-rangeless li button {
-      color: #FFFFFF; }
-      ul.tab-responsive-rangeless li a:hover, ul.tab-responsive-rangeless li button:hover {
-        color: #FBB12F; }
-    ul.tab-responsive-rangeless li.active, ul.tab-responsive-rangeless li:hover {
-      background: #FFFFFF; }
-    ul.tab-responsive-rangeless li.active a, ul.tab-responsive-rangeless li.active button {
-      color: #FBB12F; }
-  ul.tab-responsive-rangeless.active {
-    background: #FFFFFF; }
-
-ul.tab-responsive-kal {
-  background: #303030; }
-  ul.tab-responsive-kal li {
-    border-right: 1px solid #171717; }
-    ul.tab-responsive-kal li a, ul.tab-responsive-kal li button {
-      color: #FFFFFF; }
-      ul.tab-responsive-kal li a:hover, ul.tab-responsive-kal li button:hover {
-        color: #303030; }
-    ul.tab-responsive-kal li.active, ul.tab-responsive-kal li:hover {
-      background: #FFFFFF; }
-    ul.tab-responsive-kal li.active a, ul.tab-responsive-kal li.active button {
-      color: #303030; }
-  ul.tab-responsive-kal.active {
-    background: #FFFFFF; }
-
-ul.tab-responsive-lube {
-  background: #0099FF; }
-  ul.tab-responsive-lube li {
-    border-right: 1px solid #007acc; }
-    ul.tab-responsive-lube li a, ul.tab-responsive-lube li button {
-      color: #FFFFFF; }
-      ul.tab-responsive-lube li a:hover, ul.tab-responsive-lube li button:hover {
-        color: #0099FF; }
-    ul.tab-responsive-lube li.active, ul.tab-responsive-lube li:hover {
-      background: #FFFFFF; }
-    ul.tab-responsive-lube li.active a, ul.tab-responsive-lube li.active button {
-      color: #0099FF; }
-  ul.tab-responsive-lube.active {
-    background: #FFFFFF; }
-
-.tab-responsive, ul.tab-responsive-default, ul.tab-responsive-rangeless, ul.tab-responsive-kal, ul.tab-responsive-lube {
-  display: inline-flex;
-  width: 100%; }
-  .tab-responsive li, ul.tab-responsive-default li, ul.tab-responsive-rangeless li, ul.tab-responsive-kal li, ul.tab-responsive-lube li {
-    display: -webkit-inline-flex;
-    display: -moz-inline-flex;
-    display: -o-inline-flex;
-    display: -ms-inline-flex;
-    display: inline-flex;
-    -webkit-justify-content: center;
-    -moz-justify-content: center;
-    -o-justify-content: center;
-    -ms-justify-content: center;
-    justify-content: center;
-    list-style: none;
-    text-align: center;
-    width: 100%; }
-    .tab-responsive li a, ul.tab-responsive-default li a, ul.tab-responsive-rangeless li a, ul.tab-responsive-kal li a, ul.tab-responsive-lube li a, .tab-responsive li button, ul.tab-responsive-default li button, ul.tab-responsive-rangeless li button, ul.tab-responsive-kal li button, ul.tab-responsive-lube li button {
-      height: 35px;
-      justify-content: center;
-      line-height: 35px;
-      padding: 0.5rem;
-      text-decoration: none;
-      width: 100%;
-      white-space: nowrap; }
-    .tab-responsive li:hover, ul.tab-responsive-default li:hover, ul.tab-responsive-rangeless li:hover, ul.tab-responsive-kal li:hover, ul.tab-responsive-lube li:hover {
-      cursor: pointer; }
-  .tab-responsive.active, ul.active.tab-responsive-default, ul.active.tab-responsive-rangeless, ul.active.tab-responsive-kal, ul.active.tab-responsive-lube {
-    border-bottom: none; }
-
-ul.tab-kal a {
-  background: -webkit-linear-gradient(#FBFBFB, #F6F6F6);
-  background: -moz-linear-gradient(#FBFBFB, #F6F6F6);
-  background: -o-linear-gradient(#FBFBFB, #F6F6F6);
-  background: -ms-linear-gradient(#FBFBFB, #F6F6F6);
-  background: linear-gradient(#FBFBFB, #F6F6F6); }
-ul.tab-kal .active a, ul.tab-kal .active a::after {
-  background: #303030;
-  color: #FFFFFF;
-  z-index: 3; }
-
-ul.tab-lube a {
-  background: -webkit-linear-gradient(#FBFBFB, #F6F6F6);
-  background: -moz-linear-gradient(#FBFBFB, #F6F6F6);
-  background: -o-linear-gradient(#FBFBFB, #F6F6F6);
-  background: -ms-linear-gradient(#FBFBFB, #F6F6F6);
-  background: linear-gradient(#FBFBFB, #F6F6F6); }
-ul.tab-lube .active a, ul.tab-lube .active a::after {
-  background: #0099FF;
-  color: #FFFFFF;
-  z-index: 3; }
-
 .tab, ul.tab-kal, ul.tab-lube {
   list-style: none;
   overflow: hidden;
@@ -7137,6 +7030,127 @@ div#content-tab10 {
   width: 100%; }
   div#content-tab10 .tab-content-body {
     padding: 1rem; }
+
+.tab-group {
+  background: #FFFFFF;
+  border: 1px solid #DCDCDC;
+  box-sizing: border-box;
+  float: left;
+  height: auto;
+  position: relative;
+  width: 100%; }
+
+ul.tab-responsive-default {
+  background: -webkit-linear-gradient(#FBFBFB, #F6F6F6);
+  background: -moz-linear-gradient(#FBFBFB, #F6F6F6);
+  background: -o-linear-gradient(#FBFBFB, #F6F6F6);
+  background: -ms-linear-gradient(#FBFBFB, #F6F6F6);
+  background: linear-gradient(#FBFBFB, #F6F6F6); }
+  ul.tab-responsive-default li {
+    border-right: 1px solid #DCDCDC; }
+    ul.tab-responsive-default li a, ul.tab-responsive-default li button {
+      color: #000000; }
+    ul.tab-responsive-default li.active, ul.tab-responsive-default li:hover {
+      background: #FFFFFF; }
+  ul.tab-responsive-default.active {
+    background: #FFFFFF; }
+
+ul.tab-responsive-rangeless {
+  background: #FBB12F; }
+  ul.tab-responsive-rangeless li {
+    border-right: 1px solid #f29c05; }
+    ul.tab-responsive-rangeless li a, ul.tab-responsive-rangeless li button {
+      color: #FFFFFF; }
+      ul.tab-responsive-rangeless li a:hover, ul.tab-responsive-rangeless li button:hover {
+        color: #FBB12F; }
+    ul.tab-responsive-rangeless li.active, ul.tab-responsive-rangeless li:hover {
+      background: #FFFFFF; }
+    ul.tab-responsive-rangeless li.active a, ul.tab-responsive-rangeless li.active button {
+      color: #FBB12F; }
+  ul.tab-responsive-rangeless.active {
+    background: #FFFFFF; }
+
+ul.tab-responsive-kal {
+  background: #303030; }
+  ul.tab-responsive-kal li {
+    border-right: 1px solid #171717; }
+    ul.tab-responsive-kal li a, ul.tab-responsive-kal li button {
+      color: #FFFFFF; }
+      ul.tab-responsive-kal li a:hover, ul.tab-responsive-kal li button:hover {
+        color: #303030; }
+    ul.tab-responsive-kal li.active, ul.tab-responsive-kal li:hover {
+      background: #FFFFFF; }
+    ul.tab-responsive-kal li.active a, ul.tab-responsive-kal li.active button {
+      color: #303030; }
+  ul.tab-responsive-kal.active {
+    background: #FFFFFF; }
+
+ul.tab-responsive-lube {
+  background: #0099FF; }
+  ul.tab-responsive-lube li {
+    border-right: 1px solid #007acc; }
+    ul.tab-responsive-lube li a, ul.tab-responsive-lube li button {
+      color: #FFFFFF; }
+      ul.tab-responsive-lube li a:hover, ul.tab-responsive-lube li button:hover {
+        color: #0099FF; }
+    ul.tab-responsive-lube li.active, ul.tab-responsive-lube li:hover {
+      background: #FFFFFF; }
+    ul.tab-responsive-lube li.active a, ul.tab-responsive-lube li.active button {
+      color: #0099FF; }
+  ul.tab-responsive-lube.active {
+    background: #FFFFFF; }
+
+.tab-responsive, ul.tab-responsive-default, ul.tab-responsive-rangeless, ul.tab-responsive-kal, ul.tab-responsive-lube {
+  display: inline-flex;
+  width: 100%; }
+  .tab-responsive li, ul.tab-responsive-default li, ul.tab-responsive-rangeless li, ul.tab-responsive-kal li, ul.tab-responsive-lube li {
+    display: -webkit-inline-flex;
+    display: -moz-inline-flex;
+    display: -o-inline-flex;
+    display: -ms-inline-flex;
+    display: inline-flex;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -o-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    list-style: none;
+    text-align: center;
+    width: 100%; }
+    .tab-responsive li a, ul.tab-responsive-default li a, ul.tab-responsive-rangeless li a, ul.tab-responsive-kal li a, ul.tab-responsive-lube li a, .tab-responsive li button, ul.tab-responsive-default li button, ul.tab-responsive-rangeless li button, ul.tab-responsive-kal li button, ul.tab-responsive-lube li button {
+      height: 35px;
+      justify-content: center;
+      line-height: 35px;
+      padding: 0.5rem;
+      text-decoration: none;
+      width: 100%;
+      white-space: nowrap; }
+    .tab-responsive li:hover, ul.tab-responsive-default li:hover, ul.tab-responsive-rangeless li:hover, ul.tab-responsive-kal li:hover, ul.tab-responsive-lube li:hover {
+      cursor: pointer; }
+  .tab-responsive.active, ul.active.tab-responsive-default, ul.active.tab-responsive-rangeless, ul.active.tab-responsive-kal, ul.active.tab-responsive-lube {
+    border-bottom: none; }
+
+ul.tab-kal a {
+  background: -webkit-linear-gradient(#FBFBFB, #F6F6F6);
+  background: -moz-linear-gradient(#FBFBFB, #F6F6F6);
+  background: -o-linear-gradient(#FBFBFB, #F6F6F6);
+  background: -ms-linear-gradient(#FBFBFB, #F6F6F6);
+  background: linear-gradient(#FBFBFB, #F6F6F6); }
+ul.tab-kal .active a, ul.tab-kal .active a::after {
+  background: #303030;
+  color: #FFFFFF;
+  z-index: 3; }
+
+ul.tab-lube a {
+  background: -webkit-linear-gradient(#FBFBFB, #F6F6F6);
+  background: -moz-linear-gradient(#FBFBFB, #F6F6F6);
+  background: -o-linear-gradient(#FBFBFB, #F6F6F6);
+  background: -ms-linear-gradient(#FBFBFB, #F6F6F6);
+  background: linear-gradient(#FBFBFB, #F6F6F6); }
+ul.tab-lube .active a, ul.tab-lube .active a::after {
+  background: #0099FF;
+  color: #FFFFFF;
+  z-index: 3; }
 
 .table-scroll {
   float: left;
@@ -7452,11 +7466,6 @@ table.table-kal {
 
 .row {
   float: left;
-  width: 100%; }
-
-.row-input {
-  float: left;
-  margin: 0 0 0.625rem 0;
   width: 100%; }
 
 .text-center {
