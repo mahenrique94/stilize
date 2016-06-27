@@ -1,3 +1,6 @@
+// Importando fonte padrão do framework
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic);
+
 // Fontes utilizadas para criar os ícons.
 // Desenvolvidas por www.fontello.com
 // Caso surja a necessidade de uma fonte onde não se encontra no site, basta vetorizá-la em Corel ou Ilustrator, exportar como .svg,
@@ -8,22 +11,25 @@
 		style: normal;
 		weight: normal;
 	}
-  	src: url('fonts/stilize.eot?73038696');
-  	src: url('fonts/stilize.eot?73038696#iefix') format('embedded-opentype'),
-         url('fonts/stilize.woff2?73038696') format('woff2'),
-         url('fonts/stilize.woff?73038696') format('woff'),
-         url('fonts/stilize.ttf?73038696') format('truetype'),
-         url('fonts/stilize.svg?73038696#stilize') format('svg');
+  	src: url('fonts/stilize.eot?19904560');
+    src: url('fonts/stilize.eot?19904560#iefix') format('embedded-opentype'),
+         url('fonts/stilize.woff2?19904560') format('woff2'),
+         url('fonts/stilize.woff?19904560') format('woff'),
+         url('fonts/stilize.ttf?19904560') format('truetype'),
+         url('fonts/stilize.svg?19904560#stilize') format('svg');
 }
+
+// Resetando todos os estilos padrões de diversos navegadores,
+// para que possam ficar todos com o mesmo estilo definidos abaixo.
+@import 'sass/base/normalize';
+
+// Adicionado mais reset's que não são inseridos no normalize
+@import 'sass/base/reset';
 
 // Framework utilizado para controle de grid.
 // Importação para que os grids responsivos funcionem corretamente.
 // Arquivos de configuração localiza-se em sass/helpers/susy.
 @import 'susy';
-
-// Resetando todos os estilos padrões de diversos navegadores,
-// para que possam ficar todos com o mesmo estilo definidos abaixo.
-@import 'sass/base/reset';
 
 // Plugins,
 // para uma melhor separação de pastas e responsabilidades, as importações encontram-se em /plugins

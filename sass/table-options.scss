@@ -1,0 +1,18 @@
+table.table-disabled {
+	tr {
+		background: darken($background-inactive, 2.5%) !important;
+		color: $color-inactive !important;
+	}
+}
+table[class^=table] {
+    tr.table-row-pinted {
+        $color-pinted: #FFFA89; 
+        background: $color-pinted !important;
+        color: darken($color-pinted, 50%) !important;
+    }
+}
+.table-scroll {
+	float: left;
+	overflow-y: scroll;
+	width: 100%;
+}

@@ -31,6 +31,13 @@
 	-ms-filter: #{$expression};
 	filter: #{$expression};
 }
+@mixin flex-wrap($expression) {
+	-webkit-flex-wrap: #{$expression};
+	-moz-flex-wrap: #{$expression};
+	-o-flex-wrap: #{$expression};
+	-ms-flex-wrap: #{$expression};
+	flex-wrap: #{$expression};
+}
 @mixin justify-content($value) {
 	-webkit-justify-content: #{$value};
 	-moz-justify-content: #{$value};

@@ -22,14 +22,24 @@
 					align: center;
 					decoration: none;	
 				}
+				white-space: nowrap;
 				width: 100%;
+				&:focus {
+					outline: 0;
+				}
 				&:hover {
 					cursor: pointer;
 				}
 			}
-			button {
-				line-height: 1.1;
+			button[disabled], a[disabled] {
+				background: $background-inactive;
+				cursor: $cursor-inactive 
 			}
 		}
 	}	
+}
+.nav-group-full {
+	ul {
+		@include flex-wrap("wrap");
+	}
 }

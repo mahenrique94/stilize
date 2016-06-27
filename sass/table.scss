@@ -1,9 +1,5 @@
-.table-scroll {
-	float: left;
-	overflow-y: scroll;
-	width: 100%;
-}
 table.table-default {
+	border-collapse: collapse;
 	display: inline-table;
 	width: 100%;
 	td {
@@ -112,3 +108,5 @@ table.table-kal {
 		}
 	}
 }
+
+@import 'table-options';

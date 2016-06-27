@@ -7,11 +7,13 @@ nav.nav-square {
 		margin-bottom: 1rem;
 		li {			
 			margin-right: 1.25rem;
-			a {
+			a {				
+				@include align-items("center");
 				@include border-radius(.2rem);
+				@include display-flex;
+				@include justify-content("center");
 				background: rgba(255, 255, 255, .8);
 				border: 1px solid #DCDCDC;
-				display: table-cell;
 				height: 70px;
 				padding: 1rem;
 				text-align: center;
@@ -22,6 +24,9 @@ nav.nav-square {
 				i {
 					display: block;
 					margin-bottom: 5px;
+				}
+				label:hover {
+					cursor: pointer;
 				}
 			}
 			&:last-child {

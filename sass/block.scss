@@ -8,15 +8,13 @@
 	box-sizing: border-box;
 	float: left;
 	margin: $block-margin;
-	padding: $block-padding;
+	padding: 0;
 	position: relative;
 	legend.block-header {
 		@include border-radius-lefttop-righttop($block-border-radius);
 		box-sizing: inherit;
-		left: 0;
+		float: left;
 		padding: $block-legend-padding;
-		position: absolute;
-		top: 0;
 		width: 100%;
 	}
 	.block-title {
