@@ -28,7 +28,7 @@
 			border: 1px solid #000000;
 			outline: none;
 		}
-		&:only-child {
+		&:only-child:not(textarea) {
 			margin-top: 1.4rem;
 		}
 	}

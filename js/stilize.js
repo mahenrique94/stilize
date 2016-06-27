@@ -14,19 +14,9 @@ jQuery(document).ready(function () {
 	
 	/** @auth Matheus
 	 *  Mostrando e escondendo tabs de acordo com a clicada
-	 */
-	function showTab(obj) {
-		obj.style.display = 'block';
-		obj.setAttribute('aria-expanded', true);
-		obj.setAttribute('aria-hidden', false);
-	};
-	function hideTab(obj) {
-		obj.style.display = 'none';
-		obj.setAttribute('aria-expanded', false);
-		obj.setAttribute('aria-hidden', true);
-	};
-	var $tabActive = document.getElementsByClassName('active')[0];
-	if ($tabActive != null) {
+	 */	
+	var $tabActive = document.querySelector('li.active');
+	if ($tabActive != undefined && $tabActive != null) {
 		showTab(document.getElementById($tabActive.getAttribute('aria-controls')));
 	}
 	document.querySelectorAll('ul[class^=tab] a').forEach(function($link) {
@@ -180,3 +170,17 @@ function linkCheck(url) {
 	http.send();
 	return http.status != 404;
 }
+
+/** @auth Matheus
+ *  Funções para mostrar e esconder tabs com JS puro sem efeitos IN-OUT
+ */
+function showTab(obj) {
+	obj.style.display = 'block';
+	obj.setAttribute('aria-expanded', true);
+	obj.setAttribute('aria-hidden', false);
+};
+function hideTab(obj) {
+	obj.style.display = 'none';
+	obj.setAttribute('aria-expanded', false);
+	obj.setAttribute('aria-hidden', true);
+};
