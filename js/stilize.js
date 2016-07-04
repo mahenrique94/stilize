@@ -56,8 +56,8 @@ jQuery(document).ready(function () {
 	/** @auth Matheus
 	 *  Função para mostrar e esconder collapse em efeito slide
 	 */
-	jQuery('[data-toggle=collapse]').click(function() {
-		event.preventDefault();
+	jQuery('[data-toggle=collapse]').click(function(e) {
+		e.preventDefault();
 		jQuery($(this).attr('href')).slideToggle();
 	});
 	
