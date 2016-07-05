@@ -4,14 +4,12 @@
 @import 'form-validate';
 
 .form {
-	box-sizing: border-box;
 	width: 100%;
 	div[class^=col] label:first-child {
 		float: inherit;
 		width: 100%;
 	}	
 	.form-body {
-		box-sizing: inherit;
 		display: inherit;
 		float: left;
 		padding: $form-padding;
@@ -19,7 +17,6 @@
 	}
 	.form-data {
 		border: $border;
-		box-sizing: border-box;
 		color: $color;
 		float: inherit;
 		font-size: .8rem;

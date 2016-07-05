@@ -1,5 +1,4 @@
 nav.nav {
-	@extend %box-sizing;
 	box-shadow: $nav-shadow;
 	float: $nav-float;
 	padding: $nav-padding;
@@ -29,7 +28,6 @@ nav.nav {
 			left: 0;
 			position: absolute;
 			li {
-				@extend %box-sizing;
 				ul {
 					position: absolute;
 					top: 0;

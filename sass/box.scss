@@ -1,5 +1,4 @@
 div.box-group {	
-	@extend %box-sizing;
 	display: flex;
 	padding: $box-padding;
 	div[class^=box] {

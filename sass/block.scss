@@ -3,16 +3,14 @@
 
 .block {
 	@include border-radius($block-border-radius);
-	@include calc(width, "100% - .2rem");
 	border: $border;	
-	box-sizing: border-box;
 	float: left;
 	margin: $block-margin;
 	padding: 0;
 	position: relative;
+	width: 100%;
 	legend.block-header {
 		@include border-radius-lefttop-righttop($block-border-radius);
-		box-sizing: inherit;
 		float: left;
 		padding: $block-legend-padding;
 		width: 100%;
@@ -24,8 +22,7 @@
 		}
 	}	
 	.block-body {
-		box-sizing: inherit;
-		float: inherit;		
+		float: inherit;			
 		width: 100%;
 	}
 	.block-body-padding {

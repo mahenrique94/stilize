@@ -31,7 +31,6 @@
 }
 @for $i from 1 through 10 {
   div#content-tab#{$i} {
-    box-sizing: border-box;
     display: none;
     float: left;    
     width: 100%;

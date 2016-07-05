@@ -2,6 +2,11 @@ table.table-default {
 	border-collapse: collapse;
 	display: inline-table;
 	width: 100%;
+	caption {
+		font-size: .8rem;
+		padding: 0 .1rem;
+		text-align: left;
+	}
 	td {
 		border-bottom: $border;
 		border-left: 1px #FFFFFF solid;
