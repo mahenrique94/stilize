@@ -67,3 +67,10 @@
 	border: $border-range;
 	color: $color-text-range;
 }
+.btn-tie {
+	@extend .button;
+	@include button-color-hover($color-tie, $color-text-tie);	
+	background: $color-tie;
+	border: $border-tie;
+	color: $color-text-tie;
+}
