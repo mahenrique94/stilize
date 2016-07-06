@@ -4,7 +4,18 @@ div.table-responsive {
 	overflow-x: auto;
 	width: 100%;
 	table thead tr th, table tbody tr td {
-		white-space: nowrap;
+		@media screen and #{$media-querie-mobile} {
+			white-space: nowrap;
+		}
+		@media screen and #{$media-querie-tablet} {
+			white-space: initial;
+		}
+		@media screen and #{$media-querie-desktop} {
+			white-space: initial;
+		}
+		@media screen and #{$media-querie-large-screen} {
+			white-space: initial;
+		}		
 	}	
 }
 table.table-disabled {

@@ -7,6 +7,9 @@
 [class^=col-]:last-child {
 	margin-right: 0 !important;
 }
+.offset {
+	height: 68px;
+}
 @for $i from 1 through 12 {
 	.col-#{$i} {
 		@include span($i of 12);
