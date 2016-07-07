@@ -15,6 +15,7 @@ table.table-default {
 		font-size: $table-font-size-td;
 		padding: $table-padding;
 		text-align: left;
+		word-wrap: break-word;
 	}
 	th {
 		border-left: 1px #FFFFFF solid;
