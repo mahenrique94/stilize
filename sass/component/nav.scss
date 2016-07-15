@@ -3,6 +3,7 @@ nav.nav {
 	float: $nav-float;
 	padding: $nav-padding;
 	width: 100%;
+	z-index: 1010;
 	a.nav-brand {
 		@include nav-brand;
 		float: left;
