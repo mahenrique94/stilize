@@ -71,17 +71,6 @@ jQuery(document).ready(function () {
 	
 });
 
-/** @auth Matheus, Fernando e João
- * Abrir e fechar openbox
- */
-function openBox($obj) {
-	if (($obj.href || $obj.formAction) != undefined)
-		jQuery('iframe').attr('src', ($obj.href || $obj.formAction));
-	jQuery('div.bg-modal').fadeToggle(300);
-	jQuery('div.modal').fadeToggle(300);
-	return false;
-}
-
 /** @auth Matheus
  * Mostrar ou esconder elemento(s) informado(s) nos parâmetros
  */
@@ -95,6 +84,7 @@ function toggleElement(element, type, parametro) {
 			jQuery(element[i] + '['+ type[i] + '=' + parametro[i] + ']').fadeToggle(300);
 		}
 	}
+	return false;
 }
 
 /** @auth Matheus

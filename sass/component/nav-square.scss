@@ -1,38 +1,48 @@
-nav.nav-square {
+@import 'nav-square-styles';
+@import 'nav-square-hover';
+
+.nav-square {
 	float: left;
 	width: 100%;
-	ul.nav-row {
-		@include display-flex;
-		@include justify-content("flex-start");
-		margin-bottom: 1rem;
-		li {			
-			margin-right: 1.25rem;
-			a {				
+	ul {
+		li {
+			float: left;
+			margin: 0 1.25rem 1rem 0;
+			@media screen and #{$media-querie-mobile} {
+				@include calc(width, "50% - 1.25rem");
+			}
+			@media screen and #{$media-querie-tablet} {
+				@include calc(width, "25% - 1.25rem");
+			}
+			@media screen and #{$media-querie-desktop} {
+				@include calc(width, "20% - 1.25rem");
+			}
+			@media screen and #{$media-querie-large-screen} {
+				@include calc(width, "16.6666667% - 1.25rem");
+			}
+			a {
 				@include align-items("center");
 				@include border-radius(.2rem);
 				@include display-flex;
 				@include justify-content("center");
-				background: rgba(255, 255, 255, .8);
-				border: 1px solid #DCDCDC;
 				box-sizing: content-box;
 				height: 70px;
 				padding: 1rem;
-				text-align: center;
-				width: 100px;
-				color: #000000;
-				text-decoration: none;
-				vertical-align: middle;
-				i {
-					display: block;
-					margin-bottom: 5px;
+				text : {
+					align: center;
+					decoration: none;
 				}
-				label:hover {
-					cursor: pointer;
-				}
+			}
+			i {
+				display: block;
+				margin-bottom: 5px;
+			}
+			labe:hover {
+				cursor: pointer;
 			}
 			&:last-child {
-				margin-right: 0;
+				margin-right: 0;				
 			}
-		}		
+		}
 	}
 }

@@ -6,8 +6,13 @@
 	float: left;
 	width: 100%;
 	padding: $padding-band;
+	a {
+		text-decoration: none;
+		&:hover {
+			text-decoration: underline;
+		}
+	}	
 	label {
-		// line-height: 2;
 		margin-bottom: .275rem;
 	}
 	&-shadow {

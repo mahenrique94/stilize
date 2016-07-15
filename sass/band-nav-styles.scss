@@ -2,13 +2,16 @@
 	@extend .band;
 	@include background-default;
 	padding: $band-nav-padding;
+	a {
+		color: #000000;
+	}
 }
 .band-nav-derer {
 	@extend .band;
 	background: $color-derer;
 	padding: $band-nav-padding;
 	label {
-	color: $color-text-derer;
+		color: $color-text-derer;
 	}
 }
 .band-nav-kal {

@@ -1,0 +1,12 @@
+nav.nav-square-hover-lube {
+	a, i {
+		@include transition("all .25s linear");
+	}
+	a:hover {
+		background: $color-lube;
+		color: $color-text-lube;
+        i {
+            color: $color-text-lube;
+        }		
+	}
+}
