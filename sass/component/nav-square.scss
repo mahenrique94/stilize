@@ -32,13 +32,13 @@
 					align: center;
 					decoration: none;
 				}
+				label:hover {
+					cursor: pointer;
+				}
 			}
 			i {
 				display: block;
 				margin-bottom: 5px;
-			}
-			labe:hover {
-				cursor: pointer;
 			}
 			&:last-child {
 				margin-right: 0;				
