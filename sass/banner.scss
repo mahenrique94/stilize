@@ -1,31 +1,31 @@
-@import 'banner-styles';
-@import 'banner-text';
+// @import 'banner-styles';
+// @import 'banner-text';
 
-.banner {
-	@include align-items(center);
-	@include justify-content(center);
-	color: $banner-color;
-	display: flex;
-	height: $banner-height;
-	h1 {
-		font: {
-			size: $banner-font-size-h1;
-			weight: bold;
-		}
-		margin: $banner-margin;
-	}
-	p {
-		font-size: $banner-font-size;
-		margin: $banner-margin;
-		text-align: justify;
-	}
-	.banner-center {
-		width: 50%;
-	}
-}
-.banner-text {
-	font-size: 5rem;
-	padding: 5rem 0;
-	text-align: center;
-	width: 100%;	
-}
+// .banner-center-info {
+// 	@include align-items(center);
+// 	@include justify-content(center);
+// 	color: $banner-color;
+// 	display: flex;
+// 	height: $banner-height;
+// 	h1 {
+// 		font: {
+// 			size: $banner-font-size-h1;
+// 			weight: bold;
+// 		}
+// 		margin: $banner-margin;
+// 	}
+// 	p {
+// 		font-size: $banner-font-size;
+// 		margin: $banner-margin;
+// 		text-align: justify;
+// 	}
+// 	.banner-center {
+// 		width: 50%;
+// 	}
+// }
+// .banner-text {
+// 	font-size: 5rem;
+// 	padding: 5rem 0;
+// 	text-align: center;
+// 	width: 100%;	
+// }
