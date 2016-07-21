@@ -1,5 +1,52 @@
-// @import 'banner-styles';
-// @import 'banner-text';
+@import 'banner-styles';
+@import 'banner-text';
+
+div.banner-image {
+    div[class^=image-] {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: #FFFFFF;	
+        height: 500px;
+        position: relative;
+    }
+    .banner-info {
+        padding: 0 50px;
+        position: absolute;
+        top: 100px;
+        width: 100%;        
+        h1 {
+            font : {
+                size: 2rem;
+                weight: 900;
+            }
+            width: 100%
+        }
+        p {
+            font-weight: 300;
+            width: 100%
+        }
+        button {
+            margin-top: 1rem;
+        }
+    }
+    .banner-left {
+        * {
+            @include text-align(left);
+        }
+        button, a {
+            float: left;
+        }
+    }
+    .banner-right {
+        * {
+            @include text-align(right);
+        }
+        button, a {
+            float: right;
+        }
+    }
+}
 
 // .banner-center-info {
 // 	@include align-items(center);

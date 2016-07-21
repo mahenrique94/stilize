@@ -69,6 +69,13 @@
 	color: #FFFFFF;
 	font-size: $font-size-brand;
 }
+@mixin text-align($expression) {
+	text-align: -webkit-#{$expression};
+	text-align: -moz-#{$expression};
+	text-align: -o-#{$expression};
+	text-align: -ms-#{$expression};
+	text-align: $expression;
+}
 @mixin transform($expression) {
 	-webkit-transform: #{$expression};
 	-moz-transform: #{$expression};
