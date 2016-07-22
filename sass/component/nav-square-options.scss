@@ -1,0 +1,7 @@
+[class^=nav-square] {
+    li.disabled, li.disabled a, li.disabled i, li.disabled label {
+        background: #CCCCCC;
+        color: $color-inactive;
+        cursor: $cursor-inactive;
+    }
+}
