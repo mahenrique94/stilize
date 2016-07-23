@@ -10,9 +10,9 @@
 	@include link-no-decoration;
 	display: inline-block;
 	margin: 0;
-	text: {
-		align: center;
-		decoration: none;
+	text-align: center;
+	&:hover {
+		text-decoration: none !important;
 	}
 }
 .button-transparent {
