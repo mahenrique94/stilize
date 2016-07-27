@@ -3,19 +3,15 @@
 	display: table;
 	content: "";
 }
-
 .clearfix:after {
 	clear: both;
 }
-
 html, body {
-	background: #FFFFFF;
-	font-family: Open Sans, Verdana, Helvetica, Arial, sans-serif;
+	background: #FFFFFF;	
 	height: 100%;
 	margin: 0;
 	padding: 0;	
 }
-
 body:before {
 	content: "";
 	float: left;
@@ -23,13 +19,11 @@ body:before {
 	margin-top: -32767px;
 	width: 0;	
 }
-
 main#wrap{
 	margin: 0;
 	min-height:100%;
 	padding: 0;		
 }
-
 section#content {
 	@include container();
 	clear:both;
