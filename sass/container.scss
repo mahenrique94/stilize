@@ -6,17 +6,21 @@
 	overflow:hidden;
 	padding: 0;	
 }
-.container-center {
+[class^=container-center] {
 	@include container();
-	@include span(10 of 12);
 	background: transparent;
 	float: none !important;
 	margin: 0 auto !important;
-	padding: $padding;	
-	header.container-header {		
-		width: 100%;
-		h1.container-brand {
-			font-size: 1.5em;
-		}
-	}
+}
+.container-center-xs {	
+	@include span(11 of 12);	
+}
+.container-center-sm {
+	@include span(10 of 12);
+}
+.container-center-md {
+	@include span(9 of 12);
+}
+.container-center-lg {
+	@include span(8 of 12);
 }
