@@ -31,8 +31,10 @@ var Modal = (function () {
             }
             else {
                 modal.style.display = 'none';
-                if (modal.tagName == 'IFRAME')
+                if (modal.tagName == 'IFRAME') {
                     modal.src = '';
+                    modal.innerHTML = '';
+                }
             }
         });
     };

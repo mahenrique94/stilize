@@ -37,15 +37,15 @@
 	background: #FFFFFF;
 	border: solid 1px #6D6D6D;
 	display: none;
-
 	overflow-y: auto;
 	padding: 10px;
 	position: fixed;	
-	z-index: 1001;
-	iframe {
+	z-index: 1011;
+	iframe.iframe-modal {
 		@include border-radius-lefttop-righttop(10px);
 		@include calc(width, "100% - 1px");
 		@include calc(height, "100% - 0px");
 		border: $border;
+		display: none;
 	}
 }

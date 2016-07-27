@@ -46,7 +46,7 @@ jQuery(document).ready(function () {
 			jQuery(this).find('span').removeClass('icon-circle-arrow-up').addClass('icon-circle-arrow-down');
 			jQuery(jQuery(this).attr('href')).slideUp(500);
 		}
-	})
+	});
 	
 	/** @auth Matheus
 	 *  Executando função para sticky footer

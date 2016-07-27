@@ -33,8 +33,10 @@ class Modal implements ElementStilize {
                 modal.style.display = 'block';
             } else {
                 modal.style.display = 'none';
-                if (modal.tagName == 'IFRAME')
+                if (modal.tagName == 'IFRAME') {
                     modal.src = '';
+                    modal.innerHTML = '';
+                }
             }
         });
     }
