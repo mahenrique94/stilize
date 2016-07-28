@@ -1,3 +1,15 @@
+nav.nav-square-hover-kal {
+	a, i {
+		@include transition("all .25s linear");
+	}
+	a:hover {
+		background: $color-kal;
+		color: $color-text-kal;
+        i {
+            color: $color-text-kal;
+        }		
+	}
+}
 nav.nav-square-hover-lube {
 	a, i {
 		@include transition("all .25s linear");
