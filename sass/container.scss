@@ -6,7 +6,7 @@
 	overflow:hidden;
 	padding: 0;	
 }
-[class^=container-center] {
+[class*=container-center] {
 	@include container();
 	background: transparent;
 	float: none !important;
