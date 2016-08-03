@@ -1,8 +1,9 @@
-.disabled, .readonly {
+.disabled, [disabled], .readonly, [readonly] {
 	background: $background-inactive;
-	color: $color-inactive;
+	color: $color-inactive !important;
 	&:hover {
 		cursor: $cursor-inactive;
+		// pointer-events: none;
 	}
 }
 .font-bold {

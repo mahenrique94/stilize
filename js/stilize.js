@@ -2,9 +2,9 @@ NodeList.prototype.forEach = Array.prototype.forEach;
 HTMLCollection.prototype.forEach = Array.prototype.forEach;
 
 jQuery(document).ready(function () {
-	
-	/** @auth Matheus
-	 * Esconder elementos depois de 3 segundos
+
+	/** @auth Matheus Castiglioni
+	 *  Esconder elementos depois de 3 segundos
 	 */
 	if(!jQuery('.time-out').is(':empty')) {
 		setTimeout(function () {
@@ -12,7 +12,7 @@ jQuery(document).ready(function () {
         }, 3000);
     }
 	
-	/** @auth Matheus
+	/** @auth Matheus Castiglioni
 	 *  Mostrando e escondendo tabs de acordo com a clicada
 	 */	
 	var $tabActive = document.querySelector('li.active');
@@ -29,14 +29,14 @@ jQuery(document).ready(function () {
 		});
 	});
 	
-	/** @auth Matheus
-	 * Setando li ativo de acordo com url
+	/** @auth Matheus Castiglioni
+	 *  Setando li ativo de acordo com url
 	 */
 //	jQuery('li[id=' + getFinal() + ']').addClass('active');
 	
 	
-	/** @auth Matheus
-	 * Realizando slide no menu
+	/** @auth Matheus Castiglioni
+	 *  Realizando slide no menu
 	 */
 	jQuery('[data-slide=true]').click(function() {
 		if (jQuery(this).find('span').hasClass('icon-circle-arrow-down')) {
@@ -48,12 +48,12 @@ jQuery(document).ready(function () {
 		}
 	});
 	
-	/** @auth Matheus
+	/** @auth Matheus Castiglioni
 	 *  Executando função para sticky footer
 	 */
 	stickyFooter();
 	
-	/** @auth Matheus
+	/** @auth Matheus Castiglioni
 	 *  Função para mostrar e esconder collapse em efeito slide
 	 */
 	jQuery('[data-toggle=collapse]').click(function(e) {
@@ -61,7 +61,7 @@ jQuery(document).ready(function () {
 		jQuery($(this).attr('href')).slideToggle();
 	});
 	
-	/** @auth Matheus
+	/** @auth Matheus Castiglioni
 	 *  Função para mostrar e esconder divs de cadastro passo-a-passo
 	 */
 	jQuery('button[data-current][data-next]').click(function() {
@@ -71,8 +71,8 @@ jQuery(document).ready(function () {
 	
 });
 
-/** @auth Matheus
- * Mostrar ou esconder elemento(s) informado(s) nos parâmetros
+/** @auth Matheus Castiglioni
+ *  Mostrar ou esconder elemento(s) informado(s) nos parâmetros
  */
 function toggleElement(element, type, parametro) {
 	for(var i = 0; i < element.length; i++) {
@@ -87,8 +87,8 @@ function toggleElement(element, type, parametro) {
 	return false;
 }
 
-/** @auth Matheus
- * Identificar url para ativar li
+/** @auth Matheus Castiglioni
+ *  Identificar url para ativar li
  */
 function identityUrl() {
 	return window.location.href;
@@ -101,7 +101,7 @@ function getFinal() {
 	return url;
 }
 
-/** @auth Matheus
+/** @auth Matheus Castiglioni
  *  Implementando sticky footer
  */
 function stickyFooter() {
@@ -122,7 +122,7 @@ function getHeight(obj) {
 	return $(obj).css('height');
 }
 
-/** @auth Matheus
+/** @auth Matheus Castiglioni
  *  Função para mudar o ícon de (+ para -) ou (- para +) 
  */
 function toggleIconSquaredPlusToMinus(obj) {
@@ -133,7 +133,7 @@ function toggleIconSquaredPlusToMinus(obj) {
 		$(icon).removeClass().addClass('icon-plus-squared');
 }
 
-/** @auth Matheus
+/** @auth Matheus Castiglioni
  *  @param url
  *  @returns Boolean
  *  Verificando arquivos carregados no sistema 
@@ -145,7 +145,7 @@ function linkCheck(url) {
 	return http.status != 404;
 }
 
-/** @auth Matheus
+/** @auth Matheus Castiglioni
  *  Slide nav-mobile
  */
 function slideNavResponsive(obj) {
@@ -159,7 +159,7 @@ function slideNavResponsive(obj) {
 	}
 }
 
-/** @auth Matheus
+/** @auth Matheus Castiglioni
  *  Funções para mostrar e esconder tabs com JS puro sem efeitos IN-OUT
  */
 function showTab(obj) {
