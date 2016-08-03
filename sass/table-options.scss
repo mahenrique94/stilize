@@ -31,3 +31,11 @@ table[class^=table] {
         color: darken($color-pinted, 50%) !important;
     }
 }
+table.table-reduced {
+	td {
+		font-size: .6rem;
+	}
+	th {
+		font-size: .75rem;
+	}
+}

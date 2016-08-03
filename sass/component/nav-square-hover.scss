@@ -22,3 +22,27 @@ nav.nav-square-hover-lube {
         }		
 	}
 }
+nav.nav-square-hover-range {
+	a, i {
+		@include transition("all .25s linear");
+	}
+	a:hover {
+		background: $color-range;
+		color: $color-text-range;
+        i {
+            color: $color-text-range;
+        }		
+	}
+}
+nav.nav-square-hover-rangeless {
+	a, i {
+		@include transition("all .25s linear");
+	}
+	a:hover {
+		background: $color-rangeless;
+		color: $color-text-rangeless;
+        i {
+            color: $color-text-rangeless;
+        }		
+	}
+}
