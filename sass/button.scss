@@ -1,9 +1,9 @@
 @import 'button-border';
-@import 'button-colorfull';
 @import 'button-group';
 @import 'button-modern';
 @import 'button-options';
 @import 'button-sizes';
+@import 'button-styles';
 
 .button {
 	@include border-radius($button-border-radius);

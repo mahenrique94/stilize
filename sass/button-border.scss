@@ -46,3 +46,9 @@
 	border: $border-range;
 	color: $color-range;
 }
+.btn-border-tie {
+	@extend .button-transparent;	
+	@include button-color-hover($color-text-tie, $color-tie);	
+	border: $border-tie;
+	color: $color-tie;
+}
