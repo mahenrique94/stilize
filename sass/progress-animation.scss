@@ -1,0 +1,57 @@
+.progress-20 {
+    animation-name: progress-20;
+    width: 20%;
+}
+.progress-50 {
+    animation-name: progress-50;
+    width: 50%;
+}
+.progress-75 {
+    animation-name: progress-75;
+    width: 75%;
+}
+.progress-100 {
+    animation-name: progress-100;
+    width: 100%;
+}
+
+@keyframes progress-20 {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 20%;
+    }
+}
+@keyframes progress-20 {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 20%;
+    }
+}
+@keyframes progress-50 {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 50%;
+    }
+}
+@keyframes progress-75 {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 75%;
+    }
+}
+@keyframes progress-100 {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}

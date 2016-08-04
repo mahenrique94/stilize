@@ -2,7 +2,7 @@ NodeList.prototype.forEach = Array.prototype.forEach;
 HTMLCollection.prototype.forEach = Array.prototype.forEach;
 
 jQuery(document).ready(function () {
-
+	
 	/** @auth Matheus Castiglioni
 	 *  Esconder elementos depois de 3 segundos
 	 */
