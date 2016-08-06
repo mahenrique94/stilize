@@ -17,6 +17,13 @@
 	-ms-animation: #{$expression};
 	animation: #{$expression};
 }
+@mixin animation-name($expression) {
+	-webkit-animation-name: #{$expression};
+	-moz-animation-name: #{$expression};
+	-o-animation-name: #{$expression};
+	-ms-animation-name: #{$expression};
+	animation-name: #{$expression};
+}
 @mixin calc($property, $expression, $important: null) {
 	#{$property}: -webkit-calc(#{$expression}) $important;
 	#{$property}: -moz-calc(#{$expression}) $important;
