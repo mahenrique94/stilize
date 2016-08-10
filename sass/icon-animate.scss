@@ -1,4 +1,4 @@
-.animate-spin {
+.icon-animate {
   @include animation("spin 2s infinite linear");
   display: inline-block;  
 }
