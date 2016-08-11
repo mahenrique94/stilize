@@ -172,3 +172,29 @@ function hideTab(obj) {
 	obj.setAttribute('aria-expanded', false);
 	obj.setAttribute('aria-hidden', true);
 };
+
+/** @auth Matheus Castiglioni
+ *  Função para criar uma tela de loading onde nada na página será clicável até o loading terminar
+ */
+function loading() {
+	document.body.appendChild(criaLoading());
+}
+/** @auth Matheus Castiglioni
+ *  Função para criar a div onde irá ficar ácima de todos os elementos da página
+ *  @returns $loading = div com fundo preto e ícone de animação
+ */
+function criaLoading() {
+	let $loading = document.createElement('DIV');
+	$loading.classList.add('loading');
+	$loading.appendChild(criaIconLoading());
+	return $loading;
+}
+/** @auth Matheus Castiglioni
+ *  Função para criar o ícone de animação do loading
+ *  @returns $icon = ícone de animação
+ */
+function criaIconLoading() {
+	let $icon = document.createElement('I');
+	$icon.classList.add('icon-animate', 'icon-spin1');
+	return $icon;
+}
