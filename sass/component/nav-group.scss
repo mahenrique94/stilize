@@ -32,7 +32,11 @@
 			}
 			button[disabled], a[disabled] {
 				background: $background-inactive;
-				cursor: $cursor-inactive 
+				color: $color-inactive;
+				cursor: $cursor-inactive;
+				&:hover {
+					color: $color-inactive;
+				} 
 			}
 		}
 	}	
