@@ -17,13 +17,16 @@ div.banner-image {
         width: 100%;        
         h1 {
             font : {
-                size: 2rem;
+                size: $banner-font-size-h1;
                 weight: 900;
             }
             width: 100%
         }
         p {
-            font-weight: 300;
+            font : {
+                size: $banner-font-size;
+                weight: 300;
+            }
             width: 100%
         }
         button {
