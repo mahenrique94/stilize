@@ -16,17 +16,35 @@ div.banner-image {
         top: 100px;
         width: 100%;        
         h1 {
-            font : {
-                size: $banner-font-size-h1;
-                weight: 900;
+            @media screen and #{$media-querie-mobile} {
+                font-size: $banner-font-size-h1-mobile;
             }
+            @media screen and #{$media-querie-tablet} {
+                font-size: $banner-font-size-h1;
+            }
+            @media screen and #{$media-querie-desktop} {
+                font-size: $banner-font-size-h1;
+            }
+            @media screen and #{$media-querie-large-screen} {
+                font-size: $banner-font-size-h1;
+            }
+            font-weight: 900;
             width: 100%
         }
         p {
-            font : {
-                size: $banner-font-size;
-                weight: 300;
+            @media screen and #{$media-querie-mobile} {
+                font-size: $banner-font-size-mobile;
             }
+            @media screen and #{$media-querie-tablet} {
+                font-size: $banner-font-size;
+            }
+            @media screen and #{$media-querie-desktop} {
+                font-size: $banner-font-size;
+            }
+            @media screen and #{$media-querie-large-screen} {
+                font-size: $banner-font-size;
+            }
+            font-weight: 300;
             width: 100%
         }
         button {
