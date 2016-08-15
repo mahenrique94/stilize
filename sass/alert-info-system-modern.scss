@@ -1,0 +1,39 @@
+@import 'alert-info-system-modern-styles';
+
+div.alert-info-system-modern {
+    background: #595959;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, .25);
+    float: left;
+    position: fixed;
+    z-index: 1020;
+    .alert-icon {
+        background: #E6E6E6;
+        float: left;
+        font-size: 2.5rem;
+        padding: 1rem 2rem;
+        text-align: center;
+        width: 100px;
+    }
+    .alert-close {
+        background: transparent;
+        border: none;     
+        color: #FEFEFE; 
+        font-size: 1.2rem;  
+        position: absolute;
+        right: 0;
+        top: 0;
+        &:focus {
+            outline: none;
+        }
+    }
+    h1, h2, h3, h4, h5, h6 {
+        @include calc(width, "100% - 100px");
+        float: left;
+        font : {
+            size: 1rem;
+            weight: 300;
+        }
+        line-height: 2;
+        text-indent: 10px;
+    }
+}

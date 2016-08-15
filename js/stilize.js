@@ -4,13 +4,22 @@ HTMLCollection.prototype.forEach = Array.prototype.forEach;
 jQuery(document).ready(function () {
 	
 	/** @auth Matheus Castiglioni
+	 *  Ativar animação
+	 */
+	if(!jQuery('[class^=animate]').is(':empty')) {
+		setTimeout(function () {
+			jQuery('[class^=animate]').slideDown();
+		}, 1000);
+	}
+	
+	/** @auth Matheus Castiglioni
 	 *  Esconder elementos depois de 3 segundos
 	 */
 	if(!jQuery('.time-out').is(':empty')) {
 		setTimeout(function () {
-           jQuery('.time-out').toggle(); 
-        }, 3000);
-    }
+			jQuery('.time-out').slideUp(); 
+	    }, 3000);
+	}
 	
 	/** @auth Matheus Castiglioni
 	 *  Mostrando e escondendo tabs de acordo com a clicada

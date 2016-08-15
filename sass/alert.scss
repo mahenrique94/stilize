@@ -1,4 +1,5 @@
 @import 'alert-dialog';
+@import 'alert-info-system';
 @import 'alert-options';
 @import 'alert-styles';
 
@@ -21,17 +22,5 @@
 		&:focus {
 			outline: 0;
 		}
-	}
-}
-.alert-info-system {
-	position: absolute;
-	right: 20px;
-	top: 20px;
-	z-index: 1020;
-	h4 {
-		line-height: 2;
-	}	
-	i {
-		font-size: 1.5rem;
 	}
 }

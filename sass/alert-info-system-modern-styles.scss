@@ -1,0 +1,18 @@
+div.alert-info-system-modern-error {
+    @extend .alert-info-system-modern;
+    .alert-icon {
+        color: $color-text-error;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        color: $color-text-error;
+    }
+}
+div.alert-info-system-modern-success {
+    @extend .alert-info-system-modern;
+    .alert-icon {
+        color: $color-text-success;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        color: $color-text-success;
+    }
+}
