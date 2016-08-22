@@ -1,3 +1,23 @@
+.nav-bottom {
+	position: absolute;
+	bottom: 0;
+}
+.nav-left {
+	position: absolute;
+	left: 0;
+}
+.nav-right {
+	position: absolute;
+	right: 0;
+}
+.nav-bottom-left {
+	@extend .nav-bottom;
+	@extend .nav-left;
+}
+.nav-bottom-right {
+	@extend .nav-bottom;
+	@extend .nav-right;
+}
 .nav-fixed-bottom {
 	bottom: 0;
 	position: fixed;
@@ -7,6 +27,9 @@
 	position: fixed;
 	top: 0;
 	z-index: 1;
+}
+.nav-margin {
+	margin: 2rem;
 }
 .nav-mobile {
 	@media screen and #{$media-querie-mobile} {

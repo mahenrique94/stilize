@@ -26,6 +26,12 @@
 	.block-body {
 		float: inherit;			
 		width: 100%;
+		p {
+			font : {
+				size: .875rem;
+				weight: 300;
+			}
+		}
 	}
 	.block-body-padding {
 		padding: $block-body-padding;

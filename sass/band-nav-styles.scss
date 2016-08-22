@@ -38,3 +38,19 @@
 		color: $color-text-luber;
 	}
 }
+.band-nav-range {
+	@extend .band;
+	background: $color-range;
+	padding: $band-nav-padding;
+	label {
+		color: $color-text-range;
+	}
+}
+.band-nav-rangeless {
+	@extend .band;
+	background: $color-rangeless;
+	padding: $band-nav-padding;
+	label {
+		color: $color-text-rangeless;
+	}
+}
