@@ -67,6 +67,13 @@
 	border: $border-range;
 	color: $color-text-range;
 }
+.btn-rangeless {
+	@extend .button;
+	@include button-color-hover($color-rangeless, $color-text-rangeless);	
+	background: $color-rangeless;
+	border: $border-rangeless;
+	color: $color-text-rangeless;
+}
 .btn-tie {
 	@extend .button;
 	@include button-color-hover($color-tie, $color-text-tie);	
