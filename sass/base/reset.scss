@@ -1,13 +1,21 @@
 /*  @auth Matheus Castiglioni
- *  Adicionando alguns reset's de minha necessidade onde achei de grande importância
+ *  Adicionando alguns reset's de minha necessidade onde não havia no normalize, 
+ *  assim a repetição de código é diminuida
  */
 
 * {
     box-sizing: border-box;
     font-family: Roboto, Open Sans, sans-serif !important;
 }
+a {
+    color: #000000;
+    text-decoration: none;
+}
 a, h1, h2, h3, h4, h5, h6, p, ul {
     margin: 0;
+}
+button:hover {
+    cursor: pointer;
 }
 fieldset {
     border: none;
@@ -18,4 +26,7 @@ input, ul {
 }
 li {
     list-style: none;
+}
+textarea {
+    resize: none;
 }
