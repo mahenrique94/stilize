@@ -46,3 +46,15 @@ nav.nav-square-hover-rangeless {
         }		
 	}
 }
+nav.nav-square-hover-ren {
+	a, i {
+		@include transition("all .25s linear");
+	}
+	a:hover {
+		background: $color-ren;
+		color: $color-text-ren;
+        i {
+            color: $color-text-ren;
+        }		
+	}
+}

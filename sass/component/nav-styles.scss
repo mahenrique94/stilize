@@ -148,6 +148,54 @@ nav.nav-lube {
 		}
 	}
 }
+nav.nav-ren {
+	@extend .nav;
+	background: $color-ren;	
+	ul {
+		li {
+			a {
+				color: $color-text-ren;
+			}
+			&:hover {
+				background: $color-text-ren;
+			}
+			&:hover > a {
+				color: $color-ren;	
+			}
+			&:hover > ul {
+				@include transform("scale(1)");
+				opacity: 100;
+			}
+		}
+		ul {			
+			@include transform("scale(0)");
+			@include transition("all 0.3s linear");
+			background: $color-ren;	
+			opacity: 0;
+			top: $nav-height;
+			z-index: 1;
+			li {
+				border-bottom: 1px solid #F9F9F9;								
+				float: none;
+				height: $nav-sub-height;				
+				margin: 0;
+				padding: $nav-sub-padding-li;
+				min-width: $nav-min-width;	
+				white-space: nowrap;
+				a {
+					display: block;
+					height: initial;
+				}
+				ul {
+					left: $nav-min-width;
+				}							
+				&:last-child {
+					border-bottom: none;
+				}
+			}
+		}
+	}
+}
 nav.nav-tie {
 	@extend .nav;	
 	background: $color-tie;	

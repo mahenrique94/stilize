@@ -82,6 +82,28 @@
         }
     }
 }
+.nav-group-ren {
+    @extend .nav-group;
+    ul {
+        li {
+            background: $color-ren;
+            border-right: 1px solid $color-text-ren;
+            button, a {
+                color: $color-text-ren;	
+                &:hover {
+                    color: $color-ren;
+                }				
+            }
+            &:hover {
+                background: $color-text-ren;					
+                border: 1px solid $color-ren;
+            }
+            &:last-child {
+                border-right: 0;
+            }
+        }
+    }
+}
 .nav-group-tie {
     @extend .nav-group;
     ul {
