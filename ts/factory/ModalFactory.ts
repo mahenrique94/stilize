@@ -1,6 +1,6 @@
-/// <reference path="../model/Modal.ts"/>
-/// <reference path="../model/BgModal.ts"/>
-/// <reference path="../model/IframeModal.ts"/>
+/// <reference path="../component/modal/Modal.ts"/>
+/// <reference path="../component/modal/BgModal.ts"/>
+/// <reference path="../component/modal/IframeModal.ts"/>
 
 class ModalFactory {
 

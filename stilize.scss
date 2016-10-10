@@ -2,19 +2,19 @@
 // Desenvolvidas por www.fontello.com
 // Caso surja a necessidade de uma fonte onde não se encontra no site, basta vetorizá-la em Corel ou Ilustrator, exportar como .svg,
 // realizar importação e conversão(.svg para font) no site.
-@font-face {
-	font: {
-		family: 'stilize';
-		style: normal;
-		weight: normal;
-	}
-  	src: url('fonts/stilize.eot?87544163');
-  	src: url('fonts/stilize.eot?87544163#iefix') format('embedded-opentype'),
-         url('fonts/stilize.woff2?87544163') format('woff2'),
-         url('fonts/stilize.woff?87544163') format('woff'),
-         url('fonts/stilize.ttf?87544163') format('truetype'),
-         url('fonts/stilize.svg?87544163#stilize') format('svg');
-}
+// @font-face {
+// 	font: {
+// 		family: 'stilize';
+// 		style: normal;
+// 		weight: normal;
+// 	}
+//   	src: url('fonts/stilize.eot?87544163');
+//   	src: url('fonts/stilize.eot?87544163#iefix') format('embedded-opentype'),
+//          url('fonts/stilize.woff2?87544163') format('woff2'),
+//          url('fonts/stilize.woff?87544163') format('woff'),
+//          url('fonts/stilize.ttf?87544163') format('truetype'),
+//          url('fonts/stilize.svg?87544163#stilize') format('svg');
+// }
 
 // Resetando todos os estilos padrões de diversos navegadores,
 // para que possam ficar todos com o mesmo estilo definidos abaixo.
@@ -23,15 +23,10 @@
 // Adicionado mais reset's que não são inseridos no normalize
 @import 'sass/base/reset';
 
-// Framework utilizado para controle de grid.
-// Importação para que os grids responsivos funcionem corretamente.
-// Arquivos de configuração localiza-se em sass/helpers/susy.
-@import 'susy';
-
 // Plugins,
 // para uma melhor separação de pastas e responsabilidades, as importações encontram-se em /plugins
-@import 'plugins/select2/select2'; // @Select2 https://select2.github.io/
-@import 'plugins/wow/animate'; // @Animations http://mynameismatthieu.com/WOW/ - http://daneden.github.io/animate.css/
+//@import 'plugins/select2/select2'; // @Select2 https://select2.github.io/
+//@import 'plugins/wow/animate'; // @Animations http://mynameismatthieu.com/WOW/ - http://daneden.github.io/animate.css/
 
 // Importação de váriaveis, placholders e mixins,
 // nos ajuda em economia e manutenção de código.
@@ -39,52 +34,18 @@
 @import 'sass/helpers/variable';
 @import 'sass/helpers/placeholder';
 @import 'sass/helpers/mixin';
-@import 'sass/helpers/susy';
 
 // Localizado em pasta separa pois por questões de padronização do sass
 // Arquivos que trabalham com menu devem ficar localizados em /component
-@import 'sass/component/nav';
+
 
 // Importação das funcionalidades e recursos do framework
 // Qualquer novo recurso ou funcionalidade deve ser aqui importado
 // Realizado essa hierarquia de arquivos onde o nome do recurso será o nome do arquivo
 // para que a manutenção dos mesmoos seja fácil
-@import 'sass/alert';
-@import 'sass/animate';
-@import 'sass/band';
-@import 'sass/banner';
-@import 'sass/block';
-@import 'sass/box';
-@import 'sass/button';
-@import 'sass/collapse';
-@import 'sass/column';
-@import 'sass/config';
-@import 'sass/container';
-@import 'sass/dialog';
-@import 'sass/header';
-@import 'sass/icon';
-@import 'sass/figure';
-@import 'sass/font';
-@import 'sass/footer';
-@import 'sass/form';
-@import 'sass/grid';
-@import 'sass/loading';
-@import 'sass/modal';
-@import 'sass/pagination';
-@import 'sass/panel';
-@import 'sass/progress';
-@import 'sass/step';
-@import 'sass/tab';
-@import 'sass/table';
-@import 'sass/tooltip';
-@import 'sass/wallpait';
+
 
 // Arquivos importados fora da ordem alfabética pois eles precisam sobrescrever as definições e regras padrão dos demais arquivos
 // Caso colocasse na ordem eles não surtiriam efeito, tendo a necessidade de informar !important no final de suas declarações
 // Para evitar tal uso, estamos utilizando a regra css, onde os arquivos que são importados por ultimo sobrescrevem as mudanças
 // nos anteriores
-@import 'sass/background';
-@import 'sass/border';
-@import 'sass/color';
-@import 'sass/option';
-@import 'sass/size';

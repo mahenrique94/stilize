@@ -1,9 +1,0 @@
-@import 'mixin-background-style';
-
-@mixin background-linear($expression) {
-	background: -webkit-linear-gradient(#{$expression});
-	background: -moz-linear-gradient(#{$expression});
-	background: -o-linear-gradient(#{$expression});
-	background: -ms-linear-gradient(#{$expression});
-	background: linear-gradient(#{$expression});
-}

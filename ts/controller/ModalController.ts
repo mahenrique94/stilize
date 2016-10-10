@@ -1,4 +1,4 @@
-/// <reference path="../model/Modal.ts"/>
+/// <reference path="../component/modal/Modal.ts"/>
 
 class ModalController {
 
