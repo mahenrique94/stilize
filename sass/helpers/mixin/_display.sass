@@ -1,0 +1,6 @@
+@import ../variable/engine
+
+@mixin display-flex()
+    @each $engine in (map-values($engines))
+        display: #{$engine}flex
+    display: flex

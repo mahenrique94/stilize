@@ -1,0 +1,13 @@
+@import mixin/background
+@import mixin/display
+@import variable/engine
+
+@mixin transform($expression)
+    @each $engine in (map-values($engines))
+        #{$engine}transform: unquote($expression)
+    transform: unquote($expression)
+
+@mixin transition($expression)
+    @each $engine in (map-values($engines))
+        #{$engine}transition: unquote($expression)
+    transition: unquote($expression)

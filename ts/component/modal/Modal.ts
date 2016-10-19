@@ -18,7 +18,7 @@ class Modal implements ElementStilize {
 
     public create() : any {
         let modal = document.createElement('div');
-        modal.classList.add('modal');        
+        modal.classList.add('c-modal');        
         return modal;
     }
 
@@ -28,21 +28,21 @@ class Modal implements ElementStilize {
     }
 
     public toggle() : void {
-        this._elements.forEach(modal => {
-            if (this._isHide(modal)) {
-                modal.style.display = 'block';
+        this._elements.forEach(element => {
+            if (this._isHide(element)) {
+                element.style.display = 'block';
             } else {
-                modal.style.display = 'none';
-                if (modal.tagName == 'IFRAME') {
-                    modal.src = '';
-                    modal.innerHTML = '';
+                element.style.display = 'none';
+                if (element.tagName == 'IFRAME') {
+                    element.src = '';
+                    element.innerHTML = '';
                 }
             }
         });
     }
 
     private _isHide(element : any) {
-        return element.style.display == 'none' || element.style.display == '' || element.style.display == undefined;
+        return element.classList.contains('is-hide') || element.style.display == 'none' || element.style.display == '' || element.style.display == undefined;
     }    
 
 }

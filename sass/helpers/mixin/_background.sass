@@ -1,0 +1,6 @@
+@import ../variable/engine
+
+@mixin background($type, $direction, $colors)
+    @each $engine in (map-values($engines))        
+        background: #{$engine}#{$type}-gradient(unquote($direction), map-values($colors))
+    background: #{$type}-gradient(unquote($direction), map-values($colors))

@@ -1,0 +1,45 @@
+.c-nav
+    @include display-flex
+    align-items: center
+    box-shadow: $nav-shadow
+    justify-content: flex-start
+    padding: $nav-padding
+    &__brand        
+        font-size: $nav-brand-font-size    
+    &__menu--first
+        @include display-flex
+        align-items: inherit
+        justify-content: inherit
+        margin-left: 1rem
+    &__menu--second, &__menu--third 
+        @include transform("scale(0)")
+        @include transition("display .2s linear, opacity .2s ease-in-out .1s, transform .2s ease-in-out .1s")
+        box-shadow: $nav-shadow
+        display: none
+        opacity: 0
+        position: absolute
+        width: $nav-width
+    &__menu--third   
+        left: $nav-width
+        top: 0
+    &__item--first 
+        @include transition("all .2s ease-in-out")
+        a
+            display: block
+            font-weight: 100
+            padding: $nav-item-padding
+            position: relative
+        &:hover > .c-nav__menu--second 
+            @include transform("scale(1)")
+            display: block 
+            opacity: 1
+    &__item--second
+        @include transition("all .2s ease-in-out")
+        &:hover > .c-nav__menu--third
+            @include transform("scale(1)")
+            display: block
+            opacity: 1                         
+    &__item--third
+        @include transition("all .2s ease-in-out")
+
+@import nav_styles
