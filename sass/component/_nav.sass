@@ -1,45 +1,50 @@
 .c-nav
+    @include align-items("center")
     @include display-flex
-    align-items: center
+    @include justify-content("flex-start")
     box-shadow: $nav-shadow
-    justify-content: flex-start
     padding: $nav-padding
     &__brand        
         font-size: $nav-brand-font-size    
     &__menu--first
+        @include align-items("inherit")
         @include display-flex
-        align-items: inherit
-        justify-content: inherit
+        @include justify-content("inherit")
         margin-left: 1rem
     &__menu--second, &__menu--third 
         @include transform("scale(0)")
-        @include transition("display .2s linear, opacity .2s ease-in-out .1s, transform .2s ease-in-out .1s")
+        @include transition("all .2s linear")
         box-shadow: $nav-shadow
-        display: none
+        display: block
+        min-width: $nav-width
         opacity: 0
         position: absolute
-        width: $nav-width
+    &__menu--second
+        top: 55px
     &__menu--third   
-        left: $nav-width
+        left: ($nav-width - 5px)
         top: 0
     &__item--first 
         @include transition("all .2s ease-in-out")
+        border-bottom: 5px solid transparent
+        position: relative
         a
             display: block
             font-weight: 100
             padding: $nav-item-padding
             position: relative
         &:hover > .c-nav__menu--second 
-            @include transform("scale(1)")
-            display: block 
+            @include transform("scale(1)") 
             opacity: 1
     &__item--second
         @include transition("all .2s ease-in-out")
+        position: relative        
         &:hover > .c-nav__menu--third
             @include transform("scale(1)")
             display: block
             opacity: 1                         
     &__item--third
         @include transition("all .2s ease-in-out")
+        position: relative
 
 @import nav_styles

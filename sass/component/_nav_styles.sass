@@ -7,10 +7,14 @@
         .c-nav__menu--second, .c-nav__menu--third 
             background: map-get($themes-colors, $theme)
         [class^=c-nav__item]
-            border-bottom: map-get($themes-borders, $theme)
+            // border-bottom: map-get($themes-borders, $theme)
             a
                 color: map-get($themes-texts, $theme)
             &:hover
                 background: map-get($themes-colors-hover, $theme)
-            &:last-child 
-                border-bottom: none
+        .c-nav__item--first
+            &:hover
+                border-bottom: $nav-border-width solid map-get($themes-texts, $theme)
+        .c-nav__item--second, .c-nav__item--third
+            &:hover
+                border-left: $nav-border-width solid map-get($themes-texts, $theme)

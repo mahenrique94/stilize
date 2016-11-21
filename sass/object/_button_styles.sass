@@ -1,0 +1,7 @@
+@each $theme in (map-values($themes))
+    .o-button--#{$theme}
+        @extend .o-button
+        background: map-get($themes-colors, $theme)
+        color: map-get($themes-texts, $theme)
+        &:hover
+            background: map-get($themes-colors-hover, $theme)

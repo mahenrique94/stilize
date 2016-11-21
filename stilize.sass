@@ -1,51 +1,31 @@
-// Fontes utilizadas para criar os ícons.
-// Desenvolvidas por www.fontello.com
-// Caso surja a necessidade de uma fonte onde não se encontra no site, basta vetorizá-la em Corel ou Ilustrator, exportar como .svg,
-// realizar importação e conversão(.svg para font) no site.
-// @font-face {
-// 	font: {
-// 		family: 'stilize';
-// 		style: normal;
-// 		weight: normal;
-// 	}
-//   	src: url('fonts/stilize.eot?87544163');
-//   	src: url('fonts/stilize.eot?87544163#iefix') format('embedded-opentype'),
-//          url('fonts/stilize.woff2?87544163') format('woff2'),
-//          url('fonts/stilize.woff?87544163') format('woff'),
-//          url('fonts/stilize.ttf?87544163') format('truetype'),
-//          url('fonts/stilize.svg?87544163#stilize') format('svg');
-// }
-
+//// 
+// RESET
 // Resetando todos os estilos padrões de diversos navegadores,
-// para que possam ficar todos com o mesmo estilo definidos abaixo.
+// para que possam ficar todos com os mesmos estilos.
+// O arquivo reset.sass contém mais reset's que não constam no normalize e tenho necessidade ou
+// acho importante
+////
 @import sass/base/normalize
-
-// Adicionado mais reset's que não são inseridos no normalize
 @import sass/base/reset
 
-// Plugins,
-// para uma melhor separação de pastas e responsabilidades, as importações encontram-se em /plugins
-//@import 'plugins/select2/select2'; // @Select2 https://select2.github.io/
-//@import 'plugins/wow/animate'; // @Animations http://mynameismatthieu.com/WOW/ - http://daneden.github.io/animate.css/
-
-// Importação de váriaveis, placholders e mixins,
-// nos ajuda em economia e manutenção de código.
+////
+// VARIÁVEIS, MIXINS E PLACEHOLDERS
 // Como podem ser aproveitados em todo o framework são importados antes de todos os arquivos
+////
 @import sass/helpers/variable
 @import sass/helpers/placeholder
 @import sass/helpers/mixin
 
-// Localizado em pasta separa pois por questões de padronização do sass
-// Arquivos que trabalham com menu devem ficar localizados em /component
-
-
-// Importação das funcionalidades e recursos do framework
-// Qualquer novo recurso ou funcionalidade deve ser aqui importado
-// Realizado essa hierarquia de arquivos onde o nome do recurso será o nome do arquivo
-// para que a manutenção dos mesmoos seja fácil
+////
+// COMPONENTES
+// Componentes são separados pois futuramente pretendo transforma-los em @Web Components onde irei criar
+// tags HTML para que sejam mais fáceis de serem utilizados e transforma-los em HTML válido em tempo de execução
+// com Typescript 
+////
 @import sass/component/nav
 
-// Arquivos importados fora da ordem alfabética pois eles precisam sobrescrever as definições e regras padrão dos demais arquivos
-// Caso colocasse na ordem eles não surtiriam efeito, tendo a necessidade de informar !important no final de suas declarações
-// Para evitar tal uso, estamos utilizando a regra css, onde os arquivos que são importados por ultimo sobrescrevem as mudanças
-// nos anteriores
+////
+// OBJETOS
+// Objetos são todos os recursos que o framework irá possuir
+////
+@import sass/object/button
