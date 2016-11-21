@@ -1,4 +1,4 @@
-@each $theme in (map-values($themes))
+@each $theme in $themes
     .c-nav--#{$theme}
         @extend .c-nav
         background: map-get($themes-colors, $theme)
@@ -7,11 +7,10 @@
         .c-nav__menu--second, .c-nav__menu--third 
             background: map-get($themes-colors, $theme)
         [class^=c-nav__item]
-            // border-bottom: map-get($themes-borders, $theme)
             a
                 color: map-get($themes-texts, $theme)
             &:hover
-                background: map-get($themes-colors-hover, $theme)
+                background: map-get($themes-colors-stronger, $theme)
         .c-nav__item--first
             &:hover
                 border-bottom: $nav-border-width solid map-get($themes-texts, $theme)
