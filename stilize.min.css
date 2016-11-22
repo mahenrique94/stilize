@@ -703,6 +703,51 @@ textarea {
   .c-nav--tie .c-nav__item--second:hover, .c-nav--tie .c-nav__item--third:hover {
     border-left: 5px solid #595959; }
 
+.o-alert, .o-alert--error, .o-alert--info, .o-alert--success, .o-alert--warning {
+  font-size: 1.2rem;
+  font-weight: 100;
+  padding: 2rem 1rem; }
+
+.o-alert--error {
+  border: 1px solid #ff1a1a;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  background: #FF9999;
+  color: #ff1a1a; }
+
+.o-alert--info {
+  border: 1px solid #67b0ff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  background: #E6F2FF;
+  color: #67b0ff; }
+
+.o-alert--success {
+  border: 1px solid #004d39;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  background: #00CC99;
+  color: #004d39; }
+
+.o-alert--warning {
+  border: 1px solid #ffb067;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  background: #FFF2E6;
+  color: #ffb067; }
+
 .o-button, .o-button--der, .o-button--gary, .o-button--kal, .o-button--lile, .o-button--low, .o-button--lube, .o-button--pin, .o-button--range, .o-button--ren, .o-button--rup, .o-button--tie {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;

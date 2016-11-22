@@ -1,7 +1,9 @@
-@import mixin/button
 @import mixin/background
 @import mixin/display
 @import variable/engine
+
+@mixin border($color, $size : 1px, $type : solid)
+    border: $size $type $color
 
 @mixin border-radius($radius)
     @each $engine in (map-values($engines))

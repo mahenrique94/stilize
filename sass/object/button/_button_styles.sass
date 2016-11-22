@@ -2,9 +2,9 @@
     .o-button--#{$theme}
         @extend .o-button
         @if $theme == tie
-            @include button-border(darken(map-get($themes-colors-stronger, $theme), 10%))
+            @include border(darken(map-get($themes-colors-stronger, $theme), 10%))
         @else
-            @include button-border(map-get($themes-colors-stronger, $theme))
+            @include border(map-get($themes-colors-stronger, $theme))
         background: map-get($themes-colors, $theme)
         border-bottom: 3px solid rgba(0, 0, 0, .2)
         color: map-get($themes-texts, $theme)

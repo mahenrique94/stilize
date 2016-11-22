@@ -1,0 +1,34 @@
+$alerts: error, info, success, warning
+$FATOR_DARKEN: 25%
+
+////
+// ERROR
+////
+$alert-error-color: #FF9999
+$alert-error-color-stronger: darken($alert-error-color, $FATOR_DARKEN) 
+$alert-error-text: $alert-error-color-stronger
+
+////
+// INFO
+////
+$alert-info-color: #E6F2FF
+$alert-info-color-stronger: darken($alert-info-color, $FATOR_DARKEN)
+$alert-info-text: $alert-info-color-stronger
+
+////
+// SUCCESS
+////
+$alert-success-color: #00CC99
+$alert-success-color-stronger: darken($alert-success-color, $FATOR_DARKEN)
+$alert-success-text: $alert-success-color-stronger
+
+////
+// WARNING
+////
+$alert-warning-color: #FFF2E6
+$alert-warning-color-stronger: darken($alert-warning-color, $FATOR_DARKEN)
+$alert-warning-text: $alert-warning-color-stronger
+
+$alert-colors: (error : $alert-error-color, info : $alert-info-color, success : $alert-success-color, warning : $alert-warning-color)
+$alert-colors-stronger: (error : $alert-error-color-stronger, info : $alert-info-color-stronger, success : $alert-success-color-stronger, warning : $alert-warning-color-stronger)
+$alert-texts: (error : $alert-error-text, info : $alert-info-text, success : $alert-success-text, warning : $alert-warning-text)
