@@ -33,13 +33,17 @@
             font-weight: 100
             padding: $nav-item-padding
             position: relative
-            &.has-dropdown::after
-                content: '\e877'
-                font-family: Stilize
-                margin-left: 4px
+        a.has-dropdown::after
+            content: '\e877'
+            font-family: Stilize
+            margin-left: 4px
     &__item--second
         @include transition("all .2s ease-in-out")
-        position: relative                         
+        position: relative  
+        a.has-dropdown::after
+            content: '\e87A'
+            font-family: Stilize
+            margin-left: 4px                       
     &__item--third
         @include transition("all .2s ease-in-out")
         position: relative
