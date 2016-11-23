@@ -5,16 +5,21 @@
 // O arquivo reset.sass contém mais reset's que não constam no normalize e tenho necessidade ou
 // acho importante
 ////
-@import sass/base/normalize
-@import sass/base/reset
+@import base/normalize
+@import base/reset
+
+////
+// ICON
+////
+@import ../icons/icon
 
 ////
 // VARIÁVEIS, MIXINS E PLACEHOLDERS
 // Como podem ser aproveitados em todo o framework são importados antes de todos os arquivos
 ////
-@import sass/helpers/variable
-@import sass/helpers/placeholder
-@import sass/helpers/mixin
+@import helpers/variable
+@import helpers/placeholder
+@import helpers/mixin
 
 ////
 // COMPONENTES
@@ -22,11 +27,11 @@
 // tags HTML para que sejam mais fáceis de serem utilizados e transforma-los em HTML válido em tempo de execução
 // com Typescript 
 ////
-@import sass/component/nav/nav
+@import component/nav/nav
 
 ////
 // OBJETOS
 // Objetos são todos os recursos que o framework irá possuir
 ////
-@import sass/object/alert/alert
-@import sass/object/button/button
+@import object/alert/alert
+@import object/button/button
