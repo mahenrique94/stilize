@@ -2346,6 +2346,17 @@ textarea {
   content: '\f30c'; }
 
 /* '' */
+.u-container {
+  margin: 0 auto; }
+  .u-container.is-small {
+    width: 80%; }
+  .u-container.is-medium {
+    width: 85%; }
+  .u-container.is-large {
+    width: 90%; }
+  .u-container.is-big {
+    width: 95%; }
+
 .c-nav, .c-nav--der, .c-nav--gary, .c-nav--kal, .c-nav--lile, .c-nav--low, .c-nav--lube, .c-nav--neli, .c-nav--pin, .c-nav--range, .c-nav--ren, .c-nav--rup, .c-nav--tie {
   -webkit-align-items: center;
   -moz-align-items: center;

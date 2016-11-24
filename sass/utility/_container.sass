@@ -1,0 +1,5 @@
+.u-container
+    margin: 0 auto
+    @each $size in $sizes
+        &.is-#{$size}
+            width: unquote(map-get($container-sizes, $size))
