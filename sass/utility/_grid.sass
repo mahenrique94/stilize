@@ -1,0 +1,15 @@
+.u-grid
+    float: left
+    position: relative
+    @for $i from 1 through $grid-columns
+        &--#{$i}
+            @extend .u-grid            
+            width: ($grid-width / ($grid-columns / $i)) - ($grid-gutter * ($grid-columns - $i) / $grid-columns)
+    @each $type in $media-querie-types
+        @for $i from 1 through $grid-columns
+            &--#{$type}#{$i}
+                @media screen and (min-width: map-get($media-queries, $type))
+                    width: ($grid-width / ($grid-columns / $i)) - ($grid-gutter * ($grid-columns - $i) / $grid-columns)
+
+[class*=u-grid] + [class*=u-grid]
+    margin-left: $grid-gutter

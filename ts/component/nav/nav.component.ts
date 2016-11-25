@@ -1,6 +1,6 @@
 class Nav {
 
-    toggle(obj : HTMLObjectElement) : void {
+    public toggle(obj : HTMLObjectElement) : void {
         if (this._isHide(obj))
             this._show(obj);
         else
