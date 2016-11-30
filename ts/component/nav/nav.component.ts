@@ -8,17 +8,17 @@ class Nav {
     }
 
     private _show(obj : HTMLObjectElement) : void {
-        obj.style.opacity = '1';
-        obj.style.transform = 'scale(1)';
+        obj.classList.remove('is-hide');
+        obj.classList.add('is-show');
     }
 
     private _hide(obj : HTMLObjectElement) : void {
-        obj.style.opacity = '0';
-        obj.style.transform = 'scale(0)';
+        obj.classList.remove('is-show');
+        obj.classList.add('is-hide');
     }
 
     private _isHide(obj : HTMLObjectElement) : boolean {
-        return obj.style.opacity === '0' || obj.style.opacity === '';
+        return obj.classList.contains('is-hide');
     }
 
 }

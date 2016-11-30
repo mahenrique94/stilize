@@ -12,13 +12,17 @@
         @include justify-content("inherit")
         margin-left: 1rem
     &__menu--second, &__menu--third 
-        @include transform("scale(0)")
         @include transition("all .2s linear")
         box-shadow: $nav-shadow
         display: block
         min-width: $nav-width
-        opacity: 0
         position: absolute
+        &.is-hide
+            @include transform("scale(0)")
+            opacity: 0
+        &.is-show
+            @include transform("scale(1)")
+            opacity: 1
     &__menu--second
         top: 55px
     &__menu--third   
