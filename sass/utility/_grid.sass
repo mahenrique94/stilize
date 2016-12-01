@@ -8,6 +8,7 @@
     @each $type in $media-querie-types
         @for $i from 1 through $grid-columns
             &--#{$type}#{$i}
+                @extend .u-grid 
                 @media screen and (min-width: map-get($media-queries, $type))
                     width: ($grid-width / ($grid-columns / $i)) - ($grid-gutter * ($grid-columns - $i) / $grid-columns)
 

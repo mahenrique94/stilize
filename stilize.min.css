@@ -2365,7 +2365,7 @@ textarea {
   .u-container.is-big {
     width: 95%; }
 
-.u-grid, .u-grid--1, .u-grid--2, .u-grid--3, .u-grid--4, .u-grid--5, .u-grid--6, .u-grid--7, .u-grid--8, .u-grid--9, .u-grid--10, .u-grid--11, .u-grid--12 {
+.u-grid, .u-grid--1, .u-grid--2, .u-grid--3, .u-grid--4, .u-grid--5, .u-grid--6, .u-grid--7, .u-grid--8, .u-grid--9, .u-grid--10, .u-grid--11, .u-grid--12, .u-grid--mobile1, .u-grid--mobile2, .u-grid--mobile3, .u-grid--mobile4, .u-grid--mobile5, .u-grid--mobile6, .u-grid--mobile7, .u-grid--mobile8, .u-grid--mobile9, .u-grid--mobile10, .u-grid--mobile11, .u-grid--mobile12, .u-grid--tablet1, .u-grid--tablet2, .u-grid--tablet3, .u-grid--tablet4, .u-grid--tablet5, .u-grid--tablet6, .u-grid--tablet7, .u-grid--tablet8, .u-grid--tablet9, .u-grid--tablet10, .u-grid--tablet11, .u-grid--tablet12, .u-grid--desktop1, .u-grid--desktop2, .u-grid--desktop3, .u-grid--desktop4, .u-grid--desktop5, .u-grid--desktop6, .u-grid--desktop7, .u-grid--desktop8, .u-grid--desktop9, .u-grid--desktop10, .u-grid--desktop11, .u-grid--desktop12, .u-grid--screen1, .u-grid--screen2, .u-grid--screen3, .u-grid--screen4, .u-grid--screen5, .u-grid--screen6, .u-grid--screen7, .u-grid--screen8, .u-grid--screen9, .u-grid--screen10, .u-grid--screen11, .u-grid--screen12 {
   float: left;
   position: relative; }
   .u-grid--1 {
@@ -3078,3 +3078,41 @@ textarea {
   padding: .6rem 1.125rem; }
 .o-button--tie.is-big {
   padding: .8rem 1.6rem; }
+
+.o-form__body {
+  padding: 0 1rem; }
+.o-form__text, .o-form__data {
+  font-size: 1.1rem; }
+.o-form__text {
+  color: #333333;
+  display: block;
+  font-weight: 500;
+  letter-spacing: 1px; }
+.o-form__data {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -o-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  background: #FFFFFF;
+  border: 1px solid #DCDCDC;
+  box-shadow: inset 0 0 5px 2px rgba(242, 242, 242, 0.5);
+  color: #595959;
+  font-weight: 100;
+  padding: 0.5rem;
+  width: 100%; }
+  .o-form__data.has-validation:invalid {
+    background: rgba(255, 179, 179, 0.25);
+    border: 1px solid #FF8080;
+    box-shadow: 0 0 3px 1px rgba(255, 128, 128, 0.3); }
+  .o-form__data.has-validation:valid:focus {
+    background: rgba(92, 214, 92, 0.25);
+    border: 1px solid #00CC99;
+    box-shadow: 0 0 3px 1px rgba(0, 204, 153, 0.25); }
+  .o-form__data:focus {
+    border: 1px solid #0099FF;
+    box-shadow: 0 0 3px 1px rgba(0, 153, 255, 0.3); }
+.o-form select.o-form__data {
+  height: 40px; }
+.o-form textarea.o-form__data {
+  height: 120px; }
