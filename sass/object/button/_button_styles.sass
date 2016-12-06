@@ -6,7 +6,7 @@
         @else
             @include border(map-get($themes-colors-stronger, $theme))
         background: map-get($themes-colors, $theme)
-        border-bottom: 3px solid rgba(0, 0, 0, .2)
+        border-bottom: $button-border-bottom
         color: map-get($themes-texts, $theme)
         &:hover
             background: map-get($themes-colors-stronger, $theme)

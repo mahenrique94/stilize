@@ -1,0 +1,5 @@
+@each $theme in $themes
+    .o-band--#{$theme}
+        @extend .o-band
+        background: map-get($themes-colors, $theme)
+        color: map-get($themes-texts, $theme)

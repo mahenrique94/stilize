@@ -1,35 +1,35 @@
 .o-form
     &__body
-        padding: 0 1rem
+        padding: $form-body-padding
     &__text, &__data
-        font-size: 1.1rem  
+        font-size: $form-data-font-size  
     &__text
         color: $form-text-color
         display: block
-        font-weight: 500
+        font-weight: $form-text-font-weight
         letter-spacing: 1px
     &__data
-        @include border-radius(3px)
-        background: #FFFFFF
+        @include border-radius($form-data-border-radius)
+        background: $form-data-background
         border: $border
-        box-shadow: inset 0 0 5px 2px rgba(242, 242, 242, .5)
-        color: $form-input-color
-        font-weight: 100
-        padding: $form-input-padding
-        width: 100%
+        box-shadow: $form-data-shdow
+        color: $form-data-color
+        font-weight: $form-data-font-weight
+        padding: $form-data-padding
+        width: $form-data-width
         &.has-validation
             &:invalid
-                background: $form-input-background-error
-                border: $form-input-border-error
-                box-shadow: $form-input-shadow-error
+                background: $form-data-background-error
+                border: $form-data-border-error
+                box-shadow: $form-data-shadow-error
             &:valid:focus
-                background: $form-input-background-success
-                border: $form-input-border-success
-                box-shadow: $form-input-shadow-success
+                background: $form-data-background-success
+                border: $form-data-border-success
+                box-shadow: $form-data-shadow-success
         &:focus
-            border: $form-input-border-hover
-            box-shadow: $form-input-shadow-hover
+            border: $form-data-border-hover
+            box-shadow: $form-data-shadow-hover
     select.o-form__data
-        height: 40px
+        height: $form-select-height
     textarea.o-form__data
-        height: 120px
+        height: $form-textarea-height

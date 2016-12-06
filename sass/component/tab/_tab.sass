@@ -1,0 +1,30 @@
+.c-tab
+    float: left
+    li
+        float: left
+    &__item
+        @include border-radius($tab-radius) 
+        display: block
+        font :
+            size: $tab-font-size
+            weight: $tab-font-weight
+        padding: $tab-padding
+    &__group
+        @extend %float-full
+        border: $border
+    &__body
+        &.is-hide
+            display: none
+        &.is-show
+            display: block
+    &.is-full        
+        @extend %flex-full
+        li
+            @extend %flex-full
+            .c-tab__item
+                border-radius: 0
+                text-align: center
+                width: 100%
+
+
+@import tab_styles

@@ -1,10 +1,13 @@
+/// <reference path="../../base/controller.helper.ts"/>
+
 class Nav {
 
     public toggle(obj : HTMLObjectElement) : void {
-        if (this._isHide(obj))
-            this._show(obj);
+        let target = obj.parentNode.getElementsByTagName('ul')[0]
+        if (this._isHide(target) && this._hasController(obj))
+            this._show(target);
         else
-            this._hide(obj);
+            this._hide(target);
     }
 
     private _show(obj : HTMLObjectElement) : void {
@@ -23,6 +26,10 @@ class Nav {
 
     private _isHide(obj : HTMLObjectElement) : boolean {
         return obj.classList.contains('is-hide');
+    }
+
+    private _hasController(obj : HTMLObjectElement) : boolean {
+        return ControllerHelper.allowController(obj, 'NavController');
     }
 
 }

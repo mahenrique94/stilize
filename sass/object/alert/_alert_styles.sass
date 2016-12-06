@@ -2,6 +2,6 @@
     .o-alert--#{$alert}
         @extend .o-alert
         @include border(map-get($alert-colors-stronger, $alert))
-        @include border-radius(5px)
+        @include border-radius($alert-border-radius)
         background: map-get($alert-colors, $alert)
         color: map-get($alert-texts, $alert)

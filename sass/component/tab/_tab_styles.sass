@@ -1,0 +1,12 @@
+@each $theme in $themes
+    .c-tab--#{$theme}
+        @extend .c-tab
+        .c-tab__item
+            background: map-get($themes-colors, $theme)
+            color: map-get($themes-texts, $theme)
+            border: map-get($themes-borders, $theme)
+            border-bottom: none
+            &.is-active
+                background: map-get($themes-colors-stronger, $theme)
+            &:hover
+                background: map-get($themes-colors-stronger, $theme)
