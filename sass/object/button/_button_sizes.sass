@@ -1,5 +1,0 @@
-@each $theme in $themes
-    .o-button--#{$theme}
-        @each $size in $sizes
-            &.is-#{$size}
-                padding: unquote(map-get($button-paddings, $size))
