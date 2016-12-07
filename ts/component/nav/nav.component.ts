@@ -1,9 +1,10 @@
 /// <reference path="../../base/controller.helper.ts"/>
+/// <reference path="../../interface/component.ts"/>
 
-class Nav {
+class Nav implements Component {
 
     public toggle(obj : HTMLObjectElement) : void {
-        let target = obj.parentNode.getElementsByTagName('ul')[0]
+        let target : HTMLObjectElement = obj.parentNode.getElementsByTagName('ul')[0]
         if (this._isHide(target) && this._hasController(obj))
             this._show(target);
         else

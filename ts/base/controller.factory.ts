@@ -3,8 +3,8 @@
 (function(document, window) {
     document.addEventListener('DOMContentLoaded',() => {
         document.querySelectorAll('[data-controller]').forEach(element => {
-            let controller = StringFunction.trimAll(element.dataset.controller);
-            let clazzes = controller.split(',');
+            let controller : string = StringFunction.trimAll(element.dataset.controller);
+            let clazzes : Array<String> = controller.split(',');
             clazzes.forEach(clazz => {
                 window[clazz] = new window.classes[clazz]();
             });

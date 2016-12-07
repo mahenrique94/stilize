@@ -1,4 +1,6 @@
-class Tab {
+/// <reference path="../../interface/component.ts"/>
+
+class Tab implements Component {
 
     public toggle(obj : HTMLObjectElement) : void {
         if (!obj.classList.contains('is-active')) {      

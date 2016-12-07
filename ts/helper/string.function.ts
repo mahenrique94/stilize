@@ -1,18 +1,18 @@
 class StringFunction {
 
-    public static trimAll(string : string) {
+    public static trimAll(string : string) : string {
         return string.replace(/\s/g, "");
     } 
 
-    public static trimLeft(string : string) {
+    public static trimLeft(string : string) : string {
         return string.replace(/^\s+/, "");
     }
 
-    public static trimLeftRight(string : string) {
+    public static trimLeftRight(string : string) : string {
         return string.replace(/^\s+|\s+$/g, "");
     }
 
-    public static trimRight(string : string) {
+    public static trimRight(string : string) : string {
         return string.replace(/\s+$/, "");
     }
 
