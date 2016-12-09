@@ -12,13 +12,11 @@ class Tab implements Component {
     private _isActiveTab(obj : HTMLObjectElement) : void {
         this._isInactiveTab(obj.parentNode.parentNode.querySelector('.is-active'));        
         obj.setAttribute('aria-selected', 'true');
-        obj.classList.add('is-active');
-        obj.classList.remove('is-inactive');                
+        obj.classList.add('is-active');                
     }
 
     private _isInactiveTab(obj : HTMLObjectElement) : void {
         obj.setAttribute('aria-selected', 'false');
-        obj.classList.add('is-inactive');
         obj.classList.remove('is-active');
     }
 
