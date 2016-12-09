@@ -1,0 +1,7 @@
+@each $theme in $themes
+    .o-navbar--#{$theme}
+        @extend .o-navbar
+        background: map-get($theme-colors, $theme)
+        color: map-get($theme-texts, $theme)
+        a
+            color: map-get($theme-texts, $theme)

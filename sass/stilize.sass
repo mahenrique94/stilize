@@ -19,24 +19,8 @@
 // Como podem ser aproveitados em todo o framework são importados antes de todos os arquivos
 ////
 @import helpers/variable
-@import helpers/placeholder
 @import helpers/mixin
-
-////
-// LAYOUT
-// Layout são os elementos que não tem relevância para a página pois suas regras servem apenas para
-// alterar o visual
-////
-@import layout/options
-@import layout/row
-
-////
-// UTILITY
-// Utility não elementos utilitários para compor o resto do design
-////
-@import utility/clearfix
-@import utility/container
-@import utility/grid
+@import helpers/placeholder
 
 ////
 // COMPONENTES
@@ -56,7 +40,32 @@
 ////
 @import object/alert/alert
 @import object/band/band
+@import object/breadcrumb/breadcrumb
 @import object/button/button
 @import object/form/form
 @import object/modal/modal
+@import object/navbar/navbar
 @import object/toast/toast
+
+////
+// UTILITY
+// Utility não elementos utilitários para compor o resto do design
+////
+@import utility/clearfix
+@import utility/container
+@import utility/grid
+
+////
+// LAYOUT
+// Layout são os elementos que não tem relevância para a página pois suas regras servem apenas para
+// alterar o visual
+////
+@import layout/options
+@import layout/row
+
+////
+// STATE
+// State são regras de estados para os elementos, assim conseguimos mudar seu design original sem necessidade de criar
+// novas regras css ou classes
+////
+@import state/state

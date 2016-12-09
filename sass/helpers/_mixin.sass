@@ -12,7 +12,7 @@
 
 @mixin calc($property, $expression)
     @each $engine in (map-values($engines))
-        #{$engine}#{$property}: calc(#{$expression})
+        #{$property}: #{$engine}calc(#{$expression})
     #{$property}: calc(#{$expression})
 
 @mixin transform($expression)

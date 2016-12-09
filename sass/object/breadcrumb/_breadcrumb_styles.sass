@@ -1,0 +1,7 @@
+@each $breadcrumb in $breadcrumbs
+    .o-breadcrumb--#{$breadcrumb}
+        .o-breadcrumb__link
+            &:not(:last-child)::after
+                content: '\e87d'
+                font-family: Stilize
+                margin: $breadcrumb-after-margin

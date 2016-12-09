@@ -1,14 +1,14 @@
 .c-tab
-    float: left
+    display: inline-block
     li
-        float: left
+        display: inline-block
     &__item
         @include border-radius($tab-radius) 
         display: block
         font-size: $tab-font-size
         padding: $tab-padding
     &__group
-        @extend %float-full
+        @extend %inline-full
         border: $border
     &__body
         &.is-hide

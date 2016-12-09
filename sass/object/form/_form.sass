@@ -14,7 +14,6 @@
         border: $border
         box-shadow: $form-data-shdow
         color: $form-data-color
-        font-weight: $form-data-font-weight
         padding: $form-data-padding
         width: $form-data-width
         &.has-validation
@@ -29,6 +28,18 @@
         &:focus
             border: $form-data-border-hover
             box-shadow: $form-data-shadow-hover
+        &::-webkit-input-placeholder
+            color: #808080
+            font-weight: 100
+            opacity: .5
+        &::-moz-placeholder
+            color: #808080
+            font-weight: 100
+            opacity: .5
+        &:-ms-input-placeholder
+            color: #808080
+            font-weight: 100
+            opacity: .5
     select.o-form__data
         height: $form-select-height
     textarea.o-form__data
