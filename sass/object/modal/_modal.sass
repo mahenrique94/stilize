@@ -20,8 +20,8 @@
         position: relative
     &__header        
         border-bottom: $border
-        border-bottom-left-radius: 0px
-        border-bottom-right-radius: 0px
+        border-bottom-left-radius: 0
+        border-bottom-right-radius: 0
         padding: $modal-header-padding
     &__close
         background: transparent
@@ -34,13 +34,9 @@
         padding: $modal-body-padding
     &__footer
         border-top: $border
-        border-top-left-radius: 0px
-        border-top-right-radius: 0px
+        border-top-left-radius: 0
+        border-top-right-radius: 0
         padding: $modal-footer-padding
-    &.is-hide
-        display: none
-    &.is-show
-        display: block
     @each $size in $sizes
         &--#{$size}
             @extend .u-container

@@ -1,0 +1,19 @@
+.o-form__group
+    display: table
+    .o-form__element
+        display: table-cell         
+        vertical-align: middle
+        width: 1%
+        white-space: nowrap
+        a, button            
+            padding: $form-group-padding
+        &:first-child
+            a, button
+                @include form-group-border($form-group-border-hights, right, 0, false)
+        &:last-child
+            a, button
+                @include form-group-border($form-group-border-hights, left, 0, false)
+    input:first-child
+        @include form-group-border($form-group-border-hights, right, 0)
+    input:last-child
+        @include form-group-border($form-group-border-hights, left, 0)

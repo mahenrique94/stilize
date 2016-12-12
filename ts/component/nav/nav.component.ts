@@ -4,7 +4,7 @@
 class Nav implements Component {
 
     public toggle(obj : HTMLObjectElement) : void {
-        let target : HTMLObjectElement = obj.parentNode.getElementsByTagName('ul')[0]
+        let target : HTMLObjectElement = obj.parentNode.getElementsByTagName('ul')[0] || obj.parentNode.getElementsByTagName('menu')[0];
         if (this._isHide(target) && this._hasController(obj))
             this._show(target);
         else

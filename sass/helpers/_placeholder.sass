@@ -1,3 +1,4 @@
+@import variable/z_index
 @import mixin
 
 %flex-full
@@ -6,6 +7,24 @@
 
 %float-full
     float: left
+    width: 100%
+
+%fixed-bottom
+    position: fixed
+    bottom: 0
+    z-index: $zindex-fixed-bottom
+
+%fixed-bottom-full
+    @extend %fixed-bottom
+    width: 100%
+
+%fixed-top
+    position: fixed
+    top: 0
+    z-index: $zindex-fixed-top
+
+%fixed-top-full
+    @extend %fixed-top
     width: 100%
 
 %inline-full

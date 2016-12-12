@@ -40,6 +40,11 @@
             color: #808080
             font-weight: 100
             opacity: .5
+        &:-webkit-autofill
+            background: #FFFFFF
+        &[disabled], &[readonly]
+            background: #F2F2F2
+            cursor: not-allowed
     select.o-form__data
         height: $form-select-height
     textarea.o-form__data
