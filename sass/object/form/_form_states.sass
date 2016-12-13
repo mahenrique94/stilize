@@ -1,0 +1,14 @@
+.o-form
+    &__data
+        &.has-validation
+            &:invalid
+                background: $form-data-background-error
+                border: $form-data-border-error
+                box-shadow: $form-data-shadow-error
+            &:valid:focus
+                background: $form-data-background-success
+                border: $form-data-border-success
+                box-shadow: $form-data-shadow-success
+        &[disabled], &[readonly]
+            background: #F2F2F2
+            cursor: not-allowed

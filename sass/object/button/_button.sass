@@ -1,10 +1,7 @@
 .o-button
     @include border-radius($button-border-radius)
     font-weight: $button-font-weight
-    &--full
-        width: 100%
-    @each $size in $sizes
-        &--#{$size}
-            padding: unquote(map-get($button-paddings, $size))
 
+@import button_sizes
 @import button_styles
+@import button_options

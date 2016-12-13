@@ -12,12 +12,6 @@
         display: block
         min-width: $nav-width
         position: absolute
-        &.is-hide
-            @include transform("scale(0)")
-            opacity: 0
-        &.is-show
-            @include transform("scale(1)")
-            opacity: 1
     &__menu--second
         top: 55px
         z-index: $zindex-nav
@@ -44,20 +38,13 @@
         margin-right: .5rem
         vertical-align: middle
         width: 50px
-        &.is-rounded
-            @include border-radius("100%")
     &__item--second, &__item--third
         a
             padding: $nav-padding-sides
             white-space: nowrap
     &__item--second
         @include transition("all .2s ease-in-out")
-        position: relative  
-        a.has-dropdown::after
-            content: '\f105'
-            font-family: Stilize
-            position: absolute
-            right: 10px                  
+        position: relative                    
     &__item--third
         @include transition("all .2s ease-in-out")
         position: relative
@@ -65,3 +52,4 @@
         float: right     
 
 @import nav_styles
+@import nav_states

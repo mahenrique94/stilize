@@ -16,36 +16,13 @@
         color: $form-data-color
         padding: $form-data-padding
         width: $form-data-width
-        &.has-validation
-            &:invalid
-                background: $form-data-background-error
-                border: $form-data-border-error
-                box-shadow: $form-data-shadow-error
-            &:valid:focus
-                background: $form-data-background-success
-                border: $form-data-border-success
-                box-shadow: $form-data-shadow-success
         &:focus
             border: $form-data-border-hover
             box-shadow: $form-data-shadow-hover
-        &::-webkit-input-placeholder
-            color: #808080
-            font-weight: 100
-            opacity: .5
-        &::-moz-placeholder
-            color: #808080
-            font-weight: 100
-            opacity: .5
-        &:-ms-input-placeholder
-            color: #808080
-            font-weight: 100
-            opacity: .5
-        &:-webkit-autofill
-            background: #FFFFFF
-        &[disabled], &[readonly]
-            background: #F2F2F2
-            cursor: not-allowed
     select.o-form__data
         height: $form-select-height
     textarea.o-form__data
         height: $form-textarea-height
+
+import form_states
+import form_options
