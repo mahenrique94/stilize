@@ -3,6 +3,7 @@
     @include transform("translate(-50%, -50%)")
     background: #FFFFFF
     border: $modal-border
+    box-shadow: $modal-shadow
     left: 50%
     position: fixed
     top: 50%
@@ -13,7 +14,8 @@
         left: 0
         position: absolute
         top: 0
-        width: 100%    
+        width: 100%
+        z-index: $zindex-background-modal    
     &__header, &__footer
         @include border-radius($modal-border-radius)
         @include background("linear", "to bottom", $modal-background-colors)
@@ -30,14 +32,29 @@
         position: absolute
         right: 10px
         top: 10px
-    &__body
-        padding: $modal-body-padding
+    &__content
+        iframe
+            @include border-radius("7px 7px 0 0")
+            border: none
+            height: 100%
+            margin: 0
+            padding: 0
+            position: absolute
+            width: 100%
     &__footer
         border-top: $border
         border-top-left-radius: 0
         border-top-right-radius: 0
+        bottom: 0
         padding: $modal-footer-padding
+        position: absolute
+        width: 100%
+        a, button
+            margin-right: .5rem
+            &:last-child
+                margin-right: 0
     @each $size in $sizes
         &--#{$size}
             @extend .u-container
-            width: unquote(map-get($modal-sizes, $size))
+            height: unquote(map-get($modal-heights, $size))
+            width: unquote(map-get($modal-widths, $size))

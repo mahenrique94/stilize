@@ -11,9 +11,17 @@ class ModalBackground implements Object {
     }
 
     public remove(id : string) : void {
-        let modalBackground : HTMLObjectElement = document.querySelector(`[data-modal=${id}]`);
+        let modalBackground : HTMLObjectElement;
+        if (this._isFrame())
+            modalBackground = parent.document.querySelector(`[data-modal=${id}]`);
+        else
+            modalBackground = document.querySelector(`[data-modal=${id}]`);
         if (modalBackground != null && modalBackground != undefined)
             modalBackground.parentNode.removeChild(modalBackground);
+    }
+
+    private _isFrame() : boolean {
+        return parent.document.location != self.location;
     }
 
 }

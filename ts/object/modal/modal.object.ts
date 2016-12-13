@@ -6,8 +6,12 @@ class Modal implements Object {
     private _modalBackground : ModalBackground = new ModalBackground();
 
     public hide(id : string) : void {
+        let modal : HTMLObjectElement;
         this._removeBackground(id);
-        let modal : HTMLObjectElement = document.getElementById(id);
+        if (this._isFrame())
+           modal = parent.document.getElementById(id);
+        else
+            modal = document.getElementById(id);
         modal.classList.add('is-hide');
         modal.classList.remove('is-show');
     }
@@ -26,6 +30,10 @@ class Modal implements Object {
 
     private _removeBackground(id : string) {
         this._modalBackground.remove(id);
+    }
+
+    private _isFrame() : boolean {
+        return parent.document.location != self.location;
     }
 
 }
