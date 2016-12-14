@@ -1,3 +1,4 @@
+/// <reference path="../../helpers/object.helper.ts"/>
 /// <reference path="../../interface/object.ts"/>
 /// <reference path="../../interface/factory.ts"/>
 /// <reference path="./modalbackground.object.ts"/>
@@ -6,11 +7,10 @@
 class Modal implements Object, Factory {
 
     private _modalBackground : ModalBackground = new ModalBackground();
-    private _modalContent : ModalContent = new ModalContent();
 
     public append() : void {
         let modal = this.create();
-        modal.appendChild(this._modalContent.create());
+        modal.appendChild(new ModalContent().create());
         document.body.appendChild(modal);
     }
 
@@ -21,17 +21,13 @@ class Modal implements Object, Factory {
            modal = parent.document.getElementById(id);
         else
             modal = document.getElementById(id);
-        modal.classList.add('is-hide');
-        modal.classList.remove('is-show');
-        modal.setAttribute('aria-hidden', 'true');
+        ObjectHelper.hide(modal);
     }
 
     public show(id : string) : void {
         this._insertBackground(id);
         let modal : HTMLObjectElement = document.getElementById(id);
-        modal.classList.add('is-show');
-        modal.classList.remove('is-hide');
-        modal.setAttribute('aria-hidden', 'false');
+        ObjectHelper.show(modal);
     }
 
     public create() : HTMLObjectElement {
@@ -39,6 +35,7 @@ class Modal implements Object, Factory {
         modal.classList.add('o-modal', 'o-modal--large', 'is-hide');
         modal.id = 'o-modal--1';
         modal.setAttribute('aria-hidden', 'true');
+        modal.setAttribute('aria-expanded', 'false');
         modal.setAttribute('aria-labelledby', 'o-modal__title--1');
         modal.setAttribute('role', 'dialog');
         return modal;
