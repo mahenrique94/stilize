@@ -1,0 +1,5 @@
+@each $theme in $themes
+    .o-tools--#{$theme}
+        @extend .o-tools
+        a, button
+            color: map-get($theme-texts, $theme)

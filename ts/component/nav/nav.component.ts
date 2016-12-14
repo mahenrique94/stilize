@@ -1,4 +1,5 @@
 /// <reference path="../../base/controller.helper.ts"/>
+/// <reference path="../../helpers/object.helper.ts"/>
 /// <reference path="../../interface/component.ts"/>
 
 class Nav implements Component {
@@ -12,17 +13,11 @@ class Nav implements Component {
     }
 
     private _show(obj : HTMLObjectElement) : void {
-        obj.classList.remove('is-hide');
-        obj.classList.add('is-show');
-        obj.setAttribute('aria-expanded', 'true');
-        obj.setAttribute('aria-hidden', 'false');
+        ObjectHelper.show(obj);
     }
 
     private _hide(obj : HTMLObjectElement) : void {
-        obj.classList.remove('is-show');
-        obj.classList.add('is-hide');
-        obj.setAttribute('aria-expanded', 'false');
-        obj.setAttribute('aria-hidden', 'true');
+        ObjectHelper.hide(obj);
     }
 
     private _isHide(obj : HTMLObjectElement) : boolean {

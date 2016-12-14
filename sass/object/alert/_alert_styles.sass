@@ -5,3 +5,7 @@
         @include border-radius($alert-border-radius)
         background: map-get($alert-colors, $alert)
         color: map-get($alert-texts, $alert)
+        a
+            color: map-get($alert-texts, $alert)
+            &:hover
+                color: darken(map-get($alert-texts, $alert), 10%)

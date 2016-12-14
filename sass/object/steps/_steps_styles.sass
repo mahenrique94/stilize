@@ -1,0 +1,22 @@
+.o-steps--rounded
+    @extend .o-steps
+    .o-steps__step
+        border-bottom: 5px solid $step-rounded-color
+        color: $step-rounded-color
+        font :
+            size: 1.5rem 
+            weight: 500
+        padding: $step-rounded-padding
+        position: relative 
+        text-align: center
+        width: 100%
+        &::after
+            @include border-radius("100%")
+            @include transform("translateX(-50%)")
+            background: $step-rounded-color
+            bottom: -15px
+            content: ' '
+            height: 30px
+            left: 50%
+            position: absolute
+            width: 30px

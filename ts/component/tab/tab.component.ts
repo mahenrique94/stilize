@@ -1,3 +1,4 @@
+/// <reference path="../../helpers/object.helper.ts"/>
 /// <reference path="../../interface/component.ts"/>
 
 class Tab implements Component {
@@ -23,17 +24,11 @@ class Tab implements Component {
     private _showBody(obj : HTMLObjectElement) : void {        
         let body = this._findBody(obj);
         this._hideBody(body.parentNode.querySelector('.is-show'));
-        body.setAttribute('aria-expanded', 'true');
-        body.setAttribute('aria-hidden', 'false');
-        body.classList.add('is-show');
-        body.classList.remove('is-hide');        
+        ObjectHelper.show(body);        
     }
 
     private _hideBody(obj : HTMLObjectElement) : void {
-        obj.setAttribute('aria-expanded', 'false');
-        obj.setAttribute('aria-hidden', 'true');
-        obj.classList.add('is-hide');
-        obj.classList.remove('is-show');
+        ObjectHelper.hide(obj);
     }
 
     private _findBody(obj : HTMLObjectElement) : HTMLObjectElement {
