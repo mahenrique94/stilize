@@ -9,6 +9,6 @@
                 background: $form-data-background-success
                 border: $form-data-border-success
                 box-shadow: $form-data-shadow-success
-        &[disabled], &[readonly]
-            background: #F2F2F2
-            cursor: not-allowed
+        &[disabled], &[readonly], &.is-inactive
+            @extend %is-inactive
+            border: $border
