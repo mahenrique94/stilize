@@ -2,10 +2,12 @@
     @include border-radius($block-border-radius)
     border: $border
     &__header
+        @include border-radius("5px 5px 0 0")
         padding: $block-header-padding
+        width: 100%
     &__title
         font-size: $block-title-font-size
-    &__body
+    &__body--padding
         padding: $block-padding
 
 @import block_styles

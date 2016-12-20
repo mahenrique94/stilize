@@ -1,0 +1,5 @@
+@each $theme in $themes
+    .o-options--#{$theme}
+        @extend .o-options
+        background: map-get($theme-colors, $theme)
+        color: map-get($theme-texts, $theme)

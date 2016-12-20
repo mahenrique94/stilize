@@ -1,0 +1,15 @@
+.c-table
+    &--bordered
+        th, td
+            border: $border
+    &--zebrered
+        tbody
+            tr:nth-child(odd)
+                background: $table-odd-background
+            tr:nth-child(even)
+                background: $table-even-background
+    &--hovered
+        tbody
+            tr:hover
+                background: #E6F3FF
+                cursor: pointer

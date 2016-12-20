@@ -1,4 +1,4 @@
-class StringFunction {
+class StringHelper {
 
     public static trimAll(string : string) : string {
         return string.replace(/\s/g, "");

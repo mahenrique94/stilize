@@ -6,19 +6,19 @@
 *
     box-sizing: border-box
     font-family: Roboto, Open Sans, sans-serif !important
-    font-weight: 100
+    font-weight: 300
 
 *:focus
     outline: none
 
 a
-    color: #000000
+    color: inherit
     text-decoration: none
 
 a, h1, h2, h3, h4, h5, h6, p, ul
     margin: 0
 
-button:hover
+button:hover, [role=button]:hover, [role=link]:hover
     cursor: pointer
 
 fieldset
@@ -36,3 +36,10 @@ textarea
 
 menu
     margin: 0
+    padding: 0
+
+menuitem
+    display: block
+
+dialog
+    padding: 0

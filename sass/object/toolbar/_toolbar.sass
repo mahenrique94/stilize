@@ -1,0 +1,17 @@
+.o-toolbar
+    @include display-flex
+    box-shadow: $toolbar-shadow
+    &__item
+        box-shadow: $toolbar-item-shadow
+        display: inline-block
+        text-align: center
+        width: 100%        
+        a, button
+            display: block
+            padding: $toolbar-padding            
+        button
+            background: transparent
+            border: none
+            width: 100%
+
+@import toolbar_styles

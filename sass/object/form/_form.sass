@@ -1,5 +1,5 @@
 .o-form
-    &__body
+    &__body--padding
         padding: $form-body-padding
     &__text, &__data
         font-size: $form-data-font-size  
@@ -14,18 +14,8 @@
         border: $border
         box-shadow: $form-data-shdow
         color: $form-data-color
-        font-weight: $form-data-font-weight
         padding: $form-data-padding
         width: $form-data-width
-        &.has-validation
-            &:invalid
-                background: $form-data-background-error
-                border: $form-data-border-error
-                box-shadow: $form-data-shadow-error
-            &:valid:focus
-                background: $form-data-background-success
-                border: $form-data-border-success
-                box-shadow: $form-data-shadow-success
         &:focus
             border: $form-data-border-hover
             box-shadow: $form-data-shadow-hover
@@ -33,3 +23,6 @@
         height: $form-select-height
     textarea.o-form__data
         height: $form-textarea-height
+
+@import form_states
+@import form_options

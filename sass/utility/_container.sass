@@ -1,6 +1,8 @@
 .u-container
     margin: 0 auto
+    padding: $container-padding
     @each $size in $sizes
         &--#{$size}
             @extend .u-container
+            padding: 0
             width: unquote(map-get($container-sizes, $size))

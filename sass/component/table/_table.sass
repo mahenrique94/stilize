@@ -3,25 +3,15 @@
     border-collapse: collapse
     text-align: left
     width: $table-width
-    &__header
+    thead
         th, td
+            font-weight: 500
             padding: unquote($table-header-padding)
-    &__body
+    tbody
+        font-size: $table-body-font-size
         td
+            font-weight: 300
             padding: unquote($table-body-padding)
-    &--bordered
-        th, td
-            border: $border
-    &--zebrered
-        .c-table__body
-            tr:nth-child(odd)
-                background: $table-odd-background
-            tr:nth-child(even)
-                background: $table-even-background
-    &--hovered
-        .c-table__body
-            tr:hover
-                background: #E6F3FF
-                cursor: pointer
 
 @import table_styles
+@import table_options

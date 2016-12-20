@@ -3,6 +3,7 @@
     @include transform("translate(-50%, -50%)")
     background: #FFFFFF
     border: $modal-border
+    box-shadow: $modal-shadow
     left: 50%
     position: fixed
     top: 50%
@@ -11,17 +12,21 @@
         background: rgba(0, 0, 0, .5)
         height: 100%
         left: 0
-        position: absolute
+        position: fixed
         top: 0
-        width: 100%    
+        width: 100%
+        z-index: $zindex-background-modal    
     &__header, &__footer
         @include border-radius($modal-border-radius)
         @include background("linear", "to bottom", $modal-background-colors)
-        position: relative
+        position: fixed
+        width: 100%
+        z-index: $zindex-modal-footer-header
     &__header        
         border-bottom: $border
-        border-bottom-left-radius: 0px
-        border-bottom-right-radius: 0px
+        border-bottom-left-radius: 0
+        border-bottom-right-radius: 0
+        height: 67px
         padding: $modal-header-padding
     &__close
         background: transparent
@@ -30,18 +35,31 @@
         position: absolute
         right: 10px
         top: 10px
+    &__content
+        iframe
+            @include border-radius("7px 7px 0 0")
+            border: none
+            height: 100%
+            margin: 0
+            padding: 0
+            position: absolute
+            width: 100%
     &__body
-        padding: $modal-body-padding
+        padding-bottom: 70px
+        padding-top: 80px
     &__footer
         border-top: $border
-        border-top-left-radius: 0px
-        border-top-right-radius: 0px
-        padding: $modal-footer-padding
-    &.is-hide
-        display: none
-    &.is-show
-        display: block
+        border-top-left-radius: 0
+        border-top-right-radius: 0
+        bottom: 0
+        height: 68px
+        padding: $modal-footer-padding        
+        a, button
+            margin-right: .5rem
+            &:last-child
+                margin-right: 0
     @each $size in $sizes
         &--#{$size}
-            @extend .u-container
-            width: unquote(map-get($modal-sizes, $size))
+            @extend .o-modal
+            height: unquote(map-get($modal-heights, $size))
+            width: unquote(map-get($modal-widths, $size))

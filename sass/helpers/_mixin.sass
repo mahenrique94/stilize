@@ -1,6 +1,8 @@
+@import variable/engine
+
 @import mixin/background
 @import mixin/display
-@import variable/engine
+@import mixin/form
 
 @mixin border($color, $size : 1px, $type : solid)
     border: $size $type $color
@@ -12,7 +14,7 @@
 
 @mixin calc($property, $expression)
     @each $engine in (map-values($engines))
-        #{$engine}#{$property}: calc(#{$expression})
+        #{$property}: #{$engine}calc(#{$expression})
     #{$property}: calc(#{$expression})
 
 @mixin transform($expression)
