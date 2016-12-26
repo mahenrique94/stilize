@@ -1,6 +1,12 @@
 @import variable/z_index
 @import mixin
 
+%align-center
+    @include transform("translate(-50%, -50%)")
+    left: 50%
+    position: absolute
+    top: 50%
+
 %flex-full
     @include display-flex
     width: 100%
