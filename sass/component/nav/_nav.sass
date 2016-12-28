@@ -2,6 +2,7 @@
     box-shadow: $nav-shadow
     padding: $nav-padding
     &__brand        
+        display: inline-block
         font-size: $nav-brand-font-size
         line-height: 56px    
     &__menu--first
@@ -13,6 +14,7 @@
         min-width: $nav-width
         position: absolute
     &__menu--second
+        left: 0
         top: 55px
         z-index: $zindex-nav
     &__menu--third   
@@ -51,6 +53,9 @@
         position: relative
     &__item--right
         float: right     
+        .c-nav__menu--second
+            left: initial
+            right: 0
 
 @import nav_styles
 @import nav_states

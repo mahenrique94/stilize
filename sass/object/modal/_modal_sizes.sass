@@ -1,0 +1,5 @@
+@each $size in $sizes
+    .o-modal--#{$size}
+        @extend .o-modal
+        height: unquote(map-get($modal-heights, $size))
+        width: unquote(map-get($modal-widths, $size))

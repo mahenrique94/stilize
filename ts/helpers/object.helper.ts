@@ -14,4 +14,8 @@ class ObjectHelper {
         obj.setAttribute('aria-expanded', 'false');
     }
 
+    public static isHide(obj : HTMLObjectElement) : boolean {
+        return obj.classList.contains('is-hide');
+    }
+
 }

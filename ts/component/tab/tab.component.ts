@@ -23,12 +23,8 @@ class Tab implements Component {
 
     private _showBody(obj : HTMLObjectElement) : void {        
         let body = this._findBody(obj);
-        this._hideBody(body.parentNode.querySelector('.is-show'));
+        ObjectHelper.hide(body.parentNode.querySelector('.is-show'));
         ObjectHelper.show(body);        
-    }
-
-    private _hideBody(obj : HTMLObjectElement) : void {
-        ObjectHelper.hide(obj);
     }
 
     private _findBody(obj : HTMLObjectElement) : HTMLObjectElement {

@@ -1,15 +1,18 @@
-/// <reference path="../helpers/string.helper.ts"/>
+/// <reference path="../component/media/media.controller.ts"/>
+/// <reference path="../component/nav/nav.controller.ts"/>
+/// <reference path="../component/tab/tab.controller.ts"/>
+/// <reference path="../object/modal/modal.controller.ts"/>
+/// <reference path="../object/options/options.controller.ts"/>
+/// <reference path="../object/steps/steps.controller.ts"/>
 
-(function(document, window) {
-
-    document.addEventListener('DOMContentLoaded',() => {
-        document.querySelectorAll('[data-controller]').forEach(element => {
-            let controller : string = StringHelper.trimAll(element.dataset.controller);
-            let clazzes : Array<String> = controller.split(',');
-            clazzes.forEach(clazz => {
-                window[clazz] = new window.classes[clazz]();
-            });
-        });
-    });
     
-})(document, window);
+(w => {
+
+    window['MediaController'] = new MediaController();
+    window['ModalController'] = new ModalController();
+    window['NavController'] = new NavController();
+    window['OptionsController'] = new OptionsController();
+    window['StepsController'] = new StepsController();
+    window['TabController'] = new TabController();
+
+})(window);
