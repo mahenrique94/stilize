@@ -1,0 +1,9 @@
+@each $theme in $themes
+    .c-media--#{$theme}
+        @extend .c-media !optional
+        background: map-get($theme-colors, $theme)
+        color: map-get($theme-texts, $theme)
+        .c-media__progress
+            background: map-get($theme-texts, $theme)
+        .c-media__current
+            background: map-get($theme-colors, $theme)

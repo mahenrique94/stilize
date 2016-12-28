@@ -1,0 +1,39 @@
+.c-media
+    &__controls
+        padding: .5rem
+    &__control
+        margin-right: 1rem
+    &__play
+        &::before
+            content: '\e88b'
+            font-family: Stilize
+    &__pause
+        &::before
+            content: '\e88e'
+            font-family: Stilize
+    &__first
+        &::before
+            content: '\e892'
+            font-family: Stilize
+    &__backwards
+        &::before
+            content: '\e891'
+            font-family: Stilize
+    &__forward
+        &::before
+            content: '\e88f'
+            font-family: Stilize
+    &__last
+        &::before
+            content: '\e890'
+            font-family: Stilize
+    &__progress
+        display: inline-block
+        padding: .1rem
+        width: 50%
+    &__current
+        display: block
+        padding: .3rem
+        width: 0%
+
+@import media_styles
