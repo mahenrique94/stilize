@@ -2,8 +2,8 @@
     @include border-radius($modal-border-radius)
     @include transform("translate(-50%, -50%)")
     background: #FFFFFF
-    border: $modal-border
-    box-shadow: $modal-shadow
+    border: 1px solid #808080
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .3)
     left: 50%
     position: fixed
     top: 50%
@@ -27,17 +27,17 @@
         border-bottom-left-radius: 0
         border-bottom-right-radius: 0
         height: 67px
-        padding: $modal-header-padding
+        padding: 1.5rem 1rem
     &__close
         background: transparent
         border: none
-        color: $modal-close-color
+        color: $color-text
         position: absolute
         right: 10px
         top: 10px
     &__content
         iframe
-            @include border-radius("7px 7px 0 0")
+            @include border-radius(7px 7px 0 0)
             border: none
             height: 100%
             margin: 0
@@ -53,7 +53,7 @@
         border-top-right-radius: 0
         bottom: 0
         height: 68px
-        padding: $modal-footer-padding        
+        padding: .75rem 1rem
         a, button
             margin-right: .5rem
             &:last-child

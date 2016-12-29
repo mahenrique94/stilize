@@ -9,8 +9,8 @@
 
 @mixin border-radius($radius)
     @each $engine in (map-values($engines))
-        #{$engine}border-radius: unquote($radius)
-    border-radius: unquote($radius)
+        #{$engine}border-radius: $radius
+    border-radius: $radius
 
 @mixin calc($property, $expression)
     @each $engine in (map-values($engines))

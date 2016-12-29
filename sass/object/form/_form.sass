@@ -1,28 +1,28 @@
 .o-form
     &__body--padding
-        padding: $form-body-padding
+        padding: 1rem
     &__text, &__data
-        font-size: $form-data-font-size  
+        font-size: .9rem
     &__text
-        color: $form-text-color
+        color: #333333
         display: block
-        font-weight: $form-text-font-weight
+        font-weight: 500
         letter-spacing: 1px
     &__data
         @include border-radius($form-data-border-radius)
-        background: $form-data-background
+        background: #FFFFFF
         border: $border
-        box-shadow: $form-data-shdow
-        color: $form-data-color
+        box-shadow: inset 0 0 5px 2px rgba(242, 242, 242, .5)
+        color: #595959
         padding: $form-data-padding
-        width: $form-data-width
+        width: 100%
         &:focus
-            border: $form-data-border-hover
-            box-shadow: $form-data-shadow-hover
+            border: 1px solid #0099FF
+            box-shadow: 0 0 3px 1px rgba(0, 153, 255, .3)
     select.o-form__data
-        height: $form-select-height
+        height: 40px
     textarea.o-form__data
-        height: $form-textarea-height
+        height: 250px
 
 @import form_states
 @import form_options

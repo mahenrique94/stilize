@@ -1,14 +1,14 @@
 .o-toolbar
     @include display-flex
-    box-shadow: $toolbar-shadow
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, .3)
     &__item
-        box-shadow: $toolbar-item-shadow
+        box-shadow: inset 0 0 5px rgba(0, 0, 0, .15)
         display: inline-block
         text-align: center
         width: 100%        
         a, button
             display: block
-            padding: $toolbar-padding            
+            padding: 1rem
         button
             background: transparent
             border: none

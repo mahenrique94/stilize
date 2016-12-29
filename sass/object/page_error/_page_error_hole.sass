@@ -1,0 +1,42 @@
+.o-pageError--hole
+    .o-pageError__header
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .1)
+        padding: $page-error-hole--header-padding
+    .o-pageError__brand
+        color: $page-error-hole-color
+        font-weight: 500
+    .o-pageError__body
+        background: $page-error-hole-color
+        display: inline-block
+        padding: $page-error-hole--body-padding
+        width: 100%
+    .o-pageError__picture
+        float: left
+        height: 450px
+        margin-right: 100px
+        width: 350px
+        &--403
+            @extend .o-pageError__picture
+            background: url(img/error_pages/hole/403.png) no-repeat
+        &--404
+            @extend .o-pageError__picture
+            background: url(img/error_pages/hole/404.png) no-repeat
+        &--500
+            @extend .o-pageError__picture
+            background: url(img/error_pages/hole/500.png) no-repeat
+    .o-pageError__title
+        color: $color-text
+        font : 
+            size: 2rem
+            weight: bold
+        margin-bottom: $page-error-hole-margin-bottom
+    .o-pageError__describe
+        color: $page-error-hole-text-light
+        font-size: 1.5rem
+        margin-bottom: $page-error-hole-margin-bottom
+        text-align: justify
+    .o-pageError__feedback
+        color: $page-error-hole-text-light
+        font-size: 1.5rem
+        a
+            color: #0099FF
