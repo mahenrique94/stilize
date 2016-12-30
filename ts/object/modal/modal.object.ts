@@ -1,56 +1,41 @@
-/// <reference path="../../helpers/object.helper.ts"/>
 /// <reference path="../../interface/object.ts"/>
 /// <reference path="../../interface/factory.ts"/>
 /// <reference path="./modalbackground.object.ts"/>
-/// <reference path="./modalcontent.object.ts"/>
+/// <reference path="./modalframe.object.ts"/>
 
 class Modal implements Object, Factory {
 
     private _modalBackground : ModalBackground = new ModalBackground();
 
-    public append() : void {
-        let modal = this.create();
-        modal.appendChild(new ModalContent().create());
-        document.body.appendChild(modal);
+    public hide() : void {
+        this._destroy();
+        this._removeBackground();
     }
 
-    public hide(id : string) : void {
-        let modal : HTMLObjectElement;
-        this._removeBackground(id);
-        if (this._isFrame())
-           modal = parent.document.getElementById(id);
-        else
-            modal = document.getElementById(id);
-        ObjectHelper.hide(modal);
+    public show(target : HTMLObjectElement) : void {
+        document.body.appendChild(this.create(target.dataset.modalType, (target.href || target.formAction)));
+        this._insertBackground();
     }
 
-    public show(id : string) : void {
-        this._insertBackground(id);
-        let modal : HTMLObjectElement = document.getElementById(id);
-        ObjectHelper.show(modal);
-    }
-
-    public create() : HTMLObjectElement {
-        let modal = document.createElement('DIALOG');
-        modal.classList.add('o-modal', 'o-modal--large', 'is-hide');
-        modal.id = 'o-modal--1';
-        modal.setAttribute('aria-hidden', 'true');
-        modal.setAttribute('aria-expanded', 'false');
-        modal.setAttribute('aria-labelledby', 'o-modal__title--1');
+    public create(type : string, url : string) : HTMLObjectElement {
+        let modal : HTMLObjectElement = document.createElement('DIALOG');
+        modal.classList.add('js-o-modal', 'is-show', `o-modal--${type || 'large'}`);
         modal.setAttribute('role', 'dialog');
+        modal.appendChild(new ModalFrame(url).create());
         return modal;
     }
 
-    private _insertBackground(id : string) : void {
-        document.body.appendChild(new ModalBackground(id).create());
+    private _destroy() : void {
+        let modal : HTMLObjectElement = document.querySelector('.js-o-modal');
+        modal.parentNode.removeChild(modal);
     }
 
-    private _removeBackground(id : string) : void {
-        this._modalBackground.remove(id);
+    private _insertBackground() : void {
+        document.body.appendChild(new ModalBackground().create());
     }
 
-    private _isFrame() : boolean {
-        return parent.document.location != self.location;
+    private _removeBackground() : void {
+        this._modalBackground.remove();
     }
 
 }

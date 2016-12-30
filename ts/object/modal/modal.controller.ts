@@ -4,15 +4,13 @@ class ModalController {
 
     private _modal : Modal = new Modal();
 
-    public hide(id : string) : ModalController {        
-        this._modal.hide(id);
-        return this;
+    public hide() : void {        
+        this._modal.hide();
     }
 
-    public show(id : string) : ModalController {
-        this._idModal = id;        
-        this._modal.show(id);
-        return this;
+    public show(target : HTMLObjectElement, event : Event) : void {
+        event.preventDefault();    
+        this._modal.show(target);
     }
 
 }
