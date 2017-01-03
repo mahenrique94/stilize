@@ -5,7 +5,7 @@
 /// <reference path="../object/modal/modal.controller.ts"/>
 /// <reference path="../object/options/options.controller.ts"/>
 /// <reference path="../object/steps/steps.controller.ts"/>
-
+/// <reference path="../object/toast/toast.controller.ts"/>
     
 window['MarkController'] = new MarkController();
 window['MediaController'] = new MediaController();
@@ -14,3 +14,4 @@ window['NavController'] = new NavController();
 window['OptionsController'] = new OptionsController();
 window['StepsController'] = new StepsController();
 window['TabController'] = new TabController();
+window['ToastController'] = new ToastController();

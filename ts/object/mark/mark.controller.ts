@@ -8,12 +8,12 @@ class MarkController {
         this._mark.mark(mark);
     }
 
-    let marks = document.querySelectorAll('.o-mark__data');
-    marks.forEach(mark => {
-        if (mark.checked) {
-            let element = mark.parentNode.querySelector('.o-mark__element');
-            element.classList.add('is-marked');
-        }
-    });
-
 }
+
+let marks = document.querySelectorAll('.o-mark__data');
+marks.forEach(mark => {
+    if (mark.checked) {
+        let element = mark.parentNode.querySelector('.o-mark__element');
+        element.classList.add('is-marked');
+    }
+});
