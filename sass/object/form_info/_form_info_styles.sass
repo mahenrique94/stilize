@@ -1,0 +1,7 @@
+@each $type in $form-info-types
+    .o-form__infoIcon--#{$type}
+        @extend .o-form__infoIcon
+        .o-form__infoText
+            background: map-get($form-info-colors, $type)
+            border: map-get($form-info-borders, $type)
+            color: map-get($form-info-texts, $type)

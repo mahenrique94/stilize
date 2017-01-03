@@ -1,7 +1,0 @@
-@each $type in $info-types
-    .o-info--#{$type}
-        @extend .o-info
-        .o-info__text
-            background: map-get($info-colors, $type)
-            border: map-get($info-borders, $type)
-            color: map-get($info-texts, $type)
