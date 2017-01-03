@@ -1,0 +1,29 @@
+.o-info
+    color: #808080
+    font-size: 1.5rem
+    position: absolute
+    right: 5px
+    top: 7px
+    &__text
+        @include border-radius(5px)
+        display: none
+        font-size: 1rem
+        line-height: 1.5
+        padding: .5rem
+        position: absolute
+        width: 500px
+    &__example
+        display: block
+        font-weight: 500
+        &::before
+            content: 'Ex: '
+    &:hover > .o-info__text
+        display: block
+    &.is-right 
+        & > .o-info__text
+            right: 0
+    &.is-left 
+        & > .o-info__text
+            left: 0
+
+@import info_styles
