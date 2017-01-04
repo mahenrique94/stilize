@@ -11,9 +11,11 @@ class Mark implements Object {
         if (mark.classList.contains('is-marked')) {
             mark.classList.remove('is-marked');
             data.setAttribute('checked', 'false');
+            data.value = 'F';
         } else {
             mark.classList.add('is-marked');
             data.setAttribute('checked', 'true');
+            data.value = 'T';
         }
     }
 

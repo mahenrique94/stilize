@@ -20,10 +20,26 @@
         padding: .5rem
         position: absolute
         width: 500px
+        z-index: $zindex-form-info-text
+    &Example, &Link
+        margin-top: 1rem
     &Example
         display: block
         font-weight: 500
         &::before
-            content: 'Ex: '    
+            content: 'Ex: '  
+    &Link
+        display: block
+        font-weight: 500
+        &::before
+            content: 'Preciso de mais informações.'              
+
+label.o-form__info
+    & > [class*=o-form__infoIcon]
+        position: relative
+        font-size: 1rem
+        top: 0
+        & > .o-form__infoText
+            left: 0
 
 @import form_info_styles
