@@ -7,8 +7,12 @@
             margin-right: 0
     &__data
         display: none
-        &[type=radio] ~ .o-mark__element, &[type=radio] ~ .o-mark__element::before
-            @include border-radius(100%)
+        &--checkbox
+            @extend .o-mark__data
+        &--radio
+            @extend .o-mark__data
+            & ~ .o-mark__text > .o-mark__element, & ~ .o-mark__text > .o-mark__element::before
+                @include border-radius(100%)
     &__element
         border: $border
         height: $mark-size

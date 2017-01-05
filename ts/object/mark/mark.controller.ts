@@ -10,10 +10,16 @@ class MarkController {
 
 }
 
-let marks = document.querySelectorAll('.o-mark__data');
-marks.forEach(mark => {
-    if (mark.checked) {
-        let element = mark.parentNode.querySelector('.o-mark__element');
-        element.classList.add('is-marked');
-    }
-});
+let marks = document.querySelectorAll('[class*=o-mark__data]');
+if (marks.length > 0) {
+    marks.forEach(mark => {
+        if (mark.checked) {
+            let index = 0;
+            for(var i = 1; i <= mark.value.length; i++) {
+                let element = mark.parentNode.querySelector(`.o-mark__element[data-marked='${mark.value.substring(index, i)}']`);
+                element.classList.add('is-marked');
+                index++;
+            }            
+        }
+    });
+}
