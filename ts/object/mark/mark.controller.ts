@@ -17,6 +17,8 @@ if (marks.length > 0) {
             let index = 0;
             for(var i = 1; i <= mark.value.length; i++) {
                 let element = mark.parentNode.querySelector(`.o-mark__element[data-marked='${mark.value.substring(index, i)}']`);
+                if (element == undefined)
+                    element = mark.parentNode.querySelector(`.o-mark__element[data-marked='${mark.value}']`);
                 element.classList.add('is-marked');
                 index++;
             }            
