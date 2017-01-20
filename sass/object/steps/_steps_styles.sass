@@ -15,8 +15,14 @@
             @include transform("translateX(-50%)")
             background: $step-rounded-color
             bottom: -15px
+            color: #F2F2F2
             content: ' '
+            font-size: 1.2rem
+            line-height: 30px
             height: 30px
             left: 50%
             position: absolute
             width: 30px
+        @for $i from 1 through 10
+            &:nth-child(#{$i})::after
+                content: '#{$i}'
