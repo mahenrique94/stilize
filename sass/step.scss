@@ -1,0 +1,9 @@
+[class|=step]:not(.active) {
+	display: none;	
+}
+.step-body {
+	display: block !important;
+	float: left;
+	padding: 1rem;
+	width: 100%;
+}

@@ -1,0 +1,21 @@
+@import 'alert-dialog-modern';
+
+.alert-dialog {
+	@include align-items("center");
+	@include justify-content("center");
+	@include display-flex;
+	background: rgba(0, 0, 0, 0.5);
+	height: 100%;
+	position: fixed;	
+	width: 100%;
+	z-index: 1000;
+	.box {
+		background: #FFFFFF;
+		height: 20%;
+		padding: 1rem;
+		width: 30%;
+		h1, h2, h3, h4, h5, h6 {
+			margin-bottom: 2.5rem;
+		}
+	}	
+}

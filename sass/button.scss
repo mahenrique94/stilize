@@ -1,0 +1,21 @@
+@import 'button-border';
+@import 'button-group';
+@import 'button-modern';
+@import 'button-options';
+@import 'button-sizes';
+@import 'button-styles';
+
+.button {
+	@include border-radius($button-border-radius);
+	@include link-no-decoration;
+	display: inline-block;
+	margin: 0;
+	text-align: center;
+	&:hover {
+		text-decoration: none !important;
+	}
+}
+.button-transparent {
+	@extend .button;	
+	background: transparent;
+}

@@ -1,0 +1,45 @@
+.band-default {
+	@extend .band;
+	@include background-default;
+	color: #000000;
+}
+.band-der {
+	@extend .band;
+	background: $color-der;
+	color: $color-text-der;
+}
+.band-gary {
+	@extend .band;
+	background: $color-gary;
+	color: $color-text-gary;
+}
+.band-kal {
+	@extend .band;
+	background: $color-kal;
+	color: $color-text-kal;
+}
+.band-low {
+	@extend .band;
+	background: $color-low;
+	color: $color-text-low;
+}
+.band-lube {
+	@extend .band;
+	background: $color-lube;
+	color: $color-text-lube;
+}
+.band-luber {
+	@extend .band;
+	background: $color-luber;
+	color: $color-text-luber;
+}
+.band-range {
+	@extend .band;
+	background: $color-range;
+	color: $color-text-range;
+}
+.band-rangeless {
+	@extend .band;
+	background: $color-rangeless;
+	color: $color-text-rangeless;
+}

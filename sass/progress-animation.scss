@@ -1,0 +1,49 @@
+@for $i from 0 through 100 {
+    .progress-#{$i} {
+        // @include animation-name(progress-#{$i});
+        width: $i + unquote("%");
+        &:hover {
+            @include animation-name(progress-#{$i});
+        }
+    }
+    @-webkit-keyframes progress-#{$i} {
+        0% {
+            width: 0%;
+        }
+        100% {
+            width: $i + unquote("%");
+        }
+    }
+    @-moz-keyframes progress-#{$i} {
+        0% {
+            width: 0%;
+        }
+        100% {
+            width: $i + unquote("%");
+        }
+    }
+    @-o-keyframes progress-#{$i} {
+        0% {
+            width: 0%;
+        }
+        100% {
+            width: $i + unquote("%");
+        }
+    }
+    @-ms-keyframes progress-#{$i} {
+        0% {
+            width: 0%;
+        }
+        100% {
+            width: $i + unquote("%");
+        }
+    }
+    @keyframes progress-#{$i} {
+        0% {
+            width: 0%;
+        }
+        100% {
+            width: $i + unquote("%");
+        }
+    }
+}

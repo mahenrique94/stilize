@@ -1,0 +1,93 @@
+input.disabled, select.disabled, textarea.disabled, 
+input[disabled], select[disabled], textarea[disabled], 
+input.readonly, select.readonly, textarea.readonly, 
+input[readonly], select[readonly], textarea[readonly] {
+	background: $background-inactive;
+	color: $color-inactive !important;
+	&:hover {
+		cursor: $cursor-inactive;
+		// pointer-events: none;
+	}
+}
+.font-bold {
+	font-weight: bold;
+}
+.float-left {
+	float: left !important;
+}
+.float-right {
+	float: right !important;
+}
+.hidden {
+	display: none !important;
+}
+.inline-block {
+	display: inline-block;
+}
+.no-decoration {
+	@include link-no-decoration;
+}
+.no-bold {
+	font-weight: 100;
+}
+.no-float {
+	float: none !important;
+}
+.no-margin {
+	margin: 0 !important;
+}
+.no-margin-bottom {
+	margin-bottom: 0;
+}
+.no-padding {
+	padding: 0 !important;
+}
+.position-bottom {
+	bottom: 0;
+	position: absolute;
+}
+.position-left {
+	left: 0;
+	position: absolute;
+}
+.position-relative {
+	position: relative;
+}
+.position-right {
+	position: absolute;
+	right: 0;
+}
+.position-top {	
+	position: absolute;
+	top: 0;
+}
+.row {	
+	float: left;
+	width: 100%;
+}
+.text-center {
+	text-align: center;
+}
+.text-upper {
+	text-transform: uppercase;
+}
+.vertical-center {
+	@include align-items("center");
+	@include display-flex;	
+	height: 100%;
+}
+.vertical-horizontal-center {
+	@include align-items("center");
+	@include display-flex;
+	@include justify-content("center");
+	height: 100%;
+	width: 100%;	
+}
+
+/************************************************** TAGS HTML **************************************************/
+i, em {
+	font-style: italic;
+}
+b, strong {
+	font-weight: bold;
+}

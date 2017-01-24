@@ -1,0 +1,22 @@
+ul.tab-kal {
+  @extend .tab;
+  a {
+    @include background-default;
+  }
+  & .active a, & .active a::after {
+    background: $color-kal;
+    color: $color-text-kal;
+    z-index: 3;
+  }
+}
+ul.tab-lube {
+  @extend .tab;
+  a {
+    @include background-default;
+  }
+  & .active a, & .active a::after {
+    background: $color-lube;
+    color: $color-text-lube;
+    z-index: 3;
+  }
+}

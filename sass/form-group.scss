@@ -1,0 +1,33 @@
+.form-data-group {
+	display: $form-data-group-display;
+	& .form-data {
+		border-right: 0;
+	}
+	& .form-data-group-text {		
+		background: #F2F2F2;
+		border: $form-data-group-text-border;
+		display: $form-data-group-text-display;
+		font-size: .8rem;
+		line-height: 0;
+		padding: $form-data-group-text-padding;		
+		text-align: center;
+		vertical-align: $form-data-group-vertical-align;
+		white-space: $form-data-group-white-space;
+		width: $form-data-group-width;
+	}
+	& .form-data-group-btn {		
+		display: $form-data-group-text-display;
+		vertical-align: $form-data-group-vertical-align;
+		white-space: $form-data-group-white-space;
+		width: $form-data-group-width;		
+		button, a {
+			border-radius: 0;
+		}		
+		button {
+			padding: $form-data-group-btn-button-padding;
+		}
+		a {
+			padding: $form-data-group-btn-a-padding;
+		}
+	}
+}

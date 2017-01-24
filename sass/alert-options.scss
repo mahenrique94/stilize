@@ -1,0 +1,15 @@
+.alert-bottom {
+	bottom: 0;
+}
+.alert-bottom-gutter {
+	bottom: 10px;
+}
+.alert-full {
+	width: 100%;
+}
+.alert-gutter {
+	@include calc(width, "100% - 20px");
+}
+.alert-left-gutter {
+	left: 10px;
+}

@@ -1,0 +1,49 @@
+.animate {
+	display: none;
+}
+.animate-slide-up {
+    @include animation("animate-slide-up 3s cubic-bezier(0, 0, 1, .5) 1s alternate"); 
+}
+.animate-slide-up-down {
+    @include animation("animate-slide-up-down 3s cubic-bezier(0, 0, 1, .5) 1s alternate"); 
+}
+
+@keyframes animate-slide-up {
+    0% {
+        bottom: -90px;
+        display: block;
+        opacity: 0;
+    }
+    10% {
+        opacity: .5;
+    }
+    20% {
+        bottom: 10px;
+        opacity: 1;
+    }
+}
+@keyframes animate-slide-up-down {
+    0% {
+        bottom: -90px;
+        display: block;
+        opacity: 0;
+    }
+    10% {
+        opacity: .5;
+    }
+    20% {
+        bottom: 10px;
+        opacity: 1;
+    }
+    80% {
+        bottom: 10px;
+        opacity: 1;
+    }
+    90% {
+        opacity: .5;
+    }
+    100% {
+        bottom: -90px;
+        opacity: 0;
+    }
+}

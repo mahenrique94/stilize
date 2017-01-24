@@ -1,14 +1,14 @@
 {
+    "compileOnSave": true,
     "compilerOptions": {
         "module": "commonjs",
-        "target": "es5",
         "noImplicitAny": false,
-        "sourceMap": false,
+        "outFile": "./stilize.js",
         "removeComments": true,
-        "outFile": "../stilize.min.js",
-        "pretty": true
+        "sourceMap": false,
+        "target": "es6"
     },
-    "include": [
-        "**/*"
+    "exclude": [
+        "node_modules"
     ]
 }

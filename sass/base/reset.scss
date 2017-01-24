@@ -1,0 +1,21 @@
+/*  @auth Matheus Castiglioni
+ *  Adicionando alguns reset's de minha necessidade onde achei de grande importância
+ */
+
+* {
+    box-sizing: border-box;
+    font-family: Roboto, Open Sans, sans-serif !important;
+}
+a, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+}
+fieldset {
+    border: none;
+    padding: 0;
+}
+input, ul {
+    padding: 0;
+}
+li {
+    list-style: none;
+}

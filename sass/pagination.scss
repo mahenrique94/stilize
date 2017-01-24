@@ -1,0 +1,46 @@
+ul.pagination-default {
+	display: inline-block;
+	li.page-default {		
+		display: inherit;
+		float: left;
+		margin-right: $margin-pages;		
+		a , button {
+			@include border-radius($border-radius-pages);
+			border: $border;
+			padding: $padding-pages;		
+			@extend %link-page-default;
+			&:hover {
+				background: $background-pagination-active;
+				cursor: pointer;
+			}
+		}
+		&.active a, &.active button {
+			background: $background-pagination-active;
+		}
+	}
+}
+ul.pagination-lube {
+	display: inline-block;
+	li.page-lube {		
+		display: inherit;
+		float: left;
+		margin-right: $margin-pages;		
+		a , button {
+			@include border-radius($border-radius-pages);
+			background: $color-text-lube;			
+			border: $border;
+			color: $color-lube;
+			padding: $padding-pages;		
+			@extend %link-page-default;
+			&:hover {
+				background: $color-lube;
+				color: $color-text-lube;
+				cursor: pointer;
+			}
+		}
+		&.active a, &.active button {
+			background: $color-lube;
+			color: $color-text-lube;
+		}
+	}
+}

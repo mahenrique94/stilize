@@ -1,0 +1,50 @@
+nav.nav {
+	box-shadow: $nav-shadow;
+	float: $nav-float;
+	padding: $nav-padding;
+	width: 100%;
+	z-index: 1010;
+	a.nav-brand {
+		@include nav-brand;
+		float: left;
+		margin: $nav-margin-brand;
+	}
+	ul {
+		float: left;
+		li {
+			float: inherit;
+			height: $nav-height;
+			margin-right: $nav-margin-li;
+			padding: $nav-padding-li;
+			position: relative;
+			a {				
+				display: $nav-display-link;
+				height: inherit;
+				text-decoration: $nav-text-decoration;
+				vertical-align: $nav-align-link;
+			}
+		}
+		ul {
+			box-shadow: $nav-shadow;
+			left: 0;
+			position: absolute;
+			li {
+				ul {
+					position: absolute;
+					top: 0;
+				}
+				a {
+					float: inherit;
+					white-space: nowrap;
+					width: 100%;					
+				}
+			}
+		}
+	}
+}
+
+// Importado por ultimo para não sobrescrever algumas regras css
+@import 'nav-group';
+@import 'nav-square';
+@import 'nav-styles';
+@import 'nav-options';

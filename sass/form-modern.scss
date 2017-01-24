@@ -1,0 +1,9 @@
+form.form-modern {
+	@extend .form;
+	input {
+		padding: $form-data-modern-padding;					
+	}
+	select {
+		height: 35px;
+	}	
+}

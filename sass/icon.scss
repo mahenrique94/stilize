@@ -1,0 +1,22 @@
+@import 'icon-animate';
+@import 'icon-icons';
+@import 'icon-sizes';
+
+[class^=icon-]:before, [class*=icon-]:before{
+  display: inline-block;
+  font: {
+    family: "stilize";
+    style: normal;
+    variant: normal;
+    weight: normal;
+  }
+  line-height: 1em;
+  speak: none; 
+  text: {
+    align: center; 
+    decoration: inherit;
+    transform: none;
+  }
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

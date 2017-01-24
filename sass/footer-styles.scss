@@ -1,0 +1,24 @@
+footer.footer-default {
+	@extend .footer;
+	@include background-default;
+}
+footer.footer-gary {
+    @extend .footer;
+    background: $color-gary;
+    color: $color-text-gary;
+}
+footer.footer-kal {
+	@extend .footer;
+	background: $color-kal;
+	color: $color-text-kal;		
+}
+footer.footer-lube {
+	@extend .footer;
+	background: $color-lube;
+	color: $color-text-lube;		
+}
+footer.footer-tie {
+    @extend .footer;
+	background: $color-tie;
+	color: $color-text-tie;
+}

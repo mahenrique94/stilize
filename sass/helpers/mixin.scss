@@ -1,0 +1,99 @@
+@import 'mixin-background';
+@import 'mixin-border';
+@import 'mixin-button';
+@import 'mixin-display';
+
+@mixin align-items($value) {
+	-webkit-align-items: #{$value};
+	-moz-align-items: #{$value};
+	-o-align-items: #{$value};
+	-ms-align-items: #{$value};
+	align-items: #{$value};
+}
+@mixin animation($expression) {
+	-webkit-animation: #{$expression};
+	-moz-animation: #{$expression};
+	-o-animation: #{$expression};
+	-ms-animation: #{$expression};
+	animation: #{$expression};
+}
+@mixin animation-name($expression) {
+	-webkit-animation-name: #{$expression};
+	-moz-animation-name: #{$expression};
+	-o-animation-name: #{$expression};
+	-ms-animation-name: #{$expression};
+	animation-name: #{$expression};
+}
+@mixin calc($property, $expression, $important: null) {
+	#{$property}: -webkit-calc(#{$expression}) $important;
+	#{$property}: -moz-calc(#{$expression}) $important;
+	#{$property}: -o-calc(#{$expression}) $important;
+	#{$property}: -ms-calc(#{$expression}) $important;
+	#{$property}: calc(#{$expression}) $important;
+}
+@mixin filter($expression) {
+	-webkit-filter: #{$expression};
+	-moz-filter: #{$expression};
+	-o-filter: #{$expression};
+	-ms-filter: #{$expression};
+	filter: #{$expression};
+}
+@mixin flex-wrap($expression) {
+	-webkit-flex-wrap: #{$expression};
+	-moz-flex-wrap: #{$expression};
+	-o-flex-wrap: #{$expression};
+	-ms-flex-wrap: #{$expression};
+	flex-wrap: #{$expression};
+}
+@mixin justify-content($value) {
+	-webkit-justify-content: #{$value};
+	-moz-justify-content: #{$value};
+	-o-justify-content: #{$value};
+	-ms-justify-content: #{$value};
+	justify-content: #{$value};
+}
+@mixin link-no-decoration {
+	&:link {
+		@extend %link-no-decoration;
+	}
+	&:visited {
+		@extend %link-no-decoration;
+	}
+	&:focus {
+		outline: none;
+	}
+	&:hover {
+		@extend %link-no-decoration;
+		cursor: pointer;		
+	}
+	&:active {
+		@extend %link-no-decoration;
+		outline: none;
+	}	
+}
+@mixin nav-brand {
+	@include link-no-decoration;
+	color: #FFFFFF;
+	font-size: $font-size-brand;
+}
+@mixin text-align($expression) {
+	text-align: -webkit-#{$expression};
+	text-align: -moz-#{$expression};
+	text-align: -o-#{$expression};
+	text-align: -ms-#{$expression};
+	text-align: $expression;
+}
+@mixin transform($expression) {
+	-webkit-transform: #{$expression};
+	-moz-transform: #{$expression};
+	-o-transform: #{$expression};
+	-ms-transform: #{$expression};
+	transform: #{$expression};
+}
+@mixin transition($expression) {
+	-webkit-transition: #{$expression};
+	-moz-transition: #{$expression};
+	-o-transition: #{$expression};
+	-ms-transition: #{$expression};
+	transition: #{$expression};
+}

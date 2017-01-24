@@ -1,0 +1,26 @@
+.container {
+	@include container();
+	clear:both;
+	height:auto;	
+	margin:auto;
+	overflow:hidden;
+	padding: 0;	
+}
+[class*=container-center] {
+	@include container();
+	background: transparent;
+	float: none !important;
+	margin: 0 auto !important;
+}
+.container-center-xs {	
+	@include span(11 of 12);	
+}
+.container-center-sm {
+	@include span(10 of 12);
+}
+.container-center-md {
+	@include span(9 of 12);
+}
+.container-center-lg {
+	@include span(8 of 12);
+}

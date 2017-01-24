@@ -1,0 +1,16 @@
+$form-padding: 1rem;
+$form-data-padding: .125rem;
+$form-data-padding-bigger: .5rem;
+
+// FORM-MODERN
+$form-data-modern-padding: .54rem;
+
+// VALID
+$background-valid: rgba(0, 255, 0, .2);
+$color-valid: #00FF00;
+$border-valid: 1px solid $color-valid !important;
+
+// INVALID
+$background-invalid: rgba(255, 0, 0, .2);
+$color-invalid: #FF0000;
+$border-invalid: 1px solid $color-invalid !important;
