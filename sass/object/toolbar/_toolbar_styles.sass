@@ -4,7 +4,7 @@
         a, button
             @include transition("all .1s ease-in")
             background: map-get($theme-colors, $theme)
+            border-right: map-get($theme-borders, $theme)
             color: map-get($theme-texts, $theme)
             &:hover
-                background: map-get($theme-texts, $theme)
-                color: map-get($theme-colors, $theme)
+                background: map-get($theme-colors-stronger, $theme)
