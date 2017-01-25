@@ -4,12 +4,24 @@
 class Steps implements Object {
 
     public step(target : string, current : string) : void {
-        ObjectHelper.show(this._findStep(target));
+        let nextStep = this._findStep(target);
+        ObjectHelper.show(nextStep);
         ObjectHelper.hide(this._findStep(current));
+        this._setFocusFirstElementWithoutValue(nextStep);
     }
 
     private _findStep(s : string) : HTMLObjectElement {
         return document.getElementsByClassName(s)[0];
+    }
+
+    private _setFocusFirstElementWithoutValue(step) : void {
+        let inputs = step.querySelectorAll('input, select, textarea');
+        for (let i = 0; i < inputs.length; i++) {
+            if (inputs[i].value === '') {
+                inputs[i].focus();
+                return false;
+            }
+        }
     }
 
 }
