@@ -1,0 +1,32 @@
+.o-mark
+    &__text
+        float: left
+        line-height: $mark-size
+        margin-right: 1rem
+        &:last-child
+            margin-right: 0
+    &__data
+        display: none
+        &--checkbox
+            @extend .o-mark__data
+        &--radio
+            @extend .o-mark__data
+            & ~ .o-mark__text > .o-mark__element, & ~ .o-mark__text > .o-mark__element::before
+                @include border-radius(100%)
+    &__element
+        border: $border
+        height: $mark-size
+        float: left
+        margin-right: .5rem
+        text-align: center
+        width: $mark-size    
+        &.is-marked
+            &::before
+                background: #E0E0E0
+                color: $color-text
+                content: '\e827'
+                font : 
+                    family: Stilize
+                    size: 1.5rem
+                line-height: $mark-size
+                padding: .15rem

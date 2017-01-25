@@ -1,0 +1,19 @@
+.o-dynamic
+    &__button
+        @include border-radius(3px)
+        background: #FFFFFF
+        border: $border
+        font-size: .8rem
+        opacity: 0
+        position: absolute
+        right: 0
+        top: -25px
+        &:hover
+            background: darken(#FFFFFF, 5%)
+        &--clone
+            @extend .o-dynamic__button    
+        &--delete
+            @extend .o-dynamic__button
+            right: 40px
+    &:last-child:hover > .o-dynamic__button
+        opacity: 1
