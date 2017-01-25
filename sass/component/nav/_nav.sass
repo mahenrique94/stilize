@@ -1,0 +1,55 @@
+.c-nav
+    box-shadow: $nav-shadow
+    padding: 0 1rem
+    &__brand        
+        display: inline-block
+        font-size: 1.25rem
+        line-height: 56px    
+    &__menu--first
+        @extend %inline-full
+    &__menu--second, &__menu--third 
+        @include transition("all .2s linear")
+        box-shadow: $nav-shadow
+        display: block
+        min-width: $nav-width
+        position: absolute
+    &__menu--second
+        left: 0
+        top: 55px
+        z-index: $zindex-nav
+    &__menu--third   
+        left: ($nav-width - 5px)
+        top: 0
+    &__item--first 
+        @include transition("all .2s ease-in-out")
+        border-bottom: 5px solid transparent
+        display: inline-block
+        position: relative
+        a
+            display: block
+            font-weight: 100
+            padding: $nav-item-padding
+            position: relative
+    &__picture        
+        margin-right: .5rem
+        height: $nav-size-foto
+        vertical-align: middle
+        width: $nav-size-foto
+    &__item--second, &__item--third
+        a
+            padding: $nav-padding-sides
+            white-space: nowrap
+    &__item--second
+        @include transition("all .2s ease-in-out")
+        position: relative                    
+    &__item--third
+        @include transition("all .2s ease-in-out")
+        position: relative
+    &__item--right
+        float: right     
+        .c-nav__menu--second
+            left: initial
+            right: 0
+
+@import nav_styles
+@import nav_states

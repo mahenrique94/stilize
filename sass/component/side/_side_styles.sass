@@ -1,0 +1,12 @@
+@each $theme in $themes
+    .c-side--#{$theme}
+        @extend .c-side
+        background: map-get($theme-colors, $theme)
+        .c-side__item--first 
+            a                
+                color: map-get($theme-texts, $theme)
+                &:hover
+                    background: map-get($theme-colors-stronger, $theme)
+                    border-left-color: map-get($theme-texts, $theme)
+        .c-side__menu--second, &__menu--third
+            background: map-get($theme-colors, $theme)

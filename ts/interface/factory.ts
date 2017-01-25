@@ -1,0 +1,5 @@
+interface Factory {
+
+    create() : HTMLObjectElement;
+
+}

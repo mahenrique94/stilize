@@ -1,0 +1,11 @@
+@each $alert in $alerts
+    .o-alert--#{$alert}
+        @extend .o-alert
+        @include border(map-get($alert-colors-stronger, $alert))
+        @include border-radius(5px)
+        background: map-get($alert-colors, $alert)
+        color: map-get($alert-texts, $alert)
+        a
+            color: map-get($alert-texts, $alert)
+            &:hover
+                color: darken(map-get($alert-texts, $alert), 10%)

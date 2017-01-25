@@ -1,0 +1,7 @@
+@each $theme in $themes
+    .c-tab--#{$theme}
+        .c-tab__item
+            &.is-active
+                background: map-get($theme-colors-stronger, $theme)
+            &.is-inactive
+                @extend %is-inactive                          

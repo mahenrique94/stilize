@@ -1,0 +1,24 @@
+.c-nav
+    &__menu--second, &__menu--third
+        &.is-hide
+            @include transform("scale(0)")
+            opacity: 0
+        &.is-show
+            @include transform("scale(1)")
+            opacity: 1
+    &__item--first
+        a.has-dropdown::after
+            content: '\f107'
+            font-family: Stilize
+            margin-left: 4px
+        a.has-picture
+            padding: .2rem 1rem 0
+    &__picture
+        &.is-rounded
+            @include border-radius(100%)
+    &__item--second
+        a.has-dropdown::after
+            content: '\f105'
+            font-family: Stilize
+            position: absolute
+            right: 10px

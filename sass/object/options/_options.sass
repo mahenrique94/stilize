@@ -1,0 +1,33 @@
+.o-options
+    border: none
+    font-size: 1.5rem
+    position: relative
+    &__menu
+        position: absolute
+        width: 500px
+        &--left
+            right: 50px
+            text-align: right
+            .o-options__option
+                float: right
+        &--right
+            left: 50px
+            text-align: left
+            .o-options__option
+                float: left
+    &__item
+        display: inline-block
+    &__option
+        border: none
+        box-shadow: 0 0 5px rgba(0, 0, 0, .5)
+        font-size: 1.1rem
+        padding: .35rem
+        margin-right: .5rem
+        @each $theme in $themes
+            &--#{$theme}
+                @extend .o-options__option
+                background: map-get($theme-colors, $theme)
+                color: map-get($theme-texts, $theme)
+
+@import options_styles
+@import options_sizes

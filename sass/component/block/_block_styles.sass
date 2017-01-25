@@ -1,0 +1,6 @@
+@each $theme in $themes
+    .c-block--#{$theme}
+        @extend .c-block
+        .c-block__header
+            background: map-get($theme-colors, $theme)
+            color: map-get($theme-texts, $theme)

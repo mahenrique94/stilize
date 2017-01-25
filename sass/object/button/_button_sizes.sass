@@ -1,0 +1,3 @@
+@each $size in $sizes
+    .o-button--#{$size}
+        padding: unquote(map-get($button-paddings, $size))

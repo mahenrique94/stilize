@@ -1,0 +1,29 @@
+@import variable/engine
+
+@import mixin/background
+@import mixin/display
+@import mixin/form
+@import mixin/tooltip
+
+@mixin border($color, $size : 1px, $type : solid)
+    border: $size $type $color
+
+@mixin border-radius($radius)
+    @each $engine in (map-values($engines))
+        #{$engine}border-radius: $radius
+    border-radius: $radius
+
+@mixin calc($property, $expression)
+    @each $engine in (map-values($engines))
+        #{$property}: #{$engine}calc(#{$expression})
+    #{$property}: calc(#{$expression})
+
+@mixin transform($expression)
+    @each $engine in (map-values($engines))
+        #{$engine}transform: unquote($expression)
+    transform: unquote($expression)
+
+@mixin transition($expression)
+    @each $engine in (map-values($engines))
+        #{$engine}transition: unquote($expression)
+    transition: unquote($expression)

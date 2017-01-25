@@ -1,0 +1,29 @@
+.c-side    
+    height: 100%
+    position: fixed
+    width: $side-width
+    &__menu--first
+        margin-top: 1.5rem
+    &__item--first
+        a
+            display: block
+            padding: .7rem 2rem
+            white-space: nowrap
+        a:hover                        
+            border-left: 5px solid 
+        i
+            font-size: 1.5rem
+            margin-right: 1rem
+    &__menu--second, &__menu--third
+        box-shadow: -5px 0 10px rgba(0, 0, 0, .5)
+        height: 100%
+        left: $side-width
+        min-width: $side-width
+        overflow-y: auto
+        position: absolute
+        top: 0px   
+    &--uppercase
+        text-transform: uppercase     
+
+@import side_styles
+@import side_states

@@ -1,0 +1,32 @@
+.o-pageError--devices
+    .o-pageError__picture
+        display: block
+        height: 400px
+        margin-right: 100px
+        width: 100%
+        &--403
+            @extend .o-pageError__picture
+            background: url(img/error_pages/devices/403.png) no-repeat center
+        &--404
+            @extend .o-pageError__picture
+            background: url(img/error_pages/devices/404.png) no-repeat center
+        &--500
+            @extend .o-pageError__picture
+            background: url(img/error_pages/devices/500.png) no-repeat center
+    .o-pageError__info
+        background: $t-der-color
+        color: $t-der-text
+        padding: 3rem 0
+        text-align: center
+    .o-pageError__title
+        font : 
+            size: 2rem
+            weight: bold
+    .o-pageError__describe
+        font-size: 1.5rem
+        margin: 1.5rem 0
+    .o-pageError__feedback
+        font-size: 1.5rem
+        a
+            color: #595959
+            font-weight: 500

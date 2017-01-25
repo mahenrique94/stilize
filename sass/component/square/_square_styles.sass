@@ -1,0 +1,11 @@
+@each $theme in $themes
+    .c-square--#{$theme}
+        @extend .c-square !optional
+        .c-square__item
+            border: map-get($theme-borders, $theme)
+            a
+                background: map-get($theme-colors, $theme)
+                color: map-get($theme-texts, $theme)
+                &:hover
+                    background: map-get($theme-texts, $theme)
+                    color: map-get($theme-colors, $theme)

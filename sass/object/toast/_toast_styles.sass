@@ -1,0 +1,5 @@
+@each $toast in $toasts
+    .o-toast--#{$toast}
+        @extend .o-toast
+        background: map-get($toast-colors, $toast)
+        color: map-get($toast-texts, $toast)

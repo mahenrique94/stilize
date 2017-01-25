@@ -1,0 +1,19 @@
+@each $theme in $themes
+    .c-nav--#{$theme}
+        @extend .c-nav
+        background: map-get($theme-colors, $theme)
+        .c-nav__brand
+            color: map-get($theme-texts, $theme)
+        .c-nav__menu--second, .c-nav__menu--third 
+            background: map-get($theme-colors, $theme)
+        [class^=c-nav__item]
+            a
+                color: map-get($theme-texts, $theme)
+            &:hover
+                background: map-get($theme-colors-stronger, $theme)
+        .c-nav__item--first
+            &:hover
+                border-bottom: $nav-border-width solid map-get($theme-texts, $theme)
+        .c-nav__item--second, .c-nav__item--third
+            &:hover
+                border-left: $nav-border-width solid map-get($theme-texts, $theme)

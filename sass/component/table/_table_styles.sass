@@ -1,0 +1,6 @@
+@each $theme in $themes
+    .c-table--#{$theme}
+        @extend .c-table
+        thead
+            background: map-get($theme-colors, $theme)
+            color: map-get($theme-texts, $theme)

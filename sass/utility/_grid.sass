@@ -1,0 +1,18 @@
+.u-grid
+    float: left
+    margin-bottom: 1rem
+    margin-right: 2%
+    @for $i from 1 through $grid-columns
+        &--#{$i}
+            @extend .u-grid            
+            width: ($grid-width / ($grid-columns / $i)) - ($grid-gutter * ($grid-columns - $i) / $grid-columns)
+    @each $type in $media-querie-types
+        @for $i from 1 through $grid-columns
+            &--#{$type}#{$i}
+                @extend .u-grid 
+                @media screen and (min-width: map-get($media-queries, $type))
+                    @if $i == 12
+                        margin-left: 0
+                    width: ($grid-width / ($grid-columns / $i)) - ($grid-gutter * ($grid-columns - $i) / $grid-columns)
+    &:last-child
+        margin-right: 0

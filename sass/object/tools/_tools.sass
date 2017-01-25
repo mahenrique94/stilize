@@ -1,0 +1,21 @@
+.o-tools    
+    &__menu
+        @include background(linear, to bottom, $colors: (one : #FFFFFF, two : #F9F9F9, three : #F2F2F2))
+        @include border-radius(5px)
+        border: $border
+        display: inline-block
+    &__item
+        border-right: $border
+        float: left
+        a, button
+            @extend %transparent
+            display: block
+            padding: .5rem
+            &:hover
+                background: rgba(0, 0, 0, .05)
+        &:last-child
+            border-right: none
+
+@import tools_styles
+@import tools_options
+@import tools_states

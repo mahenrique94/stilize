@@ -1,0 +1,19 @@
+@import ../variable/engine
+
+////
+// DISPLAY-FLEX
+////
+@mixin align-items($expression : center)
+    @each $engine in (map-values($engines))
+        #{$engine}align-items: unquote($expression)
+    align-items: unquote($expression)
+
+@mixin display-flex()
+    @each $engine in (map-values($engines))
+        display: #{$engine}flex
+    display: flex
+
+@mixin justify-content($expression : center)
+    @each $engine in (map-values($engines))
+        #{$engine}justify-content: unquote($expression)
+    justify-content: unquote($expression)

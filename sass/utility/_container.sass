@@ -1,0 +1,8 @@
+.u-container
+    margin: 0 auto
+    padding: 0 1rem 
+    @each $size in $sizes
+        &--#{$size}
+            @extend .u-container
+            padding: 0
+            width: unquote(map-get($container-sizes, $size))

@@ -1,0 +1,6 @@
+@each $size in $sizes
+    .o-options--#{$size}
+        padding: #{(map-get($options-paddings, $size))}rem
+        .o-options__menu
+            @if map-has-key($options-paddings, $size)
+                top: #{(map-get($options-paddings, $size) / 2)}rem

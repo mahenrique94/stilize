@@ -1,8 +1,0 @@
-input.validate:invalid, select.validate:invalid, textarea.validate:invalid {
-	background: $background-invalid;
-	border: $border-invalid;
-}
-input.validate:focus:valid, textarea.validate:focus:valid {
-	background: $background-valid;
-	border: $border-valid;	
-}

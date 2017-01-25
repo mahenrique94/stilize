@@ -1,0 +1,12 @@
+@each $theme in $themes
+    .o-button--#{$theme}
+        @extend .o-button
+        @if $theme == tie
+            @include border(darken(map-get($theme-colors-stronger, $theme), 10%))
+        @else
+            @include border(map-get($theme-colors-stronger, $theme))
+        background: map-get($theme-colors, $theme)
+        border-bottom: $border-bottom
+        color: map-get($theme-texts, $theme)
+        &:hover
+            background: map-get($theme-colors-stronger, $theme)

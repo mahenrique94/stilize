@@ -1,0 +1,5 @@
+@each $theme in $themes
+    .o-tooltip--#{$theme}
+        @extend .o-tooltip
+        background: map-get($theme-colors, $theme)
+        color: map-get($theme-texts, $theme)

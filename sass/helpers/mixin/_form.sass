@@ -1,0 +1,5 @@
+@mixin form-group-border($hights , $side, $width, $border-none: true)
+    @if $border-none
+        border-#{$side}: none
+    @each $hight in $hights
+        border-#{$hight}-#{$side}-radius: $width 
