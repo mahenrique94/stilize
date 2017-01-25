@@ -1,0 +1,28 @@
+.o-box
+    background: #F9F9F9
+    position: relative
+    &__edit
+        @extend %transparent
+        font-weight: bold
+        letter-spacing: 1px
+        position: absolute
+        right: 10px
+        top: 5px
+    &__title
+        display: inline-block
+        padding: .5rem
+    &__body
+        padding: .5rem
+    &__info
+        color: $color-text
+    &__element
+        &.is-disabled
+            background: transparent
+            border: none !important
+            box-shadow: none
+            padding-left: 0
+            padding-right: 0
+    &:last-child
+        margin-bottom: 0        
+
+@import box_styles
