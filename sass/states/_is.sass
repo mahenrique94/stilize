@@ -1,8 +1,8 @@
 .is-alignRight
     text-align: right
 
-.is-disabled
-    pointer-events: none
+.is-disabled, [disabled]
+    @extend %is-disabled
 
 .is-fixedBottom
     @extend %fixed-bottom

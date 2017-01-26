@@ -38,10 +38,13 @@
     width: 100%
 
 %is-inactive
-    background: $background-inactive
-    border: none
-    color: $color-inactive
+    background: $background-inactive !important
+    border: none !important
+    color: $color-inactive !important
     pointer-events: none
+
+%is-disabled
+    @extend %is-inactive
 
 %transparent
     border: none
