@@ -1,0 +1,10 @@
+@each $theme in $themes
+    .o-file--#{$theme}
+        @extend .o-file
+        border-color: map-get($theme-colors, $theme)
+        .o-file__button
+            @extend .o-button--#{$theme}
+            border: none
+            border-bottom-left-radius: 0
+            border-top-left-radius: 0
+            padding: .5rem            
