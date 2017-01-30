@@ -5,4 +5,9 @@ class FileController {
         input.click();
     }
 
+    public selected(input) : void {
+        let info = input.parentNode.querySelector('.o-file__info');
+	    info.textContent = input.files[0].name;
+    }
+
 }
