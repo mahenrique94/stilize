@@ -15,11 +15,13 @@ if (marks.length > 0) {
     marks.forEach(mark => {
         if (mark.checked) {
             let index = 0;
+            let element;
             for(var i = 1; i <= mark.value.length; i++) {
-                let element = mark.parentNode.querySelector(`.o-mark__element[data-marked='${mark.value.substring(index, i)}']`);
-                if (element == undefined)
                     element = mark.parentNode.querySelector(`.o-mark__element[data-marked='${mark.value}']`);
-                element.classList.add('is-marked');
+                if (element == undefined)
+                    element = mark.parentNode.querySelector(`.o-mark__element[data-marked='${mark.value.substring(index, i)}']`);
+                if (element)
+                    element.classList.add('is-marked');
                 index++;
             }            
         }
