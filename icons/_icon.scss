@@ -2,12 +2,12 @@
 
 @font-face {
   font-family: 'stilize';
-  src: url('icons/stilize/stilize.eot?62613175');
-  src: url('icons/stilize/stilize.eot?62613175#iefix') format('embedded-opentype'),
-       url('icons/stilize/stilize.woff2?62613175') format('woff2'),
-       url('icons/stilize/stilize.woff?62613175') format('woff'),
-       url('icons/stilize/stilize.ttf?62613175') format('truetype'),
-       url('icons/stilize/stilize.svg?62613175#stilize') format('svg');
+  src: url('icons/stilize/stilize.eot?71148184');
+  src: url('icons/stilize/stilize.eot?71148184#iefix') format('embedded-opentype'),
+       url('icons/stilize/stilize.woff2?71148184') format('woff2'),
+       url('icons/stilize/stilize.woff?71148184') format('woff'),
+       url('icons/stilize/stilize.ttf?71148184') format('truetype'),
+       url('icons/stilize/stilize.svg?71148184#stilize') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -190,8 +190,19 @@
 .icon-users-1:before { content: '\e8ce'; } /* '' */
 .icon-picture-1:before { content: '\e8d1'; } /* '' */
 .icon-tag-1:before { content: '\e8ea'; } /* '' */
+.icon-alert:before { content: '\e902'; } /* '' */
+.icon-vcard:before { content: '\e903'; } /* '' */
+.icon-cup:before { content: '\e909'; } /* '' */
+.icon-trash-1:before { content: '\e90a'; } /* '' */
+.icon-docs-1:before { content: '\e90c'; } /* '' */
+.icon-doc-text-1:before { content: '\e90e'; } /* '' */
+.icon-doc-text-inv-1:before { content: '\e90f'; } /* '' */
+.icon-newspaper-1:before { content: '\e910'; } /* '' */
+.icon-book-open:before { content: '\e911'; } /* '' */
 .icon-archive:before { content: '\e914'; } /* '' */
 .icon-tools:before { content: '\e919'; } /* '' */
+.icon-bag:before { content: '\e91d'; } /* '' */
+.icon-hourglass-4:before { content: '\e926'; } /* '' */
 .icon-traffic-cone:before { content: '\e9a2'; } /* '' */
 .icon-cc-nc:before { content: '\e9a5'; } /* '' */
 .icon-ok-1:before { content: '\e9bc'; } /* '' */
@@ -204,6 +215,7 @@
 .icon-fuel:before { content: '\ebe3'; } /* '' */
 .icon-heliport:before { content: '\ebe9'; } /* '' */
 .icon-school:before { content: '\ebfd'; } /* '' */
+.icon-shop-1:before { content: '\ebfe'; } /* '' */
 .icon-warehouse:before { content: '\ec09'; } /* '' */
 .icon-videocam-alt:before { content: '\ec68'; } /* '' */
 .icon-home-4:before { content: '\ec70'; } /* '' */
@@ -246,6 +258,8 @@
 .icon-menu:before { content: '\f0c9'; } /* '' */
 .icon-list-bullet:before { content: '\f0ca'; } /* '' */
 .icon-list-numbered:before { content: '\f0cb'; } /* '' */
+.icon-strike:before { content: '\f0cc'; } /* '' */
+.icon-underline:before { content: '\f0cd'; } /* '' */
 .icon-table:before { content: '\f0ce'; } /* '' */
 .icon-magic:before { content: '\f0d0'; } /* '' */
 .icon-pinterest-circled:before { content: '\f0d2'; } /* '' */
@@ -424,6 +438,7 @@
 .icon-paper-plane:before { content: '\f1d8'; } /* '' */
 .icon-paper-plane-empty:before { content: '\f1d9'; } /* '' */
 .icon-history:before { content: '\f1da'; } /* '' */
+.icon-header:before { content: '\f1dc'; } /* '' */
 .icon-paragraph:before { content: '\f1dd'; } /* '' */
 .icon-sliders:before { content: '\f1de'; } /* '' */
 .icon-share:before { content: '\f1e0'; } /* '' */
