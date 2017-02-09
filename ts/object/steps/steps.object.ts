@@ -18,6 +18,7 @@ class Steps implements Object {
         let inputs = step.querySelectorAll('input, select, textarea');
         for (let i = 0; i < inputs.length; i++) {
             if (inputs[i].value === '') {
+                inputs[i].dispatchEvent(new Event('keyup'));
                 inputs[i].focus();
                 return false;
             }
