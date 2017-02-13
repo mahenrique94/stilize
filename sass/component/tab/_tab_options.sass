@@ -7,3 +7,7 @@
                 border-radius: 0
                 text-align: center
                 width: 100%
+    &--bordered
+        & ~ .c-tab__group
+            @include border-radius(0 5px 5px 5px)
+            border: $border
