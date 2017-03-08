@@ -3,15 +3,19 @@
     border-collapse: collapse
     text-align: left
     width: 100%
-    thead
+    thead, .c-table__header
         th, td
             font-weight: 500
             padding: .8rem .5rem
-    tbody
+    tbody, .c-table__body
         font-size: .8rem 
         td
             font-weight: 300
             padding: .5rem
+    caption, .c-table__caption
+        font-size: .8rem
+        padding-left: .25rem
+        text-align: left
 
 @import table_styles
 @import table_options
