@@ -10,6 +10,14 @@ class Mark implements Object {
             this._markRadio(data, mark);
     }
 
+    public checkRequired(mark : HTMLObjectElement) {
+        let marks : Array = mark.parentNode.querySelectorAll('.o-mark__element');
+        if (mark.required && mark.value == '')
+            marks.forEach(mark => mark.classList.add('is-invalid'));
+        else
+            marks.forEach(mark => mark.classList.remove('is-invalid'));
+    }
+
     private _markCheckBox(data : HTMLObjectElement, mark : HTMLObjectElement) : void {
         this._markElement(mark);
         if (this._isCheckBoxMultiple(mark)) {
@@ -20,6 +28,7 @@ class Mark implements Object {
             else
                 data.value = mark.dataset.unmarked;
         }
+        this.checkRequired(mark.parentNode.parentNode.querySelector('[class^=o-mark__data]'));
     }
 
     private _markCheckBoxMultiple(data : HTMLObjectElement, mark : HTMLObjectElement) : void {
@@ -34,6 +43,7 @@ class Mark implements Object {
         this._unmarkElement(mark);
         this._markElement(mark);
         data.value = mark.dataset.marked;
+        this.checkRequired(mark.parentNode.parentNode.querySelector('[class^=o-mark__data]'));
     }
 
     private _unmarkElement(mark : HTMLObjectElement) : void {

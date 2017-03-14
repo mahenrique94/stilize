@@ -2,13 +2,9 @@
     &__data
         &.has-validation
             &:invalid
-                background: rgba(255, 179 ,179 , .25)
-                border: 1px solid #FF8080 
-                box-shadow: 0 0 3px 1px rgba(255, 128 ,128 , .3)
+                @extend %invalid
             &:valid:focus
-                background: rgba(92, 214, 92 , .25)
-                border: 1px solid #00CC99
-                box-shadow: 0 0 3px 1px rgba(0, 204, 153 , .25)
+                @extend %valid
         &[disabled], &[readonly], .is-inactive
             @extend %is-inactive
             border: $border

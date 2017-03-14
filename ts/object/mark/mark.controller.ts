@@ -13,6 +13,7 @@ class MarkController {
 let marks = document.querySelectorAll('[class*=o-mark__data]');
 if (marks.length > 0) {
     marks.forEach(mark => {
+        new Mark().checkRequired(mark);
         if (mark.checked) {
             let index = 0;
             let element;
