@@ -8,12 +8,12 @@
 /// <reference path="../object/steps/steps.controller.ts"/>
 /// <reference path="../object/toast/toast.controller.ts"/>
 
-window['FileController'] = new FileController();    
-window['MarkController'] = new MarkController();
-window['MediaController'] = new MediaController();
-window['ModalController'] = new ModalController();
-window['NavController'] = new NavController();
-window['OptionsController'] = new OptionsController();
-window['StepsController'] = new StepsController();
-window['TabController'] = new TabController();
-window['ToastController'] = new ToastController();
+window["FileController"] = new FileController();    
+window["MarkController"] = new MarkController();
+window["MediaController"] = new MediaController();
+window["ModalController"] = new ModalController();
+window["NavController"] = new NavController();
+window["OptionsController"] = new OptionsController();
+window["StepsController"] = new StepsController();
+window["TabController"] = new TabController();
+window["ToastController"] = new ToastController();

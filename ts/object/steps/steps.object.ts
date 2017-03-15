@@ -11,14 +11,14 @@ class Steps implements Object {
     }
 
     private _findStep(s : string) : HTMLObjectElement {
-        return document.getElementsByClassName(s)[0];
+        return document.querySelector(`.${s}`);
     }
 
     private _setFocusFirstElementWithoutValue(step) : void {
-        let inputs = step.querySelectorAll('input, select, textarea');
+        let inputs = step.querySelectorAll("input, select, textarea");
         for (let i = 0; i < inputs.length; i++) {
-            if (inputs[i].value === '') {
-                inputs[i].dispatchEvent(new Event('keyup'));
+            if (inputs[i].value === "") {
+                inputs[i].dispatchEvent(new Event("keyup"));
                 inputs[i].focus();
                 return false;
             }

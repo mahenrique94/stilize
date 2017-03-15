@@ -3,7 +3,7 @@
 class Toast {
 
     public close(toast) : void {
-        toast.style.display = 'none';
+        toast.style.display = "none";
     }
 
 }

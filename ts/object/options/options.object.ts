@@ -4,7 +4,7 @@
 class Options implements Object {
 
     public toggle(options : HTMLObjectElement) : void {
-        let ul : HTMLObjectElement = options.querySelector('ul');
+        let ul : HTMLObjectElement = options.querySelector("ul");
         if (ObjectHelper.isHide(ul))
             ObjectHelper.show(ul);
         else
