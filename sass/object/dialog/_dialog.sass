@@ -1,0 +1,46 @@
+.o-dialog   
+    @include border-radius(5px)
+    @include transform("translate(-50%, -50%)")
+    background: #FFFFFF
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5)
+    height: 245px
+    left: 50%
+    position: absolute
+    top: 50%
+    width: 600px
+    z-index: $zindex-dialog
+    &__background
+        background: rgba(0, 0, 0, .5)
+        height: 100%
+        left: 0
+        position: absolute
+        top: 0
+        width: 100%
+        z-index: $zindex-background-dialog
+    &__close
+        @extend %transparent
+        color: #F2F2F2
+        font-size: 2rem
+        position: absolute
+        right: 0px
+        &:hover
+            cursor: pointer
+    &__body
+        @include display-flex
+        padding: 3rem 2rem 2.5rem
+    &__icon
+        color: #595959
+        font-size: 5rem
+        margin-right: 1rem
+        vertical-align: middle
+    &__message
+        color: $color-text
+        font-size: 1.2rem
+        font-weight: 100
+    &__footer
+        background: #F9F9F9
+        border-top: 1px solid #DCDCDC
+        padding: .7rem 1rem
+        text-align: right
+    &__button
+        padding: .5rem 2rem

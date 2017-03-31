@@ -1,9 +1,9 @@
 /// <reference path="../../interface/object.ts"/>
 
-class Toast {
+class Toast implements Object {
 
     public close(toast) : void {
-        toast.style.display = "none";
+        toast.remove();
     }
 
 }

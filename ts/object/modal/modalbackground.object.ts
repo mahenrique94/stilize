@@ -1,6 +1,6 @@
 /// <reference path="../../interface/object.ts"/>
 /// <reference path="../../interface/factory.ts"/>
-/// <reference path="./modalclose.ts"/>
+/// <reference path="./modalclose.object.ts"/>
 
 class ModalBackground implements Object, Factory {
 

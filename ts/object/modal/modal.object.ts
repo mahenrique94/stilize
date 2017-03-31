@@ -27,7 +27,7 @@ class Modal implements Object, Factory {
 
     private _destroy() : void {
         let modal : HTMLObjectElement = document.querySelector(".js-o-modal");
-        modal.parentNode.removeChild(modal);
+        modal.remove();
     }
 
     private _insertBackground() : void {

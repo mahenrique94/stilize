@@ -1,0 +1,6 @@
+@each $toast in $toasts
+    .o-toastSlim--#{$toast}
+        @extend .o-toastSlim
+        .o-toastSlim__icon
+            background: map-get($toastSlim-colors, $toast)
+            color: #FFFFFF

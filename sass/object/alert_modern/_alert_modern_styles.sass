@@ -1,0 +1,7 @@
+@each $alert in $alerts
+    .o-alertModern--#{$alert}
+        @extend .o-alertModern
+        border: 1px solid map-get($alertModern-colors, $alert)
+        .o-alertModern__icon
+            background: map-get($alertModern-colors, $alert)
+            color: #FFFFFF
