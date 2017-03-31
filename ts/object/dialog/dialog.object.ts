@@ -3,12 +3,10 @@
 
 class Dialog implements Object, Factory {
 
-    private _callback : Function;
     private _message : string;
     private _icon : string;
 
-    public build(callback : Function, message : string, icon : string) : void {
-        this._callback = callback;
+    public build(message : string, icon : string) : void {
         this._message = message;
         this._icon = icon;
         document.body.appendChild(this.create());
@@ -25,7 +23,7 @@ class Dialog implements Object, Factory {
             </div>
             <div class="o-dialog__footer">
                 <button class="o-dialog__button o-button--der" onclick="DialogController.close();" type="button"><i class="icon-cancel"></i>&nbsp;Não</button>
-                <button class="o-dialog__button o-button--ren" onclick="DialogController.execute(${this._callback});" type="button"><i class="icon-ok"></i>&nbsp;Sim</button>
+                <button class="o-dialog__button o-button--ren" onclick="DialogController.execute();" type="button"><i class="icon-ok"></i>&nbsp;Sim</button>
             </div>
         `;
         return dialog;
