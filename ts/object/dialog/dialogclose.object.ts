@@ -4,7 +4,7 @@
 class DialogClose implements Object, Factory {
 
     public create() : HTMLObjectElement {
-        const close = document.createElement("ICON");
+        const close = document.createElement("i");
         close.classList.add("icon-cancel", "o-dialog__close");
         return close;
     }

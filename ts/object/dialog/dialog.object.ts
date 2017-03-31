@@ -14,7 +14,7 @@ class Dialog implements Object, Factory {
 
     public create() : HTMLObjectElement {
         document.body.appendChild(new DialogBackground().create());
-        const dialog = document.createElement("DIV");
+        const dialog = document.createElement("div");
         dialog.classList.add("o-dialog", "js-o-dialog");
         dialog.innerHTML = `
             <div class="o-dialog__body">

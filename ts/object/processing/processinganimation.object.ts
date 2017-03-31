@@ -4,7 +4,7 @@
 class ProcessingAnimation implements Object, Factory {
 
     public create() : HTMLObjectElement {
-        let animation = document.createElement("DIV");
+        let animation = document.createElement("div");
         animation.classList.add("o-processing__animation");
         animation.innerHTML = "<i class=\"icon-spin1 animate-spin\"></i>";
         return animation;

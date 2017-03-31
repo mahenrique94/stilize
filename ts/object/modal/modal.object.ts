@@ -18,7 +18,7 @@ class Modal implements Object, Factory {
     }
 
     public create(type : string, url : string) : HTMLObjectElement {
-        let modal : HTMLObjectElement = document.createElement("DIALOG");
+        let modal : HTMLObjectElement = document.createElement("dialog");
         modal.classList.add("js-o-modal", "is-show", `o-modal--${type || "large"}`);
         modal.setAttribute("role", "dialog");
         modal.appendChild(new ModalFrame(url).create());

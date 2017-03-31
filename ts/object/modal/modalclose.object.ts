@@ -4,7 +4,7 @@
 class ModalClose implements Object, Factory {
 
     public create() : HTMLObjectElement {
-        let close = document.createElement("I");
+        let close = document.createElement("i");
         close.classList.add("icon-cancel", "o-modal__close");
         return close;
     }

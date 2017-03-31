@@ -5,7 +5,7 @@
 class ModalBackground implements Object, Factory {
 
     public create() : HTMLObjectElement {
-        let modalBackground : HTMLObjectElement = document.createElement("DIV");
+        let modalBackground : HTMLObjectElement = document.createElement("div");
         modalBackground.classList.add("o-modal__background", "js-o-modal__background");
         modalBackground.setAttribute("onclick", "ModalController.hide()");
         modalBackground.appendChild(new ModalClose().create());

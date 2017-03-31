@@ -9,7 +9,7 @@ class Processing implements Object, Factory {
     }
 
     public create() : HTMLObjectElement {
-        let processing = document.createElement("DIV");
+        let processing = document.createElement("div");
         processing.classList.add("o-processing__background");
         processing.appendChild(new ProcessingAnimation().create());
         return processing;
