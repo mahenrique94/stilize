@@ -1,0 +1,27 @@
+.o-getStarted {
+    background: #0099FF;
+    color: #F9F9F9;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.o-getStarted__title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.o-getStarted__flex {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.o-tutorial__describe {
+    font-size: 1.25rem;
+}
+.o-tutorial__step {
+    font-weight: 100;
+    list-style: decimal;
+    margin: .5rem 0;
+}
+.o-tutorial__link {
+    text-decoration: underline;
+}

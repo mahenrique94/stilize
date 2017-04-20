@@ -6,10 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Stilize</title>
     <link href="lib/stilize.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/prism.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
     <link href="assets/css/index.css" rel="stylesheet" type="text/css">
     <link href="assets/css/header.css" rel="stylesheet" type="text/css">
     <link href="assets/css/menu.css" rel="stylesheet" type="text/css">
     <link href="assets/css/welcome.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/information.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/getstarted.css" rel="stylesheet" type="text/css">
     <link href="assets/css/footer.css" rel="stylesheet" type="text/css">
 </head>
 <body>
@@ -23,15 +27,15 @@
             </ul>
         </nav>
     </header>
-    <main class="o-container">
-        <section class="o-welcome">
+    <main>
+        <section class="o-container o-welcome">
             <div class="o-welcome__wrap">
                 <h1 class="o-welcome__title">Stilize</h1>
                 <p class="o-welcome__describe">O Stilize é um framework CSS feito em SASS e Typescript para desenvolver páginas com mais facilidade e agilidade.</p>
                 <a href="https://github.com/mahenrique94/stilize/archive/master.zip" class="o-button--dowload">Download</a>
             </div>
         </section>
-        <section class="o-informations">
+        <section class="o-container o-informations">
             <div class="o-information">
                 <img alt="Desenvolvimento responsivo" class="o-information__picture" src="assets/img/responsive.svg">
                 <p class="o-information__describe">Desenvolva páginas que se adaptam a todos os dispositivos móveis garantindo que independente do dispotivo de acesso seu site não irá perder a identidade.</p>
@@ -45,26 +49,45 @@
                 <p class="o-information__describe">Desenvolvido com SASS e Typescript, as linguagens mais novas do mercado para que a manutenção seja simples e o framework tenha os recursos necessários para atender a todos.</p>
             </div>
         </section>
+        <section class="o-container o-getStarted">
+            <h2 class="o-getStarted__title">Comece a usar</h2>
+            <div class="o-getStarted__">
+                <div class="o-tutorial">
+                    <p class="o-tutorial__describe">Para utilizar o framework é muito simples, siga os passoa á baixo:</p>
+                    <ol class="o-tutorial__steps">
+                        <li class="o-tutorial__step">Faça o download do arquivo <strong>.zip</strong>.</li>
+                        <li class="o-tutorial__step">Extraia o conteúdo do arquivo para uma pasta em seu projeto.</li>
+                        <li class="o-tutorial__step">Realize a importação dos arquivos <strong>.css</strong> e <strong>.js</strong>.</li>
+                        <div class="o-exampleImport">
+                            <pre class="language-markup">
+                                <code class="language-markup">
+                                    &lt;link href="PASTA_EXTRAIDA/stilize.min.css" rel="stylesheet" type="text/css"&gt;
+                                    &lt;script src="PASTA_EXTRAIDA/stilize.min.js" type="text/javascript"&gt;&lt;/script&gt;
+                                </code>
+                            </pre>
+                        </div>
+                        <li class="o-tutorial__step">Tudo pronto para começar a usar, confira a documentação <a class="o-tutorial__link" href="documentacao.html">aqui</a>.</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
     </main>
     <footer class="o-footer">
         <ul class="o-footer__list">
-            <li class="o-footer__listItem"><a href="#" class="o-footer__listItemLink">Mapa do Site</a></li>
+            <li class="o-footer__listItem is-firstChild"><a href="#" class="o-footer__listItemLink">Mapa do Site</a></li>
             <li class="o-footer__listItem"><a href="index.html" class="o-footer__listItemLink">Home</a></li>
             <li class="o-footer__listItem"><a href="documentacao.html" class="o-footer__listItemLink">Documentação</a></li>
             <li class="o-footer__listItem"><a href="exemplos.html" class="o-footer__listItemLink">Exemplos</a></li>
         </ul>
-        <ul class="o-footer__list">
-            <li class="o-footer__listItem"><a href="#" class="o-footer__listItemLink">Projetos</a></li>
-            <li class="o-footer__listItem"><a href="http://mahenrique94.github.io/stilize" class="o-footer__listItemLink" target="_blank">Stilize</a></li>
-            <li class="o-footer__listItem"><a href="http://mahenrique94.github.io/jlib" class="o-footer__listItemLink" target="_blank">Jlib</a></li>
-            <li class="o-footer__listItem"><a href="http://mahenrique94.github.io/mhc" class="o-footer__listItemLink" target="_blank">MHC</a></li>
-            <li class="o-footer__listItem"><a href="http://mahenrique94.github.io/mhcws" class="o-footer__listItemLink" target="_blank">MHC - Web Service</a></li>
-        </ul>
-        <ul class="o-footer__list">
-            <li class="o-footer__listItem"><a href="#" class="o-footer__listItemLink">Matheus Castiglioni</a></li>
-            <li class="o-footer__listItem"><a href="http://www.matheuscastiglioni.com.br" class="o-footer__listItemLink" target="_blank">Site</a></li>
-            <li class="o-footer__listItem"><a href="http://blog.matheuscastiglioni.com.br" class="o-footer__listItemLink" target="_blank">Blog</a></li>
+        <ul class="o-footer__list o-footer__list--inline">
+            <li class="o-footer__listItem is-inline"><a href="http://www.matheuscastiglioni.com.br" class="o-footer__listItemLink" target="_blank">Matheus Castiglioni</a></li>
+            <li class="o-footer__listItem is-inline"><a href="http://blog.matheuscastiglioni.com.br" class="o-footer__listItemLink" target="_blank">Blog</a></li>
+            <li class="o-footer__listItem is-inline"><a href="http://stilize.matheuscastiglioni.com.br" class="o-footer__listItemLink" target="_blank">Stilize</a></li>
+            <li class="o-footer__listItem is-inline"><a href="http://jlib.matheuscastiglioni.com.br" class="o-footer__listItemLink" target="_blank">Jlib</a></li>
+            <li class="o-footer__listItem is-inline"><a href="http://mhcws.matheuscastiglioni.com.br" class="o-footer__listItemLink" target="_blank">MHCWS</a></li>
+            <li class="o-footer__listItem is-inline"><a href="http://mhc.matheuscastiglioni.com.br" class="o-footer__listItemLink" target="_blank">MHC</a></li>
         </ul>
     </footer>
+    <script src="assets/js/prism.js" type="text/javascript"></script>
 </body>
 </html>
