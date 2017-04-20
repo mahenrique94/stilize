@@ -1,8 +1,10 @@
 .o-welcome {
+    align-items: center;
     background: #0099FF;
     color: #F9F9F9;
-    padding-top: 17rem;
-    padding-bottom: 13rem;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
     text-align: center;
 }
 .o-welcome__title {
