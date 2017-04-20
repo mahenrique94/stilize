@@ -1,0 +1,32 @@
+.o-button--dowload {
+    border: 2px solid #F9F9F9;
+    border-radius: 3px;
+    display: inline-block;
+    margin-top: 3rem;
+    padding: 1rem 4rem;
+    transition: background .2s ease-in-out;
+}
+.o-button--dowload:hover {
+    background: #F9F9F9;
+    color: #595959;
+}
+
+.o-informations {
+    display: flex;
+    justify-content: space-around;
+    padding: 3rem 2rem;
+}
+.o-information {
+    padding: 1.5rem;
+    text-align: center;
+}
+.o-information__picture {
+    height: 250px;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+.o-information__describe {
+    color: #595959;
+    font-weight: 100;
+    text-align: justify;
+}

@@ -1,0 +1,29 @@
+.o-menu {
+    align-items: center;
+    color: #595959;
+    display: flex;
+    justify-content: space-between;
+}
+.o-menu__brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.o-menu__brand:hover {
+    color: #0099FF;
+}
+.o-menu__list, .o-menu__item {
+    display: inline-block;
+}
+.o-menu__link {
+    display: block;
+    font-weight: 300;
+    margin-left: 2rem;
+    text-transform: uppercase;
+    transition: transform .1s linear;
+}
+.o-menu__link:hover {
+    color: #0099FF;
+    transform: scale(1.3);
+}

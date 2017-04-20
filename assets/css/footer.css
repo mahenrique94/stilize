@@ -1,0 +1,20 @@
+.o-footer {
+    background: #FFFFFF;
+    box-shadow: 0 -5px 5px rgba(0, 0, 0, .3);
+    color: #595959;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 3rem;
+}
+
+.o-footer__listItem {
+    display: block;
+    margin-bottom: .5rem;
+}
+.o-footer__listItem:first-child .o-footer__listItemLink {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.o-footer__listItem:last-child {
+    margin-bottom: 0;
+}
