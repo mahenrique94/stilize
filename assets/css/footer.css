@@ -1,6 +1,6 @@
 .o-footer {
     background: #FFFFFF;
-    box-shadow: 0 -5px 5px rgba(0, 0, 0, .3);
+    border-top: 1px solid #DCDCDC;
     color: #595959;
     display: flex;
     justify-content: space-between;

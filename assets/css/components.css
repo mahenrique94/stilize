@@ -1,0 +1,18 @@
+.o-components {
+    background: #FFFFFF;
+    border-right: 1px solid #DCDCDC;
+    color: #595959;
+    height: calc(100vh - 90px);
+    overflow-y: auto;
+    position: fixed;
+    width: 20%;
+}
+.o-components__link {
+    border-bottom: 1px solid #DCDCDC;
+    display: block;
+    padding: .5rem 1rem;
+}
+.o-components__link.is-title {
+    background: #F5F5F5;
+    font-weight: bold;
+}
