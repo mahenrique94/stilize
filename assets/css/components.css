@@ -12,6 +12,9 @@
     display: block;
     padding: .5rem 1rem;
 }
+.o-components__link:hover {
+    background: #F9F9F9;
+}
 .o-components__link.is-title {
     background: #F5F5F5;
     font-weight: bold;
