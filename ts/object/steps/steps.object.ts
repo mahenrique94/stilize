@@ -4,7 +4,7 @@
 class Steps implements Object {
 
     public step(target : string, current : string) : void {
-        let nextStep = this._findStep(target);
+        const nextStep = this._findStep(target);
         ObjectHelper.show(nextStep);
         ObjectHelper.hide(this._findStep(current));
         this._setFocusFirstElementWithoutValue(nextStep);
@@ -15,7 +15,7 @@ class Steps implements Object {
     }
 
     private _setFocusFirstElementWithoutValue(step) : void {
-        let inputs = step.querySelectorAll("input, select, textarea");
+        const inputs = step.querySelectorAll("input, select, textarea");
         for (let i = 0; i < inputs.length; i++) {
             if (inputs[i].value === "") {
                 inputs[i].dispatchEvent(new Event("keyup"));

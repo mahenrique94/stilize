@@ -9,10 +9,16 @@ class Processing implements Object, Factory {
     }
 
     public create() : HTMLObjectElement {
-        let processing = document.createElement("div");
+        const processing = document.createElement("div");
         processing.classList.add("o-processing__background");
         processing.appendChild(new ProcessingAnimation().create());
         return processing;
+    }
+
+    public destroy() : void {
+        const processing = document.querySelector(".o-processing__background");
+        if (processing)
+            processing.remove();
     }
 
 }

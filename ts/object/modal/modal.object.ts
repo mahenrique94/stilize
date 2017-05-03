@@ -18,7 +18,7 @@ class Modal implements Object, Factory {
     }
 
     public create(type : string, url : string) : HTMLObjectElement {
-        let modal : HTMLObjectElement = document.createElement("dialog");
+        const modal : HTMLObjectElement = document.createElement("dialog");
         modal.classList.add("js-o-modal", "is-show", `o-modal--${type || "large"}`);
         modal.setAttribute("role", "dialog");
         modal.appendChild(new ModalFrame(url).create());
@@ -26,7 +26,7 @@ class Modal implements Object, Factory {
     }
 
     private _destroy() : void {
-        let modal : HTMLObjectElement = document.querySelector(".js-o-modal");
+        const modal : HTMLObjectElement = document.querySelector(".js-o-modal");
         modal.remove();
     }
 

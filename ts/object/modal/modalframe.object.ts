@@ -10,7 +10,7 @@ class ModalFrame implements Object, Factory {
     }
 
     public create() : void {
-        let iframe = document.createElement("iframe");
+        const iframe = document.createElement("iframe");
         iframe.classList.add("o-modal__content");
         iframe.src = this._url;
         return iframe;

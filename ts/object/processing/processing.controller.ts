@@ -8,4 +8,8 @@ class ProcessingController {
         document.body.appendChild(this._processing.new());
     }
 
+    public stop() : void {
+        this._processing.destroy();
+    }
+
 }

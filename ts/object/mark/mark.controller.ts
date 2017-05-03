@@ -10,7 +10,7 @@ class MarkController {
 
 }
 
-let marks = document.querySelectorAll("[class*=o-mark__data]");
+const marks = document.querySelectorAll("[class*=o-mark__data]");
 if (marks.length > 0) {
     marks.forEach(mark => {
         new Mark().checkRequired(mark);
