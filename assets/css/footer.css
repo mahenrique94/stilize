@@ -48,9 +48,6 @@
     }     
 }
 
-.o-footer__list--inline, .o-footer__list--inline .o-footer__listItem {
-    display: inline;
-}
 .o-footer__listItem {
     display: block;
     margin-bottom: .5rem;
