@@ -32,7 +32,7 @@ class Mark implements Object {
     }
 
     private _markCheckBoxMultiple(data : HTMLObjectElement, mark : HTMLObjectElement) : void {
-        const regEx = new RegExp(`[${mark.dataset.marked}]`, "gi");
+        const regEx = new RegExp(`(${mark.dataset.marked})`, "gi");
         if (regEx.test(data.value))
             data.value = data.value.replace(regEx, "");
         else
