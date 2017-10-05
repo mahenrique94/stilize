@@ -8,6 +8,7 @@ class Mark implements Object {
             this._markCheckBox(data, mark);
         else
             this._markRadio(data, mark);
+        this._dispatchInputEvent(data);
     }
 
     public checkRequired(mark : HTMLObjectElement) {
@@ -65,6 +66,10 @@ class Mark implements Object {
 
     private _isMarked(mark : HTMLObjectElement) : boolean {
         return mark.classList.contains("is-marked");
+    }
+
+    private _dispatchInputEvent(mark : HTMLObjectElement) : void {
+        mark.dispatchEvent(new Event("input"));
     }
 
 }
