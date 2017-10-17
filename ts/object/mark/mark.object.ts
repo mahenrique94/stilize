@@ -3,7 +3,7 @@
 class Mark implements Object {
 
     public mark(mark : HTMLObjectElement) : void {
-        const data : HTMLObjectElement = mark.parentNode.parentNode.querySelector("input[type=hidden]");
+        const data : HTMLObjectElement = mark.parentNode.parentNode.querySelector("input[type=hidden], .is-hidden");
         if (this._isCheckBox(data))
             this._markCheckBox(data, mark);
         else
