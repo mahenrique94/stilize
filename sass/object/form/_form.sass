@@ -19,7 +19,7 @@
         color: $form-data-color
         padding: $form-data-padding
         width: 100%
-        &:focus
+        &:focus:not(disabled, readonly)
             border: 1px solid #0099FF
             box-shadow: 0 0 3px 1px rgba(0, 153, 255, .3)
         &:only-child
@@ -34,6 +34,9 @@
             color: #FF8080
         &.is-valid
             color: #00CC99
+    &__link
+        &:hover
+            cursor: pointer
     select.o-form__data
         height: 40px
     textarea.o-form__data
