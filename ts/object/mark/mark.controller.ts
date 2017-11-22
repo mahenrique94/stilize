@@ -17,8 +17,13 @@ if (marks.length > 0) {
         if (mark.checked) {
             const children = mark.parentNode.querySelectorAll(".o-mark__element");
             children.forEach(child => {
-                if (mark.value.indexOf(child.dataset.marked) >= 0)
-                    child.classList.add("is-marked");
+                if (child.dataset.marked !== "") {
+                    if (mark.value.indexOf(child.dataset.marked) >= 0)
+                        child.classList.add("is-marked");
+                } else {
+                    if (mark.value === child.dataset.marked)
+                        child.classList.add("is-marked");
+                }
             });
         }
     });
