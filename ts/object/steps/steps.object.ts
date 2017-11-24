@@ -17,8 +17,8 @@ class Steps implements Object {
     private _setFocusFirstElementWithoutValue(step) : void {
         const inputs = step.querySelectorAll("input, select, textarea");
         for (let i = 0; i < inputs.length; i++) {
+            inputs[i].dispatchEvent(new Event("change"));
             if (inputs[i].value === "") {
-                inputs[i].dispatchEvent(new Event("keyup"));
                 inputs[i].focus();
                 return false;
             }
