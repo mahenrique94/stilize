@@ -4,8 +4,8 @@ class LoadingController {
 
     private _loading : Loading = new Loading();
 
-    public insertInBody() : void {
-        document.body.appendChild(this._loading.new());
+    public insertInBody(message : String = "") : void {
+        document.body.appendChild(this._loading.new(message));
     }
 
     public removeLoading() : void {
