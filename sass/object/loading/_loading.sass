@@ -4,10 +4,14 @@
   @include justify-content("center")
   background: rgba(0, 0, 0, .5)
   color: #FDFDFD
-  font-size: 5rem
+  flex-direction: column
   height: 100%
   left: 0
   position: fixed
   top: 0
   width: 100%
   z-index: $zindex-background-loading
+  .o-loading__icon
+    font-size: 5rem
+  .o-loading__message
+    margin-top: 1rem
