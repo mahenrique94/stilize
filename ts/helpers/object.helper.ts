@@ -18,4 +18,8 @@ class ObjectHelper {
         return obj.classList.contains("is-hide");
     }
 
+    public static isNull(obj : any) : boolean {
+        return obj == null;
+    }
+
 }
