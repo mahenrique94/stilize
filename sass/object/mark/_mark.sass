@@ -20,13 +20,15 @@
         float: left
         margin-right: .5rem
         text-align: center
-        width: $mark-size    
+        width: $mark-size
+        &:hover
+            cursor: pointer
         &.is-marked
             &::before
                 background: #E0E0E0
                 color: $color-text
                 content: '\e828'
-                font : 
+                font :
                     family: Stilize
                     size: 1.5rem
                 line-height: $mark-size

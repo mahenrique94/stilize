@@ -2,10 +2,10 @@
 
 class ProcessingController {
 
-    private _processing = new Processing();
+    private _processing : Processing = new Processing();
 
-    public process() : void {
-        document.body.appendChild(this._processing.new());
+    public start(message : String = "") : void {
+        document.body.appendChild(this._processing.new(message));
     }
 
     public stop() : void {

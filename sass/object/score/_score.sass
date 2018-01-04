@@ -1,0 +1,17 @@
+.o-score
+  @include display-flex
+  &.is-show
+    @include display-flex
+  .o-score__point
+    border-bottom: 5px solid
+    font-weight: 100
+    padding: .175rem
+    width: 100%
+    @each $score in ($scores)
+      &--#{$score}
+        @extend .o-score__point
+        border-bottom-color: map_get($score-colors, $score)
+        color: map_get($score-colors, $score)
+        &.is-inactive
+          border-bottom-color: #F1F1F1
+          color: #E9E9E9
