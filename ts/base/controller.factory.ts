@@ -1,6 +1,7 @@
 /// <reference path="../component/media/media.controller.ts"/>
 /// <reference path="../component/nav/nav.controller.ts"/>
 /// <reference path="../component/tab/tab.controller.ts"/>
+/// <reference path="../object/collapse/collapse.controller.ts"/>
 /// <reference path="../object/dialog/dialog.controller.ts"/>
 /// <reference path="../object/file/file.controller.ts"/>
 /// <reference path="../object/mark/mark.controller.ts"/>
@@ -11,8 +12,9 @@
 /// <reference path="../object/toast/toast.controller.ts"/>
 /// <reference path="../object/toast_slim/toastslim.controller.ts"/>
 
-window["DialogController"] = new DialogController();    
-window["FileController"] = new FileController();    
+window["CollapseController"] = new CollapseController();
+window["DialogController"] = new DialogController();
+window["FileController"] = new FileController();
 window["MarkController"] = new MarkController();
 window["MediaController"] = new MediaController();
 window["ModalController"] = new ModalController();
